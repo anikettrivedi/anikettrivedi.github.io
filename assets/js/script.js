@@ -32,21 +32,18 @@ window.onload = function () {
     // todo - load statically, remove backend request
     else if (document.URL.includes("/blog/")) {
         // article page
-        let articleDataUrl = document.URL.replace("blog", "data");
+        let articleTitle = document.URL.substring(document.URL.indexOf("title="), document.URL.length)
 
-        fetch(articleDataUrl).then(response => {
-            // fetching article data
+        fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
+            // fetching all articles data
             return response.json();
-        }).then(data => {
-            loadArticleData(data);
+        }).then(dataArray => {
+            for (let i = 0; i < dataArray.length; i++) {
+                articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
+            }
+            loadArticleData(articlesMap[articleTitle]);
             addArticlePageContent();
-        }).then(() => {
-            // fetching sidebar data
-            return fetch(baseUrl + "navigation");
-        }).then(response => {
-            return response.json();
-        }).then(data => {
-            loadNavigationData(data);
+            loadNavigationData(articlesArray);
             addSideBarContent();
             displayVisible();
         }).catch(error => {
@@ -142,7 +139,7 @@ function addSideBarContent() {
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");
         let baseUrl = document.URL.substring(0, document.URL.indexOf("blog"));
-        a.href = baseUrl + "blog.html/" + navigationArray[i].index;
+        a.href = baseUrl + "blog?title=" + navigationArray[i].index;
 
         let div = document.createElement("div");
         div.classList.add("common-sidebar-item");
@@ -319,7 +316,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     let timestampText = article.timestamp;
     let headingText = article.heading;
     console.log(document.baseURI)
-    let articleLinkRelativePath = baseUrl + "blog.html/" + article.index;
+    let articleLinkRelativePath = baseUrl + "blog?title=" + article.index;
 
     previewPanel.classList.add("preview-panel");
 

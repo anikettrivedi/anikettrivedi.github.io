@@ -28,7 +28,7 @@ window.onload = function () {
 
     } else if (document.URL.includes("/blog/")) {
         // article page
-        let articleTitle = document.URL.substring(document.URL.indexOf("title="), document.URL.length)
+        let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
         console.log("article title = " + articleTitle)
 
         fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {

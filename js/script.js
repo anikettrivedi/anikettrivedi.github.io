@@ -1,14 +1,12 @@
-import blogsData from '../json/blogs.json' assert { type: 'json' };
-console.log(blogsData)
-
 let article;
+let articlesMap = {};
 let articlesArray = [];
 let articlesArraySearchCopy = [];
 let navigationArray = [];
 let aboutData = [];
 
 let index = document.URL.indexOf("blog");
-let baseUrl = document.URL.substring(0, index);
+let baseUrl = document.URL.substring(0, document.URL.indexOf("index"));
 let ascendingSortOrder = true;
 
 let websiteHeading = "five2nine.blog"
@@ -20,9 +18,7 @@ window.onload = function () {
     // todo - load statically, remove backend request
     if (document.URL.includes("/about")) {
         // about page
-        let aboutDataUrl = document.URL.replace("about", "data-about");
-
-        fetch(aboutDataUrl).then(response => {
+        fetch("https://anikettrivedi.github.io/json/about.json").then(response => {
             return response.json()
         }).then(data => {
             loadAboutData(data);
@@ -58,27 +54,21 @@ window.onload = function () {
             console.error(error);
         });
     }
-    
+
     // todo - load statically, remove backend request
     else {
         // home page
 
-        let index = document.URL.indexOf("blog");
-        let baseUrl = document.URL.substring(0, index);
-
-        fetch(baseUrl + "all").then(response => {
+        fetch("https://anikettrivedi.github.io/json/blogs.json").then(response => {
             // fetching all articles data
             return response.json();
-        }).then(data => {
-            loadAllArticlesData(data);
+        }).then(dataArray => {
+            for (let i = 0; i < dataArray.length; i++) {
+                articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
+            }
+            loadAllArticlesData(articlesMap);
             addHomePageContent();
-        }).then(() => {
-            // fetching sidebar data
-            return fetch(baseUrl + "navigation");
-        }).then(response => {
-            return response.json();
-        }).then(data => {
-            loadNavigationData(data);
+            loadNavigationData(articlesArray);
             addSideBarContent();
             displayVisible();
         }).catch(error => {
@@ -106,11 +96,20 @@ function loadAllArticlesData(data) {
     })
 
     articlesArraySearchCopy = articlesArray;
-    // console.log(articlesArray);
+    console.log("articles data loaded")
 }
 
 function loadNavigationData(data) {
-    navigationArray = data;
+    for (let i = 0; i < data.length; i++) {
+        article = data[i];
+        navJson = JSON.parse("{}");
+        navJson.index = article.index;
+        navJson.heading = article.heading;
+        navJson.timestamp = article.timestamp;
+        navJson.place = article.place;
+        navigationArray[i] = navJson;
+    }
+    console.log("navigation data loaded")
 }
 
 // html body functions
@@ -143,7 +142,7 @@ function addSideBarContent() {
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");
         let baseUrl = document.URL.substring(0, document.URL.indexOf("blog"));
-        a.href = baseUrl + "blog/" + navigationArray[i].index;
+        a.href = baseUrl + "blog.html/" + navigationArray[i].index;
 
         let div = document.createElement("div");
         div.classList.add("common-sidebar-item");
@@ -319,7 +318,8 @@ function addHomePageArticleSummaryPanel(article, element) {
     let articleAuthor = article.author;
     let timestampText = article.timestamp;
     let headingText = article.heading;
-    let articleLinkRelativePath = document.URL + "blog/" + article.index;
+    console.log(document.baseURI)
+    let articleLinkRelativePath = baseUrl + "blog.html/" + article.index;
 
     previewPanel.classList.add("preview-panel");
 

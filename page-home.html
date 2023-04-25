@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1.0">
+        <script type="module"
+                src="./js/script.js"
+                defer></script>
+        <link rel="stylesheet"
+              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+              href="./css/home.css">
+        <link rel="stylesheet"
+              href="./css/common.css">
+        <title class="article-title"
+               id="article-title"></title>
+</head>
+
+<body id="document-body"
+      style="display: none;">
+
+        <!-- todo -->
+        <div class="common-sidebar"
+             id="common-sidebar"
+             onmouseleave="closeSideBar()"></div>
+
+        <header class="common-header">
+
+                <button class="common-icon"
+                        id="menubtn"
+                        onclick="toggleSideBar()"><i class="fa fa-bars fa-lg"></i></button>
+                <button class="common-icon"
+                        id="menubtn"
+                        onclick="toggleSearchBox()"><i class="fa fa-search fa-lg"></i></button>
+                <input class="search-box"
+                       id="search-box"
+                       type="text"
+                       placeholder="search">
+
+                <button class="common-icon"
+                        id="copy-link"
+                        onclick="openClipboardDialogBox()"
+                        style="float: right;"
+                        title="clipboard"><i class="fa fa-link fa-lg"></i></button>
+                <button class="common-icon"
+                        onclick="shareToTwitter()"
+                        style="float: right;"
+                        title="share on twitter"><i class="fa fa-twitter fa-lg"></i></button>
+                <button class="common-icon"
+                        onclick="shareToReddit()"
+                        style="float: right;"
+                        title="share on reddit"><i class="fa fa-reddit fa-lg"></i></button>
+                <button class="common-icon"
+                        onclick="shareToFacebook()"
+                        style="float: right;"
+                        title="share on facebook"><i class="fa fa-facebook fa-lg"></i></button>
+                <button class="common-icon"
+                        onclick="shareToWhatsapp()"
+                        style="float: right;"
+                        title="share on whatsapp"><i class="fa fa-whatsapp fa-lg"></i></button>
+
+                <h1 class="common-heading"
+                    id="common-heading"></h1>
+                <div class="line-thin line-light"></div>
+                <div class="common-header-menu">
+                        <p id="common-header-menu-para"
+                           class="common-header-menu-para"></p>
+                        <button class="common-icon"
+                                onclick="toggleSort()"
+                                style="float: right;"><i class="fa fa-sort fa-lg"
+                                   id="sort-icon"></i></button>
+                </div>
+                <div class="line-thin"></div>
+                <div class="line-thin"></div>
+
+        </header>
+
+        <div class="common-content">
+                <div class="row"
+                     id="row">
+                        <div class="column"
+                             id="column-1"></div>
+                        <div class="column"
+                             id="column-2"></div>
+                        <div class="column"
+                             id="column-3"></div>
+                </div>
+        </div>
+
+        <!-- footer -->
+        <footer class="common-footer"
+                id="common-footer">
+                <div class="line-thin"></div>
+
+                <div class="common-footer-item-container">
+                        <a class="common-footer-link"
+                           href="/about">About</a>
+                        <a class="common-footer-link"
+                           href="/about">E-Mail</a>
+
+                        <!-- todos -->
+                        <!-- suggested features for later versions
+
+                        todo - get notified (subscribe to email notifications)
+                        todo - unsubscribe to email notifications 
+                        todo - write me a message (send testimonials) 
+
+                        -->
+
+                        <!-- <button class="common-footer-button"
+                                onclick="openEmailDialogBox()">Get Notified</button> -->
+
+                </div>
+
+        </footer>
+
+        <!-- popups -->
+
+        <!-- clipboard popup -->
+        <div class="clipboard-alert-box"
+             id="clipboard-alert-box">
+
+                <div class="clipboard-header">
+                        <p class="clipboard-dialog"
+                           id="clipboard-dialog">Clipboard</p>
+                        <button class="common-icon"
+                                onclick="closeClipboardAlertBox()"
+                                style="float: right;"><i class="fa fa-close fa-lg"></i></button>
+                </div>
+
+
+                <div class="clipboard-alert-box-content">
+                        <input class="clipboard-alert-box-input"
+                               id="clipboard-alert-box-input"
+                               type="text"
+                               disabled>
+
+                        <button class="common-icon"
+                                onclick="copyLinkToClipBoard()"
+                                id="clipboard-copy-button"
+                                style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
+                </div>
+        </div>
+
+        <!-- email popup -->
+        <div class="email-subscribe-box"
+             id="email-subscribe-box">
+
+                <div class="email-subscribe-header">
+                        <p class="email-subscribe-dialog"
+                           id="email-subscribe-dialog">Subscribe to Mail</p>
+                        <button class="common-icon"
+                                onclick="closeEmailSubscribeBox()"
+                                style="float: right;"><i class="fa fa-close fa-lg"></i></button>
+                </div>
+
+
+                <div class="email-subscribe-box-content">
+                        <input class="email-subscribe-box-input"
+                               id="email-subscribe-box-input"
+                               type="text">
+
+                        <button class="common-icon"
+                                onclick="subscribeToEmail()"
+                                id="email-enter-button"
+                                style="float: right; display: none;">
+                                <i class="fa fa-arrow-right fa-lg"></i></button>
+                </div>
+        </div>
+</body>
+
+</html>

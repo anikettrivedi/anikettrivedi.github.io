@@ -1,0 +1,61 @@
+/* todo - responsive behavior */
+
+.row {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column {
+    box-sizing: border-box;
+    flex: 100%;
+    max-width: 33%;
+}
+
+@media screen and (max-width: 1400px) {
+    .column {
+        box-sizing: border-box;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+
+.preview-panel {
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 700px) {
+    .preview-panel {
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+}
+
+.preview-panel-media {
+    margin: 5px 0;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.preview-panel:hover {
+    color: hsl(0, 0%, 24%);
+}
+
+.search-box {
+    box-sizing: border-box;
+    display: none;
+    width: 200px;
+
+    border-radius: 2px;
+    border: none;
+    background-color: hsl(204, 90%, 69%);
+    opacity: 80%;
+}
+
+@media screen and (max-width: 700px) {
+    .search-box {
+        width: 100px;
+    }
+}

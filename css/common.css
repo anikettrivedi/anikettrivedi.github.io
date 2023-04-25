@@ -1,0 +1,438 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    
+    text-align: center;
+}
+
+p {
+    
+    font-size: 18px;
+    font-weight: 500;
+    text-align: justify;
+}
+
+p.common-header-menu-para {
+    display: inline;
+    
+    font-size: small;
+    text-align: center;
+}
+
+p.common-author-para {
+    display: block;
+    
+    font-size: small;
+    text-align: center;
+}
+
+p.timestamp {
+    
+    font-size: small;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p.timestamp-small {
+    
+    font-size: smaller;
+    text-align: center;
+    margin: 1px 0;
+}
+
+.non-found {
+    font-size: 2em;
+    margin: auto;
+}
+
+.common-header {
+    box-sizing: border-box;
+    width: 70vw;
+    margin: auto;
+    background-color: white;
+}
+
+@media screen and (max-width: 1400px) {
+    .common-header {
+        box-sizing: border-box;
+        width: 85vw;
+        margin: auto;
+        background-color: white;
+        transition: 0.25s;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .common-header {
+        box-sizing: border-box;
+        width: 95vw;
+        margin: auto;
+        background-color: white;
+    }
+}
+
+.common-header-menu {
+    width: inherit;
+    height: 20px;
+    text-align: center;
+}
+
+.common-content {
+
+    margin-top: 10px;
+    box-sizing: border-box;
+    width: 70vw;
+    margin: auto;
+    transition: 0.25s;
+}
+
+@media screen and (max-width: 1400px) {
+    .common-content {
+        box-sizing: border-box;
+        width: 85vw;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .common-content {
+        box-sizing: border-box;
+        width: 95vw;
+        margin: auto;
+    }
+}
+
+.common-footer {
+    display: none;
+    margin: 20px auto;
+    width: 70vw;
+    height: 80px;
+}
+
+@media screen and (max-width: 1400px) {
+    .common-footer {
+        width: 85vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .common-footer {
+        width: 95vw;
+    }
+}
+
+.common-footer-item-container {
+    display: flex;
+}
+
+.common-footer-link {
+    
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    opacity: 60%;
+    margin: 15px 20px 0 0;
+}
+
+.common-footer-button {
+    box-sizing: border-box;
+
+    
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+    opacity: 60%;
+
+    margin: 15px 20px 0 0;
+    padding: 0;
+    
+    background-color: white;
+    border: 0px;
+}
+
+/* sidebar styles */
+.common-sidebar {
+    box-sizing: border-box;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+
+    overflow-y: auto;
+
+    z-index: 1;
+    display: block;
+
+    background-color: hsl(0, 0%, 97%);
+    opacity: 0.95;
+
+    transition: 0.5s;
+
+}
+
+.common-sidebar-open {
+    width: 14.5vw;
+}
+
+@media screen and (max-width: 1400px) {
+    .common-sidebar-open {
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .common-sidebar-open {
+        width: 90vw;
+    }
+}
+
+.common-sidebar-item {
+    box-sizing: border-box;
+    color: black;
+    margin-bottom: 0;
+    padding: 0 20px;
+    overflow-x: hidden;
+}
+
+.common-sidebar-item:hover {
+    background-color: hsl(0, 0%, 71%);
+    font-size: 18px;
+}
+
+.common-sidebar-link {
+    text-decoration: none;
+    color: black;
+    width: inherit;
+}
+
+.common-icon {
+    background-color: transparent;
+    border: none;
+}
+
+.common-icon:hover {
+    color: hsl(0, 0%, 24%);
+}
+
+@media screen and (max-width: 700px) {
+    .common-icon {
+        font-size: 1em;
+    }
+}
+
+.line-thin {
+    margin-top: 1px;
+    border-width: 1px 0px 0px 0px;
+    border-style: solid;
+    border-color: black;
+}
+
+.line-light {
+    border-color: hsl(0, 0%, 71%);
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* clipboard popup */
+.clipboard-alert-box {
+
+    display: none;
+    box-sizing: border-box;
+    z-index: 1;
+
+    width: 350px;
+    height: 90px;
+
+    position: fixed;
+    left: 50%;
+    top: 30%;
+
+    margin-left: -175px;
+
+    opacity: 95%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+
+    animation-name: clipboard-animation;
+    animation-duration: .7s;
+
+}
+
+@keyframes clipboard-animation {
+    0% {
+        opacity: 0;
+        left: 50%;
+        top: 0;
+    }
+
+    50% {
+        opacity: 50%;
+        left: 50%;
+        top: 33%;
+    }
+
+    100% {
+        opacity: 95%;
+        left: 50%;
+        top: 30%;
+    }
+}
+
+.clipboard-alert-box-content {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px 5px 5px;
+}
+
+.clipboard-alert-box-input {
+    width: 290px;
+    height: 25px;
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+
+    
+    font-weight: bold;
+}
+
+.clipboard-header {
+    box-sizing: border-box;
+    width: inherit;
+    height: 30px;
+
+    padding: 5px;
+
+    color: black;
+
+    border-radius: 5px 5px 0 0;
+    opacity: 100%;
+
+    text-align: center;
+}
+
+.clipboard-dialog {
+    display: inline;
+    font-weight: bold;
+}
+
+/* email popup styles*/
+.email-subscribe-box {
+
+    display: none;
+    box-sizing: border-box;
+    z-index: 1;
+
+    width: 350px;
+    height: 90px;
+
+    position: fixed;
+    left: 50%;
+    top: 30%;
+
+    margin-left: -175px;
+
+    opacity: 95%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+
+    animation-name: email-animation;
+    animation-duration: .7s;
+
+}
+
+@keyframes email-animation {
+    0% {
+        opacity: 0;
+        left: 50%;
+        top: 0;
+    }
+
+    50% {
+        opacity: 50%;
+        left: 50%;
+        top: 33%;
+    }
+
+    100% {
+        opacity: 95%;
+        left: 50%;
+        top: 30%;
+    }
+}
+
+.email-subscribe-box-content {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 5px 5px 5px;
+}
+
+.email-subscribe-box-input {
+    width: 330px;
+    height: 25px;
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+
+    
+    font-weight: bold;
+}
+
+.email-subscribe-header {
+    box-sizing: border-box;
+    width: inherit;
+    height: 30px;
+
+    padding: 5px;
+
+    color: black;
+
+    border-radius: 5px 5px 0 0;
+    opacity: 100%;
+
+    text-align: center;
+}
+
+.email-subscribe-dialog {
+    display: inline;
+    font-weight: bold;
+}
+
+/* display styles */
+.visible-inline {
+    display: inline;
+}
+
+.visible-block {
+    display: block;
+}
+
+i {
+ padding: 0;
+ margin:0;   
+}

@@ -1,0 +1,46 @@
+.about-heading {
+    display: block;
+}
+
+.about-page-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    margin-top: 20px;
+}
+
+.about-page-text-container {
+    box-sizing: border-box;
+    width: 72%;
+    float: right;
+}
+
+.about-img {
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+    .about-img {
+        width: 50%;
+    }
+
+    .about-page-text-container{
+        width: 47%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .about-img {
+        margin: auto;
+        width: 50%;
+    }
+
+    .about-page-text-container {
+        margin-top: 10px;
+        width: 100%;
+    }
+}

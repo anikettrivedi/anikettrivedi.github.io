@@ -114,14 +114,11 @@ p.timestamp-small {
 }
 
 .common-footer {
-
+    box-sizing: border-box;
     display: none;
-    
-    margin-left: auto;
-    margin-right: auto;
-    
+    margin: 0 auto;
     width: 70vw;
-    height: 80px;
+    padding: 0;
 }
 
 @media screen and (max-width: 1400px) {
@@ -148,7 +145,7 @@ p.timestamp-small {
     text-decoration: none;
     color: black;
     opacity: 60%;
-    margin: 15px 20px 0 0;
+    margin: 5px 20px 0 0;
 }
 
 .common-footer-button {
@@ -162,7 +159,7 @@ p.timestamp-small {
     color: black;
     opacity: 60%;
 
-    margin: 15px 20px 0 0;
+    /* margin: 15px 20px 0 0; */
     padding: 0;
     
     background-color: white;

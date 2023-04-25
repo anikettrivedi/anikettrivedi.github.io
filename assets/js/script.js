@@ -29,7 +29,6 @@ window.onload = function () {
     } else if (document.URL.includes("/blog/")) {
         // article page
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
-        // console.log("article title = " + articleTitle)
 
         fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
             // fetching all articles data
@@ -38,6 +37,7 @@ window.onload = function () {
             for (let i = 0; i < dataArray.length; i++) {
                 articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
             }
+            loadAllArticlesData(articlesMap);
             loadArticleData(articlesMap[articleTitle]);
             addArticlePageContent();
             loadNavigationData(articlesArray);

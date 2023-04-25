@@ -15,7 +15,6 @@ let websiteHeaderMenuText = "An attempt at blogging."
 let shareLink = document.URL;
 
 window.onload = function () {
-    // todo - load statically, remove backend request
     if (document.URL.includes("/about")) {
         // about page
         fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
@@ -27,12 +26,10 @@ window.onload = function () {
             addAboutPageContent();
         })
 
-    }
-
-    // todo - load statically, remove backend request
-    else if (document.URL.includes("/blog/")) {
+    } else if (document.URL.includes("/blog/")) {
         // article page
         let articleTitle = document.URL.substring(document.URL.indexOf("title="), document.URL.length)
+        console.log("article title = " + articleTitle)
 
         fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
             // fetching all articles data
@@ -50,10 +47,7 @@ window.onload = function () {
             display404();
             console.error(error);
         });
-    }
-
-    // todo - load statically, remove backend request
-    else {
+    } else {
         // home page
 
         fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
@@ -82,6 +76,7 @@ function loadAboutData(data) {
 
 function loadArticleData(data) {
     article = data;
+    console.log("article = " + article)
 }
 
 function loadAllArticlesData(data) {
@@ -177,25 +172,6 @@ function addAboutPageContent() {
             aboutPageTextContainer.appendChild(aboutPara);
         }
     }
-
-    // let i = 0;
-    // let blinker = ""
-    // if (localStorage.getItem("disableAnimation") == null) {
-    //     setInterval(() => {
-    //         if (i <= aboutPara.length) {
-    //             blinker = i % 10 < 5 ? "" : "|";
-    //             aboutParaElement.innerHTML = aboutPara.substring(0, i) + " " + blinker;
-    //             i++
-    //         } else {
-    //             aboutParaElement.innerHTML = aboutPara;
-    //             localStorage.setItem("disableAnimation", true)
-    //             return
-    //         }
-    //     }, 75)
-    // } else {
-    //     aboutParaElement.innerHTML = aboutPara;
-    // }
-
 }
 
 // home page functions
@@ -241,38 +217,6 @@ function addHomePageArticles() {
     column3.innerHTML = "";
 
     let i = 0;
-    // while (i < articlesArraySearchCopy.length) {
-
-    //     if (window.innerWidth > 1400) {
-    //         // even article
-    //         if (i < articlesArraySearchCopy.length && i % 2 == 0) {
-    //             let article = articlesArraySearchCopy[i];
-    //             addHomePageArticleSummaryPanel(article, columnLeft);
-    //             i++;
-    //         }
-
-    //         // even article
-    //         if (i < articlesArraySearchCopy.length && i % 2 == 1) {
-    //             let article = articlesArraySearchCopy[i];
-    //             addHomePageArticleSummaryPanel(article, columnRight);
-    //             i++;
-    //         }
-    //     } else {
-    //         // first n/2 articles
-    //         while (i < articlesArraySearchCopy.length / 2) {
-    //             let article = articlesArraySearchCopy[i];
-    //             addHomePageArticleSummaryPanel(article, columnLeft);
-    //             i++;
-    //         }
-
-    //         while (i < articlesArraySearchCopy.length) {
-    //             let article = articlesArraySearchCopy[i];
-    //             addHomePageArticleSummaryPanel(article, columnRight);
-    //             i++;
-    //         }
-    //     }
-
-    // }
 
     while (i < articlesArraySearchCopy.length) {
 
@@ -545,7 +489,6 @@ onresize = () => {
 }
 
 // email dialog events & functions
-
 function openEmailDialogBox() {
     closeClipboardAlertBox()
 

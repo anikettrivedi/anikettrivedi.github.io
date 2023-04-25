@@ -18,7 +18,7 @@ window.onload = function () {
     // todo - load statically, remove backend request
     if (document.URL.includes("/about")) {
         // about page
-        fetch("https://anikettrivedi.github.io/json/about.json").then(response => {
+        fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
             return response.json()
         }).then(data => {
             loadAboutData(data);
@@ -59,7 +59,7 @@ window.onload = function () {
     else {
         // home page
 
-        fetch("https://anikettrivedi.github.io/json/blogs.json").then(response => {
+        fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
             // fetching all articles data
             return response.json();
         }).then(dataArray => {

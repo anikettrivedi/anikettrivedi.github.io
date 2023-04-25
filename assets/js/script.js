@@ -106,7 +106,7 @@ function loadNavigationData(data) {
 // html body functions
 function displayVisible() {
     body = document.getElementById("document-body");
-    body.style.display = "block";
+    body.style.display = "flex";
 }
 
 function display404() {

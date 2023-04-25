@@ -587,9 +587,9 @@ function validateEmail(e) {
 }
 
 
-function closeEmailSubscribeBox() {
-    document.getElementById("email-subscribe-box").classList.remove("visible-block");
-}
+// function closeEmailSubscribeBox() {
+//     document.getElementById("email-subscribe-box").classList.remove("visible-block");
+// }
 
 function subscribeToEmail() {
     console.log("subscribing to email...")
@@ -611,7 +611,7 @@ function subscribeToEmail() {
 
 // share button click events
 function openClipboardDialogBox() {
-    closeEmailSubscribeBox();
+    // closeEmailSubscribeBox();
 
     console.log("copy to clipboard")
     document.getElementById("clipboard-alert-box-input").value = document.URL;

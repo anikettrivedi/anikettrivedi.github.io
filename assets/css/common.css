@@ -89,7 +89,7 @@ p.timestamp-small {
 }
 
 .common-content {
-
+    flex-grow: 1;
     margin-top: 10px;
     box-sizing: border-box;
     width: 70vw;
@@ -116,10 +116,10 @@ p.timestamp-small {
 .common-footer {
 
     display: none;
-    margin-top: auto;
+    
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0;
+    
     width: 70vw;
     height: 80px;
 }
@@ -427,7 +427,6 @@ p.timestamp-small {
 
 .email-subscribe-dialog {
     display: inline;
-    /* font-weight: bold; */
 }
 
 /* display styles */

@@ -8,24 +8,14 @@
         "place": "Pune",
         "description": [
             {
-                "type": "image",
-                "value": "/assets/images/2023-05-may-08.jpg",
-                "class": "media-full"
-            },
-            {
                 "type": "text",
                 "value": "The world doesn't see you the way you see yourself."
             }
         ],
         "contents": [
             {
-                "type": "image",
-                "value": "/assets/images/2023-05-may-08.jpg",
-                "class": "media-right"
-            },
-            {
                 "type": "text",
-                "value": "The world doesn't see you the way you see yourself. You might be inclined to underestimate yourself because you focus too much on your shortcomings. A better approach to anything you wish for is to go there and just try, even if you have self doubt. You want to apply for a new job? You wish to ask for a pay raise or a promotion? You wish to ask a girl out? All you need to do is to go to that person and be frank about your expectations/feelings. Remember that they do not have the doubts about you that you have within yourself, they are not you (duh!). And, what worse can happen? You don't get what you wished for? Well, with all those self doubts and without trying, it was all the same anyway. So why not try and find out?"
+                "value": "The world doesn't see you the way you see yourself. You might be inclined to underestimate yourself because you focus too much on your shortcomings. A better approach to anything you wish for is to go there and just try, even if you have self doubt. You want to apply for a new job? You wish to ask for a pay raise or a promotion? All you need to do be frank about your expectations. Remember that they do not have the doubts about you that you have within yourself, they are not you (duh!). And, what worse can happen? You don't get what you wished for? Well, with all those self doubts and without trying, it was all the same anyway. So why not try and find out?"
             }
         ]
     },

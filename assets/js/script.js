@@ -72,6 +72,7 @@ window.onload = function () {
             addHomePageContent();
             loadNavigationData(articlesArray);
             addSideBarContent();
+            toggleSort()
             displayVisible();
         }).catch(error => {
             display404();
@@ -100,7 +101,6 @@ function loadAllArticlesData(data) {
     })
 
     articlesArraySearchCopy = articlesArray;
-    toggleSort()
     console.log("articles data loaded")
 }
 

@@ -7,8 +7,7 @@ let aboutData = [];
 
 let index = document.URL.indexOf("blog");
 let baseUrl = document.URL.substring(0, document.URL.indexOf("index"));
-let ascendingSortOrder = true;
-
+let ascendingSortOrder = false;
 let websiteHeading = ""
 let websiteHeaderMenuText = ""
 
@@ -101,6 +100,7 @@ function loadAllArticlesData(data) {
     })
 
     articlesArraySearchCopy = articlesArray;
+    toggleSort()
     console.log("articles data loaded")
 }
 

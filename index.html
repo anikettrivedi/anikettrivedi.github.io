@@ -98,8 +98,10 @@
                 <div class="common-footer-item-container">
                         <a class="common-footer-link"
                            href="./about">About</a>
+
                         <a class="common-footer-link"
-                           href="./about">E-Mail</a>
+                           onclick="openEmailAlertBox()"
+                           >E-Mail</a>
                 </div>
 
         </footer>
@@ -131,6 +133,32 @@
                                 style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
                 </div>
         </div>
+
+         <!-- email popup -->
+         <div class="email-alert-box"
+         id="email-alert-box">
+
+            <div class="email-header">
+                    <p class="email-dialog"
+                       id="email-dialog">E-Mail</p>
+                    <button class="common-icon"
+                            onclick="closeEmailAlertBox()"
+                            style="float: right;"><i class="fa fa-close fa-lg"></i></button>
+            </div>
+
+
+            <div class="email-alert-box-content">
+                    <input class="email-alert-box-input"
+                           id="email-alert-box-input"
+                           type="text"
+                           disabled>
+
+                    <button class="common-icon"
+                            onclick="copyLinkToClipBoard()"
+                            id="email-copy-button"
+                            style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
+            </div>
+    </div>
 </body>
 
 </html>

@@ -21,16 +21,22 @@ window.onload = function () {
             return response.json()
         }).then(data => {
             loadAboutData(data);
-            // console.log(aboutData);
         }).then(() => {
             addAboutPageContent();
         })
 
     } else if (document.URL.includes("/blog/")) {
         // article page
+
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
 
-        fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
+        fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
+            return response.json()
+        }).then(data => {
+            loadAboutData(data);
+        }).then(()=> {
+            return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+        }).then(response => {
             // fetching all articles data
             return response.json();
         }).then(dataArray => {
@@ -50,7 +56,13 @@ window.onload = function () {
     } else {
         // home page
 
-        fetch("https://anikettrivedi.github.io/assets/json/blogs.json").then(response => {
+        fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
+            return response.json()
+        }).then(data => {
+            loadAboutData(data);
+        }).then(()=> {
+            return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+        }).then(response => {
             // fetching all articles data
             return response.json();
         }).then(dataArray => {
@@ -198,14 +210,10 @@ function addHomePageContent() {
     headerMenuPara.appendChild(headerMenuParaText)
 
     addHomePageArticles();
+
 }
 
 function addHomePageArticles() {
-    // let columnLeft = document.getElementById("column-left");
-    // let columnRight = document.getElementById("column-right");
-
-    // columnLeft.innerHTML = "";
-    // columnRight.innerHTML = "";
 
     let column1 = document.getElementById("column-1");
     let column2 = document.getElementById("column-2");
@@ -302,14 +310,6 @@ function addHomePageArticleSummaryPanel(article, element) {
     audio.src = articleAudioURL;
 
     previewPanel.appendChild(heading);
-
-    // if (articleAuthor != "" && articleAuthor != null) {
-    //     let authorPara = document.createElement("p")
-    //     authorPara.classList.add("common-author-para")
-    //     authorPara.appendChild(document.createTextNode(articleAuthor))
-    //     previewPanel.appendChild(authorPara)
-    // }
-
 
     previewPanel.appendChild(line);
     previewPanel.appendChild(timestampPara);
@@ -476,69 +476,29 @@ onresize = () => {
 }
 
 // email dialog events & functions
-function openEmailDialogBox() {
-    closeClipboardAlertBox()
+function openEmailAlertBox() {
+    console.log(aboutData)
+    closeClipboardAlertBox();
 
-    document.getElementById("email-subscribe-box").classList.add("visible-block");
+    document.getElementById("email-alert-box-input").value = document.URL;
+    document.getElementById("email-alert-box").classList.add("visible-block");
 
     setTimeout(() => {
-        if (document.getElementById("email-subscribe-box").classList.contains("visible-block")) {
-            document.getElementById("email-subscribe-box").classList.remove("visible-block");
+        if (document.getElementById("email-alert-box").classList.contains("visible-block")) {
+            document.getElementById("email-alert-box").classList.remove("visible-block");
         }
-    }, 60 * 1000)
-
-    let emailSubscribeBoxInput = document.getElementById("email-subscribe-box-input");
-    emailSubscribeBoxInput.value = ""
-
-    emailSubscribeBoxInput.addEventListener("input", validateEmail)
+    }, 30 * 1000)
 
 }
 
-function validateEmail(e) {
-    let emailSubscribeBoxInput = document.getElementById("email-subscribe-box-input");
-    let emailEnterButton = document.getElementById("email-enter-button");
-
-    let emailAddr = e.target.value;
-
-    let isValidEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailAddr)
-
-    if (isValidEmail && emailAddr != "   ") {
-        // console.log(`valid mail ${emailAddr}`)
-        emailSubscribeBoxInput.style.border = "1px solid green";
-        emailEnterButton.style.display = "block";
-    } else {
-        // console.log(`invalid mail ${emailAddr}`)
-        emailSubscribeBoxInput.style.border = "1px solid red";
-        emailEnterButton.style.display = "none";
-    }
+function closeEmailAlertBox() {
+    document.getElementById("email-alert-box").classList.remove("visible-block");
 }
 
-
-// function closeEmailSubscribeBox() {
-//     document.getElementById("email-subscribe-box").classList.remove("visible-block");
-// }
-
-function subscribeToEmail() {
-    // console.log("subscribing to email...")
-    let mailId = document.getElementById("email-subscribe-box-input").value;
-    fetch(baseUrl + "mailingList/" + mailId).then(response => {
-        return response.text();
-    }).then((responseText) => {
-        // todo
-        // console.log(responseText)
-        let emailEnterButton = document.getElementById("email-enter-button");
-        let emailSubscribeDialog = document.getElementById("email-subscribe-dialog");
-
-        emailSubscribeDialog.innerHTML = "done!"
-        emailEnterButton.innerHTML = ""
-    }).catch(error => {
-        console.log(error);
-    })
-}
 
 // share button click events
 function openClipboardDialogBox() {
-    // closeEmailSubscribeBox();
+    closeEmailAlertBox();
 
     // console.log("copy to clipboard")
     document.getElementById("clipboard-alert-box-input").value = document.URL;

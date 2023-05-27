@@ -9,8 +9,8 @@ let index = document.URL.indexOf("blog");
 let baseUrl = document.URL.substring(0, document.URL.indexOf("index"));
 let ascendingSortOrder = true;
 
-let websiteHeading = "five2nine.blog"
-let websiteHeaderMenuText = "An attempt at blogging."
+let websiteHeading = ""
+let websiteHeaderMenuText = ""
 
 let shareLink = document.URL;
 
@@ -84,6 +84,8 @@ window.onload = function () {
 // http callback functions
 function loadAboutData(data) {
     aboutData = data;
+    websiteHeading = aboutData.websiteHeading;
+    websiteHeaderMenuText = aboutData.websiteHeaderMenuText;
 }
 
 function loadArticleData(data) {

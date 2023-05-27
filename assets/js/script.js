@@ -480,7 +480,7 @@ function openEmailAlertBox() {
     console.log(aboutData)
     closeClipboardAlertBox();
 
-    document.getElementById("email-alert-box-input").value = document.URL;
+    document.getElementById("email-alert-box-input").value = aboutData.email;
     document.getElementById("email-alert-box").classList.add("visible-block");
 
     setTimeout(() => {

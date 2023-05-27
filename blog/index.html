@@ -85,6 +85,9 @@
 
         </footer>
 
+        <!-- popups -->
+
+        <!-- clipboard popup -->
         <div class="clipboard-alert-box"
              id="clipboard-alert-box">
 
@@ -108,34 +111,34 @@
                                 id="clipboard-copy-button"
                                 style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
                 </div>
-
         </div>
 
-        <div class="email-subscribe-box"
-             id="email-subscribe-box">
+        <!-- email popup -->
+        <div class="email-alert-box"
+             id="email-alert-box">
 
-                <div class="email-subscribe-header">
-                        <p class="email-subscribe-dialog"
-                           id="email-subscribe-dialog">Subscribe to Mail</p>
+                <div class="email-header">
+                        <p class="email-dialog"
+                           id="email-dialog">E-Mail</p>
                         <button class="common-icon"
-                                onclick="closeEmailSubscribeBox()"
+                                onclick="closeEmailAlertBox()"
                                 style="float: right;"><i class="fa fa-close fa-lg"></i></button>
                 </div>
 
 
-                <div class="email-subscribe-box-content">
-                        <input class="email-subscribe-box-input"
-                               id="email-subscribe-box-input"
-                               type="text">
+                <div class="email-alert-box-content">
+                        <input class="email-alert-box-input"
+                               id="email-alert-box-input"
+                               type="text"
+                               disabled>
 
                         <button class="common-icon"
-                                onclick="subscribeToEmail()"
-                                id="email-enter-button"
-                                style="float: right; display: none;">
-                                <i class="fa fa-arrow-right fa-lg"></i></button>
+                                onclick="copyLinkToClipBoard()"
+                                id="email-copy-button"
+                                style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
                 </div>
         </div>
-
+        
 </body>
 
 </html>

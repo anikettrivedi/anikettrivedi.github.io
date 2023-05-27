@@ -477,7 +477,6 @@ onresize = () => {
 
 // email dialog events & functions
 function openEmailAlertBox() {
-    console.log(aboutData)
     closeClipboardAlertBox();
 
     document.getElementById("email-alert-box-input").value = aboutData.email;
@@ -488,7 +487,6 @@ function openEmailAlertBox() {
             document.getElementById("email-alert-box").classList.remove("visible-block");
         }
     }, 30 * 1000)
-
 }
 
 function closeEmailAlertBox() {
@@ -500,7 +498,6 @@ function closeEmailAlertBox() {
 function openClipboardDialogBox() {
     closeEmailAlertBox();
 
-    // console.log("copy to clipboard")
     document.getElementById("clipboard-alert-box-input").value = document.URL;
     document.getElementById("clipboard-alert-box").classList.add("visible-block");
 
@@ -509,9 +506,6 @@ function openClipboardDialogBox() {
             document.getElementById("clipboard-alert-box").classList.remove("visible-block");
         }
     }, 30 * 1000)
-
-    // navigator.clipboard.writeText(shareLink);
-    // alert("copied link to clipboard!")
 }
 
 function closeClipboardAlertBox() {
@@ -520,7 +514,12 @@ function closeClipboardAlertBox() {
 
 function copyLinkToClipBoard() {
     navigator.clipboard.writeText(shareLink);
-    document.getElementById("clipboard-dialog").innerHTML = "Copied!"
+    document.getElementById("clipboard-dialog").innerHTML = "Link Copied!"
+}
+
+function copyEmailToClipBoard() {
+    navigator.clipboard.writeText(aboutData.email);
+    document.getElementById("email-dialog").innerHTML = "Email Copied!"
 }
 
 function shareToTwitter() {

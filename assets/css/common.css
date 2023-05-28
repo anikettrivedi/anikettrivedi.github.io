@@ -88,6 +88,14 @@ p.timestamp-small {
     text-align: center;
 }
 
+@media screen and (max-width: 700px) {
+    .common-header-menu {
+        width: inherit;
+        height: auto;
+        text-align: center;
+    }
+}
+
 .common-content {
     flex-grow: 1;
     margin-top: 10px;

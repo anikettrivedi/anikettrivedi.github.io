@@ -17,6 +17,14 @@
     .column {
         box-sizing: border-box;
         flex: 100%;
+        max-width: 49.5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .column {
+        box-sizing: border-box;
+        flex: 100%;
         max-width: 100%;
     }
 }

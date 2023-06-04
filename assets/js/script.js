@@ -496,7 +496,9 @@ ontouchend = (e) => {
 }
 
 onresize = () => {
-    addHomePageArticles()
+    if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
+        addHomePageArticles()
+    }
 }
 
 // email dialog events & functions
@@ -598,7 +600,7 @@ function searchByTagAndToggle(e) {
     // close search box if open
     if (document.getElementById("search-box").classList.contains("visible-inline")) {
         document.getElementById("search-box").classList.remove("visible-inline")
-    } 
+    }
 
     let searchText = e.target.firstChild.textContent;
     articlesArraySearchCopy = [];

@@ -25,7 +25,7 @@ window.onload = function () {
             addAboutPageContent();
         })
 
-    } else if (document.URL.includes("/blog/")) {
+    } else if (document.URL.includes("/blog")) {
         // article page
 
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)

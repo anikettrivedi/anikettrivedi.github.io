@@ -102,7 +102,7 @@ function loadAllArticlesData(data) {
     })
 
     articlesArraySearchCopy = articlesArray;
-    console.log("articles data loaded")
+    // console.log("articles data loaded")
 }
 
 function loadNavigationData(data) {
@@ -115,7 +115,7 @@ function loadNavigationData(data) {
         navJson.place = article.place;
         navigationArray[i] = navJson;
     }
-    console.log("navigation data loaded")
+    // console.log("navigation data loaded")
 }
 
 // html body functions
@@ -607,7 +607,7 @@ function searchByTagAndToggle(e) {
 
     if (toggleTag) {
         articlesArraySearchCopy = articlesArray;
-        console.log(articlesArray);
+        // console.log(articlesArray);
     } else {
         let j = 0;
         for (let i = 0; i < articlesArray.length; i++) {
@@ -617,7 +617,7 @@ function searchByTagAndToggle(e) {
                 j++;
             }
         }
-        console.log(articlesArray);
+        // console.log(articlesArray);
     }
 
     toggleTag = !toggleTag;

@@ -10,6 +10,7 @@ let baseUrl = document.URL.substring(0, document.URL.indexOf("index"));
 let ascendingSortOrder = false;
 let websiteHeading = ""
 let websiteHeaderMenuText = ""
+let toggleTag = false;
 
 let shareLink = document.URL;
 
@@ -335,22 +336,25 @@ function addHomePageArticleSummaryPanel(article, element) {
     articleLink.classList.add("link");
     articleLink.appendChild(previewPanel);
 
+    element.appendChild(articleLink);
+
     // article tags - testing
     articleTagArray = articleTags.split(",");
     for (let i = 0; i < articleTagArray.length; i++) {
+
         let articleTagDiv = document.createElement("div");
         let articleTagPara = document.createElement("p");
+
         articleTagDiv.classList.add("article-tag");
-        articleTagPara.appendChild(document.createTextNode(articleTagArray[i]));
         articleTagPara.classList.add("article-tag-text");
-        articleTagDiv.appendChild(articleTagPara);
-        previewPanel.appendChild(articleTagDiv);
+
+        articleTagDiv.appendChild(articleTagPara)
+        articleTagPara.appendChild(document.createTextNode(articleTagArray[i]));
+
+        element.appendChild(articleTagDiv);
+
+        articleTagDiv.addEventListener("click", searchByTagAndToggle)
     }
-
-
-
-
-    element.appendChild(articleLink);
 }
 
 // article page function
@@ -477,6 +481,9 @@ function swipeActions() {
     }
 }
 
+// search events
+
+
 
 // event listener && event handlers
 ontouchstart = (e) => {
@@ -576,7 +583,7 @@ function search(e) {
             article.author.toLowerCase().includes(searchText.toLowerCase()) ||
             article.timestamp.toLowerCase().includes(searchText.toLowerCase()) ||
             article.description[0].value.toLowerCase().includes(searchText.toLowerCase()) ||
-            article.tags.value.toLowerCase().includes(searchText.toLowerCase())
+            article.tags.toLowerCase().includes(searchText.toLowerCase())
         ) {
             articlesArraySearchCopy[j] = article;
             j++;
@@ -585,6 +592,34 @@ function search(e) {
 
     addHomePageArticles()
 }
+
+function searchByTagAndToggle(e) {
+    
+    let searchText = e.target.firstChild.textContent;
+    articlesArraySearchCopy = [];
+
+    if (toggleTag) {
+        articlesArraySearchCopy = articlesArray;
+    } else {
+        let j = 0;
+        for (let i = 0; i < articlesArray.length; i++) {
+            article = articlesArray[i]
+            if (article.heading.toLowerCase().includes(searchText.toLowerCase()) ||
+                article.author.toLowerCase().includes(searchText.toLowerCase()) ||
+                article.timestamp.toLowerCase().includes(searchText.toLowerCase()) ||
+                article.description[0].value.toLowerCase().includes(searchText.toLowerCase()) ||
+                article.tags.toLowerCase().includes(searchText.toLowerCase())
+            ) {
+                articlesArraySearchCopy[j] = article;
+                j++;
+            }
+        }
+    }
+
+    toggleTag = !toggleTag;
+    addHomePageArticles()
+}
+
 
 function toggleSort() {
     if (ascendingSortOrder) {

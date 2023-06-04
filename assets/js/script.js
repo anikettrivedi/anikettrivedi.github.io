@@ -266,6 +266,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     let articleVideoURL = "";
     let articleAudioURL = "";
     let articleAuthor = article.author;
+    let articleTags = article.tags;
     let timestampText = article.timestamp;
     let headingText = article.heading;
     let articleLinkRelativePath = baseUrl + "blog?title=" + article.index;
@@ -311,21 +312,10 @@ function addHomePageArticleSummaryPanel(article, element) {
     audio.classList.add("preview-panel-media")
     audio.src = articleAudioURL;
 
-    // article tags - testing
-    let articleTag = document.createElement("div");
-    let articleTagText = document.createElement("p");
-    articleTag.classList.add("article-tag");
-
-    articleTagText.appendChild(document.createTextNode("notetoself"));
-    articleTagText.classList.add("article-tag-text");
-
-    articleTag.appendChild(articleTagText);
-
     previewPanel.appendChild(heading);
     previewPanel.appendChild(line);
     previewPanel.appendChild(timestampPara);
     previewPanel.appendChild(para);
-    previewPanel.appendChild(articleTag);
 
     if (articleImageURL != "") {
         previewPanel.appendChild(image);
@@ -344,6 +334,21 @@ function addHomePageArticleSummaryPanel(article, element) {
     articleLink.href = articleLinkRelativePath;
     articleLink.classList.add("link");
     articleLink.appendChild(previewPanel);
+
+    // article tags - testing
+    articleTagArray = articleTags.split(",");
+    for (let i = 0; i < articleTagArray.length; i++) {
+        let articleTagDiv = document.createElement("div");
+        let articleTagPara = document.createElement("p");
+        articleTagDiv.classList.add("article-tag");
+        articleTagPara.appendChild(document.createTextNode(articleTagArray[i]));
+        articleTagPara.classList.add("article-tag-text");
+        articleTagDiv.appendChild(articleTagPara);
+        previewPanel.appendChild(articleTagDiv);
+    }
+
+
+
 
     element.appendChild(articleLink);
 }

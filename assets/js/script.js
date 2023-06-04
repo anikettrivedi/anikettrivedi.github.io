@@ -594,26 +594,28 @@ function search(e) {
 }
 
 function searchByTagAndToggle(e) {
-    
+
+    // close search box if open
+    if (document.getElementById("search-box").classList.contains("visible-inline")) {
+        document.getElementById("search-box").classList.remove("visible-inline")
+    } 
+
     let searchText = e.target.firstChild.textContent;
     articlesArraySearchCopy = [];
 
     if (toggleTag) {
         articlesArraySearchCopy = articlesArray;
+        console.log(articlesArray);
     } else {
         let j = 0;
         for (let i = 0; i < articlesArray.length; i++) {
             article = articlesArray[i]
-            if (article.heading.toLowerCase().includes(searchText.toLowerCase()) ||
-                article.author.toLowerCase().includes(searchText.toLowerCase()) ||
-                article.timestamp.toLowerCase().includes(searchText.toLowerCase()) ||
-                article.description[0].value.toLowerCase().includes(searchText.toLowerCase()) ||
-                article.tags.toLowerCase().includes(searchText.toLowerCase())
-            ) {
+            if (article.tags.toLowerCase().includes(searchText.toLowerCase())) {
                 articlesArraySearchCopy[j] = article;
                 j++;
             }
         }
+        console.log(articlesArray);
     }
 
     toggleTag = !toggleTag;

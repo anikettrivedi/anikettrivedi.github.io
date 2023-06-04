@@ -33,7 +33,7 @@ window.onload = function () {
             return response.json()
         }).then(data => {
             loadAboutData(data);
-        }).then(()=> {
+        }).then(() => {
             return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
         }).then(response => {
             // fetching all articles data
@@ -59,7 +59,7 @@ window.onload = function () {
             return response.json()
         }).then(data => {
             loadAboutData(data);
-        }).then(()=> {
+        }).then(() => {
             return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
         }).then(response => {
             // fetching all articles data
@@ -311,11 +311,21 @@ function addHomePageArticleSummaryPanel(article, element) {
     audio.classList.add("preview-panel-media")
     audio.src = articleAudioURL;
 
-    previewPanel.appendChild(heading);
+    // article tags - testing
+    let articleTag = document.createElement("div");
+    let articleTagText = document.createElement("p");
+    articleTag.classList.add("article-tag");
 
+    articleTagText.appendChild(document.createTextNode("notetoself"));
+    articleTagText.classList.add("article-tag-text");
+
+    articleTag.appendChild(articleTagText);
+
+    previewPanel.appendChild(heading);
     previewPanel.appendChild(line);
     previewPanel.appendChild(timestampPara);
     previewPanel.appendChild(para);
+    previewPanel.appendChild(articleTag);
 
     if (articleImageURL != "") {
         previewPanel.appendChild(image);
@@ -560,7 +570,9 @@ function search(e) {
         if (article.heading.toLowerCase().includes(searchText.toLowerCase()) ||
             article.author.toLowerCase().includes(searchText.toLowerCase()) ||
             article.timestamp.toLowerCase().includes(searchText.toLowerCase()) ||
-            article.description[0].value.toLowerCase().includes(searchText.toLowerCase())) {
+            article.description[0].value.toLowerCase().includes(searchText.toLowerCase()) ||
+            article.tags.value.toLowerCase().includes(searchText.toLowerCase())
+        ) {
             articlesArraySearchCopy[j] = article;
             j++;
         }

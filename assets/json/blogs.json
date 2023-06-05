@@ -29,7 +29,7 @@
         "author": "",
         "timestamp": "May 25, 2023",
         "place": "Pune",
-        "display": "hidden",
+        "display": "visible",
         "description": [
             {
                 "type": "text",
@@ -48,6 +48,70 @@
             {
                 "type": "text",
                 "value": "This applies to various situations in life not just a job. It can be about a place, a relationship, a friendship, a situation or something else."
+            }
+        ]
+    },
+    {
+        "index": "2023-06-05-Inattention-Abundant",
+        "title": "Inattention Abundant",
+        "heading": "Inattention Abundant",
+        "tags": "life experience",
+        "author": "",
+        "timestamp": "June 05, 2023",
+        "place": "Pune",
+        "display": "hidden",
+        "description": [
+            {
+                "type": "text",
+                "value": "A shortage of brain chemicals."
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "I have been meaning to write about this for a while, but this is something quite personal to me and I didn't really want it to be judged from the likes, upvotes, claps etc of the internet."
+            },
+            {
+                "type": "text",
+                "value": "And so I have been making this website for past few months, primarily to share my most intimate thoughts unhindered and uninhibited. (and hopefully more coherent with the passage of time)"
+            },
+            {
+                "type": "text",
+                "value": "I have Attention Deficit Hyperactivity Disorder (ADHD) or Attention Deficit Disorder (ADD). This is not something that I have somehow acquired as I grew older but it is something I am born with. It is the way my brain is wired. Different than most, not in a romantic sense but quite literally."
+            },
+            {
+                "type": "subheading",
+                "value": "ADD/ADHD?"
+            },
+            {
+                "type": "text",
+                "value": "Dopamine, Norepinephrine or Noradrenaline are neurotransmitters in our brains which are responsible for attention."
+            },
+            {
+                "type": "link",
+                "value": "Dopamine - is involved in movement, memory, reward and motivation, behavior and cognition, attention, sleep and arousal, mood, learning and in case of women lactation.",
+                "ref": "https://my.clevelandclinic.org/health/articles/22581-dopamine"
+            },
+            {
+                "type": "link",
+                "value": "Norepinephrine - increases alertness, arousal, attention, affects sleep-wake cycle, mood and memory, helps maintain blood pressure at time of stress.",
+                "ref": "https://my.clevelandclinic.org/health/articles/22610-norepinephrine-noradrenaline"
+            },
+            {
+                "type": "text",
+                "value": "Most people have sufficient levels of these but for people like me, we don't. Our natural levels of these neurotransmitters is low. So our ability to pay or sustain attention is heavily impaired among other effects. Hence the name Attention Deficit. Hyperactivity is another facet of this impaired attention."
+            },
+            {
+                "type": "subheading",
+                "value": "How does affect me?"
+            },
+            {
+                "type": "text",
+                "value": "Think of computer with faulty RAM. This computer will have trouble in reading and writing data and it will also have a hard time processing the data. This is exactly what happens in ADHD brain, faulty RAM is quite similar to poor attention (poor working memory) and data can be analogous to long term memory. Computer data must go through RAM for any operation, faulty RAM affects every aspect of a computer. And quite similarly ADHD affects all aspects of life."
+            },
+            {
+                "type": "text",
+                "value": "ADHD people face difficulties even in simplest of tasks, because of their poor working memory. They have a hard time performing academically, coping emotionally among countless other difficulties. I can attest to that from my own personal experience."
             }
         ]
     }

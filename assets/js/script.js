@@ -463,8 +463,6 @@ function addArticlePageContent() {
             audio.appendChild(source)
             contentDiv.appendChild(audio);
         }
-
-
     });
 
     document.getElementById("common-footer").classList.add("visible-block")

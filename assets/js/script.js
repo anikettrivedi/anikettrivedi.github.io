@@ -102,7 +102,7 @@ function loadAllArticlesData(data) {
             articlesArray[i] = articleEntry;
             i++;
         }
-        
+
     })
 
     articlesArraySearchCopy = articlesArray;
@@ -429,6 +429,34 @@ function addArticlePageContent() {
             let para = document.createElement("p");
             let text = document.createTextNode(entry.value);
             para.appendChild(text);
+            div.appendChild(para)
+            contentDiv.appendChild(div);
+        } else if (entry.type == "subheading") {
+            let div = document.createElement("div");
+            let heading = document.createElement("h3");
+            let text = document.createTextNode(entry.value);
+            heading.appendChild(text);
+            div.appendChild(heading)
+            contentDiv.appendChild(div);
+        } else if (entry.type == "link") {
+            let div = document.createElement("div");
+            let para = document.createElement("p");
+            let text = document.createTextNode(entry.value);
+            let sup = document.createElement("sup");
+            let a = document.createElement("a");
+            
+            a.href = entry.ref;
+            a.innerHTML = entry.refNo;
+            a.target = "blank";
+            a.style.textDecoration = "none";
+
+            sup.appendChild(document.createTextNode("["));
+            sup.appendChild(a);
+            sup.appendChild(document.createTextNode("]"));
+
+            para.appendChild(text);
+            para.appendChild(sup);
+
             div.appendChild(para)
             contentDiv.appendChild(div);
         } else if (entry.type == "image") {

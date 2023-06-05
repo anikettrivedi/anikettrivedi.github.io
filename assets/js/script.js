@@ -226,31 +226,58 @@ function addHomePageArticles() {
     column2.innerHTML = "";
     column3.innerHTML = "";
 
-    let i = 0;
+    if (window.screen.width > 1400) {
+        // width > 1400, 3 column view and row wise distribution logic
+        let i = 0;
+        while (i < articlesArraySearchCopy.length) {
+            // (3n) th article
+            if (i < articlesArraySearchCopy.length && i % 3 == 0) {
+                let article = articlesArraySearchCopy[i];
+                addHomePageArticleSummaryPanel(article, column1);
+                i++;
+            }
 
-    while (i < articlesArraySearchCopy.length) {
+            // (3n + 1)th article
+            if (i < articlesArraySearchCopy.length && i % 3 == 1) {
+                let article = articlesArraySearchCopy[i];
+                addHomePageArticleSummaryPanel(article, column2);
+                i++;
+            }
 
-        // (3n) th article
-        if (i < articlesArraySearchCopy.length && i % 3 == 0) {
+            // (3n + 2)th article
+            if (i < articlesArraySearchCopy.length && i % 3 == 2) {
+                let article = articlesArraySearchCopy[i];
+                addHomePageArticleSummaryPanel(article, column3);
+                i++;
+            }
+        }
+    } else if (window.screen.width > 700 && window.screen.width <= 1400) {
+        // width > 700 & <= 1400, 2 column view and row wise distribution logic
+        let i = 0;
+        while (i < articlesArraySearchCopy.length) {
+            // (2n) th article
+            if (i < articlesArraySearchCopy.length && i % 2 == 0) {
+                let article = articlesArraySearchCopy[i];
+                addHomePageArticleSummaryPanel(article, column1);
+                i++;
+            }
+
+            // (2n + 1)th article
+            if (i < articlesArraySearchCopy.length && i % 2 == 1) {
+                let article = articlesArraySearchCopy[i];
+                addHomePageArticleSummaryPanel(article, column2);
+                i++;
+            }
+        }
+    } else {
+        // width < 700, 1 column view
+        // width > 700 & <= 1400, 2 column view and row wise distribution logic
+        let i = 0;
+        while (i < articlesArraySearchCopy.length) {
             let article = articlesArraySearchCopy[i];
             addHomePageArticleSummaryPanel(article, column1);
             i++;
         }
-
-        // (3n + 1)th article
-        if (i < articlesArraySearchCopy.length && i % 3 == 1) {
-            let article = articlesArraySearchCopy[i];
-            addHomePageArticleSummaryPanel(article, column2);
-            i++;
-        }
-
-        // (3n + 2)th article
-        if (i < articlesArraySearchCopy.length && i % 3 == 2) {
-            let article = articlesArraySearchCopy[i];
-            addHomePageArticleSummaryPanel(article, column3);
-            i++;
-        }
-
     }
 
     if (articlesArray.length == articlesArraySearchCopy.length && articlesArray.length > 0) {

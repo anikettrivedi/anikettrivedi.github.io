@@ -97,8 +97,10 @@ function loadAllArticlesData(data) {
     let articleMap = new Map(Object.entries(data));
     let i = 0;
     articleMap.forEach((v, k) => {
-        articlesArray[i] = JSON.parse(v);
-        i++;
+        if (v.display == 'visible') {
+            articlesArray[i] = JSON.parse(v);
+            i++;
+        }
     })
 
     articlesArraySearchCopy = articlesArray;

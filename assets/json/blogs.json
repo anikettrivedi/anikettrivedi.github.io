@@ -90,12 +90,14 @@
             {
                 "type": "link",
                 "value": "Dopamine - is involved in movement, memory, reward and motivation, behavior and cognition, attention, sleep and arousal, mood, learning and in case of women lactation.",
-                "ref": "https://my.clevelandclinic.org/health/articles/22581-dopamine"
+                "ref": "https://my.clevelandclinic.org/health/articles/22581-dopamine",
+                "refNo": 1
             },
             {
                 "type": "link",
                 "value": "Norepinephrine - increases alertness, arousal, attention, affects sleep-wake cycle, mood and memory, helps maintain blood pressure at time of stress.",
-                "ref": "https://my.clevelandclinic.org/health/articles/22610-norepinephrine-noradrenaline"
+                "ref": "https://my.clevelandclinic.org/health/articles/22610-norepinephrine-noradrenaline",
+                "refNo": 2
             },
             {
                 "type": "text",

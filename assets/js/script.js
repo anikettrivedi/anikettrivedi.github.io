@@ -98,7 +98,7 @@ function loadAllArticlesData(data) {
     let i = 0;
     articleMap.forEach((v, k) => {
         articleEntry = JSON.parse(v);
-        if (articleEntry.display == "visible" || true) {
+        if (articleEntry.display == "visible") {
             articlesArray[i] = articleEntry;
             i++;
         }

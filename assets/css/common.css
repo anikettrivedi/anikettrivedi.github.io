@@ -272,7 +272,7 @@ p.timestamp-small {
     box-sizing: border-box;
     z-index: 1;
 
-    width: 350px;
+    width: auto;
     height: 90px;
 
     position: fixed;
@@ -319,7 +319,7 @@ p.timestamp-small {
 }
 
 .clipboard-alert-box-input {
-    width: 290px;
+    width: auto;
     height: 25px;
 
     color: black;
@@ -359,7 +359,7 @@ p.timestamp-small {
     box-sizing: border-box;
     z-index: 1;
 
-    width: 350px;
+    width: auto;
     height: 90px;
 
     position: fixed;
@@ -406,7 +406,7 @@ p.timestamp-small {
 }
 
 .email-alert-box-input {
-    width: 290px;
+    width: auto;
     height: 25px;
 
     color: black;

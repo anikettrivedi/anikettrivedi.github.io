@@ -272,14 +272,14 @@ p.timestamp-small {
     box-sizing: border-box;
     z-index: 1;
 
-    width: auto;
+    width: 250px;
     height: 90px;
 
     position: fixed;
     left: 50%;
     top: 30%;
 
-    margin-left: -175px;
+    margin-left: -125px;
 
     opacity: 95%;
     border-radius: 5px;
@@ -319,7 +319,7 @@ p.timestamp-small {
 }
 
 .clipboard-alert-box-input {
-    width: auto;
+    width: 225px;
     height: 25px;
 
     color: black;
@@ -359,14 +359,14 @@ p.timestamp-small {
     box-sizing: border-box;
     z-index: 1;
 
-    width: auto;
+    width: 250px;
     height: 90px;
 
     position: fixed;
     left: 50%;
     top: 30%;
 
-    margin-left: -175px;
+    margin-left: -125px;
 
     opacity: 95%;
     border-radius: 5px;
@@ -406,7 +406,7 @@ p.timestamp-small {
 }
 
 .email-alert-box-input {
-    width: auto;
+    width: 225px;
     height: 25px;
 
     color: black;

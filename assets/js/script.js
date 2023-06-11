@@ -604,6 +604,23 @@ function copyLinkToClipBoard() {
     document.getElementById("clipboard-dialog").innerHTML = "Link Copied!"
 }
 
+function executeEmailAction() {
+    let emailAction = document.getElementById("email-actions").value;
+    let subject = `Redirected from this page titled: ${document.title}`;
+    let body = `Hey I just came across this page (${window.location}) on your website and I wanted to tell you that...`;
+    // 
+    if (emailAction === "copy") {
+        copyEmailToClipBoard();
+    } else if (emailAction === "gmail") {
+        window
+            .open(`https://mail.google.com/mail/?view=cm&fs=1&to=${aboutData.email}&su=${subject}&body=${body}`, '_blank')
+            .focus();
+    } else if (emailAction === "default") {
+        window
+            .location = `mailto:${aboutData.email}?subject=${subject}&body=${body}`;
+    }
+}
+
 function copyEmailToClipBoard() {
     navigator.clipboard.writeText(aboutData.email);
     document.getElementById("email-dialog").innerHTML = "Email Copied!"
@@ -622,7 +639,7 @@ function shareToFacebook() {
 }
 
 function shareToWhatsapp() {
-    window.open(`https://api.whatsapp.com/send?text=${document.title} ${document.URL}`, '_blank').focus();
+    window.open(`https://api.whatsapp.com/send?text=*${document.title}* ${document.URL}`, '_blank').focus();
 }
 
 function toggleSearchBox() {

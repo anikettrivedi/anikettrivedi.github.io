@@ -125,20 +125,26 @@
                                 style="float: right;"><i class="fa fa-close fa-lg"></i></button>
                 </div>
 
+                <input class="email-alert-box-input"
+                       id="email-alert-box-input"
+                       type="text"
+                       disabled>
 
-                <div class="email-alert-box-content">
-                        <input class="email-alert-box-input"
-                               id="email-alert-box-input"
-                               type="text"
-                               disabled>
+                <div class="email-actions">
+                        <select name="email-actions"
+                                id="email-actions">
+                                <option value="copy"
+                                        selected>Copy</option>
+                                <option value="gmail">Open In Gmail</option>
+                                <!-- <option value="outlook">Open In Outlook</option> -->
+                                <option value="default">Open In Default Email App</option>
+                        </select>
 
-                        <button class="common-icon"
-                                onclick="copyEmailToClipBoard()"
+                        <button onclick="executeEmailAction()"
                                 id="email-copy-button"
-                                style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
+                                style="float: right;">Go</button>
                 </div>
         </div>
-
 </body>
 
 </html>

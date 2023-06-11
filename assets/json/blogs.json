@@ -140,9 +140,9 @@
         ]
     },
     {
-        "index": "2023-06-10-Songs-I-Found-In-2023-Until-June",
-        "title": "Songs I found In 2023 Until June",
-        "heading": "Songs I found In 2023 Until June",
+        "index": "2023-06-10-Rediscovered-In-2023-Up-June",
+        "title": "Rediscovered In 2023 (Up till June)",
+        "heading": "Rediscovered In 2023 (Up till June)",
         "tags": "music",
         "author": "",
         "timestamp": "June 10, 2023",
@@ -151,14 +151,28 @@
         "description": [
             {
                 "type": "text",
-                "value": "Here's a playlist dedicated to amazing songs I have discovered in 2023 (I wish I had found them earlier!)."
+                "value": "Newly discovered (by me) old songs."
             }
         ],
         "contents": [
             {
+                "type": "text",
+                "value": "A few months back while dawdling on YouTube Shorts, I came accross a cute pet video (who doesn't?) that played a high pitched, fast forwarded cover of some song that I had never heard. The words and the melody was too good to go unnoticed, so I ended up Shazaming it and thanks to Spotify and it's suggestions found a worth of (mainly old) rock songs."
+            },
+            {
+                "type": "text",
+                "value": "So if like me, you didn't know about Keane, Oasis, The Verve, U2, Snow Patrol, Stereophonics and The Killers, check out this little playlist I have made."
+            },
+            {
                 "type": "iframe",
-                "value": "https://open.spotify.com/embed/playlist/6DFfL4N9SFFkYX5YjfOzEU?utm_source=generator",
+                "value": "https://open.spotify.com/embed/playlist/3UY759rF6KnK0e3ApXRjmD?utm_source=generator",
                 "class": "media-full"
+            },
+            {
+                "type": "link",
+                "value": "Also, that song is Somewhere Only We Know.",
+                "ref": "https://open.spotify.com/track/1SKPmfSYaPsETbRHaiA18G?si=6a932fbc825146c2",
+                "refNo": 1
             }
         ]
     }

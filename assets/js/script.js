@@ -608,6 +608,9 @@ function executeEmailAction() {
     let emailAction = document.getElementById("email-actions").value;
     let subject = `Redirected from this page titled: ${document.title}`;
     let body = `Hey I just came across this page (${window.location}) on your website and I wanted to tell you that...`;
+    body = body.replace("/","%2F");
+    body = body.replace("=","%3D");
+    body = body.replace("?","%3F");
     // 
     if (emailAction === "copy") {
         copyEmailToClipBoard();

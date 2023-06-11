@@ -194,6 +194,8 @@ function addAboutPageContent() {
             aboutPageTextContainer.appendChild(aboutPara);
         }
     }
+
+    document.getElementById("common-footer").classList.add("visible-block")
 }
 
 // home page functions
@@ -596,7 +598,12 @@ function openClipboardDialogBox() {
 }
 
 function closeClipboardAlertBox() {
-    document.getElementById("clipboard-alert-box").classList.remove("visible-block");
+    try {
+        document.getElementById("clipboard-alert-box").classList.remove("visible-block");
+    } catch (err) {
+        // do nothing
+    }
+
 }
 
 function copyLinkToClipBoard() {
@@ -608,9 +615,9 @@ function executeEmailAction() {
     let emailAction = document.getElementById("email-actions").value;
     let subject = `Redirected from this page titled: ${document.title}`;
     let body = `Hey I just came across this page (${window.location}) on your website and I wanted to tell you that...`;
-    body = body.replace("/","%2F");
-    body = body.replace("=","%3D");
-    body = body.replace("?","%3F");
+    body = body.replace("/", "%2F");
+    body = body.replace("=", "%3D");
+    body = body.replace("?", "%3F");
     // 
     if (emailAction === "copy") {
         copyEmailToClipBoard();

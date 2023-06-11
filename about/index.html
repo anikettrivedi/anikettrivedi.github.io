@@ -47,7 +47,47 @@
         </div>
     </div>
 
+    <footer class="common-footer"
+            id="common-footer">
+        <div class="line-thin"></div>
 
+        <div class="common-footer-item-container">
+            <a class="common-footer-link"
+               onclick="openEmailAlertBox()">E-Mail</a>
+        </div>
+
+    </footer>
+
+    <!-- email popup -->
+    <div class="email-alert-box"
+         id="email-alert-box">
+
+        <div class="email-header">
+            <p class="email-dialog"
+               id="email-dialog">E-Mail</p>
+            <button class="common-icon"
+                    onclick="closeEmailAlertBox()"
+                    style="float: right;"><i class="fa fa-close fa-lg"></i></button>
+        </div>
+
+        <input class="email-alert-box-input"
+               id="email-alert-box-input"
+               type="text"
+               disabled>
+
+        <div class="email-actions">
+            <select name="email-actions"
+                    id="email-actions">
+                <option value="copy">Copy</option>
+                <option value="gmail">Open In Gmail (Web)</option>
+                <option value="default">Open In Default Email App</option>
+            </select>
+
+            <button onclick="executeEmailAction()"
+                    id="email-copy-button"
+                    style="float: right;">Go</button>
+        </div>
+    </div>
 
 </body>
 

@@ -17,68 +17,71 @@ let shareLink = document.URL;
 window.onload = function () {
     if (document.URL.includes("/about")) {
         // about page
-        fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
-            return response.json()
-        }).then(data => {
-            loadAboutData(data);
-        }).then(() => {
-            addAboutPageContent();
-        })
+        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+            .then(response => {
+                return response.json()
+            }).then(data => {
+                loadAboutData(data);
+            }).then(() => {
+                addAboutPageContent();
+            })
 
     } else if (document.URL.includes("/blog")) {
         // article page
 
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
 
-        fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
-            return response.json()
-        }).then(data => {
-            loadAboutData(data);
-        }).then(() => {
-            return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
-        }).then(response => {
-            // fetching all articles data
-            return response.json();
-        }).then(dataArray => {
-            for (let i = 0; i < dataArray.length; i++) {
-                articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
-            }
-            loadAllArticlesData(articlesMap);
-            loadArticleData(articlesMap[articleTitle]);
-            addArticlePageContent();
-            loadNavigationData(articlesArray);
-            addSideBarContent();
-            displayVisible();
-        }).catch(error => {
-            display404();
-            console.error(error);
-        });
+        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+            .then(response => {
+                return response.json()
+            }).then(data => {
+                loadAboutData(data);
+            }).then(() => {
+                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+            }).then(response => {
+                // fetching all articles data
+                return response.json();
+            }).then(dataArray => {
+                for (let i = 0; i < dataArray.length; i++) {
+                    articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
+                }
+                loadAllArticlesData(articlesMap);
+                loadArticleData(articlesMap[articleTitle]);
+                addArticlePageContent();
+                loadNavigationData(articlesArray);
+                addSideBarContent();
+                displayVisible();
+            }).catch(error => {
+                display404();
+                console.error(error);
+            });
     } else {
         // home page
 
-        fetch("https://anikettrivedi.github.io/assets/json/about.json").then(response => {
-            return response.json()
-        }).then(data => {
-            loadAboutData(data);
-        }).then(() => {
-            return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
-        }).then(response => {
-            // fetching all articles data
-            return response.json();
-        }).then(dataArray => {
-            for (let i = 0; i < dataArray.length; i++) {
-                articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
-            }
-            loadAllArticlesData(articlesMap);
-            addHomePageContent();
-            loadNavigationData(articlesArray);
-            addSideBarContent();
-            toggleSort()
-            displayVisible();
-        }).catch(error => {
-            display404();
-            console.error(error);
-        });
+        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+            .then(response => {
+                return response.json()
+            }).then(data => {
+                loadAboutData(data);
+            }).then(() => {
+                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+            }).then(response => {
+                // fetching all articles data
+                return response.json();
+            }).then(dataArray => {
+                for (let i = 0; i < dataArray.length; i++) {
+                    articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
+                }
+                loadAllArticlesData(articlesMap);
+                addHomePageContent();
+                loadNavigationData(articlesArray);
+                addSideBarContent();
+                toggleSort()
+                displayVisible();
+            }).catch(error => {
+                display404();
+                console.error(error);
+            });
     }
 };
 
@@ -94,11 +97,12 @@ function loadArticleData(data) {
 }
 
 function loadAllArticlesData(data) {
+    let view = document.URL.includes("?show=hidden") ? "hidden" : "visible";
     let articleMap = new Map(Object.entries(data));
     let i = 0;
     articleMap.forEach((v, k) => {
         articleEntry = JSON.parse(v);
-        if (articleEntry.display == "visible") {
+        if (articleEntry.display === view) {
             articlesArray[i] = articleEntry;
             i++;
         }
@@ -444,7 +448,7 @@ function addArticlePageContent() {
             let text = document.createTextNode(entry.value);
             let sup = document.createElement("sup");
             let a = document.createElement("a");
-            
+
             a.href = entry.ref;
             a.innerHTML = entry.refNo;
             a.target = "blank";

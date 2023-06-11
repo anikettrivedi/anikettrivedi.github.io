@@ -7,7 +7,7 @@
         "author": "",
         "timestamp": "May 8, 2023",
         "place": "Pune",
-        "display": "visible",
+        "display": "hidden",
         "description": [
             {
                 "type": "text",
@@ -29,7 +29,7 @@
         "author": "",
         "timestamp": "May 25, 2023",
         "place": "Pune",
-        "display": "visible",
+        "display": "hidden",
         "description": [
             {
                 "type": "text",

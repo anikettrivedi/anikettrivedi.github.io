@@ -1,5 +1,27 @@
 [
     {
+        "index": "2023-06-10-blog-template",
+        "title": "Blog Template",
+        "heading": "Blog Template",
+        "tags": "template",
+        "author": "",
+        "timestamp": "June 10, 2023",
+        "place": "Pune",
+        "display": "hidden",
+        "description": [
+            {
+                "type": "text",
+                "value": "Template"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "Template"
+            }
+        ]
+    },
+    {
         "index": "2023-05-08-Observation-No-1",
         "title": "Observation No. 1",
         "heading": "Observation No. 1",
@@ -114,6 +136,29 @@
             {
                 "type": "text",
                 "value": "ADHD people face difficulties even in simplest of tasks, because of their poor working memory. They have a hard time performing academically, coping emotionally among countless other difficulties. I can attest to that from my own personal experience."
+            }
+        ]
+    },
+    {
+        "index": "2023-06-10-Songs-I-Found-In-2023-Until-June",
+        "title": "Songs I found In 2023 Until June",
+        "heading": "Songs I found In 2023 Until June",
+        "tags": "music",
+        "author": "",
+        "timestamp": "June 10, 2023",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Here's a playlist dedicated to amazing songs I have discovered in 2023 (I wish I had found them earlier!)."
+            }
+        ],
+        "contents": [
+            {
+                "type": "iframe",
+                "value": "https://open.spotify.com/embed/playlist/6DFfL4N9SFFkYX5YjfOzEU?utm_source=generator",
+                "class": "media-full"
             }
         ]
     }

@@ -273,13 +273,14 @@ p.timestamp-small {
     z-index: 1;
 
     width: 250px;
-    height: 90px;
+    height: auto;
 
     position: fixed;
     left: 50%;
     top: 30%;
 
     margin-left: -125px;
+    padding: 0;
 
     opacity: 95%;
     border-radius: 5px;
@@ -291,44 +292,27 @@ p.timestamp-small {
 
 }
 
-@keyframes clipboard-animation {
-    0% {
-        opacity: 0;
-        left: 50%;
-        top: 0;
-    }
-
-    50% {
-        opacity: 50%;
-        left: 50%;
-        top: 33%;
-    }
-
-    100% {
-        opacity: 95%;
-        left: 50%;
-        top: 30%;
-    }
-}
-
-.clipboard-alert-box-content {
+/* .clipboard-alert-box-content {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     margin: 20px 5px 5px 5px;
-}
+} */
 
 .clipboard-alert-box-input {
-    width: 225px;
+    box-sizing: border-box;
+    display: block;
+    width: 230px;
     height: 25px;
+
+    margin: 10px auto 10px auto;
+    padding: 0 0 0 5px;
+    text-align: center;
 
     color: black;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 2px;
     outline: none;
-
-
-    font-weight: bold;
 }
 
 .clipboard-header {
@@ -351,34 +335,19 @@ p.timestamp-small {
     font-weight: bold;
 }
 
-/* email popup */
-
-.email-alert-box {
-
-    display: none;
+.clipboard-actions-button {
     box-sizing: border-box;
-    z-index: 1;
+    width: 230px;
+    margin: 0 10px 10px 10px;
 
-    width: 300px;
-    height: auto;
+    background-color: #b5e7a0;
+    font-weight: bold;
 
-    position: fixed;
-    left: 50%;
-    top: 30%;
-
-    margin-left: -150px;
-
-    opacity: 95%;
-    border-radius: 5px;
-    border: 1px solid black;
-    background-color: white;
-
-    animation-name: email-animation;
-    animation-duration: .7s;
-
+    border: 0;
+    border-radius: 2px;
 }
 
-@keyframes email-animation {
+@keyframes clipboard-animation {
     0% {
         opacity: 0;
         left: 50%;
@@ -398,27 +367,48 @@ p.timestamp-small {
     }
 }
 
-/* .email-alert-box-content {
+/* email popup */
+
+.email-alert-box {
+
+    display: none;
     box-sizing: border-box;
-    width: 280px;
-    display: flex;
-    justify-content:space-around; 
-    margin: auto;
-} */
+    z-index: 1;
+
+    width: 300px;
+    height: auto;
+
+    position: fixed;
+    left: 50%;
+    top: 30%;
+
+    margin-left: -150px;
+    padding: 0;
+
+    opacity: 95%;
+    border-radius: 2px;
+    border: 1px solid black;
+    background-color: white;
+
+    animation-name: email-animation;
+    animation-duration: .7s;
+
+}
 
 .email-alert-box-input {
+    box-sizing: border-box;
     display: block;
     width: 280px;
     height: 25px;
 
     margin: 10px auto 10px auto;
+    padding: 0;
+    text-align: center;
 
     color: black;
     border: 1px solid black;
-    border-radius: 5px;
+    border-radius: 2px;
     outline: none;
-
-    font-weight: bold;
 }
 
 .email-header {
@@ -441,13 +431,49 @@ p.timestamp-small {
     font-weight: bold;
 }
 
-.email-actions {
+.email-actions-select {
     box-sizing: border-box;
-
     width: 280px;
-    margin: 10px;
-    padding: 0;
+    margin: 0 10px 10px 10px;
+
+    text-align: center;
+
+    background-color: #d5e1df;
+    font-weight: bold;
+
     border: 0;
+    border-radius: 1px;
+}
+
+.email-actions-button {
+    box-sizing: border-box;
+    width: 280px;
+    margin: 0 10px 10px 10px;
+
+    background-color: #b5e7a0;
+    font-weight: bold;
+
+    border: 0;
+}
+
+@keyframes email-animation {
+    0% {
+        opacity: 0;
+        left: 50%;
+        top: 0;
+    }
+
+    50% {
+        opacity: 50%;
+        left: 50%;
+        top: 33%;
+    }
+
+    100% {
+        opacity: 95%;
+        left: 50%;
+        top: 30%;
+    }
 }
 
 /* display styles */

@@ -75,20 +75,19 @@
                type="text"
                disabled>
 
-        <div class="email-actions">
-            <select name="email-actions"
-                    id="email-actions">
-                <option value="copy">Copy</option>
-                <option value="gmail">Open In Gmail (Web)</option>
-                <option value="default">Open In Default Email App</option>
-            </select>
+        <select class="email-actions-select"
+                name="email-actions"
+                id="email-actions">
+            <option value="copy">Copy</option>
+            <option value="gmail">Open In Gmail (Web)</option>
+            <option value="default">Open In Default Email App</option>
+        </select>
 
-            <button onclick="executeEmailAction()"
-                    id="email-copy-button"
-                    style="float: right;">Go</button>
-        </div>
+        <button class="email-actions-button"
+                onclick="executeEmailAction()"
+                id="email-copy-button">Go</button>
     </div>
-
+    
 </body>
 
 </html>

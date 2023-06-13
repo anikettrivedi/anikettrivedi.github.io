@@ -99,18 +99,15 @@
                                 style="float: right;"><i class="fa fa-close fa-lg"></i></button>
                 </div>
 
+                <input class="clipboard-alert-box-input"
+                       id="clipboard-alert-box-input"
+                       type="text"
+                       disabled>
 
-                <div class="clipboard-alert-box-content">
-                        <input class="clipboard-alert-box-input"
-                               id="clipboard-alert-box-input"
-                               type="text"
-                               disabled>
-
-                        <button class="common-icon"
-                                onclick="copyLinkToClipBoard()"
-                                id="clipboard-copy-button"
-                                style="float: right;"><i class="fa fa-copy fa-lg"></i></button>
-                </div>
+                <button class="clipboard-actions-button"
+                        onclick="copyLinkToClipBoard()"
+                        id="clipboard-copy-button">
+                        COPY</button>
         </div>
 
         <!-- email popup -->
@@ -130,18 +127,17 @@
                        type="text"
                        disabled>
 
-                <div class="email-actions">
-                        <select name="email-actions"
-                                id="email-actions">
-                                <option value="copy">Copy</option>
-                                <option value="gmail">Open In Gmail (Web)</option>
-                                <option value="default">Open In Default Email App</option>
-                        </select>
+                <select class="email-actions-select"
+                        name="email-actions"
+                        id="email-actions">
+                        <option value="copy">Copy</option>
+                        <option value="gmail">Open In Gmail (Web)</option>
+                        <option value="default">Open In Default Email App</option>
+                </select>
 
-                        <button onclick="executeEmailAction()"
-                                id="email-copy-button"
-                                style="float: right;">Go</button>
-                </div>
+                <button class="email-actions-button"
+                        onclick="executeEmailAction()"
+                        id="email-copy-button">Go</button>
         </div>
 </body>
 

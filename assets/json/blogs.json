@@ -189,11 +189,6 @@
             {
                 "type": "text",
                 "value": "Picture dump from my trip in Nepal back in 2019."
-            },
-            {
-                "type": "image",
-                "value": "https://imgur.com/HsO4edy",
-                "class": "media-full"
             }
         ],
         "contents": [

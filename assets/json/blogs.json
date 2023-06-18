@@ -12,6 +12,10 @@
             {
                 "type": "text",
                 "value": "Template"
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/wall1.jpg"
             }
         ],
         "contents": [
@@ -34,6 +38,10 @@
             {
                 "type": "text",
                 "value": "The world doesn't see you the way you see yourself."
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/wall2.jpg"
             }
         ],
         "contents": [
@@ -56,6 +64,10 @@
             {
                 "type": "text",
                 "value": "Bad stays bad, worse gets to be good."
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/wall3.png"
             }
         ],
         "contents": [
@@ -86,6 +98,10 @@
             {
                 "type": "text",
                 "value": "A shortage of brain chemicals."
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/wall2.jpg"
             }
         ],
         "contents": [
@@ -152,6 +168,10 @@
             {
                 "type": "text",
                 "value": "Newly discovered old songs."
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/wall1.jpg"
             }
         ],
         "contents": [
@@ -189,6 +209,10 @@
             {
                 "type": "text",
                 "value": "Picture dump from my trip in Nepal back in 2019."
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/wall3.png"
             }
         ],
         "contents": [

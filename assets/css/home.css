@@ -32,6 +32,7 @@
 .preview-panel {
     box-sizing: border-box;
     margin-top: 30px;
+    height: 250px;
 }
 
 @media screen and (max-width: 700px) {

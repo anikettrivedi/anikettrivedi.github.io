@@ -108,17 +108,30 @@ function loadArticleData(data) {
 }
 
 function loadAllArticlesData(data) {
-    let view = document.URL.includes("?show=hidden") ? "hidden" : "visible";
+    let view = "visible";
+
+    if (document.URL.includes("?show=")) {
+        view = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
+    }
+
     let articleMap = new Map(Object.entries(data));
     let i = 0;
-    articleMap.forEach((v, k) => {
-        articleEntry = JSON.parse(v);
-        if (articleEntry.display === view) {
+
+    if (view !== "all") {
+        articleMap.forEach((v, k) => {
+            articleEntry = JSON.parse(v);
+            if (articleEntry.display === view) {
+                articlesArray[i] = articleEntry;
+                i++;
+            }
+        })
+    } else {
+        articleMap.forEach((v, k) => {
+            articleEntry = JSON.parse(v);
             articlesArray[i] = articleEntry;
             i++;
-        }
-
-    })
+        })
+    }
 
     articlesArraySearchCopy = articlesArray;
     // console.log("articles data loaded")

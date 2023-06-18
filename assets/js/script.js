@@ -14,10 +14,21 @@ let toggleTag = false;
 
 let shareLink = document.URL;
 
+const decrypt = (salt, encoded) => {
+    const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
+    const applySaltToChar = (code) => textToChars(salt).reduce((a, b) => a ^ b, code);
+    return encoded
+        .match(/.{1,2}/g)
+        .map((hex) => parseInt(hex, 16))
+        .map(applySaltToChar)
+        .map((charCode) => String.fromCharCode(charCode))
+        .join("");
+};
+
 window.onload = function () {
     if (document.URL.includes("/about")) {
         // about page
-        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+        fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256b68657f7e2460796564"))
             .then(response => {
                 return response.json()
             }).then(data => {
@@ -31,13 +42,13 @@ window.onload = function () {
 
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
 
-        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+        fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256b68657f7e2460796564"))
             .then(response => {
                 return response.json()
             }).then(data => {
                 loadAboutData(data);
             }).then(() => {
-                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+                return fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256866656d792460796564"))
             }).then(response => {
                 // fetching all articles data
                 return response.json();
@@ -58,13 +69,13 @@ window.onload = function () {
     } else {
         // home page
 
-        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+        fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256b68657f7e2460796564"))
             .then(response => {
                 return response.json()
             }).then(data => {
                 loadAboutData(data);
             }).then(() => {
-                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+                return fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256866656d792460796564"))
             }).then(response => {
                 // fetching all articles data
                 return response.json();

@@ -175,5 +175,28 @@
                 "refNo": 1
             }
         ]
+    },
+    {
+        "index": "2019-Nepal",
+        "title": "First Trip To Nepal",
+        "heading": "First Trip To Nepal",
+        "tags": "albums,travel",
+        "author": "",
+        "timestamp": "June 18, 2023",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Picture dump from my trip in Nepal back in 2019."
+            }
+        ],
+        "contents": [
+            {
+                "type": "iframe",
+                "value": "https://imgur.com/a/5m9FDyE",
+                "class": "media-full"
+            }
+        ]
     }
 ]

@@ -503,7 +503,7 @@ function addArticlePageContent() {
             iframe.src = entry.value;
             iframe.scrolling = "no";
             iframe.classList.add(entry.class);
-            iframe.style.height = "100vh";
+            iframe.style.height = "80vh";
             iframe.style.overflow = "hidden";
             iframe.controls = 1;
         } else if (entry.type == "audio") {

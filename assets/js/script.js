@@ -495,7 +495,16 @@ function addArticlePageContent() {
             contentDiv.appendChild(iframe);
             iframe.src = entry.value;
             iframe.classList.add(entry.class);
-            iframe.style.height = "400px"
+            iframe.style.height = "60vh"
+            iframe.controls = 1;
+        } else if (entry.type == "iframe-album") {
+            let iframe = document.createElement("iframe");
+            contentDiv.appendChild(iframe);
+            iframe.src = entry.value;
+            iframe.scrolling = "no";
+            iframe.classList.add(entry.class);
+            iframe.style.height = "60vh";
+            iframe.style.overflow = "hidden";
             iframe.controls = 1;
         } else if (entry.type == "audio") {
             let audio = document.createElement("audio");

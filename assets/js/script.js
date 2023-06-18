@@ -400,22 +400,22 @@ function addHomePageArticleSummaryPanel(article, element) {
     element.appendChild(articleLink);
 
     // article tags - testing
-    articleTagArray = articleTags.split(",");
-    for (let i = 0; i < articleTagArray.length; i++) {
+    // articleTagArray = articleTags.split(",");
+    // for (let i = 0; i < articleTagArray.length; i++) {
 
-        let articleTagDiv = document.createElement("div");
-        let articleTagPara = document.createElement("p");
+    //     let articleTagDiv = document.createElement("div");
+    //     let articleTagPara = document.createElement("p");
 
-        articleTagDiv.classList.add("article-tag");
-        articleTagPara.classList.add("article-tag-text");
+    //     articleTagDiv.classList.add("article-tag");
+    //     articleTagPara.classList.add("article-tag-text");
 
-        articleTagDiv.appendChild(articleTagPara)
-        articleTagPara.appendChild(document.createTextNode(articleTagArray[i]));
+    //     articleTagDiv.appendChild(articleTagPara)
+    //     articleTagPara.appendChild(document.createTextNode(articleTagArray[i]));
 
-        element.appendChild(articleTagDiv);
+    //     element.appendChild(articleTagDiv);
 
-        articleTagDiv.addEventListener("click", searchByTagAndToggle)
-    }
+    //     articleTagDiv.addEventListener("click", searchByTagAndToggle)
+    // }
 }
 
 // article page function

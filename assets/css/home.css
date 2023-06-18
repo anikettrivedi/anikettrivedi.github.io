@@ -45,6 +45,7 @@
 .preview-panel-media {
     margin: 5px 0;
     vertical-align: middle;
+    height: 150px;
     width: 100%;
 }
 

@@ -192,10 +192,18 @@
             }
         ],
         "contents": [
+            
             {
                 "type": "iframe-album",
                 "value": "https://imgur.com/a/PA9YTVV/embed?pub=true&amp;ref=https%3A%2F%2Fimgur.com%2Fa%2F5m9FDyE",
                 "class": "media-full"
+            },
+            {
+
+                "type": "link",
+                "value": "Link to above album.",
+                "ref": "https://imgur.com/a/PA9YTVV",
+                "refNo": 1
             },
             {
                 "type": "iframe",

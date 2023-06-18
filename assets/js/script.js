@@ -360,6 +360,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     timestampPara.append(document.createTextNode(timestampText));
 
     let para = document.createElement("p");
+    para.classList.add("preview-panel-para");
     para.appendChild(document.createTextNode(articleText));
 
     let image = document.createElement("img");

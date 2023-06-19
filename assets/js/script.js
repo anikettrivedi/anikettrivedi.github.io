@@ -610,6 +610,10 @@ onresize = () => {
     if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
         addHomePageArticles()
     }
+
+    // if (document.URL.includes("/blog")) {
+    //     addArticlePageContent();
+    // }
 }
 
 // email dialog events & functions

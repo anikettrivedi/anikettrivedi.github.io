@@ -217,11 +217,6 @@
         ],
         "contents": [
             {
-                "type": "iframe",
-                "value": "https://www.youtube.com/embed/jrGBl9ssHXk",
-                "class": "media-full"
-            },
-            {
 
                 "type": "link",
                 "value": "Link to below album.",
@@ -235,6 +230,11 @@
                 "imgRef": "https://live.staticflickr.com/65535/52985383735_66d43a3766_h.jpg",
                 "imgHeight": "450",
                 "imgWidth":"800",
+                "class": "media-full"
+            },
+            {
+                "type": "iframe",
+                "value": "https://www.youtube.com/embed/jrGBl9ssHXk",
                 "class": "media-full"
             }
         ]

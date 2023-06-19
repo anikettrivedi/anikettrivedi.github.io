@@ -204,7 +204,7 @@
         "author": "",
         "timestamp": "June 18, 2023",
         "place": "Pune",
-        "display": "visible",
+        "display": "hidden",
         "description": [
             {
                 "type": "text",
@@ -229,8 +229,12 @@
                 "refNo": 1
             },
             {
-                "type": "iframe-album",
-                "value": "https://imgur.com/a/jjBNJ9e/embed?pub=true&amp;ref=https%3A%2F%2Fimgur.com%2Fa%2F5m9FDyE",
+                "type": "flickralbum",
+                "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
+                "albumRef": "https://www.flickr.com/photos/198587363@N06/52985383735/in/album-72177720309152271/",
+                "imgRef": "https://imgur.com/a/jjBNJ9e/embed?pub=true&amp;ref=https%3A%2F%2Fimgur.com%2Fa%2F5m9FDyE",
+                "imgHeight": "800",
+                "imgWidth":"450",
                 "class": "media-full"
             }
         ]

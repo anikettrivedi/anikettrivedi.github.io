@@ -511,7 +511,7 @@ function addArticlePageContent() {
             iframe.classList.add(entry.class);
             iframe.style.height = "60vh"
             iframe.controls = 1;
-        } else if (entry.type == "iframe-album") {
+        } else if (entry.type == "flickralbum") {
             let iframe = document.createElement("iframe");
             contentDiv.appendChild(iframe);
             iframe.src = entry.value;

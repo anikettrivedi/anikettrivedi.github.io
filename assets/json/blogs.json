@@ -233,8 +233,8 @@
                 "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
                 "albumRef": "https://www.flickr.com/photos/198587363@N06/52985383735/in/album-72177720309152271/",
                 "imgRef": "https://live.staticflickr.com/65535/52985383735_66d43a3766_h.jpg",
-                "imgHeight": "800",
-                "imgWidth":"450",
+                "imgHeight": "450",
+                "imgWidth":"800",
                 "class": "media-full"
             }
         ]

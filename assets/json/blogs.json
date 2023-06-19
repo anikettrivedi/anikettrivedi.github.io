@@ -232,7 +232,7 @@
                 "type": "flickralbum",
                 "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
                 "albumRef": "https://www.flickr.com/photos/198587363@N06/52985383735/in/album-72177720309152271/",
-                "imgRef": "https://imgur.com/a/jjBNJ9e/embed?pub=true&amp;ref=https%3A%2F%2Fimgur.com%2Fa%2F5m9FDyE",
+                "imgRef": "https://live.staticflickr.com/65535/52985383735_66d43a3766_h.jpg",
                 "imgHeight": "800",
                 "imgWidth":"450",
                 "class": "media-full"

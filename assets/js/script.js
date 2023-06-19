@@ -512,14 +512,27 @@ function addArticlePageContent() {
             iframe.style.height = "60vh"
             iframe.controls = 1;
         } else if (entry.type == "flickralbum") {
-            let iframe = document.createElement("iframe");
-            contentDiv.appendChild(iframe);
-            iframe.src = entry.value;
-            iframe.scrolling = "no";
-            iframe.classList.add(entry.class);
-            iframe.style.height = "80vh";
-            iframe.style.overflow = "hidden";
-            iframe.controls = 1;
+            let script = document.createElement("script");
+            script.setAttribute("async", "");
+            script.charset="utf-8";
+            script.src=entry.scriptRef;
+
+            let a = document.createElement("a");
+            a.setAttribute("data-flickr-embed", "true");
+            a.setAttribute("data-header", "true");
+            a.setAttribute("data-context", "true");
+            a.href = entry.albumRef;
+
+            let img = document.createElement("img");
+            img.src = entry.imgRef;
+            img.width = entry.imgWidth;
+            img.height = entry.imgHeight;
+
+            a.appendChild(img);
+            contentDiv.appendChild(script);
+            contentDiv.appendChild(a);
+
+
         } else if (entry.type == "audio") {
             let audio = document.createElement("audio");
             audio.controls = 1;

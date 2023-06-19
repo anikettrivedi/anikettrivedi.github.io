@@ -217,17 +217,10 @@
         ],
         "contents": [
             {
-
-                "type": "link",
-                "value": "Link to below album.",
-                "ref": "https://flic.kr/p/2oJ8WAT",
-                "refNo": 1
-            },
-            {
                 "type": "flickralbum",
                 "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
-                "albumRef": "https://www.flickr.com/photos/198587363@N06/52985383735/in/album-72177720309152271/",
-                "imgRef": "https://live.staticflickr.com/65535/52985383735_66d43a3766_h.jpg",
+                "albumRef": "https://www.flickr.com/photos/198587363@N06/albums/72177720309155341",
+                "imgRef": "https://live.staticflickr.com/65535/52985466674_651f3fb3f6_h.jpg",
                 "imgHeight": "450",
                 "imgWidth":"800",
                 "class": "media-full"

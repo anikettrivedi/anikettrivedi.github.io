@@ -514,19 +514,20 @@ function addArticlePageContent() {
         } else if (entry.type == "flickralbum") {
             let script = document.createElement("script");
             script.setAttribute("async", "");
-            script.charset="utf-8";
-            script.src=entry.scriptRef;
+            script.charset = "utf-8";
+            script.src = entry.scriptRef;
 
             let a = document.createElement("a");
             a.setAttribute("data-flickr-embed", "true");
-            a.setAttribute("data-header", "true");
+            // a.setAttribute("data-header", "true");
             a.setAttribute("data-context", "true");
             a.href = entry.albumRef;
 
             let img = document.createElement("img");
             img.src = entry.imgRef;
-            img.width = entry.imgWidth;
-            img.height = entry.imgHeight;
+            img.classList.add(entry.class);
+            // img.width = "1000";
+            // img.height = "500";
 
             a.appendChild(img);
             contentDiv.appendChild(script);

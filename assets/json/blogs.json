@@ -204,7 +204,7 @@
         "author": "",
         "timestamp": "June 18, 2023",
         "place": "Pune",
-        "display": "hidden",
+        "display": "visible",
         "description": [
             {
                 "type": "text",
@@ -225,7 +225,7 @@
 
                 "type": "link",
                 "value": "Link to below album.",
-                "ref": "https://imgur.com/a/jjBNJ9e",
+                "ref": "https://flic.kr/p/2oJ8WAT",
                 "refNo": 1
             },
             {

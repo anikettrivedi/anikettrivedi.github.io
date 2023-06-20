@@ -168,6 +168,10 @@
             {
                 "type": "text",
                 "value": "Newly discovered old songs."
+            },
+            {
+                "type": "image",
+                "value": "/assets/thumbnails/pexels-steve-johnson-860662.jpg"
             }
         ],
         "contents": [

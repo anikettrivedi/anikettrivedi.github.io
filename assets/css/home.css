@@ -10,7 +10,7 @@
 .column {
     box-sizing: border-box;
     flex: 100%;
-    max-width: 33%;
+    max-width: 32%;
 }
 
 @media screen and (max-width: 1400px) {
@@ -44,7 +44,7 @@
 
 .preview-panel-media {
     margin: 5px 0;
-    vertical-align: middle;
+    aspect-ratio: 16/9;
     width: 100%;
 }
 
@@ -70,5 +70,5 @@
 }
 
 .preview-panel-para {
-    font-size: small;
+    font-size: medium;
 }

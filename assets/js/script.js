@@ -365,6 +365,9 @@ function addHomePageArticleSummaryPanel(article, element) {
 
     let image = document.createElement("img");
     image.classList.add("preview-panel-media")
+    console.log(element.offsetWidth);
+    image.style.width=element.offsetWidth;
+    image.style.height=element.offsetWidth/1.77;
     image.src = articleImageURL;
 
     let video = document.createElement("iframe");

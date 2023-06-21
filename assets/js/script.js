@@ -363,7 +363,9 @@ function addHomePageArticleSummaryPanel(article, element) {
     articleText = articleText.trim();
     maxParaLength = maxParaLength >= articleText.length? maxParaLength : articleText.length;
     let paraLengthDiff = maxParaLength - articleText.length;
-    articleText += "&nbsp;".repeat(paraLengthDiff);
+    if (paraLengthDiff > 0) {
+        articleText += "&nbsp;".repeat(paraLengthDiff);
+    }
 
     let para = document.createElement("p");
     para.classList.add("preview-panel-para");

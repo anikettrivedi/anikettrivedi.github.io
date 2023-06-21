@@ -17,7 +17,7 @@ h6 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 1rem;
     /* font-weight: 500; */
     text-align: justify;
 }
@@ -25,20 +25,20 @@ p {
 p.common-header-menu-para {
     display: inline;
 
-    font-size: small;
+    font-size: 1rem;
     text-align: center;
 }
 
 p.common-author-para {
     display: block;
 
-    font-size: small;
+    font-size: 1rem;
     text-align: center;
 }
 
 p.timestamp {
 
-    font-size: small;
+    font-size: 1em;
     text-align: center;
     margin-top: 5px;
     margin-bottom: 5px;
@@ -46,13 +46,13 @@ p.timestamp {
 
 p.timestamp-small {
 
-    font-size: smaller;
+    font-size: .75rem;
     text-align: center;
     margin: 1px 0;
 }
 
 .non-found {
-    font-size: 2em;
+    font-size: 2rem;
     margin: auto;
 }
 
@@ -149,7 +149,7 @@ p.timestamp-small {
 .common-footer-link {
 
     display: block;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-decoration: none;
     color: black;
@@ -223,7 +223,7 @@ p.timestamp-small {
 
 .common-sidebar-item:hover {
     background-color: hsl(0, 0%, 71%);
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .common-sidebar-link {
@@ -243,7 +243,7 @@ p.timestamp-small {
 
 @media screen and (max-width: 700px) {
     .common-icon {
-        font-size: 1em;
+        font-size: 1rem;
     }
 }
 
@@ -506,7 +506,7 @@ i {
 
 .article-tag-text {
     color: black;
-    font-size: small;
+    font-size: .75rem;
     font-weight: bold;
     margin: auto;
     text-align: center;

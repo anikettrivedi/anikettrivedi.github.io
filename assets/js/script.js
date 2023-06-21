@@ -4,6 +4,7 @@ let articlesArray = [];
 let articlesArraySearchCopy = [];
 let navigationArray = [];
 let aboutData = [];
+let maxParaLength = 0;
 
 let index = document.URL.indexOf("blog");
 let baseUrl = document.URL.substring(0, document.URL.indexOf("index"));
@@ -359,9 +360,14 @@ function addHomePageArticleSummaryPanel(article, element) {
     timestampPara.classList.add("timestamp-small");
     timestampPara.append(document.createTextNode(timestampText));
 
+    articleText = articleText.trim();
+    maxParaLength = maxParaLength >= articleText.length? maxParaLength : articleText.length;
+    let paraLengthDiff = maxParaLength - articleText.length;
+    articleText += "&nbsp;".repeat(paraLengthDiff);
+
     let para = document.createElement("p");
     para.classList.add("preview-panel-para");
-    para.appendChild(document.createTextNode(articleText));
+    para.innerHTML=articleText;
 
     let image = document.createElement("img");
     image.classList.add("preview-panel-media")

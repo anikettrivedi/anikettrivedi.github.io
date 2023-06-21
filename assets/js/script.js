@@ -620,7 +620,7 @@ onresize = () => {
     }
 
     if (document.URL.includes("/blog")) {
-        window.location.reload();
+        // window.location.reload();
     }
 }
 

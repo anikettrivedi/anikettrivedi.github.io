@@ -534,6 +534,7 @@ function addArticlePageContent() {
             // a.setAttribute("data-header", "true");
             a.setAttribute("data-context", "true");
             a.href = entry.albumRef;
+            a.target = "blank";
             a.style.width = "100%";
 
             let img = document.createElement("img");

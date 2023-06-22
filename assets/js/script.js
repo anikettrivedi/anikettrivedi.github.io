@@ -615,15 +615,48 @@ ontouchend = (e) => {
 }
 
 // window resize
-onresize = () => {
-    if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
-        addHomePageArticles();
-    } else if (document.URL.includes("/blog")) {
-        // console.log("reloading blog page..")
-        // addArticlePageContent();
-        window.location.reload();
-    }
-}
+// onresize = () => {
+//     if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
+//         addHomePageArticles();
+//     } else if (document.URL.includes("/blog")) {
+//         // console.log("reloading blog page..")
+//         // addArticlePageContent();
+//         window.location.reload();
+//     }
+// }
+
+(function(){
+    //create a closed scope to prevent naming collision        
+
+    //store the previous value for the width
+    var previousWidth = window.innerWidth || document.body.clientWidth;
+
+    var onResize = function () {
+
+        //calculate the current value for the width
+        var currentWidth = window.innerWidth || document.body.clientWidth;
+
+        //look to see if the change was more than 100
+        //using the absolute value here is important because it ensures
+        //that a change of -150 is also a difference of more than 100
+        if (Math.abs(previousWidth - currentWidth) > 0 ) {
+            if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
+                addHomePageArticles();
+            } else if (document.URL.includes("/blog")) {
+                // console.log("reloading blog page..")
+                // addArticlePageContent();
+                window.location.reload();
+            }
+            // then do some stuff
+
+            //change the prior width to the current for for future references
+            previousWidth = currentWidth;
+        }
+    };
+
+    window.addEventListener('resize', onResize);
+})()
+
 
 // email dialog events & functions
 function openEmailAlertBox() {

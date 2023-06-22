@@ -361,7 +361,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     timestampPara.append(document.createTextNode(timestampText));
 
     articleText = articleText.trim();
-    maxParaLength = maxParaLength >= articleText.length? maxParaLength : articleText.length;
+    maxParaLength = maxParaLength >= articleText.length ? maxParaLength : articleText.length;
     let paraLengthDiff = maxParaLength - articleText.length;
     if (paraLengthDiff > 0) {
         articleText += "&nbsp;".repeat(paraLengthDiff);
@@ -369,7 +369,7 @@ function addHomePageArticleSummaryPanel(article, element) {
 
     let para = document.createElement("p");
     para.classList.add("preview-panel-para");
-    para.innerHTML=articleText;
+    para.innerHTML = articleText;
 
     let image = document.createElement("img");
     image.classList.add("preview-panel-media")
@@ -438,16 +438,19 @@ function addArticlePageContent() {
     articleAuthor = article.author
 
     websiteHeadingElement = document.getElementById("common-heading");
+    websiteHeadingElement.innerHTML = "";
     node = document.createTextNode(websiteHeading);
     websiteHeadingElement.appendChild(node);
 
     // article timestamp
     timestampPara = document.getElementById("common-header-menu-para");
+    timestampPara.innerHTML = "";
     timestampPara.classList.add("timestamp");
     timestampParaText = document.createTextNode(article.timestamp + ", " + article.place);
     timestampPara.appendChild(timestampParaText);
 
     let contentDiv = document.getElementById("common-content");
+    contentDiv.innerHTML = "";
 
     // article content
     articleHeading = document.createElement("h2");
@@ -521,26 +524,26 @@ function addArticlePageContent() {
             iframe.controls = 1;
         } else if (entry.type == "flickralbum") {
             let script = document.createElement("script");
-            script.setAttribute("async", "");
+            // script.setAttribute("async", "");
             script.charset = "utf-8";
             script.src = entry.scriptRef;
+            // script.classList.add(entry.class);
 
             let a = document.createElement("a");
             a.setAttribute("data-flickr-embed", "true");
             // a.setAttribute("data-header", "true");
             a.setAttribute("data-context", "true");
             a.href = entry.albumRef;
+            a.style.width = "100%";
 
             let img = document.createElement("img");
             img.src = entry.imgRef;
-            img.classList.add(entry.class);
-            // img.width = "1000";
-            // img.height = "500";
+            img.style.width = "100%";
+            // img.classList.add(entry.class);
 
             a.appendChild(img);
             contentDiv.appendChild(script);
             contentDiv.appendChild(a);
-
 
         } else if (entry.type == "audio") {
             let audio = document.createElement("audio");
@@ -600,10 +603,6 @@ function swipeActions() {
     }
 }
 
-// search events
-
-
-
 // event listener && event handlers
 ontouchstart = (e) => {
     touchstartX = e.changedTouches[0].screenX
@@ -614,13 +613,13 @@ ontouchend = (e) => {
     swipeActions()
 }
 
+// window resize
 onresize = () => {
     if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
-        addHomePageArticles()
-    }
-
-    if (document.URL.includes("/blog")) {
-        // window.location.reload();
+        addHomePageArticles();
+    } else if (document.URL.includes("/blog")) {
+        console.log("reloading blog page..")
+        addArticlePageContent();
     }
 }
 

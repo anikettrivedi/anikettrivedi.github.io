@@ -539,7 +539,7 @@ function addArticlePageContent() {
             let img = document.createElement("img");
             img.src = entry.imgRef;
             img.style.width = "100%";
-            // img.classList.add(entry.class);
+            img.classList.add(entry.class);
 
             a.appendChild(img);
             contentDiv.appendChild(script);

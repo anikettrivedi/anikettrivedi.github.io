@@ -618,8 +618,9 @@ onresize = () => {
     if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
         addHomePageArticles();
     } else if (document.URL.includes("/blog")) {
-        console.log("reloading blog page..")
-        addArticlePageContent();
+        // console.log("reloading blog page..")
+        // addArticlePageContent();
+        window.location.reload();
     }
 }
 

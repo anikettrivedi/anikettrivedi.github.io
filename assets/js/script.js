@@ -644,8 +644,8 @@ ontouchend = (e) => {
                 addHomePageArticles();
             } else if (document.URL.includes("/blog")) {
                 // console.log("reloading blog page..")
-                // addArticlePageContent();
-                window.location.reload();
+                addArticlePageContent();
+                // window.location.reload();
             }
             // then do some stuff
 

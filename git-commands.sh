@@ -1,5 +1,5 @@
 today="$(date)"
 
 git add .
-git commit -m "commited on $today"
+git commit -m "committed on $today"
 git push

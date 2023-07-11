@@ -134,6 +134,7 @@ function loadAllArticlesData(data) {
         })
     }
 
+    articlesArray = articlesArray.sort((a, b) => b.index.localeCompare(a.index));
     articlesArraySearchCopy = articlesArray;
     // console.log("articles data loaded")
 }

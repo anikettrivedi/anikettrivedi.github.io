@@ -286,10 +286,15 @@
             },
             {
                 "type": "image",
-                "value": "/assets/images/20231012-0.75x.png"
+                "value": "https://pixabay.com/illustrations/animal-snail-shell-cartoon-slimy-2345418/"
             }
         ],
         "contents": [
+            {
+                "type": "image",
+                "value": "https://pixabay.com/illustrations/animal-snail-shell-cartoon-slimy-2345418/",
+                "class": "media-left"
+            },
             {
                 "type": "text",
                 "value": "Consider slowing down a little bit. Not everything has to happen as quickly as possible. You can put that sock on a bit slowly you know? You can take 5 more minutes to eat that breakfast. You don't have to reach the office within 5 minutes, you can take 15."

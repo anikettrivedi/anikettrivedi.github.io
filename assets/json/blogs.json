@@ -269,5 +269,47 @@
                 "value": "I often wondered why it didn't come up during school? In retrospect it appears the signs were always there, but while living with parents, they created enough structure around me that held everything together, but once I was out of home, all hell broke loose."
             }
         ]
+    },
+    {
+        "index": "2023-10-12-Note-to-self-0.75x",
+        "title": "0.75x",
+        "heading": "0.75x",
+        "tags": "note to self",
+        "author": "",
+        "timestamp": "October 12, 2023",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "0.75x"
+            },
+            {
+                "type": "image",
+                "value": "/assets/images/20231012-0.75x.png"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "Consider slowing down a little bit. Not everything has to happen as quickly as possible. You can put that sock on a bit slowly you know? You can take 5 more minutes to eat that breakfast. You don't have to reach the office within 5 minutes, you can take 15."
+            },
+            {
+                "type": "text",
+                "value": "I know often time there's this lingering unease within yourself, this restless feeling as if everything you do is dictated by a deadline. But it's not. You don't need to gulp down a glass of water as if it's going to evaporate if you don't, you can take your time."
+            },
+            {
+                "type": "text",
+                "value": "Try this, every time you become aware that you are rushing through something, stop, take a deep breath (don't time it), close your eyes  (not while driving) and imagine yourself to be a video that's going too fast. You need to push that 0.75X button."
+            },
+            {
+                "type": "text",
+                "value": "And once that button is pushed, try enjoying whatever it is that you are doing, notice your breathing, is it too shallow? Try breathing a bit deeper."
+            },
+            {
+                "type": "text",
+                "value": "Almost everything will be exactly the same even if you took a little bit more time, but you will be different. You will be calmer and less anxious."
+            }
+        ]
     }
 ]

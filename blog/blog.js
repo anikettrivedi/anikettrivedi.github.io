@@ -27,7 +27,7 @@ const decrypt = (salt, encoded) => {
 };
 
 window.onload = function () {
-    if (document.URL.includes("/about")) {
+    if (document.URL.includes("/blog/about")) {
         // about page
         fetch("https://anikettrivedi.github.io/assets/json/about.json")
             .then(response => {
@@ -38,7 +38,7 @@ window.onload = function () {
                 addAboutPageContent();
             })
 
-    } else if (document.URL.includes("/page")) {
+    } else if (document.URL.includes("/blog/page")) {
         // blog page
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
         fetch("https://anikettrivedi.github.io/assets/json/about.json")
@@ -66,7 +66,8 @@ window.onload = function () {
                 console.error(error);
             });
     } else {
-        // home page
+        // /blog
+        // home page 
         fetch("https://anikettrivedi.github.io/assets/json/about.json")
             .then(response => {
                 return response.json()
@@ -179,7 +180,7 @@ function addSideBarContent() {
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");
         let baseUrl = document.URL.substring(0, document.URL.indexOf("blog"));
-        a.href = baseUrl + "blog?title=" + navigationArray[i].index;
+        a.href = baseUrl + "page?title=" + navigationArray[i].index;
 
         let div = document.createElement("div");
         div.classList.add("common-sidebar-item");
@@ -330,7 +331,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     let articleTags = article.tags;
     let timestampText = article.timestamp;
     let headingText = article.heading;
-    let articleLinkRelativePath = baseUrl + "blog?title=" + article.index;
+    let articleLinkRelativePath = baseUrl + "page?title=" + article.index;
 
     previewPanel.classList.add("preview-panel");
 

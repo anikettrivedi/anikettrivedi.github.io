@@ -1,10 +1,22 @@
 # String operations
 
 ## Split & Iterate over String
+
 ###~
 export IFS=";"
 sentence="one;two;three"
 for word in $sentence; do
   echo "$word"
+done
+~###
+
+###~
+#local str rest
+rest=$STR
+while [ -n "$rest" ] ; do
+   str=${rest%%;*}  # Everything up to the first ';'
+   # Trim up to the first ';' -- and handle final case, too.
+   [ "$rest" = "${rest/;/}" ] && rest= || rest=${rest#*;}
+   echo "+ \"$str\""
 done
 ~###

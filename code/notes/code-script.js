@@ -74,6 +74,16 @@ function fetchSectionContentsAndAdd(i){
                     // add commands
                     let cmdText = line.replace("### ", "")
                     addCmdTextPanel(cmdText)
+                } else if (line.startsWith("###~")){
+                    let multilineCmd = ""
+                    let rowCount = 0
+                    j++
+                    while (contents[j] !== "~###"){
+                        multilineCmd += contents[j] + "\n"
+                        j++
+                        rowCount++
+                    }
+                    addMultilineCmdTextAreaPanel(multilineCmd, rowCount)
                 }
             }
         })
@@ -85,6 +95,15 @@ function fetchSectionContentsAndAdd(i){
             input.value = cmdText
             cmdContainer.appendChild(div)
             div.appendChild(input)
+        }
+
+        function addMultilineCmdTextAreaPanel(cmdText, rowCount){
+            let div = document.createElement("div")
+            let textarea = document.createElement("textarea")
+            textarea.setAttribute("rows", rowCount)
+            textarea.value = cmdText
+            cmdContainer.appendChild(div)
+            div.appendChild(textarea)
         }
 }
 

@@ -7,7 +7,7 @@ select {
     font-family: monospace;
 }
 
-input {
+input, textarea {
     box-sizing: border-box;
     margin: 0 0 5px 0;
     width: 100%;

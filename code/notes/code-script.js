@@ -1,4 +1,4 @@
-var titleLinkArray;
+var titleChildrenArray;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
 var baseUrl = "https://anikettrivedi.github.io/code/assets"
@@ -6,66 +6,87 @@ var baseUrl = "https://anikettrivedi.github.io/code/assets"
 fetch('https://anikettrivedi.github.io/code/assets/cmd.json')
     .then((response) => response.json())
     .then((json) => {
-        titleLinkArray = json;
+        titleChildrenArray = json;
     })
     .then(() => {
         // create a drop down
-        insertSelect()
-
-        // insert selected section only
-        insertSelectedSection()
+        insertSelectLevel1()
+        insertSelectLevel2()
     });
 
-function insertSelect() {
+function insertSelectLevel1() {
 
     // level 1 
-    let select = document.createElement("select")
-    select.setAttribute("name", "cmd-type")
-    select.setAttribute("id", "select-cmd-type")
-    select.onchange = insertSelectedSection
-    selectContainer.appendChild(select)
+    let select1 = document.createElement("select")
+    select1.setAttribute("name", "select-1")
+    select1.setAttribute("id", "select-1")
 
-    titleLinkArray.forEach(
+    // update select 2 on change in select 1
+    select1.onchange = insertSelectLevel2
+    selectContainer.appendChild(select1)
+
+    titleChildrenArray.forEach(
         (i) => {
             let option = document.createElement("option")
             option.setAttribute("value", i.title)
             option.appendChild(document.createTextNode(i.title))
-            select.appendChild(option)
+            select1.appendChild(option)
         }
     )
+}
 
+function insertSelectLevel2() {
     // level 2
-    let selectChild = document.createElement("select")
-    selectChild.setAttribute("name", "cmd-child-type")
-    selectChild.setAttribute("id", "select-cmd-child-type")
-    selectChild.onchange = insertSelectedSection
-    selectContainer.appendChild(selectChild)
+    let select2 = document.getElementById("select-2")
 
-    let selectValue = document.getElementById("select-cmd-type").value
-    for (let i; i < titleLinkArray.length; i++)
+    if (select2 == null) {
+        // create select2 if not existing
+        select2 = document.createElement("select")
+    } else {
+        // clear innerHTML if already existing 
+        select2.innerHTML = ""
+    }
 
+    select2.setAttribute("name", "select-2")
+    select2.setAttribute("id", "select-2")
+
+    // insert only selected section
+    select2.onchange = insertSelectedSection
+    selectContainer.appendChild(select2)
+
+    let selectValue = document.getElementById("select-1").value
+    for (let i = 0; i < titleChildrenArray.length; i++) {
+        if (titleChildrenArray[i].title === selectValue) {
+            titleChildrenArray[i].children.forEach((childValue) => {
+                console.log(childValue)
+                let option = document.createElement("option")
+                option.setAttribute("value", childValue)
+                option.appendChild(document.createTextNode(childValue))
+                select2.appendChild(option)
+            })
+        }
+    }
+
+    // insert selected section only
+    insertSelectedSection()
 }
 
 function insertSelectedSection() {
     // get selected section
-    let selectedSection = document.getElementById("select-cmd-type").value
-    console.log(selectedSection)
-    titleLinkArray.forEach(i => {
-        if (i.title === selectedSection) {
-            fetchSectionContentsAndAdd(i)
-        }
-    });
+    let select2Value = document.getElementById("select-2").value
+    let target = `https://anikettrivedi.github.io/code/assets/cmd-${select2Value}.txt`
+    fetchSectionContentsAndAdd(select2Value, target)
 }
 
-function fetchSectionContentsAndAdd(i) {
-    fetch(i.link)
+function fetchSectionContentsAndAdd(select2Value, url) {
+    fetch(url)
         .then((response) => response.text())
         .then((content) => {
             // create container contents
             cmdContainer.innerHTML = ""
 
             // add title
-            document.title = `${i.title} commands`
+            document.title = `${select2Value} commands`
 
             // add contents
             let contents = content.split("\n")

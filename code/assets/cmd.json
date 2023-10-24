@@ -10,7 +10,7 @@
     {
         "title": "kafka",
         "children":[
-            "kafka-topics"
+            "kafka-topic"
         ]
     }
 ]

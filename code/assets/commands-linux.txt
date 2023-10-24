@@ -1,4 +1,10 @@
 # Resource Utilization
-## list all processes=ps -ef
-## list disk usage for a path=du -sh
-## list disk volume utilization=df -h
+
+## list all processes
+### ps -ef
+
+## list disk usage for a path
+### du -sh
+
+## list disk volume utilization
+### df -h

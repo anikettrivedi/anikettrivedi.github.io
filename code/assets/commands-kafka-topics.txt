@@ -1,2 +1,4 @@
 # Kafka Topics
-## create a topic=bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092
+
+## create a topic
+### bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092

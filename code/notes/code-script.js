@@ -1,6 +1,6 @@
 var titleLinkMap;
 var selectContainer = document.getElementById("select-container")
-var commandContainer = document.getElementById("command-container")
+var cmdContainer = document.getElementById("cmd-container")
 
 fetch('https://anikettrivedi.github.io/code/assets/commands.json')
     .then((response) => response.json())
@@ -17,8 +17,8 @@ fetch('https://anikettrivedi.github.io/code/assets/commands.json')
 
 function insertSelect(){
     let select = document.createElement("select")
-    select.setAttribute("name", "command-type")
-    select.setAttribute("id", "select-command-type")
+    select.setAttribute("name", "cmd-type")
+    select.setAttribute("id", "select-cmd-type")
     select.onchange = insertSelectedSection
     selectContainer.appendChild(select)
 
@@ -34,7 +34,7 @@ function insertSelect(){
 
 function insertSelectedSection(){
     // get selected section
-    let selectedSection = document.getElementById("select-command-type").value
+    let selectedSection = document.getElementById("select-cmd-type").value
     console.log(selectedSection)
     titleLinkMap.forEach(i => {
         if (i.title === selectedSection){
@@ -48,12 +48,10 @@ function fetchSectionContentsAndAdd(i){
         .then((response) => response.text())
         .then((content) => {
             // create container contents
-            commandContainer.innerHTML = ""
+            cmdContainer.innerHTML = ""
 
             // add title
-            let h3 = document.createElement("h3")
-            h3.appendChild(document.createTextNode(i.title))
-            commandContainer.appendChild(h3)
+            document.title = i.title
     
             // add contents
             content.split("\n").forEach(
@@ -62,14 +60,32 @@ function fetchSectionContentsAndAdd(i){
                     if (line.startsWith("# ")){
                         let h4 = document.createElement("h4")
                         h4.appendChild(document.createTextNode(line.replace("# ", "")))
-                        commandContainer.appendChild(h4)
+                        cmdContainer.appendChild(h4)
                     } else if (line.startsWith("## ")){
+                        let cmdDescription = line.replace("## ", "")
+                        
+                        
+                        // add command description
                         let para = document.createElement("p")
-                        para.appendChild(document.createTextNode(line.replace("## ", "")))
-                        commandContainer.appendChild(para)
+                        para.appendChild(document.createTextNode(cmdDescription))
+                        cmdContainer.appendChild(para)
+
+                        // add commands
+                        addCmdTextPanel(cmdText)
+                    } else if (line.startsWith("### ")){
+                        let cmdText = line.replace("## ", "").split("=")[1]
                     }
                 }
             )
         })
+
+        function addCmdTextPanel(cmdText){
+            let div = document.createElement("div")
+            let input = document.createElement("input")
+            input.setAttribute("type", "text")
+            input.value = cmdText
+            cmdContainer.appendChild(div)
+            div.appendChild(input)
+        }
 }
 

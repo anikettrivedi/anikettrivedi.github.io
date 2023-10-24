@@ -6,8 +6,8 @@ let navigationArray = [];
 let aboutData = [];
 let maxParaLength = 0;
 
-let index = document.URL.indexOf("blog");
-let baseUrl = document.URL.substring(0, document.URL.indexOf("index"));
+let index = document.URL.indexOf("page");
+let baseUrl = document.URL.substring(0, document.URL.indexOf(index));
 let ascendingSortOrder = false;
 let websiteHeading = ""
 let websiteHeaderMenuText = ""

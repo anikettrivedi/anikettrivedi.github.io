@@ -1,0 +1,10 @@
+# String operations
+
+## Split & Iterate over String
+###~
+export IFS=";"
+sentence="one;two;three"
+for word in $sentence; do
+  echo "$word"
+done
+~###

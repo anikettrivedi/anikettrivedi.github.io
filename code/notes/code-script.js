@@ -54,28 +54,28 @@ function fetchSectionContentsAndAdd(i){
             document.title = i.title
     
             // add contents
-            content.split("\n").forEach(
-                (line) => {
-                    // add sub heading for the section
-                    if (line.startsWith("# ")){
-                        let hr = document.createElement("hr")
-                        let h3 = document.createElement("h3")
-                        h3.appendChild(document.createTextNode(line.replace("# ", "")))
-                        cmdContainer.appendChild(h3)
-                        cmdContainer.appendChild(hr)
-                    } else if (line.startsWith("## ")){
-                        // add command description
-                        let cmdDescription = line.replace("## ", "")
-                        let h4 = document.createElement("h4")
-                        h4.appendChild(document.createTextNode(cmdDescription))
-                        cmdContainer.appendChild(h4)
-                    } else if (line.startsWith("### ")){
-                        // add commands
-                        let cmdText = line.replace("### ", "")
-                        addCmdTextPanel(cmdText)
-                    }
+            let contents = content.split("\n")
+            for (let j = 0; j < contents.length; j++){
+                let line = contents[j]
+                // add sub heading for the section
+                if (line.startsWith("# ")){
+                    let hr = document.createElement("hr")
+                    let h3 = document.createElement("h3")
+                    h3.appendChild(document.createTextNode(line.replace("# ", "")))
+                    cmdContainer.appendChild(h3)
+                    cmdContainer.appendChild(hr)
+                } else if (line.startsWith("## ")){
+                    // add command description
+                    let cmdDescription = line.replace("## ", "")
+                    let h4 = document.createElement("h4")
+                    h4.appendChild(document.createTextNode(cmdDescription))
+                    cmdContainer.appendChild(h4)
+                } else if (line.startsWith("### ")){
+                    // add commands
+                    let cmdText = line.replace("### ", "")
+                    addCmdTextPanel(cmdText)
                 }
-            )
+            }
         })
 
         function addCmdTextPanel(cmdText){

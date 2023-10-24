@@ -11,6 +11,7 @@ input {
     box-sizing: border-box;
     margin: 0 0 5px 0;
     width: 100%;
+    border: 0;
 }
 
 select {

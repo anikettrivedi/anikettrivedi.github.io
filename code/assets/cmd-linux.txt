@@ -21,7 +21,7 @@ while [ -n "$rest" ] ; do
 done
 ~###
 
-# File operations using AWK
+# File Operations Using AWK
 
 ## awk syntax
 ### awk '{action}' your_file_name.txt

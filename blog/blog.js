@@ -177,8 +177,10 @@ function addSideBarContent() {
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");
         if (document.URL.includes("/blog/page")){
+            // from /blog/page 
             a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
         } else {
+            // from /blog
             a.href = `${document.URL}/page?title=${navigationArray[i].index}`
         }
         

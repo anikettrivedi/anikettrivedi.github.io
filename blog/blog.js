@@ -6,8 +6,6 @@ let navigationArray = [];
 let aboutData = [];
 let maxParaLength = 0;
 
-let index = document.URL.indexOf("page");
-let baseUrl = document.URL.substring(0, document.URL.indexOf(index));
 let ascendingSortOrder = false;
 let websiteHeading = ""
 let websiteHeaderMenuText = ""
@@ -176,11 +174,14 @@ function addSideBarContent() {
     let sidebar = document.getElementById("common-sidebar");
 
     for (let i = 0; i < navigationArray.length; i++) {
-
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");
-        let baseUrl = document.URL.substring(0, document.URL.indexOf("blog"));
-        a.href = baseUrl + "page?title=" + navigationArray[i].index;
+        if (document.URL.includes("/blog/page")){
+            a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
+        } else {
+            a.href = `${document.URL}/page?title=${navigationArray[i].index}`
+        }
+        
 
         let div = document.createElement("div");
         div.classList.add("common-sidebar-item");
@@ -331,8 +332,8 @@ function addHomePageArticleSummaryPanel(article, element) {
     let articleTags = article.tags;
     let timestampText = article.timestamp;
     let headingText = article.heading;
-    let articleLinkRelativePath = baseUrl + "page?title=" + article.index;
 
+    let articleLinkRelativePath = `${document.URL}/page?title=${article.index}`
     previewPanel.classList.add("preview-panel");
 
     article.description.forEach(entry => {
@@ -624,9 +625,9 @@ ontouchend = (e) => {
     var onResize = function () {
         var currentWidth = window.innerWidth || document.body.clientWidth;
         if (Math.abs(previousWidth - currentWidth) > 0 ) {
-            if (!document.URL.includes("/about") && !document.URL.includes("/blog")) {
+            if (!document.URL.includes("/blog/about") && !document.URL.includes("/blog/page")) {
                 addHomePageArticles();
-            } else if (document.URL.includes("/blog")) {
+            } else if (document.URL.includes("/blog/page")) {
                 window.location.reload();
             }
             previousWidth = currentWidth;

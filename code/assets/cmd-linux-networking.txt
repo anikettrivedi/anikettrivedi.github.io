@@ -1,6 +1,6 @@
 # Networking
 
-## netstat - dentify open ports, connections to external IP addresses, and the connection status
+## netstat - identify open ports, connections to external IP addresses, and the connection status
 ### netstat
 
 ## tcpdump - check network traffic

@@ -2,7 +2,7 @@ var titleLinkMap;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
 
-fetch('https://anikettrivedi.github.io/code/assets/commands.json')
+fetch('https://anikettrivedi.github.io/code/assets/cmd.json')
     .then((response) => response.json())
     .then((json) => {
         titleLinkMap = json;
@@ -62,18 +62,15 @@ function fetchSectionContentsAndAdd(i){
                         h4.appendChild(document.createTextNode(line.replace("# ", "")))
                         cmdContainer.appendChild(h4)
                     } else if (line.startsWith("## ")){
-                        let cmdDescription = line.replace("## ", "")
-                        
-                        
                         // add command description
+                        let cmdDescription = line.replace("## ", "")
                         let para = document.createElement("p")
                         para.appendChild(document.createTextNode(cmdDescription))
                         cmdContainer.appendChild(para)
-
-                        // add commands
-                        addCmdTextPanel(cmdText)
                     } else if (line.startsWith("### ")){
-                        let cmdText = line.replace("## ", "").split("=")[1]
+                        // add commands
+                        let cmdText = line.replace("### ", "")
+                        addCmdTextPanel(cmdText)
                     }
                 }
             )

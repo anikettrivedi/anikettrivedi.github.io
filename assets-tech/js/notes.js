@@ -5,6 +5,7 @@ var cmdContainer = document.getElementById("cmd-container")
 fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
     .then((response) => response.json())
     .then((json) => {
+        console.log(json)
         titleChildrenArray = json;
     })
     .then(() => {

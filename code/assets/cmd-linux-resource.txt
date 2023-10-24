@@ -24,6 +24,6 @@
 
 # I/O Operations
 
-## I/O Activity Monitor
+## I/O activity monitoring
 ### iostat
 ### iotop

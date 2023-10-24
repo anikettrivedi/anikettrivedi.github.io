@@ -1,4 +1,4 @@
-# String operations
+# String Operations
 
 ## split & iterate over a string with IFS
 ###~
@@ -21,5 +21,37 @@ while [ -n "$rest" ] ; do
 done
 ~###
 
-## this is just for test
-### echo "I am just for test"
+# File operations using AWK
+
+## awk syntax
+### awk '{action}' your_file_name.txt
+### awk '/regex pattern/{action}' your_file_name.txt
+
+## sample file
+###~
+information.txt
+
+fristName       lastName        age     city       ID
+
+Thomas          Shelby          30      Rio        400
+Omega           Night           45      Ontario    600
+Wood            Tinker          54      Lisbon     N/A
+Giorgos         Georgiou        35      London     300
+Timmy           Turner          32      Berlin     N/A
+~###
+
+## awk: print all contents using
+### awk '{print $0}' information.txt
+
+## awk: print line number count using NR
+### awk '{print NR,$0}' information.txt 
+
+## awk: print 1st column
+### awk '{print $1}' information.txt
+
+## awk: print 2nd column
+### awk '{print $2}' information.txt
+
+## awk: print 1st & 4th columns
+### awk '{print $1, $4}' information.txt
+

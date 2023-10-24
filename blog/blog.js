@@ -176,12 +176,14 @@ function addSideBarContent() {
     for (let i = 0; i < navigationArray.length; i++) {
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");
+
+        // links to /blog/page
         if (document.URL.includes("/blog/page")){
             // from /blog/page 
             a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
         } else {
             // from /blog
-            a.href = `${document.URL}/page?title=${navigationArray[i].index}`
+            a.href = `${document.URL}page?title=${navigationArray[i].index}`
         }
         
 
@@ -335,7 +337,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     let timestampText = article.timestamp;
     let headingText = article.heading;
 
-    let articleLinkRelativePath = `${document.URL}/page?title=${article.index}`
+    let articleLinkRelativePath = `${document.URL}page?title=${article.index}`
     previewPanel.classList.add("preview-panel");
 
     article.description.forEach(entry => {

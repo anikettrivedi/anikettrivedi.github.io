@@ -14,16 +14,6 @@
 ## list of open files
 ### lsof
 
-# Networking
-
-## netstat - dentify open ports, connections to external IP addresses, and the connection status
-### netstat
-
-
-## tcpdump - check network traffic
-### sudo tcpdump
-### sudo tcpdump port 443
-
 # Disk usage
 
 ## list disk usage for a path (human readable)

@@ -1,0 +1,8 @@
+# Networking
+
+## netstat - dentify open ports, connections to external IP addresses, and the connection status
+### netstat
+
+## tcpdump - check network traffic
+### sudo tcpdump
+### sudo tcpdump port 443

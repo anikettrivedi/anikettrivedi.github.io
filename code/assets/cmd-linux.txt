@@ -16,8 +16,8 @@
 
 # Disk usage
 
-## list disk usage for a path (human readable)
+## list disk usage for a path
 ### du -sh
 
-## list disk volume utilization (human readable)
+## list disk volume utilization
 ### df -h

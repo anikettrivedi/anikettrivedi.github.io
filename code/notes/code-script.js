@@ -58,9 +58,11 @@ function fetchSectionContentsAndAdd(i){
                 (line) => {
                     // add sub heading for the section
                     if (line.startsWith("# ")){
+                        let hr = document.createElement("hr")
                         let h3 = document.createElement("h3")
                         h3.appendChild(document.createTextNode(line.replace("# ", "")))
                         cmdContainer.appendChild(h3)
+                        cmdContainer.appendChild(hr)
                     } else if (line.startsWith("## ")){
                         // add command description
                         let cmdDescription = line.replace("## ", "")

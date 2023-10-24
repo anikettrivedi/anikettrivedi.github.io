@@ -51,7 +51,7 @@ function fetchSectionContentsAndAdd(i){
             cmdContainer.innerHTML = ""
 
             // add title
-            document.title = i.title
+            document.title = `${i.title} commands`
     
             // add contents
             let contents = content.split("\n")

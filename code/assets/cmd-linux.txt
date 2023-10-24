@@ -29,7 +29,7 @@ done
 
 ## sample file
 ###~
-information.txt
+cat information.txt
 
 fristName       lastName        age     city       ID
 

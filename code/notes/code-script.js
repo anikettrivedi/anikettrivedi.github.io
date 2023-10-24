@@ -58,15 +58,15 @@ function fetchSectionContentsAndAdd(i){
                 (line) => {
                     // add sub heading for the section
                     if (line.startsWith("# ")){
-                        let h4 = document.createElement("h4")
-                        h4.appendChild(document.createTextNode(line.replace("# ", "")))
-                        cmdContainer.appendChild(h4)
+                        let h3 = document.createElement("h3")
+                        h3.appendChild(document.createTextNode(line.replace("# ", "")))
+                        cmdContainer.appendChild(h3)
                     } else if (line.startsWith("## ")){
                         // add command description
                         let cmdDescription = line.replace("## ", "")
-                        let para = document.createElement("p")
-                        para.appendChild(document.createTextNode(cmdDescription))
-                        cmdContainer.appendChild(para)
+                        let h4 = document.createElement("h4")
+                        h4.appendChild(document.createTextNode(cmdDescription))
+                        cmdContainer.appendChild(h4)
                     } else if (line.startsWith("### ")){
                         // add commands
                         let cmdText = line.replace("### ", "")

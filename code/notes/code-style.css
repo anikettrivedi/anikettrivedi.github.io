@@ -1,3 +1,19 @@
-h4, p, input, select {
+h3,
+h4,
+h5,
+p,
+input,
+select {
     font-family: monospace;
+}
+
+input {
+    box-sizing: border-box;
+    margin: 0 0 5px 0;
+    width: 100%;
+}
+
+select {
+    width: 20%;
+    
 }

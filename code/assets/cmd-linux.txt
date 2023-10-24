@@ -3,8 +3,21 @@
 ## list all processes
 ### ps -ef
 
-## list disk usage for a path
+## display sorted information about processes
+### top
+### top -o +%MEM
+### top -o +%CPU
+
+### vmstat
+
+## list of open files
+### lsof
+
+
+# Disk usage
+
+## list disk usage for a path (human readable)
 ### du -sh
 
-## list disk volume utilization
+## list disk volume utilization (human readable)
 ### df -h

@@ -1,7 +1,6 @@
 # String operations
 
-## Split & Iterate over String
-
+## split & iterate over a string with IFS
 ###~
 export IFS=";"
 sentence="one;two;three"
@@ -10,6 +9,7 @@ for word in $sentence; do
 done
 ~###
 
+## split & iterate over a string without IFS
 ###~
 #local str rest
 rest=$STR
@@ -21,4 +21,5 @@ while [ -n "$rest" ] ; do
 done
 ~###
 
-### echo "Hello World"
+## this is just for test
+### echo "I am just for test"

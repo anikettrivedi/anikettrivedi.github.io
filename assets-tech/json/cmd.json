@@ -8,8 +8,20 @@
         ]
     },
     {
+        "title": "postgres",
+        "children": [
+            "postgres-data-queries",
+            "postgres-data-subqueries",
+            "postgres-data-definition",
+            "postgres-data-manipulation",
+            "postgres-transactions",
+            "postgres-roles",
+            "postgres-psql"
+        ]
+    },
+    {
         "title": "kafka",
-        "children":[
+        "children": [
             "kafka-topic"
         ]
     }

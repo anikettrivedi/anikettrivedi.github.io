@@ -1,3 +1,10 @@
+# Storage
+
+## list disk usage for a path
+### du -sh
+
+## list disk volume utilization
+### df -h
 
 # Resource Utilization
 
@@ -15,10 +22,8 @@
 ## list of open files
 ### lsof
 
-# Disk usage
+# I/O Operations
 
-## list disk usage for a path
-### du -sh
-
-## list disk volume utilization
-### df -h
+## I/O Activity Monitor
+### iostat
+### iotop

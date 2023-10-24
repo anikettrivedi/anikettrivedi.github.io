@@ -1,28 +1,31 @@
-var titleLinkMap;
+var titleLinkArray;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
+var baseUrl = "https://anikettrivedi.github.io/code/assets"
 
 fetch('https://anikettrivedi.github.io/code/assets/cmd.json')
     .then((response) => response.json())
     .then((json) => {
-        titleLinkMap = json;
+        titleLinkArray = json;
     })
-    .then(()=> {
+    .then(() => {
         // create a drop down
         insertSelect()
-        
+
         // insert selected section only
         insertSelectedSection()
     });
 
-function insertSelect(){
+function insertSelect() {
+
+    // level 1 
     let select = document.createElement("select")
     select.setAttribute("name", "cmd-type")
     select.setAttribute("id", "select-cmd-type")
     select.onchange = insertSelectedSection
     selectContainer.appendChild(select)
 
-    titleLinkMap.forEach(
+    titleLinkArray.forEach(
         (i) => {
             let option = document.createElement("option")
             option.setAttribute("value", i.title)
@@ -30,20 +33,31 @@ function insertSelect(){
             select.appendChild(option)
         }
     )
+
+    // level 2
+    let selectChild = document.createElement("select")
+    selectChild.setAttribute("name", "cmd-child-type")
+    selectChild.setAttribute("id", "select-cmd-child-type")
+    selectChild.onchange = insertSelectedSection
+    selectContainer.appendChild(selectChild)
+
+    let selectValue = document.getElementById("select-cmd-type").value
+    for (let i; i < titleLinkArray.length; i++)
+
 }
 
-function insertSelectedSection(){
+function insertSelectedSection() {
     // get selected section
     let selectedSection = document.getElementById("select-cmd-type").value
     console.log(selectedSection)
-    titleLinkMap.forEach(i => {
-        if (i.title === selectedSection){
+    titleLinkArray.forEach(i => {
+        if (i.title === selectedSection) {
             fetchSectionContentsAndAdd(i)
         }
     });
 }
 
-function fetchSectionContentsAndAdd(i){    
+function fetchSectionContentsAndAdd(i) {
     fetch(i.link)
         .then((response) => response.text())
         .then((content) => {
@@ -52,33 +66,33 @@ function fetchSectionContentsAndAdd(i){
 
             // add title
             document.title = `${i.title} commands`
-    
+
             // add contents
             let contents = content.split("\n")
-            for (let j = 0; j < contents.length; j++){
+            for (let j = 0; j < contents.length; j++) {
                 let line = contents[j]
                 // add sub heading for the section
-                if (line.startsWith("# ")){
+                if (line.startsWith("# ")) {
                     let hr = document.createElement("hr")
                     let h3 = document.createElement("h3")
                     h3.appendChild(document.createTextNode(line.replace("# ", "")))
                     cmdContainer.appendChild(h3)
                     cmdContainer.appendChild(hr)
-                } else if (line.startsWith("## ")){
+                } else if (line.startsWith("## ")) {
                     // add command description
                     let cmdDescription = line.replace("## ", "")
                     let h4 = document.createElement("h4")
                     h4.appendChild(document.createTextNode(cmdDescription))
                     cmdContainer.appendChild(h4)
-                } else if (line.startsWith("### ")){
+                } else if (line.startsWith("### ")) {
                     // add commands
                     let cmdText = line.replace("### ", "")
                     addCmdTextPanel(cmdText)
-                } else if (line.startsWith("###~")){
+                } else if (line.startsWith("###~")) {
                     let multilineCmd = ""
                     let rowCount = 0
                     j++
-                    while (contents[j] !== "~###"){
+                    while (contents[j] !== "~###") {
                         multilineCmd += contents[j] + "\n"
                         j++
                         rowCount++
@@ -88,21 +102,21 @@ function fetchSectionContentsAndAdd(i){
             }
         })
 
-        function addCmdTextPanel(cmdText){
-            let div = document.createElement("div")
-            let input = document.createElement("input")
-            input.setAttribute("type", "text")
-            input.value = cmdText
-            cmdContainer.appendChild(div)
-            div.appendChild(input)
-        }
+    function addCmdTextPanel(cmdText) {
+        let div = document.createElement("div")
+        let input = document.createElement("input")
+        input.setAttribute("type", "text")
+        input.value = cmdText
+        cmdContainer.appendChild(div)
+        div.appendChild(input)
+    }
 
-        function addMultilineCmdTextAreaPanel(cmdText, rowCount){
-            let div = document.createElement("div")
-            let textarea = document.createElement("textarea")
-            textarea.setAttribute("rows", rowCount)
-            textarea.value = cmdText
-            cmdContainer.appendChild(div)
-            div.appendChild(textarea)
-        }
+    function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
+        let div = document.createElement("div")
+        let textarea = document.createElement("textarea")
+        textarea.setAttribute("rows", rowCount)
+        textarea.value = cmdText
+        cmdContainer.appendChild(div)
+        div.appendChild(textarea)
+    }
 }

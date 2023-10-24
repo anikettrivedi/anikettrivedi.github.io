@@ -1,18 +1,16 @@
 [
     {
         "title": "linux",
-        "link": "https://anikettrivedi.github.io/code/assets/cmd-linux.txt"
+        "children": [
+            "linux-basics",
+            "linux-resource",
+            "linux-networking"
+        ]
     },
     {
-        "title": "linux-resource",
-        "link": "https://anikettrivedi.github.io/code/assets/cmd-linux-resource.txt"
-    },
-    {
-        "title": "linux-networking",
-        "link": "https://anikettrivedi.github.io/code/assets/cmd-linux-networking.txt"
-    },
-    {
-        "title": "kafka-topic",
-        "link": "https://anikettrivedi.github.io/code/assets/cmd-kafka-topic.txt"
+        "title": "kafka",
+        "children":[
+            "kafka-topics"
+        ]
     }
 ]

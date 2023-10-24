@@ -10,18 +10,35 @@ fetch('https://anikettrivedi.github.io/code/assets/commands.json')
     });
 
 function insertSections(){
-    titleLinkMap.forEach(element => {
-        insertSectionContent(element)
+    titleLinkMap.forEach(i => {
+        fetchSectionContentsAndAdd(i)
     });
 }
 
-function insertSectionContent(element){
+function fetchSectionContentsAndAdd(i){
     var commandContainer = document.getElementById("command-container")
-    var title = document.createTextNode(element.title)
-    var link = element.link
+    var h3 = document.createElement("h3")
+    h3.appendChild(document.createTextNode(i.title))
+    commandContainer.appendChild(h3)
     
+    var link = i.link
     fetch(link)
         .then((response) => response.text())
-        .then(text => console.log(text))
+        .then((content) => {
+            content.split("\n").forEach(
+                (line) => {
+                    // add sub heading for the section
+                    if (line.startsWith("# ")){
+                        let h4 = document.createElement("h4")
+                        h4.appendChild(document.createTextNode(line.replace("# ", "")))
+                        commandContainer.appendChild(h4)
+                    } else if (line.startsWith("## ")){
+                        let para = document.createElement("p")
+                        para.appendChild(document.createTextNode(line.replace("## ", "")))
+                        commandContainer.appendChild(para)
+                    }
+                }
+            )
+        })
 }
 

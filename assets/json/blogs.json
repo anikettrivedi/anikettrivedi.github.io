@@ -167,11 +167,11 @@
         "description": [
             {
                 "type": "text",
-                "value": "Newly discovered old songs.                       "
+                "value": "A few songs I have discovered recently."
             },
             {
                 "type": "image",
-                "value": "https://unsplash.com/photos/black-and-white-electronic-keyboard-Xb3Dz_IfFGw"
+                "value": "/assets/images/patrick-hendry-Xb3Dz_IfFGw-unsplash.jpg"
             }
         ],
         "contents": [

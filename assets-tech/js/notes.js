@@ -1,9 +1,8 @@
 var titleChildrenArray;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
-var baseUrl = "https://anikettrivedi.github.io/code/assets"
 
-fetch('https://anikettrivedi.github.io/code/assets/cmd.json')
+fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
     .then((response) => response.json())
     .then((json) => {
         titleChildrenArray = json;
@@ -76,7 +75,7 @@ function insertSelectLevel2() {
 function insertSelectedSection() {
     // get selected section
     let select2Value = document.getElementById("select-2").value
-    let target = `https://anikettrivedi.github.io/code/assets/cmd-${select2Value}.txt`
+    let target = `https://anikettrivedi.github.io/assets-tech/txt/cmd-${select2Value}.txt`
     fetchSectionContentsAndAdd(select2Value, target)
 }
 

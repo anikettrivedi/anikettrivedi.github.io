@@ -4,17 +4,17 @@
 <head>
         <meta name="viewport"
               content="width=device-width, initial-scale=1.0">
-        <script src="../assets/js/script.js"
+        <script src="./assets/js/script.js"
                 defer></script>
         <link rel="stylesheet"
               href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet"
-              href="../assets/css/article.css">
+              href="./assets/css/home.css">
         <link rel="stylesheet"
-              href="../assets/css/common.css">
+              href="./assets/css/common.css">
         <link rel="icon"
               type="image/x-icon"
-              href="../assets/images/favicon.ico">
+              href="./assets/images/favicon.ico">
         <title class="article-title"
                id="article-title"></title>
 </head>
@@ -22,6 +22,7 @@
 <body id="document-body"
       style="display: none;">
 
+        <!-- todo -->
         <div class="common-sidebar"
              id="common-sidebar"
              onmouseleave="closeSideBar()"></div>
@@ -29,12 +30,18 @@
         <header class="common-header">
 
                 <button class="common-icon"
+                        id="menubtn"
                         onclick="toggleSideBar()"><i class="fa fa-bars fa-lg"></i></button>
                 <button class="common-icon"
-                        onclick="goToHomePage()"><i class="fa fa-home fa-lg"></i></button>
+                        id="menubtn"
+                        onclick="toggleSearchBox()"><i class="fa fa-search fa-lg"></i></button>
+                <input class="search-box"
+                       id="search-box"
+                       type="text"
+                       placeholder="search">
 
-                <!-- todo -->
                 <button class="common-icon"
+                        id="copy-link"
                         onclick="openClipboardDialogBox()"
                         style="float: right;"
                         title="clipboard"><i class="fa fa-link fa-lg"></i></button>
@@ -58,27 +65,40 @@
                 <h1 class="common-heading"
                     id="common-heading"></h1>
                 <div class="line-thin line-light"></div>
-                <div class="common-header-menu"
-                     id="common-header-menu">
+                <div class="common-header-menu">
                         <p id="common-header-menu-para"
                            class="common-header-menu-para"></p>
+                        <button class="common-icon"
+                                onclick="toggleSort()"
+                                style="float: right;"><i class="fa fa-sort fa-lg"
+                                   id="sort-icon"></i></button>
                 </div>
                 <div class="line-thin"></div>
                 <div class="line-thin"></div>
 
         </header>
 
-        <div class="common-content"
-             id="common-content">
+        <div class="common-content">
+                <div class="row"
+                     id="row">
+                        <div class="column"
+                             id="column-1"></div>
+                        <div class="column"
+                             id="column-2"></div>
+                        <div class="column"
+                             id="column-3"></div>
+                </div>
         </div>
 
+        <!-- footer -->
         <footer class="common-footer"
                 id="common-footer">
                 <div class="line-thin"></div>
 
                 <div class="common-footer-item-container">
                         <a class="common-footer-link"
-                           href="/about">About</a>
+                           href="./about">About</a>
+
                         <a class="common-footer-link"
                            onclick="openEmailAlertBox()">E-Mail</a>
                 </div>
@@ -137,7 +157,7 @@
 
                 <button class="email-actions-button"
                         onclick="executeEmailAction()"
-                        id="email-copy-button">Go</button>
+                        id="email-copy-button">GO</button>
         </div>
 </body>
 

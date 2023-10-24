@@ -8,6 +8,12 @@
         ]
     },
     {
+        "title": "postgres",
+        "children":[
+            
+        ]
+    },
+    {
         "title": "kafka",
         "children":[
             "kafka-topic"

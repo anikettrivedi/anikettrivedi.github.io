@@ -19,6 +19,8 @@ input, textarea {
 select {
     width: auto;
     margin-right: 10px;
+    border: 1px solid black;
+    border-radius: 1px;
 }
 
 hr {

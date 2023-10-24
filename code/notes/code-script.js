@@ -20,9 +20,6 @@ function insertSelectLevel1() {
     let select1 = document.createElement("select")
     select1.setAttribute("name", "select-1")
     select1.setAttribute("id", "select-1")
-
-    // update select 2 on change in select 1
-    select1.onchange = insertSelectLevel2
     selectContainer.appendChild(select1)
 
     titleChildrenArray.forEach(
@@ -33,6 +30,10 @@ function insertSelectLevel1() {
             select1.appendChild(option)
         }
     )
+
+    // event listener
+    // update select 2 when select1 change event trigger
+    select1.onchange = insertSelectLevel2
 }
 
 function insertSelectLevel2() {
@@ -49,9 +50,6 @@ function insertSelectLevel2() {
 
     select2.setAttribute("name", "select-2")
     select2.setAttribute("id", "select-2")
-
-    // insert only selected section
-    select2.onchange = insertSelectedSection
     selectContainer.appendChild(select2)
 
     let selectValue = document.getElementById("select-1").value
@@ -67,8 +65,12 @@ function insertSelectLevel2() {
         }
     }
 
-    // insert selected section only
+    // insert selected section when insertSelectLevel2() is called from insertSelectLevel1
     insertSelectedSection()
+
+    // event listener
+    // insert selected section when select2 change event triggers
+    select2.onchange = insertSelectedSection
 }
 
 function insertSelectedSection() {

@@ -1,27 +1,27 @@
-var commandsJson;
+var titleLinkMap;
 
 fetch('https://anikettrivedi.github.io/code/assets/commands.json')
     .then((response) => response.json())
     .then((json) => {
-        commandsJson = json;
+        titleLinkMap = json;
     })
     .then(()=> {
-        insertCommands()
+        insertSections()
     });
 
-function insertCommands(){
-    commandsJson.forEach(element => {
-        insertCommandSection(element)
+function insertSections(){
+    titleLinkMap.forEach(element => {
+        insertSectionContent(element)
     });
 }
 
-function insertCommandSection(element){
+function insertSectionContent(element){
     var commandContainer = document.getElementById("command-container")
-    var div = document.createElement("div")
-    var h3 = document.createElement("h3")
     var title = document.createTextNode(element.title)
     var link = element.link
-    h3.appendChild(title)
-    div.appendChild(h3)
-    commandContainer.appendChild(div)
+    
+    fetch(link)
+        .then((response) => response.text())
+        .then(text => console.log(text))
 }
+

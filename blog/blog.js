@@ -591,7 +591,7 @@ function openSideBar() {
 
 
 function goToHomePage() {
-    window.location.href = "/";
+    window.location.href = "https://anikettrivedi.github.io/blog/";
 }
 
 // touch events

@@ -29,7 +29,7 @@ const decrypt = (salt, encoded) => {
 window.onload = function () {
     if (document.URL.includes("/about")) {
         // about page
-        fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256b68657f7e2460796564"))
+        fetch("https://anikettrivedi.github.io/assets/json/about.json")
             .then(response => {
                 return response.json()
             }).then(data => {
@@ -38,18 +38,16 @@ window.onload = function () {
                 addAboutPageContent();
             })
 
-    } else if (document.URL.includes("/blog")) {
-        // article page
-
+    } else if (document.URL.includes("/page")) {
+        // blog page
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
-
-        fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256b68657f7e2460796564"))
+        fetch("https://anikettrivedi.github.io/assets/json/about.json")
             .then(response => {
                 return response.json()
             }).then(data => {
                 loadAboutData(data);
             }).then(() => {
-                return fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256866656d792460796564"))
+                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
             }).then(response => {
                 // fetching all articles data
                 return response.json();
@@ -69,14 +67,13 @@ window.onload = function () {
             });
     } else {
         // home page
-
-        fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256b68657f7e2460796564"))
+        fetch("https://anikettrivedi.github.io/assets/json/about.json")
             .then(response => {
                 return response.json()
             }).then(data => {
                 loadAboutData(data);
             }).then(() => {
-                return fetch(decrypt("salt", "627e7e7a793025256b6463616f7e7e78637c6f6e63246d637e627f68246365256b79796f7e792560796564256866656d792460796564"))
+                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
             }).then(response => {
                 // fetching all articles data
                 return response.json();

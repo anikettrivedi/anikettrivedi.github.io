@@ -1,6 +1,10 @@
 [
     {
-        "title": "linux frequently used commands",
+        "title": "linux",
         "link": "https://anikettrivedi.github.io/code/assets/commands-linux.txt"
+    },
+    {
+        "title": "kafka topics",
+        "link": "https://anikettrivedi.github.io/code/assets/commands-kafka-topics.txt"
     }
 ]

@@ -5,7 +5,7 @@ var cmdContainer = document.getElementById("cmd-container")
 fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
     .then((response) => response.json())
     .then((json) => {
-        console.log(json)
+        //console.log(json)
         titleChildrenArray = json;
     })
     .then(() => {
@@ -56,7 +56,7 @@ function insertSelectLevel2() {
     for (let i = 0; i < titleChildrenArray.length; i++) {
         if (titleChildrenArray[i].title === selectValue) {
             titleChildrenArray[i].children.forEach((childValue) => {
-                console.log(childValue)
+                //console.log(childValue)
                 let option = document.createElement("option")
                 option.setAttribute("value", childValue)
                 option.appendChild(document.createTextNode(childValue))

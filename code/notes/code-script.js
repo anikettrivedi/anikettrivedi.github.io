@@ -106,4 +106,3 @@ function fetchSectionContentsAndAdd(i){
             div.appendChild(textarea)
         }
 }
-

@@ -4,9 +4,26 @@
 
 @h4 singly linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png
+@h4 operations
+@starttextarea
+1 - insert at a position, insert at start, insert at end
+2 - delete at a position, delete at start, delete at end
+3 - traverse a linked list from start to end
+4 - find an entry in the linked list
+5 - find length of the linked list
+@endtextarea
+
 
 @h4 doubly linked list
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png
+@h4 operations
+@starttextarea
+1 - insert at a position, insert at start, insert at end
+2 - delete at a position, delete at start, delete at end
+3 - traverse a linked list from start to end, from end to start (reverse order)
+4 - find an entry in the linked list
+5 - find length of the linked list
+@endtextarea
 
 @h4 circular linked list
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png

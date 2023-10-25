@@ -1,5 +1,7 @@
 @h3 Linked List
 
+@link https://en.wikipedia.org/wiki/Linked_list
+
 @h4 singly linked List
 @img https://en.wikipedia.org/wiki/File:Singly-linked-list.svg
 

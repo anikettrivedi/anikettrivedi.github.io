@@ -76,7 +76,7 @@ function insertSelectLevel2() {
 function insertSelectedSection() {
     // get selected section
     let select2Value = document.getElementById("select-2").value
-    let target = `https://anikettrivedi.github.io/assets-tech/txt/cmd-${select2Value}.txt`
+    let target = `https://anikettrivedi.github.io/assets-tech/txt/${select2Value}.txt`
     fetchSectionContentsAndAdd(select2Value, target)
 }
 

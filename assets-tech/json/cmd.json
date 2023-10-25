@@ -2,9 +2,9 @@
     {
         "title": "linux",
         "children": [
-            "linux-basics",
-            "linux-resource",
-            "linux-networking"
+            "linux-shell-ifs-awk",
+            "linux-shell-resource",
+            "linux-shell-networking"
         ]
     },
     {
@@ -22,7 +22,7 @@
     {
         "title": "kafka",
         "children": [
-            "kafka-topic"
+            "kafka-topics"
         ]
     }
 ]

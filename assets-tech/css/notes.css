@@ -3,7 +3,8 @@ h4,
 h5,
 p,
 input,
-select {
+select,
+button {
     font-family: monospace;
 }
 
@@ -16,12 +17,16 @@ input, textarea {
     overflow: hidden;
 }
 
-select {
+select, button {
     width: auto;
     margin-right: 10px;
     border: 1px solid black;
     border-radius: 1px;
 }
+
+/* button {
+    display: block;
+} */
 
 hr {
     border-top: 1px;

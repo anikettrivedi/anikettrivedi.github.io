@@ -1,19 +1,13 @@
 var titleChildrenArray;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
-
-// todo - start
-// need to implement type & subtype based routing
-// when valid params not provided, load default type & subtype
-// when params provided & valid, load type & subtype view
-// when navigated to any type & subtype combination, navigate by change route
 var type = ""
 var subtype = ""
 
-try{
+try {
     type = document.URL.split("?")[1].split("type=")[1].split("&")[0]
     subtype = document.URL.split("?")[1].split("subtype=")[1].split("&")[0]
-} catch (ignore) {}
+} catch (ignore) { }
 
 console.log(`type=${type}`)
 console.log(`subtype=${subtype}`)
@@ -30,6 +24,8 @@ fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
         // create a drop down
         insertSelectLevel1()
         insertSelectLevel2()
+        insertButton()
+        insertSelectedSection()
     });
 
 function insertSelectLevel1() {
@@ -48,6 +44,14 @@ function insertSelectLevel1() {
         }
     )
 
+    if (type === "") {
+        // set type if not set already
+        type = select1.value
+    } else {
+        // set select as type if type is provided
+        select1.value = type
+    }
+
     // event listener
     // update select 2 when select1 change event trigger
     select1.onchange = insertSelectLevel2
@@ -60,14 +64,16 @@ function insertSelectLevel2() {
     if (select2 == null) {
         // create select2 if not existing
         select2 = document.createElement("select")
+        select2.setAttribute("name", "select-2")
+        select2.setAttribute("id", "select-2")
+        selectContainer.appendChild(select2)
     } else {
-        // clear innerHTML if already existing 
-        select2.innerHTML = ""
+        // remove all options under select
+        let i, L = select2.options.length - 1;
+        for (i = L; i >= 0; i--) {
+            select2.remove(i);
+        }
     }
-
-    select2.setAttribute("name", "select-2")
-    select2.setAttribute("id", "select-2")
-    selectContainer.appendChild(select2)
 
     let selectValue = document.getElementById("select-1").value
     for (let i = 0; i < titleChildrenArray.length; i++) {
@@ -82,19 +88,39 @@ function insertSelectLevel2() {
         }
     }
 
-    // insert selected section when insertSelectLevel2() is called from insertSelectLevel1
-    insertSelectedSection()
+    if (subtype === "") {
+        // set subtype if not set already
+        subtype = select2.value
+    } else {
+        // set select as type if type is provided
+        select2.value = subtype
+    }
 
-    // event listener
-    // insert selected section when select2 change event triggers
-    select2.onchange = insertSelectedSection
+    // set subtype if not set already
+    subtype = select2.value
+}
+
+function insertButton() {
+    var button = document.getElementById("button")
+    if (button == null || button == undefined) {
+        button = document.createElement("button")
+        button.setAttribute("id", "button")
+        button.appendChild(document.createTextNode("go"))
+        selectContainer.appendChild(button)
+        button.onclick = navigateOnButtonClick
+    }
+}
+
+function navigateOnButtonClick() {
+    type = document.getElementById("select-1").value
+    subtype = document.getElementById("select-2").value
+    window.location.href = `${document.URL.split("?")[0]}?type=${type}&subtype=${subtype}`
 }
 
 function insertSelectedSection() {
     // get selected section
-    let select2Value = document.getElementById("select-2").value
-    let target = `https://anikettrivedi.github.io/assets-tech/txt/${select2Value}.txt`
-    fetchSectionContentsAndAdd(select2Value, target)
+    let target = `https://anikettrivedi.github.io/assets-tech/txt/${subtype}.txt`
+    fetchSectionContentsAndAdd(subtype, target)
 }
 
 function fetchSectionContentsAndAdd(select2Value, url) {
@@ -157,13 +183,14 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                 }
             }
         })
-
-    function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
-        let div = document.createElement("div")
-        let textarea = document.createElement("textarea")
-        textarea.setAttribute("rows", rowCount)
-        textarea.value = cmdText
-        cmdContainer.appendChild(div)
-        div.appendChild(textarea)
-    }
 }
+
+function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
+    let div = document.createElement("div")
+    let textarea = document.createElement("textarea")
+    textarea.setAttribute("rows", rowCount)
+    textarea.value = cmdText
+    cmdContainer.appendChild(div)
+    div.appendChild(textarea)
+}
+

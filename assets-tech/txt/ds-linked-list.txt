@@ -2,3 +2,10 @@
 
 @h4 singly linked List
 @img https://en.wikipedia.org/wiki/File:Singly-linked-list.svg
+
+@h4 doubly linked list
+@img https://en.wikipedia.org/wiki/File:Doubly-linked-list.svg
+
+@h4 circular linked list
+@img https://en.wikipedia.org/wiki/File:Circularly-linked-list.svg
+

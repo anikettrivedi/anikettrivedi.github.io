@@ -121,8 +121,8 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     // add link
                     let src = line.replace("@img", "").trim()
                     let img = document.createElement("img")
-                    img.setAttribute()
-                    cmdContainer.appendChild(anchor)
+                    img.setAttribute("src", src)
+                    cmdContainer.appendChild(img)
                 } else if (line.startsWith("@textarea")) {
                     // add commands
                     let cmdText = line.replace("@textarea", "").trim()

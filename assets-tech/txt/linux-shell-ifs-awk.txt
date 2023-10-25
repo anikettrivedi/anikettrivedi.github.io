@@ -1,6 +1,6 @@
-@h3 String Operations
+@h3 String Operations using IFS
 
-@h4 split & iterate over a string with IFS
+@h4 split & iterate over a string with IFS (Internal Field Separator)
 @starttextarea 
 export IFS=";"
 sentence="one;two;three"
@@ -9,19 +9,7 @@ for word in $sentence; do
 done
 @endtextarea
 
-@h4 split & iterate over a string without IFS
-@starttextarea 
-#local str rest
-rest=$STR
-while [ -n "$rest" ] ; do
-   str=${rest%%;*}  # Everything up to the first ';'
-   # Trim up to the first ';' -- and handle final case, too.
-   [ "$rest" = "${rest/;/}" ] && rest= || rest=${rest#*;}
-   echo "+ \"$str\""
-done
-@endtextarea
-
-# File Operations Using AWK
+@h3 File Operations Using AWK
 
 @h4 awk syntax
 @textarea awk '{action}' your_file_name.txt

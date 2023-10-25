@@ -2,6 +2,24 @@ var titleChildrenArray;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
 
+// todo - start
+// need to implement type & subtype based routing
+// when valid params not provided, load default type & subtype
+// when params provided & valid, load type & subtype view
+// when navigated to any type & subtype combination, navigate by change route
+var type = ""
+var subtype = ""
+
+try{
+    type = document.URL.split("?")[1].split("type=")[1].split("&")[0]
+    subtype = document.URL.split("?")[1].split("subtype=")[1].split("&")[0]
+} catch (ignore) {}
+
+console.log(`type=${type}`)
+console.log(`subtype=${subtype}`)
+
+// todo - end
+
 fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
     .then((response) => response.json())
     .then((json) => {
@@ -15,7 +33,6 @@ fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
     });
 
 function insertSelectLevel1() {
-
     // level 1 
     let select1 = document.createElement("select")
     select1.setAttribute("name", "select-1")

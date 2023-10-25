@@ -1,8 +1,6 @@
-@h3 Linked List
-
 @link https://en.wikipedia.org/wiki/Linked_list
 
-@h4 singly linked List
+@h3 Singly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png
 @h4 operations
 @starttextarea
@@ -14,7 +12,7 @@
 @endtextarea
 
 
-@h4 doubly linked list
+@h3 Doubly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png
 @h4 operations
 @starttextarea
@@ -25,6 +23,6 @@
 5 - find length of the linked list
 @endtextarea
 
-@h4 circular linked list
+@h3 Circularly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png
 

@@ -1,8 +1,8 @@
-# Networking
+@h3 Networking
 
-## netstat - identify open ports, connections to external IP addresses, and the connection status
-### netstat
+@h4 netstat - identify open ports, connections to external IP addresses, and the connection status
+@textarea netstat
 
-## tcpdump - check network traffic
-### sudo tcpdump
-### sudo tcpdump port 443
+@h4 tcpdump - check network traffic
+@textarea sudo tcpdump
+@textarea sudo tcpdump port 443

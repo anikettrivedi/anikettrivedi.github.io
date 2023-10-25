@@ -95,27 +95,27 @@ function fetchSectionContentsAndAdd(select2Value, url) {
             for (let j = 0; j < contents.length; j++) {
                 let line = contents[j]
                 // add sub heading for the section
-                if (line.startsWith("# ")) {
+                if (line.startsWith("@h3")) {
                     let hr = document.createElement("hr")
                     let h3 = document.createElement("h3")
-                    h3.appendChild(document.createTextNode(line.replace("# ", "")))
+                    h3.appendChild(document.createTextNode(line.replace("@h3 ", "")))
                     cmdContainer.appendChild(h3)
                     cmdContainer.appendChild(hr)
-                } else if (line.startsWith("## ")) {
+                } else if (line.startsWith("@h4")) {
                     // add command description
-                    let cmdDescription = line.replace("## ", "")
+                    let cmdDescription = line.replace("@h4", "")
                     let h4 = document.createElement("h4")
                     h4.appendChild(document.createTextNode(cmdDescription))
                     cmdContainer.appendChild(h4)
-                } else if (line.startsWith("### ")) {
+                } else if (line.startsWith("@textarea")) {
                     // add commands
-                    let cmdText = line.replace("### ", "")
+                    let cmdText = line.replace("@textarea", "")
                     addCmdTextPanel(cmdText)
-                } else if (line.startsWith("###~")) {
+                } else if (line.startsWith("@textarea-start")) {
                     let multilineCmd = ""
                     let rowCount = 0
                     j++
-                    while (contents[j] !== "~###") {
+                    while (contents[j] !== "@textarea-end") {
                         multilineCmd += contents[j] + "\n"
                         j++
                         rowCount++

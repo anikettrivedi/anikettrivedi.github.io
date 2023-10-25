@@ -1,16 +1,16 @@
-# String Operations
+@h3 String Operations
 
-## split & iterate over a string with IFS
-###~
+@h4 split & iterate over a string with IFS
+@textarea-start 
 export IFS=";"
 sentence="one;two;three"
 for word in $sentence; do
   echo "$word"
 done
-~###
+@textarea-end
 
-## split & iterate over a string without IFS
-###~
+@h4 split & iterate over a string without IFS
+@textarea-start 
 #local str rest
 rest=$STR
 while [ -n "$rest" ] ; do
@@ -19,16 +19,16 @@ while [ -n "$rest" ] ; do
    [ "$rest" = "${rest/;/}" ] && rest= || rest=${rest#*;}
    echo "+ \"$str\""
 done
-~###
+@textarea-end
 
 # File Operations Using AWK
 
-## awk syntax
-### awk '{action}' your_file_name.txt
-### awk '/regex pattern/{action}' your_file_name.txt
+@h4 awk syntax
+@textarea awk '{action}' your_file_name.txt
+@textarea awk '/regex pattern/{action}' your_file_name.txt
 
-## sample file
-###~
+@h4 sample file
+@textarea-start 
 vi information.txt
 
 fristName       lastName        age     city       ID
@@ -38,20 +38,20 @@ Omega           Night           45      Ontario    600
 Wood            Tinker          54      Lisbon     N/A
 Giorgos         Georgiou        35      London     300
 Timmy           Turner          32      Berlin     N/A
-~###
+@textarea-end
 
-## awk: print all contents using
-### awk '{print $0}' information.txt
+@h4 awk: print all contents using
+@textarea awk '{print $0}' information.txt
 
-## awk: print line number count using NR
-### awk '{print NR,$0}' information.txt 
+@h4 awk: print line number count using NR
+@textarea awk '{print NR,$0}' information.txt 
 
-## awk: print 1st column
-### awk '{print $1}' information.txt
+@h4 awk: print 1st column
+@textarea awk '{print $1}' information.txt
 
-## awk: print 2nd column
-### awk '{print $2}' information.txt
+@h4 awk: print 2nd column
+@textarea awk '{print $2}' information.txt
 
-## awk: print 1st & 4th columns
-### awk '{print $1, $4}' information.txt
+@h4 awk: print 1st & 4th columns
+@textarea awk '{print $1, $4}' information.txt
 

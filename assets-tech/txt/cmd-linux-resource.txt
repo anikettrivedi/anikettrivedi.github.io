@@ -1,29 +1,29 @@
-# Storage
+@h3 Storage
 
-## list disk usage for a path
-### du -sh
+@h4 list disk usage for a path
+@textarea du -sh
 
-## list disk volume utilization
-### df -h
+@h4 list disk volume utilization
+@textarea df -h
 
-# Resource Utilization
+@h3 Resource Utilization
 
-## list all processes
-### ps -ef
+@h4 list all processes
+@textarea ps -ef
 
-## display sorted information about processes
-### top
-### top -o +%MEM
-### top -o +%CPU
+@h4 display sorted information about processes
+@textarea top
+@textarea top -o +%MEM
+@textarea top -o +%CPU
 
-## virtual memory
-### vmstat
+@h4 virtual memory
+@textarea vmstat
 
-## list of open files
-### lsof
+@h4 list of open files
+@textarea lsof
 
-# I/O Operations
+@h3 I/O Operations
 
-## I/O activity monitoring
-### iostat
-### iotop
+@h4 I/O activity monitoring
+@textarea iostat
+@textarea iotop

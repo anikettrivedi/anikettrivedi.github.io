@@ -98,24 +98,24 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                 if (line.startsWith("@h3")) {
                     let hr = document.createElement("hr")
                     let h3 = document.createElement("h3")
-                    h3.appendChild(document.createTextNode(line.replace("@h3 ", "")))
+                    h3.appendChild(document.createTextNode(line.replace("@h3", "").trim()))
                     cmdContainer.appendChild(h3)
                     cmdContainer.appendChild(hr)
                 } else if (line.startsWith("@h4")) {
                     // add command description
-                    let cmdDescription = line.replace("@h4", "")
+                    let cmdDescription = line.replace("@h4", "").trim()
                     let h4 = document.createElement("h4")
                     h4.appendChild(document.createTextNode(cmdDescription))
                     cmdContainer.appendChild(h4)
                 } else if (line.startsWith("@textarea")) {
                     // add commands
-                    let cmdText = line.replace("@textarea", "")
-                    addCmdTextPanel(cmdText)
-                } else if (line.startsWith("@textarea-start")) {
+                    let cmdText = line.replace("@textarea", "").trim()
+                    addMultilineCmdTextAreaPanel(cmdText, 1)
+                } else if (line.startsWith("@starttextarea")) {
                     let multilineCmd = ""
                     let rowCount = 0
                     j++
-                    while (contents[j] !== "@textarea-end") {
+                    while (contents[j] !== "@endtextarea") {
                         multilineCmd += contents[j] + "\n"
                         j++
                         rowCount++
@@ -124,15 +124,6 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                 }
             }
         })
-
-    function addCmdTextPanel(cmdText) {
-        let div = document.createElement("div")
-        let input = document.createElement("input")
-        input.setAttribute("type", "text")
-        input.value = cmdText
-        cmdContainer.appendChild(div)
-        div.appendChild(input)
-    }
 
     function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
         let div = document.createElement("div")

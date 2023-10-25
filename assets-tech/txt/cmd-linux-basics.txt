@@ -1,16 +1,16 @@
 @h3 String Operations
 
 @h4 split & iterate over a string with IFS
-@textarea-start 
+@starttextarea 
 export IFS=";"
 sentence="one;two;three"
 for word in $sentence; do
   echo "$word"
 done
-@textarea-end
+@endtextarea
 
 @h4 split & iterate over a string without IFS
-@textarea-start 
+@starttextarea 
 #local str rest
 rest=$STR
 while [ -n "$rest" ] ; do
@@ -19,7 +19,7 @@ while [ -n "$rest" ] ; do
    [ "$rest" = "${rest/;/}" ] && rest= || rest=${rest#*;}
    echo "+ \"$str\""
 done
-@textarea-end
+@endtextarea
 
 # File Operations Using AWK
 
@@ -28,7 +28,7 @@ done
 @textarea awk '/regex pattern/{action}' your_file_name.txt
 
 @h4 sample file
-@textarea-start 
+@starttextarea 
 vi information.txt
 
 fristName       lastName        age     city       ID
@@ -38,7 +38,7 @@ Omega           Night           45      Ontario    600
 Wood            Tinker          54      Lisbon     N/A
 Giorgos         Georgiou        35      London     300
 Timmy           Turner          32      Berlin     N/A
-@textarea-end
+@endtextarea
 
 @h4 awk: print all contents using
 @textarea awk '{print $0}' information.txt

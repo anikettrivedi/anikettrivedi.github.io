@@ -3,11 +3,11 @@
 @link https://en.wikipedia.org/wiki/Linked_list
 
 @h4 singly linked List
-@img https://en.wikipedia.org/wiki/File:Singly-linked-list.svg
+@img https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png
 
 @h4 doubly linked list
-@img https://en.wikipedia.org/wiki/File:Doubly-linked-list.svg
+@img https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png
 
 @h4 circular linked list
-@img https://en.wikipedia.org/wiki/File:Circularly-linked-list.svg
+@img https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png
 

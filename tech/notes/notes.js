@@ -107,6 +107,10 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     let h4 = document.createElement("h4")
                     h4.appendChild(document.createTextNode(cmdDescription))
                     cmdContainer.appendChild(h4)
+                } else if (line.startsWith("@link")) {
+                    // add link
+                    let href = line.replace("@link").trim()
+                    let anchor = document.createElement()
                 } else if (line.startsWith("@textarea")) {
                     // add commands
                     let cmdText = line.replace("@textarea", "").trim()

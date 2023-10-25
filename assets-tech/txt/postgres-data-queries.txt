@@ -1,0 +1,22 @@
+@h3 PostgreSQL Data Queries
+
+@h4 querying data
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-select/
+
+@h4 filtering data
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-where/
+
+@h4 joining tables
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-joins/
+
+@h4 grouping data
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-group-by/
+
+@h4 set operations
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-union/
+
+@h4 grouping sets, cube and rollup
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-grouping-sets/
+
+@h4 subqueries
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-subquery/

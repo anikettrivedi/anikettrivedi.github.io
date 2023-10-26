@@ -21,6 +21,7 @@ fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
         // create a drop down
         insertSelectLevel1()
         insertSelectLevel2()
+
         insertButton()
         insertSelectedSection()
     });
@@ -48,6 +49,18 @@ function insertSelectLevel1() {
         // set select as type if type is provided
         select1.value = type
     }
+
+    // set type if not set already
+    type = select1.value
+
+    // if type is still empty (in case of invalid type param) after above command
+    // set it to first option value
+    if (type === "") {
+        type = select1.options[0].text
+        select1.value = type
+    }
+
+    console.log(`type=${type}`)
 
     // event listener
     // update select 2 when select1 change event trigger
@@ -96,7 +109,8 @@ function insertSelectLevel2() {
     // set subtype if not set already
     subtype = select2.value
 
-    // if subtype is still "" after above command, set it to first option value
+    // if subtype is still empty (in case of invalid subtype param) after above command
+    // set it to first option value
     if (subtype === "") {
         subtype = select2.options[0].text
         select2.value = subtype

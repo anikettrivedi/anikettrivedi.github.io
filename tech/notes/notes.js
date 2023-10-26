@@ -9,9 +9,6 @@ try {
     subtype = document.URL.split("?")[1].split("subtype=")[1].split("&")[0]
 } catch (ignore) { }
 
-console.log(`type=${type}`)
-console.log(`subtype=${subtype}`)
-
 // todo - end
 
 fetch('https://anikettrivedi.github.io/assets-tech/json/cmd.json')
@@ -98,6 +95,15 @@ function insertSelectLevel2() {
 
     // set subtype if not set already
     subtype = select2.value
+
+    // if subtype is still "" after above command, set it to first option value
+    if (subtype === "") {
+        subtype = select2.options[0].text
+        select2.value = subtype
+    }
+
+    console.log(`type=${type}`)
+    console.log(`subtype=${subtype}`)
 }
 
 function insertButton() {

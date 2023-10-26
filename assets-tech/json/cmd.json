@@ -4,7 +4,8 @@
         "children": [
             "linux-shell-ifs-awk",
             "linux-shell-resource",
-            "linux-shell-networking"
+            "linux-shell-networking",
+            "linux-shell-conditions-and-loops"
         ]
     },
     {

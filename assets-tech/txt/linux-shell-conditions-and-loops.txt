@@ -1,0 +1,24 @@
+@h3 Linux Shell Conditions & Loops
+
+@h3 if-elif-else
+
+@h4 if-elif-else syntax
+@starttextarea
+if test-commands; then
+  consequent-commands;
+[elif more-test-commands; then
+  more-consequents;]
+[else alternate-consequents;]
+fi
+@endtextarea
+
+@h4 case
+@h3 case syntax
+@starttextarea
+case word in
+    [ [(] pattern [| pattern]…) command-list ;;]…
+esac
+@endtextarea
+
+@h3 Loops
+@h4 To Be Done

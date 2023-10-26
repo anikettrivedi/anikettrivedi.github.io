@@ -12,8 +12,8 @@ if test-commands; then
 fi
 @endtextarea
 
-@h4 case
-@h3 case syntax
+@h3 case
+@h4 case syntax
 @starttextarea
 case word in
     [ [(] pattern [| pattern]…) command-list ;;]…

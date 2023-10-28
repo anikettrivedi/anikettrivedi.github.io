@@ -1,13 +1,23 @@
 @h3 Java Streams API
 
-@h4 java streams api articles
+@h4 Java Streams API Links
 @link https://dev.java/learn/api/streams/
 
-@h4 custom stream collector
+@h4 Create Custom Collectors
 @link https://dev.java/learn/api/streams/custom-collectors/
 
-@h4 optionals
+@h4 Optionals In Java
 @link https://dev.java/learn/api/streams/optionals/
 
-@h4 parallel streams
+@h4 Parallel Streams
 @link https://dev.java/learn/api/streams/parallel-streams/
+
+@h3 Java Collections Framework
+
+@h4 Java Collections Framework Links
+@link https://dev.java/learn/api/collections-framework/
+
+@h3 Java Date Time API
+
+@h4 Java Date Time API
+@link https://dev.java/learn/date-time/

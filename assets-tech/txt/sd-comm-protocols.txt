@@ -1,0 +1,37 @@
+@h3 Communication Protocols
+
+@h4 RESTAPI vs GraphQL
+@link https://github.com/ByteByteGoHq/system-design-101#rest-api-vs-graphql
+
+@h4 SOAP vs REST vs GraphQL vs RPC
+@link https://github.com/ByteByteGoHq/system-design-101#soap-vs-rest-vs-graphql-vs-rpc
+
+@h3 gRPC
+@link https://github.com/ByteByteGoHq/system-design-101#how-does-grpc-work
+
+@h3 HTTP Callbacks (Webhooks)
+@link https://github.com/ByteByteGoHq/system-design-101#what-is-a-webhook
+
+@h3 API Performance Tuning
+@link https://github.com/ByteByteGoHq/system-design-101#how-to-improve-api-performance
+
+@starttextarea
+Instance Level (Without considering horizontal scaling)
+1 - pagination
+2 - async logging
+3 - caching
+4 - payload compression
+5 - connection pooling
+
+Instance Wide (horizontal scaling)
+1 - distributed caching
+2 - load balancing
+3 - database read replica (if it suites the use case)
+
+Effective Microservice Communication
+1 - RESTAPI, GraphQL for application gateway
+2 - gRPC for communication between microservices
+@endtextarea
+
+@h3 Forward Proxy vs Reverse Proxy
+@link https://github.com/ByteByteGoHq/system-design-101#why-is-nginx-called-a-reverse-proxy

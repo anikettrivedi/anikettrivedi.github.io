@@ -11,16 +11,6 @@
         ]
     },
     {
-        "title": "linux",
-        "children": [
-            "linux-shell-ifs-awk",
-            "linux-shell-resource",
-            "linux-shell-networking",
-            "todo-linux-shell-conditions",
-            "todo-linux-shell-loops"
-        ]
-    },
-    {
         "title": "postgres",
         "children": [
             "postgres-data-queries"
@@ -29,7 +19,8 @@
     {
         "title": "system-design",
         "children": [
-            "sd-security"
+            "sd-security",
+            "sd-comm-protocols"
         ]
     },
     {
@@ -42,6 +33,16 @@
         "title": "computer-science",
         "children": [
             "cs-concurrency"
+        ]
+    },
+    {
+        "title": "linux",
+        "children": [
+            "linux-shell-ifs-awk",
+            "linux-shell-resource",
+            "linux-shell-networking",
+            "todo-linux-shell-conditions",
+            "todo-linux-shell-loops"
         ]
     }
 ]

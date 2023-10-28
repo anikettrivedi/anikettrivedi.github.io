@@ -34,11 +34,6 @@
     {
         "title": "system-design",
         "children": [
-            "sd-comm-protocols",
-            "sd-databases",
-            "sd-caching",
-            "sd-microservices",
-            "sd-cloud",
             "sd-security"
         ]
     },

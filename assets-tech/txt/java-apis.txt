@@ -27,3 +27,12 @@
 @h4 Java I/O API Links
 @link https://dev.java/learn/java-io/
 @link https://dev.java/learn/java-io/intro/
+
+@h4 File System Basics
+@link https://dev.java/learn/java-io/file-system/
+
+@h4 Working With Paths
+@link https://dev.java/learn/java-io/file-system/path/
+
+@h4 Accessing File System
+@link https://dev.java/learn/java-io/file-system/file-system/

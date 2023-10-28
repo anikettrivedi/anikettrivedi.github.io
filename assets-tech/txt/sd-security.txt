@@ -54,8 +54,17 @@ Identity Management usually is 3 steps process
 @h4 Links
 @link https://www.youtube.com/watch?v=UBUNrFtufWo
 @starttextarea
-1 - Session : Server creates a session id and stores it in it's memory and shares with client as well.  
-2 - Token   : Server creates a token (JWT) and shares it with client, but does not store it anywhere in it's memory. The tokens are signed such that only server can validate if the token is correct or not. This makes sure that the token can't be tampered with.
+1 - Session : 
+    1 - Server creates a session id and stores it in it's memory and shares with client as well. 
+    2 - This limits the scalability of the application.
+    3 - This also adds memory overhead on server side.
+2 - Token   : 
+    1 - Server creates a token (JWT) and shares it with client, but does not store it anywhere in it's memory. 
+    2 - The tokens are signed such that only server can validate if the token is correct or not. 
+    3 - This makes sure that the token can't be tampered with.
+    4 - This allows application to easily scale.
+    5 - as no particular server holds information of the client, servers can share secret keys to access client info.
+
 @endtextarea
 
 

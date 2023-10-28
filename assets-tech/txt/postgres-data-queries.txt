@@ -17,6 +17,3 @@
 
 @h4 grouping sets, cube and rollup
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-grouping-sets/
-
-@h4 subqueries
-@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-subquery/

@@ -2,3 +2,6 @@
 
 @h4 Threads & Cores (Java etc)
 @link https://stackoverflow.com/questions/34689709/java-threads-and-number-of-cores
+
+@h4 Concurrency vs Parallelism
+@link https://stackoverflow.com/questions/1050222/what-is-the-difference-between-concurrency-and-parallelism

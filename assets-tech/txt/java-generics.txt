@@ -1,0 +1,8 @@
+@h3 Java Generics
+
+@h4 Java Generics Links
+@link https://dev.java/learn/generics/
+@link https://dev.java/learn/generics/intro/#generics-inheritance-subtypes
+@link https://dev.java/learn/generics/wildcards/
+@link https://dev.java/learn/generics/type-erasure/
+@link https://dev.java/learn/generics/restrictions/

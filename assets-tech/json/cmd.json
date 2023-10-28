@@ -3,7 +3,10 @@
         "title": "java",
         "children": [
             "java-literature",
-            "java-apis"
+            "java-apis",
+            "java-lambda",
+            "java-generics",
+            "java-exceptions"
         ]
     },
     {

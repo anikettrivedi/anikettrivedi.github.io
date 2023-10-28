@@ -16,7 +16,8 @@
             "linux-shell-ifs-awk",
             "linux-shell-resource",
             "linux-shell-networking",
-            "todo-linux-shell-conditions-and-loops"
+            "todo-linux-shell-conditions",
+            "todo-linux-shell-loops"
         ]
     },
     {

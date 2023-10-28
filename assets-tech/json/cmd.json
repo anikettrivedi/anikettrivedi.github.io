@@ -14,7 +14,7 @@
         "title": "postgres",
         "children": [
             "postgres-data-queries",
-            "postgres-sub-queries",
+            "postgres-subqueries",
             "postgres-ctes"
         ]
     },

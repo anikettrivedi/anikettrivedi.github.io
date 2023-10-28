@@ -1,1 +1,37 @@
 @h3 Java Literature
+
+@h4 Java Language Basics
+@link https://dev.java/learn/language-basics/
+@link https://dev.java/learn/numbers-strings/
+
+@h4 Floating Point Arithmatic
+@link https://www.youtube.com/watch?v=ajaHQ9S4uTA&t=305s
+@link https://www.h-schmidt.net/FloatConverter/IEEE754.html
+
+@h4 Classes & Objects
+@link https://dev.java/learn/classes-objects/
+@link https://dev.java/learn/classes-objects/nested-classes/#anonymous
+
+@h4 Interfaces
+@link https://dev.java/learn/interfaces/
+
+@h4 Records
+@link https://dev.java/learn/records/
+
+@h4 Enums
+@link https://docs.oracle.com/javase/tutorial/java/javaOO/enum.html
+
+@h4 Packages
+@link https://dev.java/learn/packages/
+
+@h4 Annotations
+@link https://dev.java/learn/annotations/
+
+@h4 Java OOP Concepts
+@link https://dev.java/learn/oop/
+
+@h4 Inheritance
+@link https://dev.java/learn/inheritance/
+
+@h4 Pattern Matching
+@link https://dev.java/learn/pattern-matching/

@@ -7,7 +7,7 @@
             "java-lambda",
             "java-generics",
             "java-exceptions",
-            "java-jdk-tools"
+            "todo-java-jdk-tools"
         ]
     },
     {
@@ -16,19 +16,13 @@
             "linux-shell-ifs-awk",
             "linux-shell-resource",
             "linux-shell-networking",
-            "linux-shell-conditions-and-loops"
+            "todo-linux-shell-conditions-and-loops"
         ]
     },
     {
         "title": "postgres",
         "children": [
-            "postgres-data-queries",
-            "postgres-data-subqueries",
-            "postgres-data-definition",
-            "postgres-data-manipulation",
-            "postgres-transactions",
-            "postgres-roles",
-            "postgres-psql"
+            "postgres-data-queries"
         ]
     },
     {

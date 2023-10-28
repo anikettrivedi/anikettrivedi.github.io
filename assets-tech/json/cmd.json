@@ -32,5 +32,11 @@
         "children":[
             "ds-linked-list"
         ]
+    },
+    {
+        "title": "computer-science",
+        "children":[
+            "cs-concurrency"
+        ]
     }
 ]

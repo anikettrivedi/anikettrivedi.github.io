@@ -1,6 +1,12 @@
-@h3 Java APIs
+@h3 Java Streams API
 
-@h4 java streams api
 @link https://dev.java/learn/api/streams/
+
+@h4 custom stream collector
+@link https://dev.java/learn/api/streams/custom-collectors/
+
+@h4 optionals
 @link https://dev.java/learn/api/streams/optionals/
+
+@h4 parallel streams
 @link https://dev.java/learn/api/streams/parallel-streams/

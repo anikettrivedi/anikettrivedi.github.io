@@ -1,0 +1,13 @@
+@h3 PostgreSQL Common Table Expressions
+
+@h4 Common Table Expressions
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-cte/
+
+@h4 Recursive Queries Using CTEs
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-recursive-query/
+@starttextarea
+1 - A recursive query is a query that refers to a recursive CTE.
+2 - The recursive queries are useful in many situations such as querying hierarchical data like:
+    1 - organizational structure
+    2 - bill of materials, etc.
+@endtextarea

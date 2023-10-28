@@ -151,7 +151,7 @@ function fetchSectionContentsAndAdd(select2Value, url) {
             cmdContainer.innerHTML = ""
 
             // add title
-            document.title = `${select2Value} commands`
+            document.title = `${select2Value}`
 
             // add contents
             let contents = content.split("\n")

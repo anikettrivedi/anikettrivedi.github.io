@@ -48,10 +48,31 @@ Identity Management usually is 3 steps process
 5 - When user logs in with their password, server retries salt from the DB, encrypts it and matches it with encryption of (password + salt) which is already present in the DB, if match is successful user is authenticated.
 @endtextarea
 
+
+@h3 Token vs Session
+
+@h4 Links
+@link https://www.youtube.com/watch?v=UBUNrFtufWo
+@starttextarea
+1 - Session : Server creates a session id and stores it in it's memory and shares with client as well.  
+2 - Token   : Server creates a token (JWT) and shares it with client, but does not store it anywhere in it's memory. The tokens are signed such that only server can validate if the token is correct or not. This makes sure that the token can't be tampered with.
+@endtextarea
+
+
 @h3 JWT (JSON Web Token)
 
 @h4 Links
-@link https://github.com/ByteByteGoHq/system-design-101#explaining-json-web-token-jwt-to-a-10-year-old-kid
+@link https://www.youtube.com/watch?v=7Q17ubqLfaM
+@link https://jwt.io/
+
+@starttextarea
+Components of JWT
+1 - header
+2 - payload
+3 - verify signature
+
+Server only keeps the secret key that can decode the JWT Token, so as long a secret key is safe, no one other than the server can decode the JWT token.
+@endtextarea
 
 
 

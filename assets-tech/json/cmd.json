@@ -6,7 +6,8 @@
             "java-apis",
             "java-lambda",
             "java-generics",
-            "java-exceptions"
+            "java-exceptions",
+            "java-jdk-tools"
         ]
     },
     {

@@ -1,0 +1,59 @@
+@h3 HTTPS
+
+@h4 HTTPS Inner Working Mechanism
+@link https://github.com/ByteByteGoHq/system-design-101#how-does-https-work
+@link https://github.com/ByteByteGoHq/system-design-101#top-4-forms-of-authentication-mechanisms
+@starttextarea
+1 - HTTPS uses combination of Asymmetric & Symmetric Encryption
+    i)  - Asymmetric Encryption is used intially to establish connection
+    ii) - Symmetric Encryption is used afterwards to exchange enrypted data
+2 - SSL Certificates (Secure Socket Layer) are used for Asymmetric Encryption 
+@endtextarea
+
+@h3 OAuth2
+
+@h4 OAuth2 Links
+@link https://github.com/ByteByteGoHq/system-design-101#oauth-20-explained-with-simple-terms
+
+@h3 Authentication Mechanisms
+
+@h4 Frequently Used Auth Mechanisms
+@link https://github.com/ByteByteGoHq/system-design-101#top-4-forms-of-authentication-mechanisms
+@starttextarea
+1 - SSH (Secure Shell)
+2 - OAuth2 (Token Based)
+3 - Credentials (Username & Password)
+@endtextarea
+
+@h3 User Identity Management (Session, Token, JWT etc.)
+
+@h4 Links
+@link https://github.com/ByteByteGoHq/system-design-101#session-cookie-jwt-token-sso-and-oauth-20---what-are-they
+@starttextarea
+Identity Management usually is 3 steps process
+1 - Identification: Client identifies itself themselves to the server.
+2 - Authentication: Server validates the identity of the client.
+3 - Autherization : Server grants necessary permissions to the client.
+@endtextarea
+
+@h3 Password Storage Practices
+
+@h4 Links
+@link https://github.com/ByteByteGoHq/system-design-101#how-to-store-passwords-safely-in-the-database-and-how-to-validate-a-password
+@starttextarea
+1 - Password must not be stored without encryption.
+2 - Password itself should not be stored with or without encryption.
+3 - Password should be stored using encryption of (password + salt) in DB.
+4 - Salt is a randomly generated string, that too must be stored in DB.
+5 - When user logs in with their password, server retries salt from the DB, encrypts it and matches it with encryption of (password + salt) which is already present in the DB, if match is successful user is authenticated.
+@endtextarea
+
+@h3 JWT (JSON Web Token)
+
+@h4 Links
+@link https://github.com/ByteByteGoHq/system-design-101#explaining-json-web-token-jwt-to-a-10-year-old-kid
+
+
+
+
+

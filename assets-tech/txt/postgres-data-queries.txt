@@ -1,4 +1,4 @@
-@h3 PostgreSQL Data Queries
+@h3 PostgreSQL Data Queries (DQL)
 
 @h4 querying data
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-select/

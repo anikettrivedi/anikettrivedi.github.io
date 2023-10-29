@@ -1,0 +1,65 @@
+@h3 Insert Rows Into A Table (DML)
+
+@h4 INSERT
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-insert/
+@start-pre
+    1 - Use PostgreSQL INSERT statement to insert data into a table.
+    2 - Use the RETURNING clause to get the inserted rows.
+@end-pre
+
+@h4 INSERT (Multiple Rows)
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-insert-multiple-rows/
+@start-pre
+    1 - Specify multiple value lists in the INSERT statement to insert multiple rows into a table.
+    2 - Use RETURNING clause to return the inserted rows.
+@end-pre
+
+---
+
+@h3 Update Rows of A Table (DML)
+
+@h4 UPDATE
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-update/
+@start-pre
+    1 - Use the PostgreSQL UPDATE statement to update data in one or more columns of a table.
+    2 - Use the RETURNING clause to return the updated rows from the UPDATE statement
+@end-pre
+
+@h4 UPDATE join
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-update-join/
+
+---
+
+@h3 Delete Rows From A Table (DML)
+
+@h4 DELETE
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-delete/
+@start-pre
+    1 - Use the DELETE FROM statement to delete one or more rows from a table.
+    2 - Use the WHERE clause to specify which rows to be deleted.
+    3 - Use the RETURNING clause to return the deleted rows.
+@end-pre
+
+@h4 DELETE join alternatives
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-delete-join/
+
+@start-pre
+1 - PostgreSQL doesn’t support the DELETE JOIN statement. However, it does support the USING clause in the DELETE statement that provides similar functionality as the DELETE JOIN. 
+2 - USING clause is not part of SQL standard and should be avoided, as it may not be supported in other SQL compliant DBs and therefore will be not suitable in case of migration from PostgreSQL to any other SQL compliant database.
+3 - Delete join using a subquery should be preferred as it's SQL compliant.
+@end-pre
+
+4 - Takeaway point:
+    1 - Use USING clause in the DELETE statement. (not SQL compliant)
+    2 - USE subquery to emulate the DELETE JOIN operation. (SQL compliant)
+
+--- 
+
+@h3 Update a Table or Insert into a Table (DML)
+
+@h4 Upsert Using INSERT ON CONFLICT
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-upsert/
+
+@start-pre
+1 - update if row already exists in the table, otherwise insert new row into the table.
+@end-pre

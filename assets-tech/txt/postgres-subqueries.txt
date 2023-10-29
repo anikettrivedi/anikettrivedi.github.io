@@ -1,4 +1,4 @@
-@h3 PostgreSQL Subqueries
+@h3 PostgreSQL Subqueries (DQL)
 
 @h4 subqueries
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-subquery/

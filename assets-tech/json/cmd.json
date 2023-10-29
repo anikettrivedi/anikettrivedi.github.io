@@ -15,7 +15,8 @@
         "children": [
             "postgres-data-queries",
             "postgres-subqueries",
-            "postgres-ctes"
+            "postgres-ctes",
+            "postgres-data-manipulation"
         ]
     },
     {

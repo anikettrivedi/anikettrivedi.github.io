@@ -51,5 +51,3 @@ WHERE
 
 --
 
-@h4 PostgreSQL Alter Tables
-@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-alter-table/

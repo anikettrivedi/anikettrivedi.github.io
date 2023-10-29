@@ -1,1 +1,17 @@
 @h3 PostgreSQL Alter Table
+
+--
+
+@h4 ALTER TABLE
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-alter-table/
+
+@start-pre
+Alter Table allows to:
+1 - Add a column to a existing table
+2 - Drop a column from a table
+3 - Change the data type of a column
+4 - Rename a column
+5 - Set a default value for the column.
+6 - Add a constraint to a column.
+7 - Rename a table
+@end-pre

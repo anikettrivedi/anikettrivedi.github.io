@@ -200,6 +200,13 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                         rowCount++
                     }
                     addMultilineCmdTextAreaPanel(multilineCmd, rowCount)
+                } else if (line.startsWith("@start-pre")) {
+                    let multilineCmd = ""
+                    while (contents[j] !== "@end-pre") {
+                        multilineCmd += contents[j] + "\n"
+                        j++
+                    }
+                    addPreformattedText(multilineCmd)
                 }
             }
         })
@@ -214,3 +221,10 @@ function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
     div.appendChild(textarea)
 }
 
+function addPreformattedText(cmdText) {
+    let div = document.createElement("div")
+    let pre = document.createElement("pre")
+    pre.value = cmdText
+    cmdContainer.appendChild(div)
+    div.appendChild(pre)
+}

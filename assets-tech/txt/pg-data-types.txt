@@ -1,5 +1,6 @@
 @h3 Data Types
 
+@h4 Supported Data Types in PostgreSQL
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
 @start-pre
 Supported Data Types:

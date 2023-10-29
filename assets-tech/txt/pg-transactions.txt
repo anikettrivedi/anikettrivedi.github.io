@@ -1,0 +1,76 @@
+@h3 Transactions in PostgreSQL
+
+@h4 Transactions
+@link https://en.wikipedia.org/wiki/ACID
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-transaction/
+
+@h4 What are Database Transactions?
+@start-pre
+
+A database transaction is a single unit of work that consists of one or more operations.
+
+Database Transactions must be ACID compliant
+
+A - Atomicity  : A transaction must complete in all-or-nothing manner. 
+C - Consistency: Change to data written to database must be valid and follow predefined rules.
+I - Isolation  : Detemines how transaction intergrity is visible to other transactions. 
+D - Durability : Insures committed transactions will be stored in the dataabase permanently.
+
+@end-pre
+
+@h4 Example-1
+@start-textarea
+-- start a transaction
+BEGIN;
+
+-- insert a new row into the accounts table
+INSERT INTO accounts(name,balance)
+VALUES('Alice',10000);
+
+-- commit the change (or roll it back later)
+-- only after commit is made, changes will be visible to other users/sessions in the database
+COMMIT;
+@end-textarea
+
+@h4 Example-2
+@start-textarea
+-- start a transaction
+BEGIN;
+
+-- deduct 1000 from account 1
+UPDATE accounts 
+SET balance = balance - 1000
+WHERE id = 1;
+
+-- add 1000 to account 2
+UPDATE accounts
+SET balance = balance + 1000
+WHERE id = 2; 
+
+-- select the data from accounts
+SELECT id, name, balance
+FROM accounts;
+
+-- commit the transaction
+-- only after commit is made, changes will be visible to other users/sessions in the database
+COMMIT;
+@end-textarea
+
+@h4 Example-3
+@start-textarea
+-- begin the transaction
+BEGIN;
+
+-- deduct the amount from the account 1
+UPDATE accounts 
+SET balance = balance - 1500
+WHERE id = 1;
+
+-- add the amount from the account 3 (instead of 2)
+UPDATE accounts
+SET balance = balance + 1500
+WHERE id = 3; 
+
+-- roll back the transaction
+ROLLBACK;
+@end-textarea

@@ -13,10 +13,11 @@
     {
         "title": "postgres",
         "children": [
-            "postgres-data-queries",
-            "postgres-subqueries",
-            "postgres-ctes",
-            "postgres-data-manipulation"
+            "pg-data-queries",
+            "pg-subqueries",
+            "pg-ctes",
+            "pg-data-manipulation",
+            "pg-transactions"
         ]
     },
     {

@@ -4,6 +4,9 @@
 @link https://en.wikipedia.org/wiki/ACID
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-transaction/
 
+@h4 Transactions Isolation Levels
+@link https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/
+
 @h4 What are Database Transactions?
 @start-pre
 

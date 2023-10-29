@@ -27,3 +27,8 @@ Alter Table allows to:
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-add-column/
 
 --
+
+@h4 Drop column
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-drop-column/
+
+--

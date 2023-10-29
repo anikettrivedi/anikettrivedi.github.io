@@ -47,10 +47,11 @@
 1 - PostgreSQL doesn’t support the DELETE JOIN statement. However, it does support the USING clause in the DELETE statement that provides similar functionality as the DELETE JOIN. 
 2 - USING clause is not part of SQL standard and should be avoided, as it may not be supported in other SQL compliant DBs and therefore will be not suitable in case of migration from PostgreSQL to any other SQL compliant database.
 3 - Delete join using a subquery should be preferred as it's SQL compliant.
-@end-pre
 4 - Takeaway points:
     1 - Use USING clause in the DELETE statement. (not SQL compliant)
     2 - USE subquery to emulate the DELETE JOIN operation. (SQL compliant)
+
+@end-pre
 
 --- 
 

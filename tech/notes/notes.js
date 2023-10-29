@@ -139,7 +139,7 @@ function navigateOnButtonClick() {
 
 function insertSelectedSection() {
     // get selected section
-    let target = `https://anikettrivedi.github.io/assets-tech/txt/${subtype}.txt`
+    let target = `https://anikettrivedi.github.io/assets-tech/txt/${type}/${subtype}.txt`
     fetchSectionContentsAndAdd(subtype, target)
 }
 

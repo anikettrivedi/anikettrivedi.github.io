@@ -3,22 +3,22 @@
 @h3 if-elif-else
 
 @h4 if-elif-else syntax
-@starttextarea
+@start-textarea
 if test-commands; then
   consequent-commands;
 [elif more-test-commands; then
   more-consequents;]
 [else alternate-consequents;]
 fi
-@endtextarea
+@end-textarea
 
 @h3 case
 @h4 case syntax
-@starttextarea
+@start-textarea
 case word in
     [ [(] pattern [| pattern]…) command-list ;;]…
 esac
-@endtextarea
+@end-textarea
 
 @h3 Loops
 @h4 To Be Done

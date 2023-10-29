@@ -3,12 +3,12 @@
 @h4 HTTPS Inner Working Mechanism
 @link https://github.com/ByteByteGoHq/system-design-101#how-does-https-work
 @link https://github.com/ByteByteGoHq/system-design-101#top-4-forms-of-authentication-mechanisms
-@starttextarea
+@start-pre
 1 - HTTPS uses combination of Asymmetric & Symmetric Encryption
     i)  - Asymmetric Encryption is used intially to establish connection
     ii) - Symmetric Encryption is used afterwards to exchange enrypted data
 2 - SSL Certificates (Secure Socket Layer) are used for Asymmetric Encryption 
-@endtextarea
+@end-pre
 
 @h3 OAuth2
 
@@ -19,41 +19,41 @@
 
 @h4 Frequently Used Auth Mechanisms
 @link https://github.com/ByteByteGoHq/system-design-101#top-4-forms-of-authentication-mechanisms
-@starttextarea
+@start-pre
 1 - SSH (Secure Shell)
 2 - OAuth2 (Token Based)
 3 - Credentials (Username & Password)
-@endtextarea
+@end-pre
 
 @h3 User Identity Management (Session, Token, JWT etc.)
 
 @h4 Links
 @link https://github.com/ByteByteGoHq/system-design-101#session-cookie-jwt-token-sso-and-oauth-20---what-are-they
-@starttextarea
+@start-pre
 Identity Management usually is 3 steps process
 1 - Identification: Client identifies itself themselves to the server.
 2 - Authentication: Server validates the identity of the client.
 3 - Autherization : Server grants necessary permissions to the client.
-@endtextarea
+@end-pre
 
 @h3 Password Storage Practices
 
 @h4 Links
 @link https://github.com/ByteByteGoHq/system-design-101#how-to-store-passwords-safely-in-the-database-and-how-to-validate-a-password
-@starttextarea
+@start-pre
 1 - Password must not be stored without encryption.
 2 - Password itself should not be stored with or without encryption.
 3 - Password should be stored using encryption of (password + salt) in DB.
 4 - Salt is a randomly generated string, that too must be stored in DB.
 5 - When user logs in with their password, server retries salt from the DB, encrypts it and matches it with encryption of (password + salt) which is already present in the DB, if match is successful user is authenticated.
-@endtextarea
+@end-pre
 
 
 @h3 Token vs Session
 
 @h4 Links
 @link https://www.youtube.com/watch?v=UBUNrFtufWo
-@starttextarea
+@start-pre
 1 - Session : 
     1 - Server creates a session id and stores it in it's memory and shares with client as well. 
     2 - This limits the scalability of the application.
@@ -65,7 +65,7 @@ Identity Management usually is 3 steps process
     4 - This allows application to easily scale.
     5 - as no particular server holds information of the client, servers can share secret keys to access client info.
 
-@endtextarea
+@end-pre
 
 
 @h3 JWT (JSON Web Token)
@@ -74,14 +74,14 @@ Identity Management usually is 3 steps process
 @link https://www.youtube.com/watch?v=7Q17ubqLfaM
 @link https://jwt.io/
 
-@starttextarea
+@start-pre
 Components of JWT
 1 - header
 2 - payload
 3 - verify signature
 
 Server only keeps the secret key that can decode the JWT Token, so as long a secret key is safe, no one other than the server can decode the JWT token.
-@endtextarea
+@end-pre
 
 
 

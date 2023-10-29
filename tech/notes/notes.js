@@ -190,16 +190,18 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     // add commands
                     let cmdText = line.replace("@textarea", "").trim()
                     addMultilineCmdTextAreaPanel(cmdText, 1)
-                } else if (line.startsWith("@starttextarea")) {
+                } else if (line.startsWith("@start-textarea")) {
                     let multilineCmd = ""
                     let rowCount = 0
                     j++
-                    while (contents[j] !== "@endtextarea") {
+                    while (contents[j] !== "@end-textarea") {
                         multilineCmd += contents[j] + "\n"
                         j++
                         rowCount++
                     }
                     addMultilineCmdTextAreaPanel(multilineCmd, rowCount)
+                } else if (line.startsWith("@pre")) {
+                    addPreformattedText(line.trim())
                 } else if (line.startsWith("@start-pre")) {
                     let multilineCmd = ""
                     while (contents[j] !== "@end-pre") {
@@ -224,7 +226,7 @@ function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
 function addPreformattedText(cmdText) {
     let div = document.createElement("div")
     let pre = document.createElement("pre")
-    pre.value = cmdText
+    pre.appendChild(document.createTextNode(cmdText))
     cmdContainer.appendChild(div)
     div.appendChild(pre)
 }

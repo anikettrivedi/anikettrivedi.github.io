@@ -52,5 +52,28 @@
             "todo-linux-shell-conditions",
             "todo-linux-shell-loops"
         ]
+    },
+    {
+        "title": "aws-ccp",
+        "children":[
+            "todo-aws-ccp-iam",
+            "todo-aws-ccp-ec2",
+            "todo-aws-ccp-ec2-storage",
+            "todo-aws-ccp-elb-asg",
+            "todo-aws-ccp-s3",
+            "todo-aws-ccp-dbs",
+            "todo-aws-ccp-oth-compute",
+            "todo-aws-ccp-infra-at-scale",
+            "todo-aws-ccp-global-infra",
+            "todo-aws-ccp-cloud-int",
+            "todo-aws-ccp-monitoring",
+            "todo-aws-ccp-networking",
+            "todo-aws-ccp-sec-compl",
+            "todo-aws-ccp-ml",
+            "todo-aws-ccp-acc-mgmt",
+            "todo-aws-ccp-adv-iden",
+            "todo-aws-ccp-oth-svs",
+            "todo-aws-ccp-arch-eco"
+        ]
     }
 ]

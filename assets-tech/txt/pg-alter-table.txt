@@ -19,7 +19,7 @@ Alter Table allows to:
 -- 
 
 @h4 Rename a table
-@ link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-rename-table/
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-rename-table/
 
 --
 

@@ -18,6 +18,9 @@ D - Durability : Insures committed transactions will be stored in the dataabase 
 
 @end-pre
 
+@h4 Below examples are taken from www.postgresqltutorial.com
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-transaction/
+
 @h4 Example-1
 @start-textarea
 -- start a transaction

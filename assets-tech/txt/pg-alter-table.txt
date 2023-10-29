@@ -15,3 +15,15 @@ Alter Table allows to:
 6 - Add a constraint to a column.
 7 - Rename a table
 @end-pre
+
+-- 
+
+@h4 Rename a table
+@ link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-rename-table/
+
+--
+
+@h4 Add more columns
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-add-column/
+
+--

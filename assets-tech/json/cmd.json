@@ -40,7 +40,8 @@
     {
         "title": "computer-science",
         "children": [
-            "cs-concurrency"
+            "cs-concurrency",
+            "todo-cs-oop-design-patterns"
         ]
     },
     {

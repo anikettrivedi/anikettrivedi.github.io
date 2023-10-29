@@ -1,0 +1,33 @@
+@h3 Data Types
+
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
+@start-pre
+Supported Data Types:
+1 - Boolean
+2 - Character
+    1 - CHAR(n)
+    2 - VARCHAR(n)
+    3 - TEXT
+3 - Numeric
+    1 - Integer
+        1 - SMALLINT (2-byte-signed)
+        2 - INT (4-byte-signed)
+        3 - SERIAL (similar to AUTO_INCREMENT in MySQL)
+    2 - Floating Point
+        1 - float(n) (n = no of bytes upto 8)
+        2 - real or float8 (4 byte)
+        3 - numeric or numeric(p,s) (p = no of digits, s = numbers after decimal)
+4 - Temporal data types
+    1 - DATE
+    2 - TIME
+    3 - TIMESTAMP
+    4 - TIMESTAMPZ
+    5 - INTERVAL
+5 - Arrays
+6 - JSON and JSONB (binary)
+7 - UUID (Universal Unique Identifiers)
+8 - Special Data Types
+    1 - box, line, point, lseg, polygon, inet, macaddr
+@end-pre
+
+

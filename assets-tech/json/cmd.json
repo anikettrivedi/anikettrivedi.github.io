@@ -18,7 +18,8 @@
             "pg-ctes",
             "pg-data-manipulation",
             "pg-transactions",
-            "pg-import-export"
+            "pg-import-export",
+            "pg-data-types"
         ]
     },
     {

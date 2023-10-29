@@ -35,9 +35,9 @@
 @h4 DELETE
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-delete/
 @start-pre
-    1 - Use the DELETE FROM statement to delete one or more rows from a table.
-    2 - Use the WHERE clause to specify which rows to be deleted.
-    3 - Use the RETURNING clause to return the deleted rows.
+1 - Use the DELETE FROM statement to delete one or more rows from a table.
+2 - Use the WHERE clause to specify which rows to be deleted.
+3 - Use the RETURNING clause to return the deleted rows.
 @end-pre
 
 @h4 DELETE join alternatives

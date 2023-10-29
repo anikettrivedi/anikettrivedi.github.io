@@ -1,6 +1,5 @@
 @h3 Java Exceptions
 
-@h4 Java Exceptions Links
 @link https://dev.java/learn/exceptions/
 @link https://dev.java/learn/exceptions/what-is-an-exception/
 @link https://dev.java/learn/exceptions/catching-handling/

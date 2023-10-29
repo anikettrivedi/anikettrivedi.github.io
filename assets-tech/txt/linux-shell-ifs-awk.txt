@@ -9,6 +9,8 @@ for word in $sentence; do
 done
 @end-textarea
 
+---
+
 @h3 File Operations Using AWK
 
 @h4 awk syntax

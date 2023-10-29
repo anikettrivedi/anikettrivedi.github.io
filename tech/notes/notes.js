@@ -175,7 +175,7 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     let href = line.replace("@link", "").trim()
                     let anchor = document.createElement("a")
                     let p = document.createElement("p")
-                    p.appendChild(document.createTextNode(href))
+                    p.appendChild(document.createTextNode(`@${href}`))
                     anchor.setAttribute("href", href)
                     anchor.setAttribute("target", "_blank")
                     anchor.appendChild(p)
@@ -187,10 +187,11 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     img.setAttribute("src", src)
                     cmdContainer.appendChild(img)
                 } else if (line.startsWith("@textarea")) {
-                    // add commands
+                    // text area for code
                     let cmdText = line.replace("@textarea", "").trim()
                     addMultilineCmdTextAreaPanel(cmdText, 1)
                 } else if (line.startsWith("@start-textarea")) {
+                    // multiline text area for code
                     let multilineCmd = ""
                     let rowCount = 0
                     j++
@@ -201,8 +202,11 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     }
                     addMultilineCmdTextAreaPanel(multilineCmd, rowCount)
                 } else if (line.startsWith("@pre")) {
+                    // preformatted text
                     addPreformattedText(line.trim())
                 } else if (line.startsWith("@start-pre")) {
+                    // multiline preformatted text
+                    j++
                     let multilineCmd = ""
                     while (contents[j] !== "@end-pre") {
                         multilineCmd += contents[j] + "\n"

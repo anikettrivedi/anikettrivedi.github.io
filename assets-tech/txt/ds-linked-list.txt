@@ -11,6 +11,7 @@
 5 - find length of the linked list
 @end-pre
 
+---
 
 @h3 Doubly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png
@@ -23,6 +24,8 @@
 5 - find length of the linked list
 @end-pre
 
-@h3 Circularly Linked List
+---
+
+@h3 TODO - Circularly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png
 

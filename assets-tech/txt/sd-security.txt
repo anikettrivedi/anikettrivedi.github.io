@@ -10,9 +10,10 @@
 2 - SSL Certificates (Secure Socket Layer) are used for Asymmetric Encryption 
 @end-pre
 
+---
+
 @h3 OAuth2
 
-@h4 OAuth2 Links
 @link https://github.com/ByteByteGoHq/system-design-101#oauth-20-explained-with-simple-terms
 
 @h3 Authentication Mechanisms
@@ -25,9 +26,10 @@
 3 - Credentials (Username & Password)
 @end-pre
 
+---
+
 @h3 User Identity Management (Session, Token, JWT etc.)
 
-@h4 Links
 @link https://github.com/ByteByteGoHq/system-design-101#session-cookie-jwt-token-sso-and-oauth-20---what-are-they
 @start-pre
 Identity Management usually is 3 steps process
@@ -36,9 +38,10 @@ Identity Management usually is 3 steps process
 3 - Autherization : Server grants necessary permissions to the client.
 @end-pre
 
+---
+
 @h3 Password Storage Practices
 
-@h4 Links
 @link https://github.com/ByteByteGoHq/system-design-101#how-to-store-passwords-safely-in-the-database-and-how-to-validate-a-password
 @start-pre
 1 - Password must not be stored without encryption.
@@ -48,10 +51,10 @@ Identity Management usually is 3 steps process
 5 - When user logs in with their password, server retries salt from the DB, encrypts it and matches it with encryption of (password + salt) which is already present in the DB, if match is successful user is authenticated.
 @end-pre
 
+---
 
 @h3 Token vs Session
 
-@h4 Links
 @link https://www.youtube.com/watch?v=UBUNrFtufWo
 @start-pre
 1 - Session : 
@@ -67,10 +70,10 @@ Identity Management usually is 3 steps process
 
 @end-pre
 
+---
 
 @h3 JWT (JSON Web Token)
 
-@h4 Links
 @link https://www.youtube.com/watch?v=7Q17ubqLfaM
 @link https://jwt.io/
 

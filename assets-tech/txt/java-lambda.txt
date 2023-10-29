@@ -1,6 +1,5 @@
 @h3 Java Lambda Expressions
 
-@h4 Java Lambda Expressions Links
 @link https://dev.java/learn/lambdas/
 @link https://dev.java/learn/lambdas/first-lambdas/
 @link https://dev.java/learn/lambdas/functional-interfaces/

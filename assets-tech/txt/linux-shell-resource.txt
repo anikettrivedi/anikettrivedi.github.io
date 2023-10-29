@@ -6,6 +6,8 @@
 @h4 list disk volume utilization
 @textarea df -h
 
+---
+
 @h3 Resource Utilization
 
 @h4 list all processes
@@ -21,6 +23,8 @@
 
 @h4 list of open files
 @textarea lsof
+
+---
 
 @h3 I/O Operations
 

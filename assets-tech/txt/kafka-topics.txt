@@ -1,5 +1,0 @@
-@h3 To Be Done
-@h3 Kafka Topics
-
-@h4 create a topic
-@textarea bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092

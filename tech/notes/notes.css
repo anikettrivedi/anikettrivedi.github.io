@@ -27,11 +27,11 @@ select, button {
 
 a {
     text-decoration: none;
-    color: black;
+    color: #292F33;
 }
 
 a:hover {
-    color: #80b3ff;
+    color: #EA4335;
 }
 
 hr {
@@ -50,4 +50,9 @@ h4 {
 
 img {
     max-width: 90vw;
+}
+
+textarea {
+    font-style: italic;
+    background-color: #e6eeff;
 }

@@ -3,15 +3,15 @@
 @h4 INSERT
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-insert/
 @start-pre
-    1 - Use PostgreSQL INSERT statement to insert data into a table.
-    2 - Use the RETURNING clause to get the inserted rows.
+1 - Use PostgreSQL INSERT statement to insert data into a table.
+2 - Use the RETURNING clause to get the inserted rows.
 @end-pre
 
 @h4 INSERT (Multiple Rows)
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-insert-multiple-rows/
 @start-pre
-    1 - Specify multiple value lists in the INSERT statement to insert multiple rows into a table.
-    2 - Use RETURNING clause to return the inserted rows.
+1 - Specify multiple value lists in the INSERT statement to insert multiple rows into a table.
+2 - Use RETURNING clause to return the inserted rows.
 @end-pre
 
 ---
@@ -21,8 +21,8 @@
 @h4 UPDATE
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-update/
 @start-pre
-    1 - Use the PostgreSQL UPDATE statement to update data in one or more columns of a table.
-    2 - Use the RETURNING clause to return the updated rows from the UPDATE statement
+1 - Use the PostgreSQL UPDATE statement to update data in one or more columns of a table.
+2 - Use the RETURNING clause to return the updated rows from the UPDATE statement
 @end-pre
 
 @h4 UPDATE join
@@ -48,8 +48,7 @@
 2 - USING clause is not part of SQL standard and should be avoided, as it may not be supported in other SQL compliant DBs and therefore will be not suitable in case of migration from PostgreSQL to any other SQL compliant database.
 3 - Delete join using a subquery should be preferred as it's SQL compliant.
 @end-pre
-
-4 - Takeaway point:
+4 - Takeaway points:
     1 - Use USING clause in the DELETE statement. (not SQL compliant)
     2 - USE subquery to emulate the DELETE JOIN operation. (SQL compliant)
 

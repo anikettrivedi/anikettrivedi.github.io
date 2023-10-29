@@ -27,7 +27,8 @@ select, button {
 
 a {
     text-decoration: none;
-    color: #292F33;
+    color: blueviolet;
+    display: block;
 }
 
 a:hover {
@@ -46,6 +47,7 @@ h3 {
 h4 {
     font-style: italic;
     font-size: 17px;
+    color: #c94c4c;
 }
 
 img {
@@ -55,4 +57,8 @@ img {
 textarea {
     font-style: italic;
     background-color: #e6eeff;
+}
+
+pre {
+    white-space: pre-wrap;
 }

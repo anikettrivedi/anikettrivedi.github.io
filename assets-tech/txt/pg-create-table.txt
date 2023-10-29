@@ -1,0 +1,55 @@
+@h3 PostgreSQL Create Table (DDL)
+
+---
+
+@h4 Create Tables
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/
+
+@start-textarea
+CREATE TABLE [IF NOT EXISTS] table_name (
+   column1 datatype(length) column_contraint,
+   column2 datatype(length) column_contraint,
+   column3 datatype(length) column_contraint,
+   table_constraints
+);
+@end-textarea
+
+--
+
+@h4 SELECT INTO
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-select-into/
+
+@start-textarea
+SELECT
+    select_list
+INTO [ TEMPORARY | TEMP | UNLOGGED ] [ TABLE ] new_table_name
+FROM
+    table_name
+WHERE
+    search_condition;
+@end-textarea
+
+--
+
+@h4 CREATE TABLE AS
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table-as/
+
+--
+
+@h4 Auto Increment Column (serial)
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-serial/
+
+--
+
+@h4 PostgreSQL Sequences
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-sequences/
+
+--
+
+@h4 PostgreSQL Identity Column
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-identity-column/
+
+--
+
+@h4 PostgreSQL Alter Tables
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-alter-table/

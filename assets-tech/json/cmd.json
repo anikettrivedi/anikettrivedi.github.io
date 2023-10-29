@@ -19,7 +19,9 @@
             "pg-data-manipulation",
             "pg-transactions",
             "pg-import-export",
-            "pg-data-types"
+            "pg-data-types",
+            "pg-create-table",
+            "pg-alter-table"
         ]
     },
     {

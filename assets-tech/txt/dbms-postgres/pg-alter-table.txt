@@ -30,5 +30,35 @@ Alter Table allows to:
 
 @h4 Drop column
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-drop-column/
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-drop-column/
+@start-pre
+1 - DROP can be used when column is not being referenced by any other table, view, etc.
+2 - DROP CASCADE can be used when other objects are depended on the column, in such cases other dependent objects will be dropped as well.
+@end-pre
 
 --
+
+@h4 Change Column Data type
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-change-column-type/
+@start-textarea
+ALTER TABLE table_name
+ALTER COLUMN column_name [SET DATA] TYPE new_data_type;
+@end-textarea
+
+@start-textarea
+ALTER TABLE table_name
+ALTER COLUMN column_name1 [SET DATA] TYPE new_data_type,
+ALTER COLUMN column_name2 [SET DATA] TYPE new_data_type,
+...;
+@end-textarea
+
+@start-textarea
+ALTER TABLE assets
+ALTER COLUMN asset_no TYPE INT 
+USING asset_no::integer;
+@end-textarea
+
+--
+
+@h4 Renaming A column
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-rename-column/

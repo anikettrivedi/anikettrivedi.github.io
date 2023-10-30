@@ -21,7 +21,9 @@
             "pg-import-export",
             "pg-data-types",
             "pg-create-table",
-            "pg-alter-table"
+            "pg-alter-table",
+            "pg-drop-table",
+            "pg-truncate-table"
         ]
     },
     {

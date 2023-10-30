@@ -23,7 +23,9 @@
             "pg-create-table",
             "pg-alter-table",
             "pg-drop-table",
-            "pg-truncate-table"
+            "pg-truncate-table",
+            "pg-temp-table",
+            "pg-copy-table"
         ]
     },
     {

@@ -1,0 +1,4 @@
+@h3 Temporary Tables
+
+@h4 Create a temp table (exists only during a db session)
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-temporary-table/

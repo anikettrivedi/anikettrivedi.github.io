@@ -1,0 +1,38 @@
+@h3 Copy Tables
+
+--
+
+@h4 Copy Table
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-copy-table/
+
+--
+
+@h4 Copy Table Structure & Data
+@start-textarea
+CREATE TABLE new_table AS 
+TABLE existing_table;
+@end-textarea
+
+--
+
+@h4 Copy Table Structure Alone
+@start-textarea
+CREATE TABLE new_table AS 
+TABLE existing_table 
+WITH NO DATA;
+@end-textarea
+
+-- 
+
+@h4 Copy Table Structure & Partial Data
+@start-textarea
+CREATE TABLE new_table AS 
+SELECT
+*
+FROM
+    existing_table
+WHERE
+    condition;
+@end-textarea
+
+--

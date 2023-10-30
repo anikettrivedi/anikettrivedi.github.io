@@ -1,0 +1,14 @@
+@h3 Contraints
+
+--
+
+@h4 Primary Key
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-primary-key/
+
+--
+
+@h4 Foreign Key
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-foreign-key/
+
+--
+

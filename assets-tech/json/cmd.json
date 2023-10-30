@@ -1,6 +1,6 @@
 [
     {
-        "title": "java",
+        "title": "lang-java",
         "children": [
             "java-literature",
             "java-apis",
@@ -25,31 +25,32 @@
             "pg-drop-table",
             "pg-truncate-table",
             "pg-temp-table",
-            "pg-copy-table"
+            "pg-copy-table",
+            "pg-constraints"
         ]
     },
     {
-        "title": "system-design",
+        "title": "arch-system-design",
         "children": [
             "sd-security",
             "sd-comm-protocols"
         ]
     },
     {
-        "title": "data-structures",
+        "title": "cs-data-structures",
         "children": [
             "ds-linked-list"
         ]
     },
     {
-        "title": "computer-science",
+        "title": "cs-other-topics",
         "children": [
             "cs-concurrency",
             "todo-cs-oop-design-patterns"
         ]
     },
     {
-        "title": "linux",
+        "title": "os-linux",
         "children": [
             "linux-shell-ifs-awk",
             "linux-shell-resource",
@@ -59,7 +60,7 @@
         ]
     },
     {
-        "title": "aws-ccp",
+        "title": "cloud-aws-ccp",
         "children":[
             "todo-aws-ccp-iam",
             "todo-aws-ccp-ec2",

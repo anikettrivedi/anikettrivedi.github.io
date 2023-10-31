@@ -41,8 +41,6 @@
 @h4 Java 10
 @start-pre
 1 - var keyword: Declare local variables without explicit type declaration
-2 - Garbage-Collector Interfaces
-3 - Application Class-Data Sharing: Share class data accross multple JVMs
 @end-pre
 
 --
@@ -50,9 +48,6 @@
 @h4 Java 11
 @start-pre
 1 - local variable for Lambda
-2 - Java EE & COBRA modules removed from JDK
-3 - HTTP Client to support both HTTP/1.1 & HTTP/2
-4 - Epsilon Garbage Collector: For testing and experimentations.
 @end-pre
 
 --
@@ -60,16 +55,13 @@
 @h4 Java 12
 @start-pre
 1 - Switch Expressions (yield keyword) [preview]
-2 - Raw String Literals
-3 - JVM Contants API
 @end-pre
 
 -- 
 
 @h4 Java 13
 @start-pre
-1 - Reimplementation of Socket API
-2 - JavaFX module removed from JDK
+1 - JavaFX module removed from JDK
 @end-pre
 
 -- 

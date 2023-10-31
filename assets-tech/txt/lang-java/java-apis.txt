@@ -46,3 +46,17 @@
 ---
 
 @h3 TODO: Java Reflections
+
+---
+
+@h3 TODO: Regular Expressions
+
+---
+
+@h3 TODO: Security using JDK Liberaries
+
+---
+
+@h3 TODO: Virtual Threads
+
+---

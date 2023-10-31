@@ -1,0 +1,112 @@
+@h3 Java Evolution
+
+@link https://dev.java/evolution/
+@link https://www.tutorialspoint.com/evolution-of-java-programming-language
+
+--
+
+@h4 Java 5 (or 1.5)
+@start-pre
+1 - Generics
+@end-pre
+
+--
+
+@h4 Java 7
+@start-pre
+1 - Switch statements for String data type
+2 - try-with-resources
+@end-pre
+
+--
+
+@h4 Java 8
+@start-pre
+1 - Lambda Expressions, Functional Interfaces
+2 - Default methods in Interfaces
+3 - New Data and Time API
+@end-pre
+
+--
+
+@h4 Java 9
+@start-pre
+1 - Java Platform Module System (JPMS)
+2 - JShell: Real time interaction with JVM using Read-Eval-Print Loop (REPL)
+3 - HTTP/2 client: supports HTTP/2 protocol
+@end-pre
+
+--
+
+@h4 Java 10
+@start-pre
+1 - var keyword: Declare local variables without explicit type declaration
+2 - Garbage-Collector Interfaces
+3 - Application Class-Data Sharing: Share class data accross multple JVMs
+@end-pre
+
+--
+
+@h4 Java 11
+@start-pre
+1 - local variable for Lambda
+2 - Java EE & COBRA modules removed from JDK
+3 - HTTP Client to support both HTTP/1.1 & HTTP/2
+4 - Epsilon Garbage Collector: For testing and experimentations.
+@end-pre
+
+--
+
+@h4 Java 12
+@start-pre
+1 - Switch Expressions (yield keyword) [preview]
+2 - Raw String Literals
+3 - JVM Contants API
+@end-pre
+
+-- 
+
+@h4 Java 13
+@start-pre
+1 - Reimplementation of Socket API
+2 - JavaFX module removed from JDK
+@end-pre
+
+-- 
+
+@h4 Java 14
+@start-pre
+1 - Switch Expressions 
+@end-pre
+
+-- 
+
+@h4 Java 15
+@start-pre
+1 - Text Blocks
+@end-pre
+
+-- 
+
+@h4 Java 16
+@start-pre
+1 - Records
+2 - Pattern Matching for instanceof
+@end-pre
+
+-- 
+
+@h4 Java 17
+@start-pre
+1 - Sealed Classes
+@end-pre
+
+-- 
+
+@h4 Java 21
+@start-pre
+1 - Pattern Matching for switch
+2 - Record Patterns
+@end-pre
+
+--

@@ -2,6 +2,7 @@
     {
         "title": "lang-java",
         "children": [
+            "java-evolution",
             "java-literature",
             "java-apis",
             "java-lambda",

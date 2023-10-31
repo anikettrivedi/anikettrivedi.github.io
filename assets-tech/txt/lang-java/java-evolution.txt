@@ -1,7 +1,9 @@
 @h3 Java Evolution
 
 @link https://dev.java/evolution/
-@link https://www.tutorialspoint.com/evolution-of-java-programming-language
+@link https://inside.java/tag/amber
+
+@img https://dev.java/assets/images/evolution/amber_in_action.png
 
 --
 

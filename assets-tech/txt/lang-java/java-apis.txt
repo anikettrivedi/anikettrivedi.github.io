@@ -45,6 +45,9 @@
 
 @h4 Walking the File Tree
 @link https://dev.java/learn/java-io/file-system/walking-tree/
+
+@h4 Wathcing a Directory for Changes
+@link https://dev.java/learn/java-io/file-system/watching-dir-changes/
 ---
 
 @h3 TODO: Java Reflections

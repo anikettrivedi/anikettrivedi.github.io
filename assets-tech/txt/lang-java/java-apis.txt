@@ -51,3 +51,9 @@
 
 @h4 Reading & Writing Small Files
 @link https://dev.java/learn/java-io/reading-writing/small-files/
+
+@h4 Reading & Writing Text Files
+@link https://dev.java/learn/java-io/reading-writing/buffered-text/
+
+@h4 Reading & Writing Binary Files
+@link https://dev.java/learn/java-io/reading-writing/binary-files/

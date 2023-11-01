@@ -2,14 +2,27 @@
 
 ---
 
-@h4 TODO: Kafka Architecture
+@h4 TODO: Application Architectures
+@start-pre
+1 - Messenging App
+2 - Streaming App
+3 - Social Media App
+4 - Search Engine
+5 - Ride Sharing App
+6 - E-commerce Website
+7 - Maps (Eg. Google Maps)
+@end-pre
 
 ---
 
-@h4 TODO: Docker Architecture
-
----
-
-@h4 TODO: Kubernetes Architecture
+@h4 TODO: Technologies
+@start-pre
+1 - Kafka Architecture & Working
+2 - Docker Architecture & Working
+3 - Kubernetes Architecture & Working
+4 - Websocket Protocol
+5 - HTTP Protocol
+6 - TCP/IP Protocol
+@end-pre
 
 ---

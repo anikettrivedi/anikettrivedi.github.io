@@ -27,7 +27,8 @@
             "pg-truncate-table",
             "pg-temp-table",
             "pg-copy-table",
-            "pg-constraints"
+            "pg-constraints",
+            "pg-conditional-exps"
         ]
     },
     {

@@ -20,8 +20,7 @@
 @h4 TODO: Technologies
 @start-pre
 1 - Kafka Architecture & Working
-2 - Docker Architecture & Working
-3 - Kubernetes Architecture & Working
+2 - Messenging Queue Architecture
 @end-pre
 
 ---

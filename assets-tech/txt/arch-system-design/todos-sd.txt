@@ -4,13 +4,15 @@
 
 @h4 TODO: Application Architectures
 @start-pre
-1 - Messenging App
-2 - Streaming App
-3 - Social Media App
-4 - Search Engine
-5 - Ride Sharing App
-6 - E-commerce Website
-7 - Maps (Eg. Google Maps)
+1 - Messenging App (Whatsapp/Telegram/Messenger/etc)
+2 - Streaming App (Spotify/Amazon Prime/Netflix/etc)
+3 - Social Media App (Facebook/Instagram/Twitter/etc)
+4 - Search Engine (DuckDuckGo/Google/Yahoo/etc)
+5 - Ride Sharing App (Uber/Ola/etc)
+6 - E-commerce Website (Ebay/Amazon/etc)
+7 - Maps (Google Maps/etc)
+8 - AI Based Chatbots (ChatGPT/Google Bard/etc)
+9 - Delivery Service (Uber Eats/Swiggy/etc)
 @end-pre
 
 ---
@@ -20,9 +22,16 @@
 1 - Kafka Architecture & Working
 2 - Docker Architecture & Working
 3 - Kubernetes Architecture & Working
-4 - Websocket Protocol
-5 - HTTP Protocol
-6 - TCP/IP Protocol
+@end-pre
+
+---
+
+@h4 TODO: Communication Protocols
+@start-pre
+1 - Websocket Protocol
+2 - HTTP/1.1, HTTP/2, etc. Protocol
+3 - TCP/IP Protocol
+4 - RPC Protocol
 @end-pre
 
 ---

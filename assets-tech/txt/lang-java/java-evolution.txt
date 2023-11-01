@@ -1,9 +1,14 @@
 @h3 Java Evolution
 
+@img https://dev.java/assets/images/evolution/amber_in_action.png
+
+
+--
+
+@h4 Links
+
 @link https://dev.java/evolution/
 @link https://inside.java/tag/amber
-
-@img https://dev.java/assets/images/evolution/amber_in_action.png
 
 --
 

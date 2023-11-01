@@ -61,7 +61,9 @@ pre {
 }
 
 img {
+    display: block;
     max-width: 75%;
+    margin: auto;
 }
 
 @media screen and (max-width: 1400px) {

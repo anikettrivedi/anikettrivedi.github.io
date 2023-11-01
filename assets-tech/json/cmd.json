@@ -34,7 +34,8 @@
         "title": "arch-system-design",
         "children": [
             "sd-security",
-            "sd-comm-protocols"
+            "sd-comm-protocols", 
+            "todos-sd"
         ]
     },
     {
@@ -57,6 +58,12 @@
             "shell-resource",
             "shell-networking",
             "todos-shell"
+        ]
+    },
+    {
+        "title": "cloud-devops",
+        "children":[
+            "todos-devops"
         ]
     },
     {

@@ -51,10 +51,6 @@ h4 {
     color: #c94c4c;
 }
 
-img {
-    max-width: 90vw;
-}
-
 textarea {
     font-style: italic;
     background-color: #e6eeff;
@@ -62,4 +58,14 @@ textarea {
 
 pre {
     white-space: pre-wrap;
+}
+
+img {
+    max-width: 50%;
+}
+
+@media screen and (max-width: 1400px) {
+    img {
+        max-width: 100%;
+    }
 }

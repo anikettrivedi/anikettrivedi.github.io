@@ -1,0 +1,15 @@
+@h3 TODOS: System Design & Architectures
+
+---
+
+@h4 TODO: Kafka Architecture
+
+---
+
+@h4 TODO: Docker Architecture
+
+---
+
+@h4 TODO: Kubernetes Architecture
+
+---

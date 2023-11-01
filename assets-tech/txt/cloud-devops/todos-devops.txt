@@ -1,0 +1,23 @@
+@h3 TODOS: DevOps
+
+---
+
+@h4 TODO: Docker
+
+---
+
+@h4 TODO: Kubernetes
+
+---
+
+@h4 TODO: OpenShift
+
+---
+
+@h4 TODO: Other DevOps Technologies
+@start-pre
+1 - Ansible
+2 - Terraform
+@end-pre
+
+---

@@ -8,8 +8,7 @@
             "java-lambda",
             "java-generics",
             "java-exceptions",
-            "todo-java-pattern-matching",
-            "todo-java-jdk-tools"
+            "todos-java"
         ]
     },
     {

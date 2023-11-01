@@ -49,20 +49,5 @@
 @h4 Wathcing a Directory for Changes
 @link https://dev.java/learn/java-io/file-system/watching-dir-changes/
 
----
-
-@h3 TODO: Java Reflections
-
----
-
-@h3 TODO: Regular Expressions
-
----
-
-@h3 TODO: Security using JDK Liberaries
-
----
-
-@h3 TODO: Virtual Threads
-
----
+@h4 Reading & Writing Small Files
+@link https://dev.java/learn/java-io/reading-writing/small-files/

@@ -13,14 +13,14 @@
 --
 
 @h4 CHECK Contraint
-@link
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-check-constraint/
 
 --
 
 @h4 UNIQUE Contraint
-@link
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-unique-constraint/
 
 --
 
 @h4 NOT NULL Contraint
-@link
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-not-null-constraint/

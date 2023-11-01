@@ -57,3 +57,9 @@
 
 @h4 Reading & Writing Binary Files
 @link https://dev.java/learn/java-io/reading-writing/binary-files/
+
+@h4 Decorating IO Streams
+@link https://dev.java/learn/java-io/reading-writing/decorating/
+
+@h4 In Memory IO Streams
+@link https://dev.java/learn/java-io/reading-writing/in-memory/

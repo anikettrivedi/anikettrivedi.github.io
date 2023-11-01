@@ -1,10 +1,10 @@
-@h4 Java Todos
+@h3 TODOS: Java
 
 
 ---
-@h3 TODO: Java Reflections=
+@h4 TODO: Java Reflections=
 ---
-@h3 TODO: Java 3rd Party Libraries
+@h4 TODO: Java 3rd Party Libraries
 @start-pre
 1 - Lombok
 2 - Spring Cloud Feign
@@ -14,11 +14,11 @@
     3 - log4j2
 @end-pre
 ---
-@h3 TODO: Regular Expressions
+@h4 TODO: Regular Expressions
 ---
-@h3 TODO: Security using JDK Libraries
+@h4 TODO: Security using JDK Libraries
 ---
-@h3 TODO: Virtual Threads
+@h4 TODO: Virtual Threads
 ---
 @h4 TODO: Java Concurrency
 ---

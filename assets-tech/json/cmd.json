@@ -53,11 +53,10 @@
     {
         "title": "os-linux",
         "children": [
-            "linux-shell-ifs-awk",
-            "linux-shell-resource",
-            "linux-shell-networking",
-            "todo-linux-shell-conditions",
-            "todo-linux-shell-loops"
+            "shell-ifs-awk",
+            "shell-resource",
+            "shell-networking",
+            "todos-shell"
         ]
     },
     {

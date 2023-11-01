@@ -2,7 +2,6 @@
 
 @img https://dev.java/assets/images/evolution/amber_in_action.png
 
-
 --
 
 @h4 Links

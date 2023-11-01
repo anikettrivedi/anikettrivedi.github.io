@@ -61,7 +61,7 @@ pre {
 }
 
 img {
-    max-width: 50%;
+    max-width: 75%;
 }
 
 @media screen and (max-width: 1400px) {

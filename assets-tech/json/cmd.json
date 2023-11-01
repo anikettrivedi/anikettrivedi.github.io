@@ -62,24 +62,24 @@
     {
         "title": "cloud-aws-ccp",
         "children":[
-            "todo-aws-ccp-iam",
-            "todo-aws-ccp-ec2",
-            "todo-aws-ccp-ec2-storage",
-            "todo-aws-ccp-elb-asg",
-            "todo-aws-ccp-s3",
-            "todo-aws-ccp-dbs",
-            "todo-aws-ccp-oth-compute",
-            "todo-aws-ccp-infra-at-scale",
-            "todo-aws-ccp-global-infra",
-            "todo-aws-ccp-cloud-int",
-            "todo-aws-ccp-monitoring",
-            "todo-aws-ccp-networking",
-            "todo-aws-ccp-sec-compl",
-            "todo-aws-ccp-ml",
-            "todo-aws-ccp-acc-mgmt",
-            "todo-aws-ccp-adv-iden",
-            "todo-aws-ccp-oth-svs",
-            "todo-aws-ccp-arch-eco"
+            "todo-ccp-iam",
+            "todo-ccp-ec2",
+            "todo-ccp-ec2-storage",
+            "todo-ccp-elb-asg",
+            "todo-ccp-s3",
+            "todo-ccp-dbs",
+            "todo-ccp-oth-compute",
+            "todo-ccp-infra-at-scale",
+            "todo-ccp-global-infra",
+            "todo-ccp-cloud-int",
+            "todo-ccp-monitoring",
+            "todo-ccp-networking",
+            "todo-ccp-sec-compl",
+            "todo-ccp-ml",
+            "todo-ccp-acc-mgmt",
+            "todo-ccp-adv-iden",
+            "todo-ccp-oth-svs",
+            "todo-ccp-arch-eco"
         ]
     }
 ]

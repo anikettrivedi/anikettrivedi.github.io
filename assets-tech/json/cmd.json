@@ -62,32 +62,15 @@
         ]
     },
     {
-        "title": "cloud-devops",
+        "title": "cloud-dev-ops",
         "children":[
-            "todos-devops"
+            "todos-dev-ops"
         ]
     },
     {
-        "title": "cloud-aws-ccp",
+        "title": "cloud-aws",
         "children":[
-            "todo-ccp-iam",
-            "todo-ccp-ec2",
-            "todo-ccp-ec2-storage",
-            "todo-ccp-elb-asg",
-            "todo-ccp-s3",
-            "todo-ccp-dbs",
-            "todo-ccp-oth-compute",
-            "todo-ccp-infra-at-scale",
-            "todo-ccp-global-infra",
-            "todo-ccp-cloud-int",
-            "todo-ccp-monitoring",
-            "todo-ccp-networking",
-            "todo-ccp-sec-compl",
-            "todo-ccp-ml",
-            "todo-ccp-acc-mgmt",
-            "todo-ccp-adv-iden",
-            "todo-ccp-oth-svs",
-            "todo-ccp-arch-eco"
+            "todos-aws"
         ]
     }
 ]

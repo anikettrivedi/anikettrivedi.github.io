@@ -9,7 +9,8 @@ button {
     font-family: monospace;
 }
 
-input, textarea {
+input,
+textarea {
     box-sizing: border-box;
     margin: 0 0 5px 0;
     width: 100%;
@@ -18,7 +19,8 @@ input, textarea {
     overflow: hidden;
 }
 
-select, button {
+select,
+button {
     width: auto;
     margin-right: 10px;
     border: 1px solid black;
@@ -62,12 +64,20 @@ pre {
 
 img {
     display: block;
-    max-width: 75%;
+    max-width: 100%;
+    margin: auto;
+}
+
+.select-container,
+.cmd-container {
+    max-width: 70%;
     margin: auto;
 }
 
 @media screen and (max-width: 1400px) {
-    img {
-        max-width: 100%;
+    .select-container,
+    .cmd-container {
+        max-width: 97.5%;
+        margin: auto;
     }
 }

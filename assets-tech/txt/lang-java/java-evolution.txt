@@ -29,8 +29,9 @@
 @h4 Java 8
 @start-pre
 1 - Lambda Expressions, Functional Interfaces
-2 - Default methods in Interfaces
-3 - New Data and Time API
+2 - Streams API
+3 - Default methods in Interfaces
+4 - New Data and Time API
 @end-pre
 
 --

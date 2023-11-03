@@ -120,7 +120,7 @@
 6 - Graphs
 7 - Others
     1 - Trie
-    2 - Heaps
+    2 - Heaps    
 @end-pre
 
 @h4 TODO: Algorithms

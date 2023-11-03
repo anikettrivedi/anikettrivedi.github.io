@@ -43,6 +43,7 @@
 ---
 
 @h3 Skip List
+@link https://en.wikipedia.org/wiki/Skip_list
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Skip_list.svg/400px-Skip_list.svg.png
 @h4 Operations
 @start-pre

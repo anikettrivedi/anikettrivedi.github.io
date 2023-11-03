@@ -6,7 +6,7 @@
 @h4 TODO: AWS Certified DevOps Engineer - Professional
 @h4 TODO: AWS Certified Solutions Architect - Professional
 
---------
+---------
 
 @h3 TODOS: DevOps
 @h4 TODO: Docker
@@ -19,14 +19,24 @@
 2 - Terraform
 @end-pre
 
----
---------
+---------
+
+@h3 TODOS: Java-Spring
+
+@h4 TODO: Spring Boot
+@h4 TODO: Spring Framework - Core
+@h4 TODO: Spring Framework - Testing
+@h4 TODO: Spring Framework - Security
+@h4 TODO: Spring Framework - Data (JPA & JDBC)
+@h4 TODO: Spring Framework - MVC
+@h4 TODO: Spring Framework - WebFlux
+
+---------
 
 @h3 TODOS: Java
 
----
 @h4 TODO: Java Reflections=
----
+
 @h4 TODO: Java 3rd Party Libraries
 @start-pre
 1 - Lombok
@@ -36,39 +46,35 @@
     2 - logback
     3 - log4j2
 @end-pre
----
+
 @h4 TODO: Spring, Spring Boot and other Spring Projects
----
 @h4 TODO: Regular Expressions
----
 @h4 TODO: Security using JDK Libraries
----
+
 @h4 TODO: Virtual Threads
----
+
 @h4 TODO: Java Concurrency
----
+
 @h4 TODO: Java Pattern Matching
----
+
 @h4 TODO: Java JDK Tools
----
+
 @h4 TODO: Java Build Tools
 @start-pre
 1 - Maven
 2 - Gradle
     1 - Bill of Materials (BOM)
 @end-pre
----
+
 @h4 TODO: Java Coding Conventions
 @start-pre
 1 - Checkstyle
 @end-pre
----
 
---------
+
+---------
 
 @h3 TODOS: System Design & Architectures
-
----
 
 @h4 TODO: Application Architectures
 @start-pre
@@ -83,15 +89,11 @@
 9 - Delivery Service (Uber Eats/Swiggy/etc)
 @end-pre
 
----
-
 @h4 TODO: Technologies
 @start-pre
 1 - Kafka Architecture & Working
 2 - Messenging Queue Architecture
 @end-pre
-
----
 
 @h4 TODO: Communication Protocols
 @start-pre
@@ -100,8 +102,6 @@
 3 - TCP/IP Protocol
 4 - RPC Protocol
 @end-pre
-
----
 
 ---------
 
@@ -113,4 +113,3 @@
 @h4 TODO: Networking
 @h4 TODO: DBMS Theory
 @h4 TODO: Operating Systems
-

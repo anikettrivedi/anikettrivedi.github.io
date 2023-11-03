@@ -57,13 +57,6 @@
 1 - local variable for Lambda
 @end-pre
 
---
-
-@h4 Java 12
-@start-pre
-1 - Switch Expressions (yield keyword) [preview]
-@end-pre
-
 -- 
 
 @h4 Java 13

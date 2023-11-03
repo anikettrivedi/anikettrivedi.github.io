@@ -43,7 +43,7 @@
 
 @h3 TODOS: Java
 
-@h4 TODO: Java Reflections=
+@h4 TODO: Java Reflections
 
 @h4 TODO: Java 3rd Party Libraries
 @start-pre

@@ -109,6 +109,20 @@
 @h3 TODOS: Computer Science
 
 @h4 TODO: Data Structures
+@start-pre
+1 - Arrays
+2 - Stacks
+3 - Queues
+4 - Trees
+    1 - Binary Trees
+    2 - Red-Black Trees
+5 - Dictionaries or Maps
+6 - Graphs
+7 - Others
+    1 - Trie
+    2 - Heaps
+@end-pre
+
 @h4 TODO: Algorithms
 @h4 TODO: OOP Design Patterns
 @h4 TODO: Networking

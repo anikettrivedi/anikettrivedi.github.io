@@ -39,3 +39,12 @@
 3 - find a node or a value
 4 - traverse
 @end-pre
+
+---
+
+@h3 Skip List
+@img https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Skip_list.svg/400px-Skip_list.svg.png
+@h4 Operations
+@start-pre
+1 - Insert, Delete and Search
+@end-pre

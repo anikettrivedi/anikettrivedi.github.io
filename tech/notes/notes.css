@@ -23,11 +23,20 @@ select,
 button {
     margin-right: 10px;
     border: 0;
-    border-radius: 3px;
+    border-radius: 2px;
+    background-color: beige;
 }
 
 select {
-    width: 100px;
+    width: 125px;
+}
+
+button {
+    width: 25px;
+}
+
+select:hover, button:hover {
+    background-color: aliceblue;
 }
 
 a {
@@ -82,6 +91,10 @@ img {
 .cmd-container {
     max-width: 70%;
     margin: auto;
+}
+
+.cmd-container {
+    margin-top: 40px;
 }
 
 @media screen and (max-width: 1400px) {

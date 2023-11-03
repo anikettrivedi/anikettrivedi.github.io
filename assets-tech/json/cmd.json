@@ -7,8 +7,7 @@
             "java-apis",
             "java-lambda",
             "java-generics",
-            "java-exceptions",
-            "todos-java"
+            "java-exceptions"
         ]
     },
     {
@@ -35,8 +34,7 @@
         "title": "arch-system-design",
         "children": [
             "sd-security",
-            "sd-comm-protocols", 
-            "todos-sd"
+            "sd-comm-protocols"
         ]
     },
     {
@@ -48,8 +46,7 @@
     {
         "title": "cs-other-topics",
         "children": [
-            "cs-concurrency",
-            "todo-cs-oop-design-patterns"
+            "cs-concurrency"
         ]
     },
     {
@@ -57,20 +54,13 @@
         "children": [
             "shell-ifs-awk",
             "shell-resource",
-            "shell-networking",
-            "todos-shell"
+            "shell-networking"
         ]
     },
     {
-        "title": "cloud-dev-ops",
-        "children":[
-            "todos-dev-ops"
-        ]
-    },
-    {
-        "title": "cloud-aws",
-        "children":[
-            "todos-aws"
+        "title": "todos",
+        "children": [
+            "todos-all"
         ]
     }
 ]

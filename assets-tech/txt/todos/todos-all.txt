@@ -1,0 +1,115 @@
+@h3 TODOS: AWS
+
+@h4 TODO: AWS Certified Cloud Practitioner
+@h4 TODO: AWS Certified Developer - Associate
+@h4 TODO: AWS Certified Solutions Architect - Associate
+@h4 TODO: AWS Certified Solutions Architect - Professional
+
+--------
+
+@h3 TODOS: DevOps
+@h4 TODO: Docker
+@h4 TODO: Kubernetes
+@h4 TODO: OpenShift
+
+@h4 TODO: Other DevOps Technologies
+@start-pre
+1 - Ansible
+2 - Terraform
+@end-pre
+
+---
+--------
+
+@h3 TODOS: Java
+
+---
+@h4 TODO: Java Reflections=
+---
+@h4 TODO: Java 3rd Party Libraries
+@start-pre
+1 - Lombok
+2 - Spring Cloud Feign
+3 - Logging
+    1 - slf4j
+    2 - logback
+    3 - log4j2
+@end-pre
+---
+@h4 TODO: Spring, Spring Boot and other Spring Projects
+---
+@h4 TODO: Regular Expressions
+---
+@h4 TODO: Security using JDK Libraries
+---
+@h4 TODO: Virtual Threads
+---
+@h4 TODO: Java Concurrency
+---
+@h4 TODO: Java Pattern Matching
+---
+@h4 TODO: Java JDK Tools
+---
+@h4 TODO: Java Build Tools
+@start-pre
+1 - Maven
+2 - Gradle
+    1 - Bill of Materials (BOM)
+@end-pre
+---
+@h4 TODO: Java Coding Conventions
+@start-pre
+1 - Checkstyle
+@end-pre
+---
+
+--------
+
+@h3 TODOS: System Design & Architectures
+
+---
+
+@h4 TODO: Application Architectures
+@start-pre
+1 - Messenging App (Whatsapp/Telegram/Messenger/etc)
+2 - Streaming App (Spotify/Amazon Prime/Netflix/etc)
+3 - Social Media App (Facebook/Instagram/Twitter/etc)
+4 - Search Engine (DuckDuckGo/Google/Yahoo/etc)
+5 - Ride Sharing App (Uber/Ola/etc)
+6 - E-commerce Website (Ebay/Amazon/etc)
+7 - Maps (Google Maps/etc)
+8 - AI Based Chatbots (ChatGPT/Google Bard/etc)
+9 - Delivery Service (Uber Eats/Swiggy/etc)
+@end-pre
+
+---
+
+@h4 TODO: Technologies
+@start-pre
+1 - Kafka Architecture & Working
+2 - Messenging Queue Architecture
+@end-pre
+
+---
+
+@h4 TODO: Communication Protocols
+@start-pre
+1 - Websocket Protocol
+2 - HTTP/1.1, HTTP/2, etc. Protocol
+3 - TCP/IP Protocol
+4 - RPC Protocol
+@end-pre
+
+---
+
+---------
+
+@h3 TODOS: Computer Science
+
+@h4 TODO: Data Structures
+@h4 TODO: Algorithms
+@h4 TODO: OOP Design Patterns
+@h4 TODO: Networking
+@h4 TODO: DBMS Theory
+@h4 TODO: Operating Systems
+

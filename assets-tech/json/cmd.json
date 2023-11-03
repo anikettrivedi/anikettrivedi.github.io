@@ -1,5 +1,11 @@
 [
     {
+        "title": "todos",
+        "children": [
+            "todos-all"
+        ]
+    },
+    {
         "title": "lang-java",
         "children": [
             "java-evolution",
@@ -50,12 +56,6 @@
             "shell-ifs-awk",
             "shell-resource",
             "shell-networking"
-        ]
-    },
-    {
-        "title": "todos",
-        "children": [
-            "todos-all"
         ]
     }
 ]

@@ -22,7 +22,7 @@ textarea {
 select,
 button {
     margin-right: 10px;
-    border: 0;
+    border: 1px solid black;
     border-radius: 2px;
     background-color: beige;
 }

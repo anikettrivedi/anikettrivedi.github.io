@@ -60,7 +60,7 @@ function insertSelectLevel1() {
         select1.value = type
     }
 
-    console.log(`type=${type}`)
+    // console.log(`type=${type}`)
 
     // event listener
     // update select 2 when select1 change event trigger

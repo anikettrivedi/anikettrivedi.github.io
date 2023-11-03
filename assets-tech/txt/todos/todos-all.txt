@@ -8,7 +8,8 @@
 
 ---------
 
-@h3 TODOS: DevOps
+@h3 TODOS: Dev-Ops
+
 @h4 TODO: Docker
 @h4 TODO: Kubernetes
 @h4 TODO: OpenShift
@@ -30,6 +31,13 @@
 @h4 TODO: Spring Framework - Data (JPA & JDBC)
 @h4 TODO: Spring Framework - MVC
 @h4 TODO: Spring Framework - WebFlux
+@h4 TODO: Spring Framework - Others
+@start-pre
+1 - HATEOAS
+2 - Internationalization
+3 - Integration
+4 - Batch
+@end-pre
 
 ---------
 
@@ -50,15 +58,10 @@
 @h4 TODO: Spring, Spring Boot and other Spring Projects
 @h4 TODO: Regular Expressions
 @h4 TODO: Security using JDK Libraries
-
 @h4 TODO: Virtual Threads
-
 @h4 TODO: Java Concurrency
-
 @h4 TODO: Java Pattern Matching
-
 @h4 TODO: Java JDK Tools
-
 @h4 TODO: Java Build Tools
 @start-pre
 1 - Maven
@@ -70,8 +73,6 @@
 @start-pre
 1 - Checkstyle
 @end-pre
-
-
 ---------
 
 @h3 TODOS: System Design & Architectures

@@ -1,8 +1,9 @@
 @h3 TODOS: AWS
 
 @h4 TODO: AWS Certified Cloud Practitioner
-@h4 TODO: AWS Certified Developer - Associate
 @h4 TODO: AWS Certified Solutions Architect - Associate
+@h4 TODO: AWS Certified Developer - Associate
+@h4 TODO: AWS Certified DevOps Engineer - Professional
 @h4 TODO: AWS Certified Solutions Architect - Professional
 
 --------

@@ -21,10 +21,13 @@ textarea {
 
 select,
 button {
-    width: auto;
     margin-right: 10px;
-    border: 1px solid black;
-    border-radius: 1px;
+    border: 0;
+    border-radius: 3px;
+}
+
+select {
+    width: 100px;
 }
 
 a {
@@ -68,6 +71,13 @@ img {
     margin: auto;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 10px 0 10px 0;
+}
+
 .select-container,
 .cmd-container {
     max-width: 70%;
@@ -75,9 +85,14 @@ img {
 }
 
 @media screen and (max-width: 1400px) {
+
     .select-container,
     .cmd-container {
         max-width: 97.5%;
         margin: auto;
+    }
+
+    .cmd-container {
+        margin-top: 40px;
     }
 }

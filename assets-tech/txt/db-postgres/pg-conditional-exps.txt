@@ -38,4 +38,8 @@ ORDER BY title;
 @h4 NULLIF
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-nullif/
 
+---
+
+@h4 CAST
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-cast/
 

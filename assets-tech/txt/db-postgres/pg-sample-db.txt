@@ -1,0 +1,3 @@
+@h3 Sample Database
+
+@link https://www.postgresqltutorial.com/postgresql-getting-started/postgresql-sample-database/

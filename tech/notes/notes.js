@@ -203,7 +203,8 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     addMultilineCmdTextAreaPanel(multilineCmd, rowCount)
                 } else if (line.startsWith("@pre")) {
                     // preformatted text
-                    addPreformattedText(line.trim())
+                    let cmdText = line.replace("@pre", "").trim()
+                    addPreformattedText(cmdText)
                 } else if (line.startsWith("@startpre")) {
                     // multiline preformatted text
                     j++

@@ -1,0 +1,14 @@
+@h3 PSQL Commands
+
+---
+
+@h4 Connect To Database
+
+@pre Database on same host:
+@textarea psql -d database -U  user -W
+
+@pre Database on remote host:
+@textarea psql -h host -d database -U user -W
+
+@pre Via SSL
+@textarea psql -U user -h host "dbname=db sslmode=require"

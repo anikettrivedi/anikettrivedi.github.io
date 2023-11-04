@@ -19,6 +19,7 @@
     {
         "title": "db-postgres",
         "children": [
+            "pg-psql",
             "pg-sample-db",
             "pg-data-queries",
             "pg-subqueries",

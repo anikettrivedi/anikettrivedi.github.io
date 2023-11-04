@@ -7,38 +7,38 @@
 @h3 Singly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png
 @h4 Operations
-@start-pre
+@startpre
 1 - insert after a given node or value, insert at start, insert at end
 2 - delete a given node or value, delete at start, delete at end
 3 - traverse natural order
 4 - find a node or value in the linked list
 5 - find length of the linked list
-@end-pre
+@endpre
 
 ---
 
 @h3 Doubly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Doubly-linked-list.svg/610px-Doubly-linked-list.svg.png
 @h4 Operations
-@start-pre
+@startpre
 1 - insert after a given node or value, insert at start, insert at end
 2 - delete a given node or value, delete at start, delete at end
 3 - traverse natural or reverse order
 4 - find a node or value in the linked list
 5 - find length of the linked list
-@end-pre
+@endpre
 
 ---
 
 @h3 Circularly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Circularly-linked-list.svg/350px-Circularly-linked-list.svg.png
 @h4 Operations 
-@start-pre
+@startpre
 1 - insert at start, insert at end
 2 - delete at start, delete at end
 3 - find a node or a value
 4 - traverse
-@end-pre
+@endpre
 
 ---
 
@@ -46,6 +46,6 @@
 @link https://en.wikipedia.org/wiki/Skip_list
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Skip_list.svg/400px-Skip_list.svg.png
 @h4 Operations
-@start-pre
+@startpre
 1 - Insert, Delete and Search
-@end-pre
+@endpre

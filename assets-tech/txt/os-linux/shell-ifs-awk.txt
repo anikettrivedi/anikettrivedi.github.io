@@ -1,13 +1,13 @@
 @h3 String Operations using IFS
 
 @h4 split & iterate over a string with IFS (Internal Field Separator)
-@start-textarea 
+@starttextarea 
 export IFS=";"
 sentence="one;two;three"
 for word in $sentence; do
   echo "$word"
 done
-@end-textarea
+@endtextarea
 
 ---
 
@@ -18,7 +18,7 @@ done
 @textarea awk '/regex pattern/{action}' your_file_name.txt
 
 @h4 sample file
-@start-pre 
+@startpre 
 vi information.txt
 
 fristName       lastName        age     city       ID
@@ -28,7 +28,7 @@ Omega           Night           45      Ontario    600
 Wood            Tinker          54      Lisbon     N/A
 Giorgos         Georgiou        35      London     300
 Timmy           Turner          32      Berlin     N/A
-@end-pre
+@endpre
 
 @h4 awk: print all contents using
 @textarea awk '{print $0}' information.txt

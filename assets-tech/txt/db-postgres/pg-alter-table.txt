@@ -5,7 +5,7 @@
 @h4 ALTER TABLE
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-alter-table/
 
-@start-pre
+@startpre
 Alter Table allows to:
 1 - Add a column to a existing table
 2 - Drop a column from a table
@@ -14,7 +14,7 @@ Alter Table allows to:
 5 - Set a default value for the column.
 6 - Add a constraint to a column.
 7 - Rename a table
-@end-pre
+@endpre
 
 -- 
 
@@ -31,32 +31,32 @@ Alter Table allows to:
 @h4 Drop column
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-drop-column/
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-drop-column/
-@start-pre
+@startpre
 1 - DROP can be used when column is not being referenced by any other table, view, etc.
 2 - DROP CASCADE can be used when other objects are depended on the column, in such cases other dependent objects will be dropped as well.
-@end-pre
+@endpre
 
 --
 
 @h4 Change Column Data type
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-change-column-type/
-@start-textarea
+@starttextarea
 ALTER TABLE table_name
 ALTER COLUMN column_name [SET DATA] TYPE new_data_type;
-@end-textarea
+@endtextarea
 
-@start-textarea
+@starttextarea
 ALTER TABLE table_name
 ALTER COLUMN column_name1 [SET DATA] TYPE new_data_type,
 ALTER COLUMN column_name2 [SET DATA] TYPE new_data_type,
 ...;
-@end-textarea
+@endtextarea
 
-@start-textarea
+@starttextarea
 ALTER TABLE assets
 ALTER COLUMN asset_no TYPE INT 
 USING asset_no::integer;
-@end-textarea
+@endtextarea
 
 --
 

@@ -15,10 +15,10 @@
 @h4 TODO: OpenShift
 
 @h4 TODO: Other DevOps Technologies
-@start-pre
+@startpre
 1 - Ansible
 2 - Terraform
-@end-pre
+@endpre
 
 ---------
 
@@ -32,12 +32,12 @@
 @h4 TODO: Spring Framework - MVC
 @h4 TODO: Spring Framework - WebFlux
 @h4 TODO: Spring Framework - Others
-@start-pre
+@startpre
 1 - HATEOAS
 2 - Internationalization
 3 - Integration
 4 - Batch
-@end-pre
+@endpre
 
 ---------
 
@@ -46,14 +46,14 @@
 @h4 TODO: Java Reflections
 
 @h4 TODO: Java 3rd Party Libraries
-@start-pre
+@startpre
 1 - Lombok
 2 - Spring Cloud Feign
 3 - Logging
     1 - slf4j
     2 - logback
     3 - log4j2
-@end-pre
+@endpre
 
 @h4 TODO: Spring, Spring Boot and other Spring Projects
 @h4 TODO: Regular Expressions
@@ -63,22 +63,22 @@
 @h4 TODO: Java Pattern Matching
 @h4 TODO: Java JDK Tools
 @h4 TODO: Java Build Tools
-@start-pre
+@startpre
 1 - Maven
 2 - Gradle
     1 - Bill of Materials (BOM)
-@end-pre
+@endpre
 
 @h4 TODO: Java Coding Conventions
-@start-pre
+@startpre
 1 - Checkstyle
-@end-pre
+@endpre
 ---------
 
 @h3 TODOS: System Design & Architectures
 
 @h4 TODO: Application Architectures
-@start-pre
+@startpre
 1 - Messenging App (Whatsapp/Telegram/Messenger/etc)
 2 - Streaming App (Spotify/Amazon Prime/Netflix/etc)
 3 - Social Media App (Facebook/Instagram/Twitter/etc)
@@ -88,28 +88,28 @@
 7 - Maps (Google Maps/etc)
 8 - AI Based Chatbots (ChatGPT/Google Bard/etc)
 9 - Delivery Service (Uber Eats/Swiggy/etc)
-@end-pre
+@endpre
 
 @h4 TODO: Technologies
-@start-pre
+@startpre
 1 - Kafka Architecture & Working
 2 - Messenging Queue Architecture
-@end-pre
+@endpre
 
 @h4 TODO: Communication Protocols
-@start-pre
+@startpre
 1 - Websocket Protocol
 2 - HTTP/1.1, HTTP/2, etc. Protocol
 3 - TCP/IP Protocol
 4 - RPC Protocol
-@end-pre
+@endpre
 
 ---------
 
 @h3 TODOS: Computer Science
 
 @h4 TODO: Data Structures
-@start-pre
+@startpre
 1 - Arrays
 2 - Stacks
 3 - Queues
@@ -121,7 +121,7 @@
 7 - Others
     1 - Trie
     2 - Heaps    
-@end-pre
+@endpre
 
 @h4 TODO: Algorithms
 @h4 TODO: OOP Design Patterns

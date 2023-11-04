@@ -12,93 +12,93 @@
 --
 
 @h4 Java 5 (or 1.5)
-@start-pre
+@startpre
 1 - Generics
-@end-pre
+@endpre
 
 --
 
 @h4 Java 7
-@start-pre
+@startpre
 1 - Switch statements for String data type
 2 - try-with-resources
-@end-pre
+@endpre
 
 --
 
 @h4 Java 8
-@start-pre
+@startpre
 1 - Lambda Expressions, Functional Interfaces
 2 - Streams API
 3 - Default methods in Interfaces
 4 - New Data and Time API
-@end-pre
+@endpre
 
 --
 
 @h4 Java 9
-@start-pre
+@startpre
 1 - Java Platform Module System (JPMS)
 2 - JShell: Real time interaction with JVM using Read-Eval-Print Loop (REPL)
 3 - HTTP/2 client: supports HTTP/2 protocol
-@end-pre
+@endpre
 
 --
 
 @h4 Java 10
-@start-pre
+@startpre
 1 - var keyword: Declare local variables without explicit type declaration
-@end-pre
+@endpre
 
 --
 
 @h4 Java 11
-@start-pre
+@startpre
 1 - local variable for Lambda
-@end-pre
+@endpre
 
 -- 
 
 @h4 Java 13
-@start-pre
+@startpre
 1 - JavaFX module removed from JDK
-@end-pre
+@endpre
 
 -- 
 
 @h4 Java 14
-@start-pre
+@startpre
 1 - Switch Expressions 
-@end-pre
+@endpre
 
 -- 
 
 @h4 Java 15
-@start-pre
+@startpre
 1 - Text Blocks
-@end-pre
+@endpre
 
 -- 
 
 @h4 Java 16
-@start-pre
+@startpre
 1 - Records
 2 - Pattern Matching for instanceof
-@end-pre
+@endpre
 
 -- 
 
 @h4 Java 17
-@start-pre
+@startpre
 1 - Sealed Classes
-@end-pre
+@endpre
 
 -- 
 
 @h4 Java 21
-@start-pre
+@startpre
 1 - Pattern Matching for switch
 2 - Record Patterns
-@end-pre
+@endpre
 
 --

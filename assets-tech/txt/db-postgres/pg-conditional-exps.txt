@@ -1,0 +1,41 @@
+@h3 Conditional Expressions
+
+@h4 CASE
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-case/
+
+@pre Syntax:
+@starttextarea
+CASE 
+      WHEN condition_1  THEN result_1
+      WHEN condition_2  THEN result_2
+      [WHEN ...]
+      [ELSE else_result]
+END
+@endtextarea
+
+@pre Example:
+@starttextarea
+SELECT title,
+       length,
+       CASE
+           WHEN length> 0
+                AND length <= 50 THEN 'Short'
+           WHEN length > 50
+                AND length <= 120 THEN 'Medium'
+           WHEN length> 120 THEN 'Long'
+       END duration
+FROM film
+ORDER BY title;
+@endtextarea
+
+---
+
+@h4 COALESCE
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-coalesce/
+
+---
+
+@h4 NULLIF
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-nullif/
+
+

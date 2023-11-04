@@ -3,15 +3,15 @@
 @h4 Quickly Delete All Data From Large Tables
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-truncate-table/
 
-@start-pre
+@startpre
 1 - The  TRUNCATE TABLE statement deletes all data from a table without scanning it. This is the reason why it is faster than the DELETE statement.
 2 - In addition, the TRUNCATE TABLE statement reclaims the storage right away so you do not have to perform a subsequent VACUMM operation, which is useful in the case of large tables.
-@end-pre
+@endpre
 
-@start-pre
+@startpre
 Summary
 1 - Use the TRUNCATE TABLE statement to delete all data from a large table.
 2 - Use the CASCADE option to truncate a table and other tables that reference the table via foreign key constraint.
 3 - The TRUNCATE TABLE does not fire ON DELETE trigger. Instead, it fires the BEFORE TRUNCATE and AFTER TRUNCATE triggers.
 4 - The TRUNCATE TABLE statement is transaction-safe. It means that if you place it within a transaction, you can roll it back safely.
-@end-pre
+@endpre

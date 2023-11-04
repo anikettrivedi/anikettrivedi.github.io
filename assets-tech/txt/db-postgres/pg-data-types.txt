@@ -2,7 +2,7 @@
 
 @h4 Supported Data Types in PostgreSQL
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
-@start-pre
+@startpre
 Supported Data Types:
 1 - Boolean
 2 - Character
@@ -29,6 +29,6 @@ Supported Data Types:
 7 - UUID (Universal Unique Identifiers)
 8 - Special Data Types
     1 - box, line, point, lseg, polygon, inet, macaddr
-@end-pre
+@endpre
 
 

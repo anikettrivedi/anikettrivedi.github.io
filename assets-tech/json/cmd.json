@@ -17,8 +17,9 @@
         ]
     },
     {
-        "title": "dbms-postgres",
+        "title": "db-postgres",
         "children": [
+            "pg-sample-db",
             "pg-data-queries",
             "pg-subqueries",
             "pg-ctes",

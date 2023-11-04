@@ -5,21 +5,21 @@
 @h4 Create Tables
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-create-table/
 
-@start-textarea
+@starttextarea
 CREATE TABLE [IF NOT EXISTS] table_name (
    column1 datatype(length) column_contraint,
    column2 datatype(length) column_contraint,
    column3 datatype(length) column_contraint,
    table_constraints
 );
-@end-textarea
+@endtextarea
 
 --
 
 @h4 SELECT INTO
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-select-into/
 
-@start-textarea
+@starttextarea
 SELECT
     select_list
 INTO [ TEMPORARY | TEMP | UNLOGGED ] [ TABLE ] new_table_name
@@ -27,7 +27,7 @@ FROM
     table_name
 WHERE
     search_condition;
-@end-textarea
+@endtextarea
 
 --
 

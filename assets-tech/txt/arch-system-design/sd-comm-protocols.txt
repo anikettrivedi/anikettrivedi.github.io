@@ -19,7 +19,7 @@
 @h3 API Performance Tuning
 @link https://github.com/ByteByteGoHq/system-design-101#how-to-improve-api-performance
 
-@start-pre
+@startpre
 Instance Level (Without considering horizontal scaling)
 1 - pagination
 2 - async logging
@@ -35,7 +35,7 @@ Instance Wide (horizontal scaling)
 Effective Microservice Communication
 1 - RESTAPI, GraphQL for application gateway
 2 - gRPC for communication between microservices
-@end-pre
+@endpre
 
 ---
 

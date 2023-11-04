@@ -190,12 +190,12 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     // text area for code
                     let cmdText = line.replace("@textarea", "").trim()
                     addMultilineCmdTextAreaPanel(cmdText, 1)
-                } else if (line.startsWith("@start-textarea")) {
+                } else if (line.startsWith("@starttextarea")) {
                     // multiline text area for code
                     let multilineCmd = ""
                     let rowCount = 0
                     j++
-                    while (contents[j] !== "@end-textarea") {
+                    while (contents[j] !== "@endtextarea") {
                         multilineCmd += contents[j] + "\n"
                         j++
                         rowCount++
@@ -204,11 +204,11 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                 } else if (line.startsWith("@pre")) {
                     // preformatted text
                     addPreformattedText(line.trim())
-                } else if (line.startsWith("@start-pre")) {
+                } else if (line.startsWith("@startpre")) {
                     // multiline preformatted text
                     j++
                     let multilineCmd = ""
-                    while (contents[j] !== "@end-pre") {
+                    while (contents[j] !== "@endpre") {
                         multilineCmd += contents[j] + "\n"
                         j++
                     }

@@ -8,24 +8,24 @@
 --
 
 @h4 Copy Table Structure & Data
-@start-textarea
+@starttextarea
 CREATE TABLE new_table AS 
 TABLE existing_table;
-@end-textarea
+@endtextarea
 
 --
 
 @h4 Copy Table Structure Alone
-@start-textarea
+@starttextarea
 CREATE TABLE new_table AS 
 TABLE existing_table 
 WITH NO DATA;
-@end-textarea
+@endtextarea
 
 -- 
 
 @h4 Copy Table Structure & Partial Data
-@start-textarea
+@starttextarea
 CREATE TABLE new_table AS 
 SELECT
 *
@@ -33,6 +33,6 @@ FROM
     existing_table
 WHERE
     condition;
-@end-textarea
+@endtextarea
 
 --

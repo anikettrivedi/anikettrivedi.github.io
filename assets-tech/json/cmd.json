@@ -40,6 +40,12 @@
         ]
     },
     {
+        "title": "db-concepts",
+        "children":[
+            "db-er-model"
+        ]
+    },
+    {
         "title": "arch-system-design",
         "children": [
             "sd-security",

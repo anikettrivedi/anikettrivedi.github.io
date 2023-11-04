@@ -1,5 +1,7 @@
 @h3 Data Types
 
+---
+
 @h4 Supported Data Types in PostgreSQL
 @link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-data-types/
 @startpre
@@ -31,4 +33,41 @@ Supported Data Types:
     1 - box, line, point, lseg, polygon, inet, macaddr
 @endpre
 
+---
 
+@h3 In Depth
+
+---
+
+@h4 DATE, TIMESTAMP, INTERVAL, TIME
+
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-date/
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-timestamp/
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-interval/
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-time/
+
+---
+
+@h4 UUID
+
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-uuid/
+
+---
+
+@h4 Array
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-array/
+
+---
+
+@h4 HSTORE (key/value pairs)
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-hstore/
+
+---
+
+@h4 JSON
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-json/
+
+---
+
+@h4 User-defined Data Types
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-user-defined-data-types/

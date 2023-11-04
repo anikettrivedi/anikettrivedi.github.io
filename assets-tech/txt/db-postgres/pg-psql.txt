@@ -1,4 +1,14 @@
 @h3 PSQL Commands
+@link https://www.postgresqltutorial.com/postgresql-administration/psql-commands/
+
+---
+@h4 Get Help
+
+@pre list available PSQL commands
+@textarea \?
+
+@pre get help on specific PostgreSQL statement
+@textarea \h ALTER TABLE
 
 ---
 
@@ -12,3 +22,82 @@
 
 @pre Via SSL
 @textarea psql -U user -h host "dbname=db sslmode=require"
+
+---
+
+@h4 Switch to Different Database
+@textarea \c dbname username
+
+---
+
+@h4 List Available Databases
+@textarea \l
+
+---
+
+@h4 List Tables in Database
+@textarea \dt
+
+---
+
+@h4 Describe a Table 
+@textarea \d table_name
+
+---
+
+@h4 List Available Schema
+@textarea \dn
+
+---
+
+@h4 List Available Functions
+@textarea \df
+
+---
+
+@h4 List Available Views
+@textarea \dv
+
+---
+
+@h4 List Users and their Roles
+@textarea \du
+
+---
+
+@h4 Execute Previous Command
+@starttextarea 
+SELECT version();
+\g
+@endtextarea
+
+---
+
+@h4 Command History
+@textarea \s
+@pre save command history to a file
+@textarea \s filename
+
+---
+
+@h4 Execute PSQL Commands from a file
+@textarea \i filename
+
+---
+
+@h4 Turn on Query Execution Time
+@textarea \timing
+
+---
+
+@h4 Switch Output Format
+
+@pre Non aligned columns
+@textarea \a
+@pre HTML format
+@textarea \H
+
+---
+
+@h4 Quit PSQL 
+@textarea \q

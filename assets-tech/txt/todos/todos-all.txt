@@ -126,5 +126,9 @@
 @h4 TODO: Algorithms
 @h4 TODO: OOP Design Patterns
 @h4 TODO: Networking
-@h4 TODO: DBMS Theory
+@h4 TODO: DBMS
+@startpre
+1 - ER diagrams
+2 - DBMS Theory
+@endpre
 @h4 TODO: Operating Systems

@@ -36,7 +36,8 @@
             "pg-copy-table",
             "pg-constraints",
             "pg-conditional-exps",
-            "pg-useful"
+            "pg-useful",
+            "pg-views"
         ]
     },
     {

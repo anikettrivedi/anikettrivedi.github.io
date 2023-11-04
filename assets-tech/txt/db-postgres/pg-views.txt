@@ -1,0 +1,30 @@
+@h3 Views
+@link https://www.postgresqltutorial.com/postgresql-views/
+
+---
+
+@h4 Create, Modify and Remove Views
+@link https://www.postgresqltutorial.com/managing-postgresql-views/
+
+---
+
+@h4 Drop Views
+@link https://www.postgresqltutorial.com/postgresql-views/postgresql-drop-view/
+
+---
+
+@h4 Create Updatable Views
+@link https://www.postgresqltutorial.com/postgresql-updatable-views/
+@link https://www.postgresqltutorial.com/postgresql-views-with-check-option/
+
+---
+
+@h4 Materialized Views
+@link https://www.postgresqltutorial.com/postgresql-materialized-views/
+
+---
+
+@h4 Recursive Views
+@link https://www.postgresqltutorial.com/postgresql-recursive-view/
+
+---

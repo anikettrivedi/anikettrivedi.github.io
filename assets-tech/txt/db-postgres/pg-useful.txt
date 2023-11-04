@@ -1,0 +1,27 @@
+@h3 Useful
+
+---
+
+@h4 Compare 2 Tables
+@link https://www.postgresqltutorial.com/postgresql-tutorial/compare-two-tables-in-postgresql/
+
+---
+
+@h4 Delete Duplicate Rows
+@link https://www.postgresqltutorial.com/postgresql-tutorial/how-to-delete-duplicate-rows-in-postgresql/
+
+---
+
+@h4 Generate Random Numbers
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-random-range/
+
+---
+
+@h4 Explain Statement (Query Execution Plan)
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-explain/
+
+---
+
+@h4 Comparison With Other RDBMS Databases
+@pre PostgreSQL vs MySQL
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-vs-mysql/

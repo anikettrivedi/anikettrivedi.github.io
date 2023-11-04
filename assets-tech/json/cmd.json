@@ -35,7 +35,8 @@
             "pg-temp-table",
             "pg-copy-table",
             "pg-constraints",
-            "pg-conditional-exps"
+            "pg-conditional-exps",
+            "pg-useful"
         ]
     },
     {

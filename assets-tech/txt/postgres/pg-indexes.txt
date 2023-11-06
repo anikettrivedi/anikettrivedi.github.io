@@ -1,0 +1,48 @@
+@h3 Indexes
+
+---
+
+@h4 Create Index
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-create-index/
+
+---
+
+@h4 Drop Index
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-drop-index/
+
+---
+
+@h4 List Indexes
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-list-indexes/
+
+---
+
+@h4 Index Types
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-index-types/
+
+---
+
+@h4 Unique Index
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-unique-index/
+
+---
+
+@h4 Index on Expression
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-index-on-expression/
+
+---
+
+@h4 Partial Index
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-partial-index/
+
+---
+
+@h4 Reindex
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-reindex/
+
+---
+
+@h4 Multicolumn Index
+@link https://www.postgresqltutorial.com/postgresql-indexes/postgresql-multicolumn-indexes/
+
+---

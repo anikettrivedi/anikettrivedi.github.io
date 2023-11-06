@@ -37,7 +37,8 @@
             "pg-constraints",
             "pg-conditional-exps",
             "pg-useful",
-            "pg-views"
+            "pg-views",
+            "pg-indexes"
         ]
     },
     {

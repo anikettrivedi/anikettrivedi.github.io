@@ -223,6 +223,7 @@ function addMultilineCmdTextAreaPanel(multilineCmd) {
     let textarea = document.createElement("textarea")
     textarea.setAttribute("rows", multilineCmd.length)
     let text = multilineCmd.join('\n')
+    console.log(multilineCmd)
     console.log(text)
     // textarea.value = text
     cmdContainer.appendChild(div)
@@ -233,6 +234,7 @@ function addPreformattedText(multilineCmd) {
     let div = document.createElement("div")
     let pre = document.createElement("pre")
     let text = multilineCmd.join('\n')
+    console.log(multilineCmd)
     console.log(text)
     // pre.appendChild(document.createTextNode(text))
     cmdContainer.appendChild(div)

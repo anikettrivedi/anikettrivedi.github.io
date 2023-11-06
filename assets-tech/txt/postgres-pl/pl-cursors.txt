@@ -1,0 +1,2 @@
+@h3 Cursors
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-cursor/

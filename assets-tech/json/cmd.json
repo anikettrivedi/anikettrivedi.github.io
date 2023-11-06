@@ -52,8 +52,8 @@
             "pl-functions",
             "pl-exceptions",
             "pl-stored-procedures",
-            "pl-cursor-todo",
-            "pl-triggers-todo"
+            "pl-cursors",
+            "pl-triggers"
         ]
     },
     {

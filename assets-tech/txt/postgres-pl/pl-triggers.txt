@@ -1,0 +1,77 @@
+@h3 Triggers
+@link https://www.postgresqltutorial.com/postgresql-triggers/
+
+---
+
+@h3 Introduction to Triggers
+@link https://www.postgresqltutorial.com/postgresql-triggers/
+
+---
+
+@h3 Create Triggers
+@link https://www.postgresqltutorial.com/postgresql-triggers/creating-first-trigger-postgresql/
+
+@h4 Create Trigger Function Syntax
+@starttextarea
+CREATE FUNCTION trigger_function() 
+   RETURNS TRIGGER 
+   LANGUAGE PLPGSQL
+AS $$
+BEGIN
+   -- trigger logic
+END;
+$$
+@endtextarea
+
+@h4 Create Trigger Syntax
+@starttextarea
+CREATE TRIGGER trigger_name 
+   {BEFORE | AFTER} { event }
+   ON table_name
+   [FOR [EACH] { ROW | STATEMENT }]
+       EXECUTE PROCEDURE trigger_function
+@endtextarea
+
+@pre Example
+@starttextarea
+-- Trigger Function
+CREATE OR REPLACE FUNCTION log_last_name_changes()
+  RETURNS TRIGGER 
+  LANGUAGE PLPGSQL
+  AS
+$$
+BEGIN
+	IF NEW.last_name <> OLD.last_name THEN
+		 INSERT INTO employee_audits(employee_id,last_name,changed_on)
+		 VALUES(OLD.id,OLD.last_name,now());
+	END IF;
+
+	RETURN NEW;
+END;
+$$
+
+-- Linking Trigger Function to table
+CREATE TRIGGER last_name_changes
+  BEFORE UPDATE
+  ON employees
+  FOR EACH ROW
+  EXECUTE PROCEDURE log_last_name_changes();
+@endtextarea
+
+---
+
+@h3 Drop Trigger
+@link https://www.postgresqltutorial.com/postgresql-triggers/postgresql-drop-trigger/
+
+---
+
+@h3 Alter Trigger
+@link https://www.postgresqltutorial.com/postgresql-triggers/postgresql-alter-trigger/
+
+---
+
+@h3 Disabling & Enabling Trigger
+@link https://www.postgresqltutorial.com/postgresql-triggers/managing-postgresql-trigger/
+@link https://www.postgresqltutorial.com/postgresql-triggers/enable-triggers/
+
+---

@@ -1,5 +1,3 @@
-@h3 Functions in PostgreSQL
-
 ---
 
 @h3 Aggregate Functions

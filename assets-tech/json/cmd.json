@@ -1,12 +1,12 @@
 [
     {
-        "title": "todos",
+        "title": "todo",
         "children": [
-            "todos-all"
+            "todolist"
         ]
     },
     {
-        "title": "lang-java",
+        "title": "java",
         "children": [
             "java-evolution",
             "java-literature",
@@ -17,7 +17,7 @@
         ]
     },
     {
-        "title": "db-postgres",
+        "title": "postgres",
         "children": [
             "pg-psql",
             "pg-sample-db",
@@ -41,13 +41,13 @@
         ]
     },
     {
-        "title": "db-concepts",
+        "title": "dbms",
         "children":[
             "db-er-model"
         ]
     },
     {
-        "title": "arch-system-design",
+        "title": "systemdesign",
         "children": [
             "sd-security",
             "sd-comm-protocols"
@@ -61,7 +61,7 @@
         ]
     },
     {
-        "title": "os-linux",
+        "title": "linux",
         "children": [
             "shell-ifs-awk",
             "shell-resource",

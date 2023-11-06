@@ -116,8 +116,8 @@ function insertSelectLevel2() {
         select2.value = subtype
     }
 
-    console.log(`type=${type}`)
-    console.log(`subtype=${subtype}`)
+    // console.log(`type=${type}`)
+    // console.log(`subtype=${subtype}`)
 }
 
 function insertButton() {
@@ -202,7 +202,8 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     addMultilineCmdTextAreaPanel(multilineCmd)
                 } else if (line.startsWith("@pre")) {
                     // preformatted text
-                    let cmdText = [].push(line.replace("@pre", "").trim())
+                    let cmdText = []
+                    cmdText.push(line.replace("@pre", "").trim())
                     addPreformattedText(cmdText)
                 } else if (line.startsWith("@startpre")) {
                     // multiline preformatted text
@@ -223,20 +224,21 @@ function addMultilineCmdTextAreaPanel(multilineCmd) {
     let textarea = document.createElement("textarea")
     textarea.setAttribute("rows", multilineCmd.length)
     let text = multilineCmd.join('\n')
-    console.log(multilineCmd)
-    console.log(text)
-    // textarea.value = text
+    // console.log(multilineCmd)
+    // console.log(text)
+    textarea.value = text
     cmdContainer.appendChild(div)
     div.appendChild(textarea)
 }
 
 function addPreformattedText(multilineCmd) {
+    // console.log(multilineCmd)
     let div = document.createElement("div")
     let pre = document.createElement("pre")
     let text = multilineCmd.join('\n')
-    console.log(multilineCmd)
-    console.log(text)
-    // pre.appendChild(document.createTextNode(text))
+    // console.log(multilineCmd)
+    // console.log(text)
+    pre.appendChild(document.createTextNode(text))
     cmdContainer.appendChild(div)
     div.appendChild(pre)
 }

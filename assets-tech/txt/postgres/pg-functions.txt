@@ -34,3 +34,5 @@
 @link https://www.postgresqltutorial.com/postgresql-math-functions/
 
 @pre ABS/CEIL/MOD/FLOOR/ROUND/TRUNC
+
+---

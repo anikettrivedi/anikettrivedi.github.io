@@ -1,0 +1,136 @@
+@h3 Loop statements
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-loop-statements/
+
+@pre Example
+@starttextarea
+do $$
+declare
+   n integer:= 10;
+   fib integer := 0;
+   counter integer := 0 ; 
+   i integer := 0 ; 
+   j integer := 1 ;
+begin
+	if (n < 1) then
+		fib := 0 ;
+	end if; 
+	loop 
+		exit when counter = n ; 
+		counter := counter + 1 ; 
+		select j, i + j into i,	j ;
+	end loop; 
+	fib := i;
+    raise notice '%', fib; 
+end; $$
+@endtextarea
+
+---
+
+@h3 While Loop
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/pl-pgsql-while-loop/
+
+@pre Example
+@starttextarea
+do $$
+declare 
+   counter integer := 0;
+begin
+   while counter < 5 loop
+      raise notice 'Counter %', counter;
+	  counter := counter + 1;
+   end loop;
+end$$;
+@endtextarea
+
+---
+
+@h3 For Loop
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-for-loop/
+
+@pre Example
+@starttextarea
+do $$
+begin
+   for counter in 1..5 loop
+	raise notice 'counter: %', counter;
+   end loop;
+end; $$
+@endtextarea
+
+@starttextarea
+do $$
+begin
+   for counter in reverse 5..1 loop
+      raise notice 'counter: %', counter;
+   end loop;
+end; $$
+@endtextarea
+
+@starttextarea
+do $$
+begin 
+  for counter in 1..6 by 2 loop
+    raise notice 'counter: %', counter;
+  end loop;
+end; $$
+@endtextarea
+
+@starttextarea
+do
+$$
+declare
+    f record;
+begin
+    for f in select title, length 
+	       from film 
+	       order by length desc, title
+	       limit 10 
+    loop 
+	raise notice '%(% mins)', f.title, f.length;
+    end loop;
+end;
+$$
+@endtextarea
+
+@starttextarea
+do $$
+declare
+    -- sort by 1: title, 2: release year
+    sort_type smallint := 1; 
+	-- return the number of films
+	rec_count int := 10;
+	-- use to iterate over the film
+	rec record;
+	-- dynamic query
+    query text;
+begin
+		
+	query := 'select title, release_year from film ';
+	
+	if sort_type = 1 then
+		query := query || 'order by title';
+	elsif sort_type = 2 then
+	  query := query || 'order by release_year';
+	else 
+	   raise 'invalid sort type %s', sort_type;
+	end if;
+
+	query := query || ' limit $1';
+
+	for rec in execute query using rec_count
+        loop
+	     raise notice '% - %', rec.release_year, rec.title;
+	end loop;
+end;
+$$
+@endtextarea
+
+---
+
+@h3 Exit Statement
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-exit/
+
+---
+
+@h3 Continue Statement
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/pl-pgsql-continue/

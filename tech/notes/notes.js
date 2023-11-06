@@ -186,6 +186,17 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     let img = document.createElement("img")
                     img.setAttribute("src", src)
                     cmdContainer.appendChild(img)
+                } else if (line.startsWith("@ol")) {
+                    // add ordered link
+                    let olText = line.replace("@ol", "").trim()
+                    let olLiTextArray = olText.split("/")
+                    let ol = document.createElement("ol")
+                    cmdContainer.appendChild(ol)
+                    for (let liIndex in olLiTextArray) {
+                        let li = document.createElement("li")
+                        li.appendChild(document.createTextNode(olLiTextArray[liIndex]))
+                        ol.appendChild(li)
+                    }
                 } else if (line.startsWith("@textarea")) {
                     // text area for code
                     let cmdText = []

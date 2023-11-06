@@ -5,7 +5,9 @@ p,
 a,
 input,
 select,
-button {
+button,
+ol,
+li {
     font-family: monospace;
 }
 

@@ -38,7 +38,8 @@
             "pg-conditional-exps",
             "pg-useful",
             "pg-views",
-            "pg-indexes"
+            "pg-indexes", 
+            "pg-functions"
         ]
     },
     {

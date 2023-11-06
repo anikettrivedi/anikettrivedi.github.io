@@ -1,0 +1,213 @@
+@h3 If Statement
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-if-else-statements/
+
+---
+
+@h4 if-then statement
+
+@pre Syntax
+@starttextarea
+if condition then
+   statements;
+end if;
+@endtextarea
+
+@pre Example
+@starttextarea
+do $$
+declare
+  selected_film film%rowtype;
+  input_film_id film.film_id%type := 0;
+begin  
+
+  select * from film
+  into selected_film
+  where film_id = input_film_id;
+  
+  if not found then
+     raise notice'The film % could not be found', 
+	    input_film_id;
+  end if;
+end $$
+@endtextarea
+
+---
+
+@h4 if-then-else statement
+
+@pre Syntax
+@starttextarea
+if condition then
+  statements;
+else
+  alternative-statements;
+END if;
+@endtextarea
+
+@pre Example
+@starttextarea
+do $$
+declare
+  selected_film film%rowtype;
+  input_film_id film.film_id%type := 100;
+begin  
+
+  select * from film
+  into selected_film
+  where film_id = input_film_id;
+  
+  if not found then
+     raise notice 'The film % could not be found', 
+	    input_film_id;
+  else
+     raise notice 'The film title is %', selected_film.title;
+  end if;
+end $$
+@endtextarea
+
+---
+
+@h4 if-then-elseif statement
+
+@pre Syntax
+@starttextarea
+if condition_1 then
+  statement_1;
+elsif condition_2 then
+  statement_2
+...
+elsif condition_n then
+  statement_n;
+else
+  else-statement;
+end if;
+@endtextarea
+
+@pre Example
+@starttextarea
+do $$
+declare
+   v_film film%rowtype;
+   len_description varchar(100);
+begin  
+
+  select * from film
+  into v_film
+  where film_id = 100;
+  
+  if not found then
+     raise notice 'Film not found';
+  else
+      if v_film.length >0 and v_film.length <= 50 then
+		 len_description := 'Short';
+	  elsif v_film.length > 50 and v_film.length < 120 then
+		 len_description := 'Medium';
+	  elsif v_film.length > 120 then
+		 len_description := 'Long';
+	  else 
+		 len_description := 'N/A';
+	  end if;
+    
+	  raise notice 'The % film is %.',
+	     v_film.title,  
+	     len_description;
+  end if;
+end $$
+@endtextarea
+
+---
+
+@h3 Case Expression vs Case Statement
+@link https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-case/
+@pre Notice that you should not confuse about the case statement and case expression. The case expression evaluates to a value while the case statement selects a section to execute based on condition.
+
+---
+
+@h3 Case Statement
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-case-statement/
+
+---
+
+@h4 Simple Case Statement
+@pre Syntax
+@starttextarea
+case search-expression
+   when expression_1 [, expression_2, ...] then
+      when-statements
+  [ ... ]
+  [else
+      else-statements ]
+END case;
+@endtextarea
+
+@pre Example
+@starttextarea
+do $$
+declare 
+	rate   film.rental_rate%type;
+	price_segment varchar(50);
+begin
+    -- get the rental rate
+    select rental_rate into rate 
+    from film 
+    where film_id = 100;
+	
+	-- assign the price segment
+	if found then
+		case rate
+		   when 0.99 then
+              price_segment =  'Mass';
+		   when 2.99 then
+              price_segment = 'Mainstream';
+		   when 4.99 then
+              price_segment = 'High End';
+		   else
+	    	  price_segment = 'Unspecified';
+		   end case;
+		raise notice '%', price_segment;  
+    end if;
+end; $$
+@endtextarea
+
+---
+
+@h4 Searched Case Statement
+@pre Syntax
+@starttextarea
+case
+    when boolean-expression-1 then
+      statements
+  [ when boolean-expression-2 then
+      statements
+    ... ]
+  [ else
+      statements ]
+end case;
+@endtextarea
+
+@pre Example
+@starttextarea
+do $$ 
+declare
+    total_payment numeric; 
+    service_level varchar(25) ;
+begin
+     select sum(amount) into total_payment
+     from Payment
+     where customer_id = 100; 
+	 
+	 if found then
+	    case 
+		   when total_payment > 200 then
+               service_level = 'Platinum' ;
+           when total_payment > 100 then
+	           service_level = 'Gold' ;
+           else
+               service_level = 'Silver' ;
+        end case;
+		raise notice 'Service Level: %', service_level;
+     else
+	    raise notice 'Customer not found';
+	 end if;
+end; $$ 
+@endtextarea

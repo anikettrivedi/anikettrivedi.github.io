@@ -2,7 +2,7 @@
     {
         "title": "todo",
         "children": [
-            "todolist"
+            "list-1"
         ]
     },
     {
@@ -39,6 +39,18 @@
             "pg-useful",
             "pg-views",
             "pg-indexes"
+        ]
+    },
+    {
+        "title": "postgres-pl-pgsql",
+        "children":[
+            "pl-intro",
+            "pl-variables-constants",
+            "pl-messages-errors",
+            "pl-if-case",
+            "pl-loops",
+            "pl-functions",
+            "pl-exceptions"
         ]
     },
     {

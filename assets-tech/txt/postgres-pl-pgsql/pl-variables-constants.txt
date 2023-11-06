@@ -1,0 +1,51 @@
+@h3 Variables & Constants
+
+---
+
+@h4 Variables
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-variables/
+
+---
+
+@h4 SELECT INTO
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/pl-pgsql-select-into/
+@pre Example
+@starttextarea
+do $$
+declare
+   actor_count integer; 
+begin
+   -- select the number of actors from the actor table
+   select count(*)
+   into actor_count
+   from actor;
+
+   -- show the number of actors
+   raise notice 'The number of actors: %', actor_count;
+end; $$
+@endtextarea
+
+---
+
+@h4 Row Types
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/pl-pgsql-row-types/
+
+---
+
+@h4 Record Types
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-record-types/
+
+---
+
+@h4 Constants
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-constants/
+@pre Example
+@starttextarea
+do $$ 
+declare
+   vat constant numeric := 0.1;
+   net_price    numeric := 20.5;
+begin
+   raise notice 'The selling price is %', net_price * ( 1 + vat );
+end $$;
+@endtextarea

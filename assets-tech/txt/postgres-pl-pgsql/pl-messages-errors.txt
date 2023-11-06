@@ -1,0 +1,13 @@
+@h3 Messages and Errors
+
+---
+
+@h4 Errors and Messages
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-errors-messages/
+
+---
+
+@h4 Assert Statement
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/pl-pgsql-assert/
+
+---

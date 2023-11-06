@@ -1,0 +1,45 @@
+@h3 PL/pgSQL
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/introduction-to-postgresql-stored-procedures/
+
+@startpre
+1 - PL/pgSQL is a procedural programming language for the PostgreSQL database system.
+2 - PL/pgSQL allows you to extend the functionality of the PostgreSQL database server by creating server objects with complex logic.
+@endpre
+
+---
+
+@h4 Dollar Quoted Strings
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/dollar-quoted-string-constants/
+@pre Example
+@starttextarea
+do 
+$$
+declare
+   film_count integer;
+begin 
+   select count(*) into film_count
+   from film;
+   raise notice 'The number of films: %', film_count;
+end;
+$$
+@endtextarea
+
+---
+
+@h4 Block Structure
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/plpgsql-block-structure/
+@pre Example
+@starttextarea
+do $$ 
+<<first_block>>
+declare
+  film_count integer := 0;
+begin
+   -- get the number of films
+   select count(*) 
+   into film_count
+   from film;
+   -- display a message
+   raise notice 'The number of films is %', film_count;
+end first_block $$;
+@endtextarea

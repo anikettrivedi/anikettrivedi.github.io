@@ -1,0 +1,2 @@
+@h3 Exceptions
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/postgresql-exception/

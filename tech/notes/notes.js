@@ -188,29 +188,28 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     cmdContainer.appendChild(img)
                 } else if (line.startsWith("@textarea")) {
                     // text area for code
-                    let cmdText = line.replace("@textarea", "").trim()
-                    addMultilineCmdTextAreaPanel(cmdText, 1)
+                    let cmdText = []
+                    cmdText.push(line.replace("@textarea", "").trim())
+                    addMultilineCmdTextAreaPanel(cmdText)
                 } else if (line.startsWith("@starttextarea")) {
                     // multiline text area for code
-                    let multilineCmd = ""
-                    let rowCount = 0
+                    let multilineCmd = []
                     j++
                     while (contents[j] !== "@endtextarea") {
-                        multilineCmd += contents[j] + "\n"
+                        multilineCmd.push(contents[j])
                         j++
-                        rowCount++
                     }
-                    addMultilineCmdTextAreaPanel(multilineCmd, rowCount)
+                    addMultilineCmdTextAreaPanel(multilineCmd)
                 } else if (line.startsWith("@pre")) {
                     // preformatted text
-                    let cmdText = line.replace("@pre", "").trim()
+                    let cmdText = [].push(line.replace("@pre", "").trim())
                     addPreformattedText(cmdText)
                 } else if (line.startsWith("@startpre")) {
                     // multiline preformatted text
                     j++
-                    let multilineCmd = ""
+                    let multilineCmd = []
                     while (contents[j] !== "@endpre") {
-                        multilineCmd += contents[j] + "\n"
+                        multilineCmd.push(contents[j])
                         j++
                     }
                     addPreformattedText(multilineCmd)
@@ -219,19 +218,23 @@ function fetchSectionContentsAndAdd(select2Value, url) {
         })
 }
 
-function addMultilineCmdTextAreaPanel(cmdText, rowCount) {
+function addMultilineCmdTextAreaPanel(multilineCmd) {
     let div = document.createElement("div")
     let textarea = document.createElement("textarea")
-    textarea.setAttribute("rows", rowCount)
-    textarea.value = cmdText
+    textarea.setAttribute("rows", multilineCmd.length)
+    let text = multilineCmd.join('\n')
+    console.log(text)
+    // textarea.value = text
     cmdContainer.appendChild(div)
     div.appendChild(textarea)
 }
 
-function addPreformattedText(cmdText) {
+function addPreformattedText(multilineCmd) {
     let div = document.createElement("div")
     let pre = document.createElement("pre")
-    pre.appendChild(document.createTextNode(cmdText))
+    let text = multilineCmd.join('\n')
+    console.log(text)
+    // pre.appendChild(document.createTextNode(text))
     cmdContainer.appendChild(div)
     div.appendChild(pre)
 }

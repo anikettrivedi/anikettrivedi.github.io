@@ -5,42 +5,33 @@
 @h3 Aggregate Functions
 @link https://www.postgresqltutorial.com/postgresql-aggregate-functions/
 
-@startpre
-AVG/ARRAY_AGG/COUNT/SUM/STRING_AGG/MAX/MIN
-@endpre
+@pre AVG/ARRAY_AGG/COUNT/SUM/STRING_AGG/MAX/MIN
 
 ---
 
 @h3 Window Functions
 @link https://www.postgresqltutorial.com/postgresql-window-function/
 
-@startpre
-CUME_DIST/DENSE_RANK/FIRST_VALUE/LAG/LAST_VALUE/LEAD/NTILE/NTH_VALUE/PERCENT_RANK/RANK/ROW_NUMBER
-@endpre
+@pre CUME_DIST/DENSE_RANK/FIRST_VALUE/LAG/LAST_VALUE/LEAD/NTILE/NTH_VALUE/PERCENT_RANK/RANK/ROW_NUMBER
 
 ---
 
 @h3 Date Functions
 @link https://www.postgresqltutorial.com/postgresql-date-functions/
 
-@startpre
-AGE/CURRENT_DATE/CURRENT_TIME/CURRENT_TIMESTAMP/EXTRACT/LOCALTIME/LOCALTIMESTAMP/DATE_PART/DATE_TRUNC/NOW/TO_DATE/TO_TIMESTAMP
-@endpre
+@pre AGE/CURRENT_DATE/CURRENT_TIME/CURRENT_TIMESTAMP/EXTRACT/LOCALTIME/LOCALTIMESTAMP/DATE_PART/DATE_TRUNC/NOW/TO_DATE/TO_TIMESTAMP
 
 ---
 
 @h3 String Functions
 @link https://www.postgresqltutorial.com/postgresql-string-functions/
 
-@startpre
+@pre
 ASCII/CONCAT/CHR/FORMAT/LEFT/LENGTH/LPAD/MD5/POSITION/REGEXP_MATCHES/REGEXP_REPLACE/RIGHT/REPLACE/SPLIT_PART/SUBSTRING/TRANSLATE/TRIM/TO_CHAR/TO_NUMBER
-@endpre
 
 ---
 
 @h3 Math Functions
 @link https://www.postgresqltutorial.com/postgresql-math-functions/
 
-@startpre
-ABS/CEIL/MOD/FLOOR/ROUND/TRUNC
-@endpre 
+@pre ABS/CEIL/MOD/FLOOR/ROUND/TRUNC

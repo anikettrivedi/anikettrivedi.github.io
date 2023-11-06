@@ -50,7 +50,8 @@
             "pl-if-case",
             "pl-loops",
             "pl-functions",
-            "pl-exceptions"
+            "pl-exceptions",
+            "pl-stored-procedures"
         ]
     },
     {

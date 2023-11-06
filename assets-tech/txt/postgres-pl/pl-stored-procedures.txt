@@ -1,0 +1,72 @@
+@h3 Create Stored Procedures
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/postgresql-create-procedure/
+
+@startpre
+1 - A drawback of user-defined functions is that they cannot execute transactions. In other words, inside a user-defined function, you cannot start a transaction, and commit or rollback it.
+2 - PostgreSQL 11 introduced stored procedures that support transactions.
+3 - Parameters in stored procedures can have the in and inout modes. They cannot have the out mode.
+4 - A stored procedure does not return a value.
+@endpre
+
+---
+
+@h4 Creating a stored procedure
+
+@pre Syntax
+@starttextarea
+create [or replace] procedure procedure_name(parameter_list)
+language plpgsql
+as $$
+declare
+-- variable declaration
+begin
+-- stored procedure body
+end; $$
+@endtextarea
+
+@pre The following example creates a stored procedure named transfer that transfers a specified amount of money from one account to another:
+@starttextarea
+create or replace procedure transfer(
+   sender int,
+   receiver int, 
+   amount dec
+)
+language plpgsql    
+as $$
+begin
+    -- subtracting the amount from the sender's account 
+    update accounts 
+    set balance = balance - amount 
+    where id = sender;
+
+    -- adding the amount to the receiver's account
+    update accounts 
+    set balance = balance + amount 
+    where id = receiver;
+
+    commit;
+end;$$
+@endtextarea
+
+---
+
+@h4 Calling a stored procedure
+
+@pre Syntax
+@textarea call stored_procedure_name(argument_list);
+
+@pre Example:
+@textarea call transfer(1,2,1000);
+
+---
+
+@h4 Summary
+@startpre
+1 - Use create procedure statement to define a new stored procedure.
+2 - Use the call statement to invoke a stored procedure.
+@endpre
+
+---
+
+@h3 Drop Stored Procedures
+@link https://www.postgresqltutorial.com/postgresql-plpgsql/postgresql-drop-procedure/

@@ -42,7 +42,7 @@
         ]
     },
     {
-        "title": "postgres-pl-pgsql",
+        "title": "postgres-pl",
         "children":[
             "pl-intro",
             "pl-variables-constants",

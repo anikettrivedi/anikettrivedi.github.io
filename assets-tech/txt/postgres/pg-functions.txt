@@ -6,13 +6,7 @@
 @link https://www.postgresqltutorial.com/postgresql-aggregate-functions/
 
 @startpre
-1 - AVG
-2 - ARRAY_AGG
-3 - COUNT
-4 - SUM
-5 - STRING_AGG
-6 - MAX
-7 - MIN
+AVG/ARRAY_AGG/COUNT/SUM/STRING_AGG/MAX/MIN
 @endpre
 
 ---
@@ -21,17 +15,7 @@
 @link https://www.postgresqltutorial.com/postgresql-window-function/
 
 @startpre
-1 - CUME_DIST
-2 - DENSE_RANK
-3 - FIRST_VALUE
-4 - LAG
-5 - LAST_VALUE
-6 - LEAD
-7 - NTILE
-8 - NTH_VALUE
-9 - PERCENT_RANK
-10 - RANK
-11 - ROW_NUMBER
+CUME_DIST/DENSE_RANK/FIRST_VALUE/LAG/LAST_VALUE/LEAD/NTILE/NTH_VALUE/PERCENT_RANK/RANK/ROW_NUMBER
 @endpre
 
 ---
@@ -40,18 +24,8 @@
 @link https://www.postgresqltutorial.com/postgresql-date-functions/
 
 @startpre
-1 - AGE
-2 - CURRENT_DATE
-3 - CURRENT_TIME
-4 - CURRENT_TIMESTAMP
-5 - EXTRACT
-6 - LOCALTIME
-7 - LOCALTIMESTAMP
-8 - DATE_PART
-9 - DATE_TRUNC
-10 - NOW
-11 - TO_DATE
-12 - TO_TIMESTAMP
+AGE
+/CURRENT_DATE/CURRENT_TIME/CURRENT_TIMESTAMP/EXTRACT/LOCALTIME/LOCALTIMESTAMP/DATE_PART/DATE_TRUNC/NOW/TO_DATE/TO_TIMESTAMP
 @endpre
 
 ---
@@ -60,25 +34,7 @@
 @link https://www.postgresqltutorial.com/postgresql-string-functions/
 
 @startpre
-1 - ASCII
-2 - CONCAT
-3 - CHR
-4 - FORMAT
-5 - LEFT
-6 - LENGTH
-7 - LPAD
-8 - MD5
-9 - POSITION
-10 - REGEXP_MATCHES
-11 - REGEXP_REPLACE
-12 - RIGHT
-13 - REPLACE
-14 - SPLIT_PART
-15 - SUBSTRING
-16 - TRANSLATE
-17 - TRIM
-18 - TO_CHAR
-19 - TO_NUMBER
+ASCII/CONCAT/CHR/FORMAT/LEFT/LENGTH/LPAD/MD5/POSITION/REGEXP_MATCHES/REGEXP_REPLACE/RIGHT/REPLACE/SPLIT_PART/SUBSTRING/TRANSLATE/TRIM/TO_CHAR/TO_NUMBER
 @endpre
 
 ---
@@ -87,10 +43,5 @@
 @link https://www.postgresqltutorial.com/postgresql-math-functions/
 
 @startpre
-1 - ABS
-2 - CEIL
-3 - MOD
-4 - FLOOR
-5 - ROUND
-6 - TRUNC
+ABS/CEIL/MOD/FLOOR/ROUND/TRUNC
 @endpre 

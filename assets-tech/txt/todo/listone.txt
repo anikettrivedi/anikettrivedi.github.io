@@ -57,6 +57,7 @@
 
 @h4 TODO: Spring, Spring Boot and other Spring Projects
 @h4 TODO: Regular Expressions
+@h4 TODO: Java Modules
 @h4 TODO: Security using JDK Libraries
 @h4 TODO: Virtual Threads
 @h4 TODO: Java Concurrency

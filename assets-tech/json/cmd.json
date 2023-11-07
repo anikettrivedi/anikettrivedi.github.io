@@ -1,14 +1,17 @@
 [
     {
-        "group": "todo list"
+        "type": "optgroup",
+        "title": "todo lists"
     },
     {
+        "type": "option",
         "title": "todo",
         "children": [
             "listone"
         ]
     },
     {
+        "type": "option",
         "title": "java",
         "children": [
             "java-evolution",
@@ -20,6 +23,7 @@
         ]
     },
     {
+        "type": "option",
         "title": "postgres",
         "children": [
             "pg-psql",
@@ -61,12 +65,14 @@
         ]
     },
     {
+        "type": "option",
         "title": "dbms",
         "children":[
             "db-er-model"
         ]
     },
     {
+        "type": "option",
         "title": "systemdesign",
         "children": [
             "sd-security",
@@ -74,6 +80,7 @@
         ]
     },
     {
+        "type": "option",
         "title": "cs",
         "children": [
             "ds-linked-list",
@@ -81,6 +88,7 @@
         ]
     },
     {
+        "type": "option",
         "title": "linux",
         "children": [
             "shell-ifs-awk",

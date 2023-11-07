@@ -35,6 +35,7 @@ function insertSelectLevel1() {
 
     titleChildrenArray.forEach(
         (i) => {
+            
             let option = document.createElement("option")
             option.setAttribute("value", i.title)
             option.appendChild(document.createTextNode(i.title))

@@ -1,5 +1,8 @@
 [
     {
+        "group": "todo list"
+    },
+    {
         "title": "todo",
         "children": [
             "listone"

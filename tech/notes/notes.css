@@ -11,6 +11,10 @@ li {
     font-family: monospace;
 }
 
+option {
+    background-color: bisque;
+}
+
 input,
 textarea {
     box-sizing: border-box;

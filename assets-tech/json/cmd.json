@@ -1,13 +1,13 @@
 [
     {
-        "optgroup": "todo lists",
-        "title": "todo",
+        "optgroup": "Lists",
+        "title": "todo-lists",
         "children": [
-            "listone"
+            "list-one"
         ]
     },
     {
-        "optgroup": "programming languages",
+        "optgroup": "Languages",
         "title": "java",
         "children": [
             "java-evolution",
@@ -19,7 +19,7 @@
         ]
     },
     {
-        "optgroup": "databases",
+        "optgroup": "Databases",
         "title": "postgres",
         "children": [
             "pg-psql",
@@ -46,7 +46,7 @@
         ]
     },
     {
-        "optgroup": "databases",
+        "optgroup": "Databases",
         "title": "postgres-pl",
         "children": [
             "pl-intro",
@@ -62,14 +62,14 @@
         ]
     },
     {
-        "optgroup": "databases",
+        "optgroup": "Databases",
         "title": "dbms",
         "children": [
             "db-er-model"
         ]
     },
     {
-        "optgroup": "software design",
+        "optgroup": "Design",
         "title": "systemdesign",
         "children": [
             "sd-security",
@@ -77,16 +77,22 @@
         ]
     },
     {
-        "optgroup": "computer science",
-        "title": "cs",
+        "optgroup": "CS",
+        "title": "data-structures",
         "children": [
-            "ds-linked-list",
-            "cs-concurrency"
+            "linked-lists"
         ]
     },
     {
-        "optgroup": "operating systems",
-        "title": "linux",
+        "optgroup": "CS",
+        "title": "cs-other",
+        "children": [
+            "concurrency"
+        ]
+    },
+    {
+        "optgroup": "OS",
+        "title": "linux-shell",
         "children": [
             "shell-ifs-awk",
             "shell-resource",

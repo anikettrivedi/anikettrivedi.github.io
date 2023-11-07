@@ -1,6 +1,7 @@
 var titleChildrenArray;
 var selectContainer = document.getElementById("select-container")
 var cmdContainer = document.getElementById("cmd-container")
+var optgroupMap = new Map();
 var type = ""
 var subtype = ""
 
@@ -35,14 +36,20 @@ function insertSelectLevel1() {
 
     titleChildrenArray.forEach(
         (i) => {
-            if (i.type === "optgroup") {
-                
+            let option = document.createElement("option")
+            option.setAttribute("value", i.title)
+            option.appendChild(document.createTextNode(i.title))
+
+            let optgroup = null
+            if (optgroupMap.has(i.optgroup)) {
+                optgroup = optgroupMap.get(i.optgroup)
             } else {
-                let option = document.createElement("option")
-                option.setAttribute("value", i.title)
-                option.appendChild(document.createTextNode(i.title))
-                select1.appendChild(option)
+                optgroup = document.createElement("optgroup")
+                optgroupMap.set(i.optgroup, optgroup)
+                optgroup.label = i.optgroup
+                select1.appendChild(optgroup)
             }
+            optgroup.appendChild(option)
         }
     )
 

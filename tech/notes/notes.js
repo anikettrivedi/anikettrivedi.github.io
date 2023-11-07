@@ -35,11 +35,14 @@ function insertSelectLevel1() {
 
     titleChildrenArray.forEach(
         (i) => {
-            
-            let option = document.createElement("option")
-            option.setAttribute("value", i.title)
-            option.appendChild(document.createTextNode(i.title))
-            select1.appendChild(option)
+            if (i.type === "optgroup") {
+                
+            } else {
+                let option = document.createElement("option")
+                option.setAttribute("value", i.title)
+                option.appendChild(document.createTextNode(i.title))
+                select1.appendChild(option)
+            }
         }
     )
 

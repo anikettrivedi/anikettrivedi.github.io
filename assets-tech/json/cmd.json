@@ -1,17 +1,13 @@
 [
     {
-        "type": "optgroup",
-        "title": "todo lists"
-    },
-    {
-        "type": "option",
+        "optgroup": "todo lists",
         "title": "todo",
         "children": [
             "listone"
         ]
     },
     {
-        "type": "option",
+        "optgroup": "programming languages",
         "title": "java",
         "children": [
             "java-evolution",
@@ -23,7 +19,7 @@
         ]
     },
     {
-        "type": "option",
+        "optgroup": "databases",
         "title": "postgres",
         "children": [
             "pg-psql",
@@ -45,13 +41,14 @@
             "pg-conditional-exps",
             "pg-useful",
             "pg-views",
-            "pg-indexes", 
+            "pg-indexes",
             "pg-functions"
         ]
     },
     {
+        "optgroup": "databases",
         "title": "postgres-pl",
-        "children":[
+        "children": [
             "pl-intro",
             "pl-variables-constants",
             "pl-messages-errors",
@@ -65,14 +62,14 @@
         ]
     },
     {
-        "type": "option",
+        "optgroup": "databases",
         "title": "dbms",
-        "children":[
+        "children": [
             "db-er-model"
         ]
     },
     {
-        "type": "option",
+        "optgroup": "software design",
         "title": "systemdesign",
         "children": [
             "sd-security",
@@ -80,7 +77,7 @@
         ]
     },
     {
-        "type": "option",
+        "optgroup": "computer science",
         "title": "cs",
         "children": [
             "ds-linked-list",
@@ -88,7 +85,7 @@
         ]
     },
     {
-        "type": "option",
+        "optgroup": "operating systems",
         "title": "linux",
         "children": [
             "shell-ifs-awk",

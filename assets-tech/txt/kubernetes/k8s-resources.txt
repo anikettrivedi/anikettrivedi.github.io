@@ -1,0 +1,46 @@
+---
+
+@h3 Kubernetes
+
+@h4 Reference Documentation
+@link https://kubernetes.io/docs/reference/
+
+---
+
+@h3 Concepts and tasks
+
+@h4 Concepts
+@link https://kubernetes.io/docs/concepts/
+
+@h4 Tasks
+@link https://kubernetes.io/docs/tasks/
+
+
+---
+
+@h3 Hands On Guides
+
+@h4 Links
+@link https://kubernetes.io/docs/tutorials/
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/
+@link https://kubernetes.io/docs/tutorials/configuration/
+@link https://kubernetes.io/docs/tutorials/security/
+@link https://kubernetes.io/docs/tutorials/stateless-application/
+@link https://kubernetes.io/docs/tutorials/stateful-application/
+@link https://kubernetes.io/docs/tutorials/services/
+
+---
+
+@h3 Kubernetes Setup
+@link https://kubernetes.io/docs/setup/
+
+@h4 Learning Environment
+@link https://kubernetes.io/docs/tasks/tools/
+
+@h4 Production Environment
+@link https://kubernetes.io/docs/setup/production-environment/
+
+@h4 Best Practices
+@link https://kubernetes.io/docs/setup/best-practices/
+
+---

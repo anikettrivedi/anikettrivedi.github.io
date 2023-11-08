@@ -73,7 +73,8 @@
         "title": "kubernetes",
         "children":[
             "k8s-setup",
-            "todo-k8s-objects",
+            "k8s-objects",
+            "todo-k8s-objects-mgmt",
             "todo-k8s-components",
             "todo-k8s-api",
             "todo-k8s-cluster",

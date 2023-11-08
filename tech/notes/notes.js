@@ -205,7 +205,7 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                     cmdContainer.appendChild(ol)
                     for (let liIndex in olLiTextArray) {
                         let li = document.createElement("li")
-                        li.appendChild(document.createTextNode(olLiTextArray[liIndex]))
+                        li.appendChild(document.createTextNode(olLiTextArray[liIndex].trim()))
                         ol.appendChild(li)
                     }
                 } else if (line.startsWith("@textarea")) {

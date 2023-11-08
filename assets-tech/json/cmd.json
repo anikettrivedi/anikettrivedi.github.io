@@ -77,7 +77,7 @@
             "k8s-objects-in-depth",
             "k8s-components",
             "k8s-api",
-            "todo-k8s-cluster",
+            "todo-k8s-cluster-arch",
             "todo-k8s-containers",
             "todo-k8s-workloads",
             "todo-k8s-svc-lb-netw",

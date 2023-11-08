@@ -5,7 +5,6 @@
 @h4 Reference Documentation
 @link https://kubernetes.io/docs/reference/
 
-
 ---
 
 @h3 Concepts and tasks

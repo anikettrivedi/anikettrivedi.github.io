@@ -74,7 +74,7 @@
         "children":[
             "k8s-setup",
             "k8s-objects",
-            "todo-k8s-objects-in-depth",
+            "k8s-objects-in-depth",
             "k8s-components",
             "todo-k8s-api",
             "todo-k8s-cluster",

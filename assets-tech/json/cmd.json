@@ -75,7 +75,7 @@
             "k8s-setup",
             "k8s-objects",
             "todo-k8s-objects-in-depth",
-            "todo-k8s-components",
+            "k8s-components",
             "todo-k8s-api",
             "todo-k8s-cluster",
             "todo-k8s-containers",

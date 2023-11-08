@@ -1,6 +1,6 @@
 @h3 TODOS: AWS
 
-@h4 TODO: AWS Certified Cloud Practitioner
+@h4 TODO: ...AWS Certified Cloud Practitioner
 @h4 TODO: AWS Certified Solutions Architect - Associate
 @h4 TODO: AWS Certified Developer - Associate
 @h4 TODO: AWS Certified DevOps Engineer - Professional
@@ -11,7 +11,7 @@
 @h3 TODOS: Dev-Ops
 
 @h4 TODO: Docker
-@h4 TODO: Kubernetes
+@h4 TODO: ...Kubernetes
 @h4 TODO: OpenShift
 
 @h4 TODO: Other DevOps Technologies
@@ -22,7 +22,7 @@
 
 ---------
 
-@h3 TODOS: Java-Spring
+@h3 TODOS: ...Java-Spring
 
 @h4 TODO: Spring Boot
 @h4 TODO: Spring Framework - Core
@@ -41,7 +41,7 @@
 
 ---------
 
-@h3 TODOS: Java
+@h3 TODOS: ...Java
 
 @h4 TODO: Java Reflections
 

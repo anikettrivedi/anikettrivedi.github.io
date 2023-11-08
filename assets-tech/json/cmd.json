@@ -69,6 +69,31 @@
         ]
     },
     {
+        "optgroup": "Cloud",
+        "title": "kubernetes",
+        "children":[
+            "k8s-setup",
+            "todo: k8s-objects",
+            "todo: k8s-components",
+            "todo: k8s-api",
+            "todo: k8s-cluster",
+            "todo: k8s-containers",
+            "todo: k8s-workloads",
+            "todo: k8s-svc-lb-netw",
+            "todo: k8s-security",
+            "todo: k8s-policies",
+            "todo: k8s-scheduling",
+            "todo: k8s-cluster-admin",
+            "todo: k8s-tasks",
+            "todo: handson-basics",
+            "todo: handson-configs",
+            "todo: handson-security",
+            "todo: handson-stateless",
+            "todo: handson-stateful",
+            "todo: handson-services"
+        ]
+    },
+    {
         "optgroup": "Design",
         "title": "systemdesign",
         "children": [

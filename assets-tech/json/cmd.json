@@ -94,6 +94,22 @@
         ]
     },
     {
+        "optgroup": "Cloud",
+        "title": "docker",
+        "children": [
+            "todo: docker-overview",
+            "todo: docker-commands",
+            "todo: docker-run",
+            "todo: docker-images",
+            "todo: docker-compose",
+            "todo: docker-registry",
+            "todo: docker-engine",
+            "todo: docker-storage",
+            "todo: docker-networking",
+            "todo: handson"
+        ]
+    },
+    {
         "optgroup": "Design",
         "title": "systemdesign",
         "children": [

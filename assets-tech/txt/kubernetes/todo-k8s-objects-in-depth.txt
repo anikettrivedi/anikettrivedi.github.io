@@ -34,3 +34,28 @@ kubectl apply -R -f configs/
 @link https://kubernetes.io/docs/concepts/overview/working-with-objects/labels/
 
 ---
+
+@h3 TODO: Namespaces
+@link https://kubernetes.io/docs/concepts/overview/working-with-objects/namespaces/
+
+---
+
+@h3 TODO: Annotations
+
+---
+
+@h3 TODO: Field Selectors
+
+---
+
+@h3 TODO: Finalizers
+
+---
+
+@h3 TODO: Owners and Dependents
+
+---
+
+@h3 TODO: Recommended Labels
+
+---

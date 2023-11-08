@@ -48,10 +48,10 @@ spec:
 
 @textarea kubectl apply -f https://k8s.io/examples/application/deployment.yaml
 
-@start-pre
+@startpre
 Output:
 deployment.apps/nginx-deployment created
-@end-pre
+@endpre
 
 ---
 

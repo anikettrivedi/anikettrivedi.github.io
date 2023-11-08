@@ -1,5 +1,97 @@
 @h3 Kubernetes Components
 @link https://kubernetes.io/docs/concepts/overview/components/
 @img https://kubernetes.io/images/docs/components-of-kubernetes.svg
+
+@pre Kubernetes Components
+@ol Control Plane/Node/Addons
+
+------
+
+@h3 Control Plane Components 
+@link https://kubernetes.io/docs/concepts/overview/components/#control-plane-components
+
+@startpre
+The control plane's components make global decisions about the cluster (for example, scheduling), as well as detecting and responding to cluster events (for example, starting up a new pod when a deployment's replicas field is unsatisfied).
+
+Control plane components can be run on any machine in the cluster. However, for simplicity, set up scripts typically start all control plane components on the same machine, and do not run user containers on this machine.
+@endpre
+
 ---
+
+@h4 kube-apiserver
+
+@startpre
+The API server is a component of the Kubernetes control plane that exposes the Kubernetes API. The API server is the front end for the Kubernetes control plane.
+The main implementation of a Kubernetes API server is kube-apiserver. kube-apiserver is designed to scale horizontally—that is, it scales by deploying more instances. You can run several instances of kube-apiserver and balance traffic between those instances.
+@endpre
+
+---
+
+@h4 etcd 
+
+@pre Consistent and highly-available key value store used as Kubernetes' backing store for all cluster data.
+
+---
+
+@h4 kube-scheduler 
+
+@pre Control plane component that watches for newly created Pods with no assigned node, and selects a node for them to run on.
+@pre Factors taken into account for scheduling decisions include: individual and collective resource requirements, hardware/software/policy constraints, affinity and anti-affinity specifications, data locality, inter-workload interference, and deadlines.
+
+---
+
+@h4 kube-controller-manager 
+
+@pre Control plane component that runs controller processes.
+@pre Logically, each controller is a separate process, but to reduce complexity, they are all compiled into a single binary and run in a single process.
+@pre There are many different types of controllers. Some examples of them are:
+@ol Node controller: Responsible for noticing and responding when nodes go down./Job controller: Watches for Job objects that represent one-off tasks, then creates Pods to run those tasks to completion./EndpointSlice controller: Populates EndpointSlice objects (to provide a link between Services and Pods)./ServiceAccount controller: Create default ServiceAccounts for new namespaces.
+
+---
+
+@h4 cloud-controller-manager 
+
+@pre A Kubernetes control plane component that embeds cloud-specific control logic. The cloud controller manager lets you link your cluster into your cloud provider's API, and separates out the components that interact with that cloud platform from components that only interact with your cluster.
+
+@pre The cloud-controller-manager only runs controllers that are specific to your cloud provider. If you are running Kubernetes on your own premises, or in a learning environment inside your own PC, the cluster does not have a cloud controller manager.
+
+@pre As with the kube-controller-manager, the cloud-controller-manager combines several logically independent control loops into a single binary that you run as a single process. You can scale horizontally (run more than one copy) to improve performance or to help tolerate failures.
+
+@pre The following controllers can have cloud provider dependencies:
+@ol Node controller: For checking the cloud provider to determine if a node has been deleted in the cloud after it stops responding/Route controller: For setting up routes in the underlying cloud infrastructure/Service controller: For creating, updating and deleting cloud provider load balancers
+
+------
+
+@h3 Node Components 
+@link https://kubernetes.io/docs/concepts/overview/components/#node-components
+
+---
+
+@h4 kubelet
+@pre An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod.
+@pre The kubelet takes a set of PodSpecs that are provided through various mechanisms and ensures that the containers described in those PodSpecs are running and healthy. The kubelet doesn't manage containers which were not created by Kubernetes.
+
+---
+
+@h4 kube-proxy 
+@pre kube-proxy is a network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept.
+@pre kube-proxy maintains network rules on nodes. These network rules allow network communication to your Pods from network sessions inside or outside of your cluster.
+@pre kube-proxy uses the operating system packet filtering layer if there is one and it's available. Otherwise, kube-proxy forwards the traffic itself.
+
+---
+
+@h4 Container runtime 
+@pre A fundamental component that empowers Kubernetes to run containers effectively. It is responsible for managing the execution and lifecycle of containers within the Kubernetes environment.
+@pre Kubernetes supports container runtimes such as containerd, CRI-O, and any other implementation of the Kubernetes CRI (Container Runtime Interface).
+
+------
+
+@h3 Addons
+@link https://kubernetes.io/docs/concepts/overview/components/#addons
+@startpre
+Addons use Kubernetes resources (DaemonSet, Deployment, etc) to implement cluster features. Because these are providing cluster-level features, namespaced resources for addons belong within the kube-system namespace.
+@endpre
+
+@pre Some Addons
+@ol DNS/Web UI (Dashboard)/Container Resource Monitoring/Cluster-level Logging/Network Plugins 
 

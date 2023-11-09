@@ -73,9 +73,15 @@
         "title": "kubernetes",
         "children":[
             "k8s-resources",
+            "k8s-components",
+            "todo-handson-basics",
+            "todo-handson-configs",
+            "todo-handson-security",
+            "todo-handson-stateless",
+            "todo-handson-stateful",
+            "todo-handson-services",
             "k8s-objects",
             "k8s-objects-in-depth",
-            "k8s-components",
             "k8s-api",
             "todo-k8s-cluster-arch",
             "todo-k8s-containers",
@@ -87,13 +93,7 @@
             "todo-k8s-policies",
             "todo-k8s-scheduling",
             "todo-k8s-cluster-admin",
-            "todo-k8s-tasks-overview",
-            "todo-handson-basics",
-            "todo-handson-configs",
-            "todo-handson-security",
-            "todo-handson-stateless",
-            "todo-handson-stateful",
-            "todo-handson-services"
+            "todo-k8s-tasks-overview"
         ]
     },
     {

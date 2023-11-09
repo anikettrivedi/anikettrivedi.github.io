@@ -34,7 +34,7 @@ window.onload = function () {
             }).then(data => {
                 loadAboutData(data);
             }).then(() => {
-                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+                return fetch("https://anikettrivedi.github.io/blog/assets/json/blogs.json")
             }).then(response => {
                 // fetching all articles data
                 return response.json();

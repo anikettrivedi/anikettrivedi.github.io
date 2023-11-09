@@ -75,13 +75,13 @@
             "k8s-resources",
             "k8s-components",
             "k8s-handson-basics",
-            "todo-handson-links",
+            "**handson-links",
             "k8s-objects",
             "k8s-api",
             "k8s-objects-in-depth",
-            "todo-k8s-concepts",
-            "todo-k8s-concepts",
-            "todo-k8s-tasks"
+            "**k8s-concepts",
+            "**k8s-concepts",
+            "**k8s-tasks"
         ]
     },
     {

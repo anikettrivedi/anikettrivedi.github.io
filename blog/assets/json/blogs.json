@@ -15,7 +15,7 @@
             },
             {
                 "type": "image",
-                "value": "/assets/images/wall1.jpg"
+                "value": "/blog/assets/images/wall1.jpg"
             }
         ],
         "contents": [
@@ -41,7 +41,7 @@
             },
             {
                 "type": "image",
-                "value": "/assets/images/wall2.jpg"
+                "value": "/blog/assets/images/wall2.jpg"
             }
         ],
         "contents": [
@@ -67,7 +67,7 @@
             },
             {
                 "type": "image",
-                "value": "/assets/images/wall3.png"
+                "value": "/blog/assets/images/wall3.png"
             }
         ],
         "contents": [
@@ -101,7 +101,7 @@
             },
             {
                 "type": "image",
-                "value": "/assets/images/wall2.jpg"
+                "value": "/blog/assets/images/wall2.jpg"
             }
         ],
         "contents": [
@@ -171,7 +171,7 @@
             },
             {
                 "type": "image",
-                "value": "/assets/images/patrick-hendry-Xb3Dz_IfFGw-unsplash.jpg"
+                "value": "/blog/assets/images/patrick-hendry-Xb3Dz_IfFGw-unsplash.jpg"
             }
         ],
         "contents": [

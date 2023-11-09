@@ -1,0 +1,24 @@
+@h3 TODO: Configuring Redis using a ConfigMap
+@link https://kubernetes.io/docs/tutorials/configuration/configure-redis-using-configmap/
+
+---
+
+@h3 TODO: Security
+@link https://kubernetes.io/docs/tutorials/security/
+
+---
+
+@h3 TODO: Stateless Applications
+@link https://kubernetes.io/docs/tutorials/stateless-application/
+
+---
+
+@h3 TODO: Stateful Applications
+@link https://kubernetes.io/docs/tutorials/stateful-application/
+
+---
+
+@h3 TODO: Services
+@link https://kubernetes.io/docs/tutorials/services/
+
+---

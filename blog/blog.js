@@ -16,7 +16,7 @@ let shareLink = document.URL;
 window.onload = function () {
     if (document.URL.includes("/blog/about")) {
         // about page
-        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+        fetch("https://anikettrivedi.github.io/blog/assets/json/about.json")
             .then(response => {
                 return response.json()
             }).then(data => {
@@ -28,7 +28,7 @@ window.onload = function () {
     } else if (document.URL.includes("/blog/page")) {
         // blog page
         let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
-        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+        fetch("https://anikettrivedi.github.io/blog/assets/json/about.json")
             .then(response => {
                 return response.json()
             }).then(data => {
@@ -55,13 +55,13 @@ window.onload = function () {
     } else {
         // /blog
         // home page 
-        fetch("https://anikettrivedi.github.io/assets/json/about.json")
+        fetch("https://anikettrivedi.github.io/blog/assets/json/about.json")
             .then(response => {
                 return response.json()
             }).then(data => {
                 loadAboutData(data);
             }).then(() => {
-                return fetch("https://anikettrivedi.github.io/assets/json/blogs.json")
+                return fetch("https://anikettrivedi.github.io/blog/assets/json/blogs.json")
             }).then(response => {
                 // fetching all articles data
                 return response.json();

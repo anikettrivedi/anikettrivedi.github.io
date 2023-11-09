@@ -1,0 +1,139 @@
+@h3 Hands On: Kuberneter Basics
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/
+
+---
+
+@h3 Create A Cluster: Minikube (Learning Environment)
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/create-cluster/cluster-intro/
+
+@img https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_01_cluster.svg
+
+---
+
+@h3 Deploy An App
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/deploy-app/deploy-intro/
+
+@pre Deploy An App
+@textarea kubectl create deployment kubernetes-bootcamp --image=gcr.io/google-samples/kubernetes-bootcamp:v1
+
+@pre List Deployments
+@textarea kubectl get deployments
+
+@pre View the app
+@pre You need to open a second terminal window to run the proxy.
+@textarea kubectl proxy
+@textarea curl http://localhost:8001/version
+
+@pre The API server will automatically create an endpoint for each pod, based on the pod name, that is also accessible through the proxy.
+@pre First we need to get the Pod name, and we'll store in the environment variable POD_NAME:
+
+@textarea export POD_NAME=$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')
+@textarea echo Name of the Pod: $POD_NAME
+
+@pre You can access the Pod through the proxied API, by running:
+@textarea curl http://localhost:8001/api/v1/namespaces/default/pods/$POD_NAME/
+
+---
+
+@h3 Viewing Pods and Nodes
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/explore/explore-intro/
+
+@h4 Pods
+@img https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_03_pods.svg
+
+@pre Commands for pods
+
+@textarea kubectl get pods
+
+@textarea kubectl describe pods
+
+@starttextarea
+export POD_NAME="$(kubectl get pods -o go-template --template '{{range .items}}{{.metadata.name}}{{"\n"}}{{end}}')"
+echo Name of the Pod: $POD_NAME
+kubectl logs "$POD_NAME"
+@endtextarea
+
+@pre Executing command on the container
+@textarea kubectl exec "$POD_NAME" -- env
+
+@pre bash session inside a pod's container
+@textarea kubectl exec -ti $POD_NAME -- bash
+
+@h4 Nodes
+@img https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_03_nodes.svg
+
+---
+
+@h3 Using a Service to Expose Your App
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/expose/expose-intro/
+@img https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_04_labels.svg
+
+@pre List Services
+@textarea kubectl get services
+
+@pre Create new service
+@textarea kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
+
+@pre Describe a service
+@textarea kubectl describe services/kubernetes-bootcamp
+
+@pre Create an environment variable called NODE_PORT that has the value of the Node port assigned:
+@starttextarea
+export NODE_PORT="$(kubectl get services/kubernetes-bootcamp -o go-template='{{(index .spec.ports 0).nodePort}}')"
+echo "NODE_PORT=$NODE_PORT"
+@endtextarea
+
+@pre Now we can test that the app is exposed outside of the cluster using curl, the IP address of the Node and the externally exposed port:
+@textarea curl http://"$(minikube ip):$NODE_PORT"
+
+@h4 Using Labels
+
+@pre Let’s use this label to query our list of Pods. We’ll use the kubectl get pods command with -l as a parameter, followed by the label values:
+@textarea kubectl get pods -l app=kubernetes-bootcamp
+
+@pre You can do the same to list the existing Services:
+@textarea kubectl get services -l app=kubernetes-bootcamp
+
+@pre Deleting a service
+@textarea kubectl delete service -l app=kubernetes-bootcamp
+
+---
+
+@h3 Scaling the Application
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/scale/scale-intro/
+
+@pre Scale deployment to 4 replicas
+@textarea kubectl scale deployments/kubernetes-bootcamp --replicas=4
+@textarea kubectl get deployments
+@textarea kubectl get pods -o wide
+@textarea kubectl describe deployments/kubernetes-bootcamp
+
+@pre Scale Down
+@textarea kubectl scale deployments/kubernetes-bootcamp --replicas=2
+@textarea kubectl get deployments
+@textarea kubectl get pods -o wide
+@textarea kubectl describe deployments/kubernetes-bootcamp
+
+---
+
+@h3 Performing a Rolling Update
+@link https://kubernetes.io/docs/tutorials/kubernetes-basics/update/update-intro/
+@img https://kubernetes.io/docs/tutorials/kubernetes-basics/public/images/module_06_rollingupdates3.svg
+
+@pre Update to new version
+@textarea kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=jocatalin/kubernetes-bootcamp:v2
+
+@pre Verify update
+@textarea kubectl describe services/kubernetes-bootcamp
+
+@pre You can also confirm the update by running the rollout status subcommand:
+@textarea kubectl rollout status deployments/kubernetes-bootcamp
+
+@pre Roll back an update
+@textarea kubectl set image deployments/kubernetes-bootcamp kubernetes-bootcamp=gcr.io/google-samples/kubernetes-bootcamp:v10
+
+@pre To roll back the deployment to your last working version, use the rollout undo subcommand:
+@textarea kubectl rollout undo deployments/kubernetes-bootcamp
+
+@pre Remember to clean up your local cluster
+@textarea kubectl delete deployments/kubernetes-bootcamp services/kubernetes-bootcamp

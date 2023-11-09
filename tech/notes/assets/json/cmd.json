@@ -74,7 +74,7 @@
         "children":[
             "k8s-resources",
             "k8s-components",
-            "todo-handson-basics",
+            "k8s-handson-basics",
             "todo-handson-configs",
             "todo-handson-security",
             "todo-handson-stateless",

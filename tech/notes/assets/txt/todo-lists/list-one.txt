@@ -1,47 +1,25 @@
-@h3 TODOS: AWS
+@h3 TODOS: *** AWS
 
-@h4 TODO: ...AWS Certified Cloud Practitioner
-@h4 TODO: AWS Certified Solutions Architect - Associate
+@h4 TODO: *** AWS Certified Cloud Practitioner
+@h4 TODO: *** AWS Certified Solutions Architect - Associate
 @h4 TODO: AWS Certified Developer - Associate
 @h4 TODO: AWS Certified DevOps Engineer - Professional
 @h4 TODO: AWS Certified Solutions Architect - Professional
 
 ---------
 
-@h3 TODOS: Dev-Ops
+@h3 TODOS: *** Java-Spring (Document Useful Links Only)
 
-@h4 TODO: Docker
-@h4 TODO: ...Kubernetes
-@h4 TODO: OpenShift
-
-@h4 TODO: Other DevOps Technologies
-@startpre
-1 - Ansible
-2 - Terraform
-@endpre
+@h4 TODO: *** Spring Boot
+@h4 TODO: *** Spring Framework - Core
+@h4 TODO: *** Spring Framework - Testing
+@h4 TODO: *** Spring Framework - Security
+@h4 TODO: *** Spring Framework - Data (JPA & JDBC)
+@h4 TODO: *** Spring Framework - MVC
 
 ---------
 
-@h3 TODOS: ...Java-Spring
-
-@h4 TODO: Spring Boot
-@h4 TODO: Spring Framework - Core
-@h4 TODO: Spring Framework - Testing
-@h4 TODO: Spring Framework - Security
-@h4 TODO: Spring Framework - Data (JPA & JDBC)
-@h4 TODO: Spring Framework - MVC
-@h4 TODO: Spring Framework - WebFlux
-@h4 TODO: Spring Framework - Others
-@startpre
-1 - HATEOAS
-2 - Internationalization
-3 - Integration
-4 - Batch
-@endpre
-
----------
-
-@h3 TODOS: ...Java
+@h3 TODOS: *** Java
 
 @h4 TODO: Java Reflections
 
@@ -55,7 +33,6 @@
     3 - log4j2
 @endpre
 
-@h4 TODO: Spring, Spring Boot and other Spring Projects
 @h4 TODO: Regular Expressions
 @h4 TODO: Java Modules
 @h4 TODO: Security using JDK Libraries
@@ -63,6 +40,7 @@
 @h4 TODO: Java Concurrency
 @h4 TODO: Java Pattern Matching
 @h4 TODO: Java JDK Tools
+
 @h4 TODO: Java Build Tools
 @startpre
 1 - Maven
@@ -74,6 +52,21 @@
 @startpre
 1 - Checkstyle
 @endpre
+
+---------
+
+@h3 TODOS: Dev-Ops
+
+@h4 TODO: * Kubernetes
+@h4 TODO: Docker
+@h4 TODO: OpenShift
+
+@h4 TODO: Other DevOps Technologies
+@startpre
+1 - Ansible
+2 - Terraform
+@endpre
+
 ---------
 
 @h3 TODOS: System Design & Architectures
@@ -133,3 +126,5 @@
 2 - DBMS Theory
 @endpre
 @h4 TODO: Operating Systems
+
+---------

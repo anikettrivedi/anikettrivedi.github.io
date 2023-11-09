@@ -19,7 +19,7 @@
 
 ---------
 
-@h3 TODOS: *** Java
+@h3 TODOS: * Java
 
 @h4 TODO: Java Reflections
 

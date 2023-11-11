@@ -22,6 +22,7 @@
         "optgroup": "Databases",
         "title": "postgres",
         "children": [
+            "pg-reference",
             "pg-psql",
             "pg-sample-db",
             "pg-data-queries",

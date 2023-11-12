@@ -64,6 +64,13 @@
     },
     {
         "optgroup": "Databases",
+        "title": "postgres-admin",
+        "children":[
+            "pg-admin-refs"
+        ]
+    },
+    {
+        "optgroup": "Databases",
         "title": "dbms",
         "children": [
             "db-er-model"

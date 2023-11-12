@@ -1,0 +1,59 @@
+@h3 PostgreSQL Administration
+@link https://www.postgresqltutorial.com/postgresql-administration/
+
+---
+
+@h3 Managing Databases
+
+@link https://www.postgresqltutorial.com/postgresql-create-database/
+@link https://www.postgresqltutorial.com/postgresql-alter-database/
+@link https://www.postgresqltutorial.com/postgresql-rename-database/
+@link https://www.postgresqltutorial.com/postgresql-drop-database/
+@link https://www.postgresqltutorial.com/postgresql-copy-database/
+@link https://www.postgresqltutorial.com/postgresql-database-indexes-table-size/
+
+---
+
+@h3 Managing Schemas
+
+@link https://www.postgresqltutorial.com/postgresql-schema/
+@link https://www.postgresqltutorial.com/postgresql-create-schema/
+@link https://www.postgresqltutorial.com/postgresql-alter-schema/
+@link https://www.postgresqltutorial.com/postgresql-drop-schema/
+
+---
+
+@h3 Managing Tablespaces
+
+@link https://www.postgresqltutorial.com/postgresql-create-tablespace/
+@link https://www.postgresqltutorial.com/postgresql-alter-tablespace/
+@link https://www.postgresqltutorial.com/postgresql-drop-tablespace/
+
+---
+
+@h3 Roles and Privileges
+
+@link https://www.postgresqltutorial.com/postgresql-roles/
+@link https://www.postgresqltutorial.com/postgresql-administration/postgresql-grant/
+@link https://www.postgresqltutorial.com/postgresql-administration/postgresql-revoke/
+@link https://www.postgresqltutorial.com/postgresql-administration/postgresql-alter-role/
+@link https://www.postgresqltutorial.com/postgresql-administration/postgresql-drop-role/
+@link https://www.postgresqltutorial.com/postgresql-administration/postgresql-role-membership/
+@link https://www.postgresqltutorial.com/postgresql-list-users/
+
+---
+
+@h3 Backup and Restore Databases
+
+@link https://www.postgresqltutorial.com/postgresql-backup-database/
+@link https://www.postgresqltutorial.com/postgresql-restore-database/
+
+---
+
+@h3 Tips
+
+@link https://www.postgresqltutorial.com/postgresql-reset-password/
+@link https://www.postgresqltutorial.com/psql-commands/
+@link https://www.postgresqltutorial.com/postgresql-describe-table/
+@link https://www.postgresqltutorial.com/postgresql-show-databases/
+@link https://www.postgresqltutorial.com/postgresql-show-tables/

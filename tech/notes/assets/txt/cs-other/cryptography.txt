@@ -1,6 +1,5 @@
 @h3 Cryptography
 
-
 @h4 Symmetric (AES, etc.) and Asymmetric (RSA, etc.) Encryption
 @link https://preyproject.com/blog/types-of-encryption-symmetric-or-asymmetric-rsa-or-aes
 

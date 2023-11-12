@@ -9,9 +9,10 @@
 @para Dopamine, Norepinephrine or Noradrenaline are neurotransmitters in our brains which are responsible for attention.
 
 @start
-@value 1
-@link https://my.clevelandclinic.org/health/articles/22581-dopamine
-@desc Dopamine - is involved in movement, memory, reward and motivation, behavior and cognition, attention, sleep and arousal, mood, learning and in case of women lactation. 
+@type link
+@textlink 1
+@valuelink https://my.clevelandclinic.org/health/articles/22581-dopamine
+@desclink Dopamine - is involved in movement, memory, reward and motivation, behavior and cognition, attention, sleep and arousal, mood, learning and in case of women lactation. 
 @end
 
 @para Most people have sufficient levels of these but for people like me, we don't. Our natural levels of these neurotransmitters is low. So our ability to pay or sustain attention is heavily impaired among other effects. Hence the name Attention Deficit. Hyperactivity is another facet of this impaired attention.

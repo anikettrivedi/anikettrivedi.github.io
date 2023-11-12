@@ -6,6 +6,7 @@
 @end
 
 @start
-@value And also, that song was Somewhere Only We Know by Keane.
+@type link
+@para And also, that song was Somewhere Only We Know by Keane.
 @link https://open.spotify.com/track/1SKPmfSYaPsETbRHaiA18G?si=6a932fbc825146c2
 @end

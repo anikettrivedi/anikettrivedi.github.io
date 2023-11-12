@@ -1,0 +1,16 @@
+@h3 RSA Keys
+
+@h4 Generate RSA keypair in Mac using ssh-keygen
+@textarea ssh-keygen -t rsa
+
+@h4 Generate RSA kyepair in Mac using openssl
+@starttextarea
+openssl genrsa -out key.pem 1024 
+openssl rsa -in key.pem -pubout -out pub.pem 
+@endtextarea
+
+@h4 Encrypt a file using public key
+@textarea openssl rsautl -encrypt -pubin -inkey pub.pem -in input_file -out encrypted_file
+
+@h4 Decrypt a file using private key
+@textarea openssl rsautl -decrypt -inkey key.pem -in encrypted_file

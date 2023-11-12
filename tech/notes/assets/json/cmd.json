@@ -129,7 +129,7 @@
         "children": [
             "concurrency",
             "cryptography",
-            "ssh-keys"
+            "crypto-rsa-keys"
         ]
     },
     {

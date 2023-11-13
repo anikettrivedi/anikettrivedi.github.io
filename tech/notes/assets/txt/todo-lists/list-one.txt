@@ -1,25 +1,25 @@
-@h3 TODOS: *** AWS
+@h3 TODOS: *** AWS Application Architect
 
 @h4 TODO: *** AWS Certified Cloud Practitioner
 @h4 TODO: *** AWS Certified Solutions Architect - Associate
-@h4 TODO: AWS Certified Developer - Associate
-@h4 TODO: AWS Certified DevOps Engineer - Professional
-@h4 TODO: AWS Certified Solutions Architect - Professional
+@h4 TODO: *** AWS Certified Developer - Associate
+@h4 TODO: *** AWS Certified DevOps Engineer - Professional
+@h4 TODO: * AWS Certified Solutions Architect - Professional
 
 ---------
 
-@h3 TODOS: *** Java-Spring (Document Useful Links Only)
+@h3 TODOS: ** Java-Spring (Document Useful Links Only)
 
-@h4 TODO: *** Spring Boot
-@h4 TODO: *** Spring Framework - Core
-@h4 TODO: *** Spring Framework - Testing
-@h4 TODO: *** Spring Framework - Security
-@h4 TODO: *** Spring Framework - Data (JPA & JDBC)
-@h4 TODO: *** Spring Framework - MVC
+@h4 TODO: ** Spring Boot
+@h4 TODO: ** Spring Framework - Core
+@h4 TODO: ** Spring Framework - Testing
+@h4 TODO: ** Spring Framework - Security
+@h4 TODO: ** Spring Framework - Data (JPA & JDBC)
+@h4 TODO: ** Spring Framework - MVC
 
 ---------
 
-@h3 TODOS: * Java
+@h3 TODOS: ** Java
 
 @h4 TODO: Java Reflections
 
@@ -57,8 +57,8 @@
 
 @h3 TODOS: Dev-Ops
 
-@h4 TODO: * Kubernetes
-@h4 TODO: Docker
+@h4 TODO: ** Kubernetes
+@h4 TODO: * Docker
 @h4 TODO: OpenShift
 
 @h4 TODO: Other DevOps Technologies
@@ -87,6 +87,7 @@
 @h4 TODO: Technologies
 @startpre
 1 - Kafka Architecture & Working
+    1 - Kafka Consumer, Producer, Streams Optimization
 2 - Messenging Queue Architecture
 @endpre
 

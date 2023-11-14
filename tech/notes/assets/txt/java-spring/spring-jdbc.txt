@@ -7,8 +7,7 @@
 @pre Need to initialize DataSource
 @pre DataSource object requires
 @ol Jdbc Driver/DB Url/Username/Password/Other connection props
-@pre Have to manually manager resources and ensure no memory leak happens by closing connections once used
-@pre for example, need to manually close
+@pre Have to manually manage resources and ensure no memory leak happens by closing connections once used, for example, need to manually close:
 @ol Connection/PreparedStatement/ResultSet
 
 ---

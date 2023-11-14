@@ -22,14 +22,14 @@
         "optgroup": "Languages",
         "title": "java-spring",
         "children": [
+            "spring-boot",
             "spring-core",
-            "--spring-jdbc",
+            "spring-jdbc",
             "--spring-jpa-hibernate",
             "--spring-servlet",
             "--spring-reactive",
             "--spring-security",
-            "--spring-testing",
-            "--spring-boot"
+            "--spring-testing"
         ]
     },
     {

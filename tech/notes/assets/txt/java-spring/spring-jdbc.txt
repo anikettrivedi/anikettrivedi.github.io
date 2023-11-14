@@ -1,0 +1,64 @@
+@h3 Data Access with JDBC
+@link https://docs.spring.io/spring-framework/reference/data-access/jdbc.html
+
+---
+
+@h3 Data Access Without Spring JDBC
+@pre Need to initialize DataSource
+@pre DataSource object requires
+@ol Jdbc Driver/DB Url/Username/Password/Other connection props
+@pre Have to manually manager resources and ensure no memory leak happens by closing connections once used
+@pre for example, need to manually close
+@ol Connection/PreparedStatement/ResultSet
+
+---
+
+@h3 Data Access With Spring JDBC
+@pre Need to initialize DataSource and provide it as dependency to Spring's JdbcTemplate
+@pre JdbcTemplate management of queries, we just have to provide the query for execution
+
+---
+
+@h3 Spring Jdbc Dependencies & Sample Configs
+
+@pre Gradle Dependencies
+@textarea implementation "org.springframework.data:spring-data-jdbc:${springDataVersion}"
+
+@pre XML Configs (mysql-jdbc-component-scan.xml)
+@starttextarea
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+		http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!-- Scans within the base package of the application for @Component classes to configure as beans -->
+    <context:component-scan base-package="com.example.springcore.springdatajdbc.xmlbased.dao" />
+
+    <bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource" destroy-method="close">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+
+    <bean id="jdbcXmlDao" class="com.example.springjdbc.mysqljdbcxmlbased.JdbcXmlDao">
+        <constructor-arg name="dataSource" ref="dataSource"/>
+    </bean>
+
+    <context:property-placeholder location="mysql-jdbc.properties"/>
+
+</beans>
+@endtextarea
+
+@pre DB Connection Details (mysql-jdbc.properties)
+@starttextarea
+jdbc.driverClassName=com.mysql.cj.jdbc.Driver
+jdbc.url=jdbc:mysql://localhost:3306/external_db
+jdbc.username=root
+jdbc.password=password
+@endtextarea

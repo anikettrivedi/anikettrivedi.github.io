@@ -20,8 +20,8 @@
 
 @h3 Steps to use Spring JDBC
 @startpre
-1 - Initialize DataSource (via XML files and properties file or via Annotations (Java Config))
-2 - Inject DataSource to JdbcTemplate (via XML files or via Annotations (Java Config))
+1 - Initialize DataSource (via XML or Annotations)
+2 - Inject DataSource to JdbcTemplate (via XML or Annotations)
 3 - Inject JdbcTemplate to Spring Managed Service, Dao, etc beans
 @endpre
 

@@ -6,8 +6,7 @@
 
 @h3 What is Spring Boot
 @pre Spring Boot is basically is a shortcut to get started with Spring Framework Ecosystem. It provides lots of ways to quickly develop Spring based application without having to worry about different Spring Framework aspects.
-@pre For example, to create a web based application we can quickly get going with Spring Boot Starter Web Gradle/Maven Dependency,
-this alone will download all required jars (standalone dependencies) that are needed to successfully create a web applications, such as:
+@pre For example, to create a web based application we can quickly get going with Spring Boot Starter Web Gradle/Maven Dependency, this alone will download all required jars (standalone dependencies) that are needed to successfully create a web applications, such as:
 @ol Spring Servlet dependencies/ Embedded Servlet Container dependencies (Tomcat)/ JSON Dependencies, etc.
 
 ---

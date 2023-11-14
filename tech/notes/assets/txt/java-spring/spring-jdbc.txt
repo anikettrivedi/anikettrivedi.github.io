@@ -7,14 +7,14 @@
 @pre Need to initialize DataSource
 @pre DataSource object requires
 @ol Jdbc Driver/DB Url/Username/Password/Other connection props
-@pre Have to manually manage resources and ensure no memory leak happens by closing connections once used, for example, need to manually close:
+@pre Have to manually manage resources and ensure no resource leaks happens by closing connections once used, for example, need to manually close:
 @ol Connection/PreparedStatement/ResultSet
 
 ---
 
 @h3 Data Access With Spring JDBC
 @pre Need to initialize DataSource and provide it as dependency to Spring's JdbcTemplate
-@pre JdbcTemplate management of queries, we just have to provide the query for execution
+@pre JdbcTemplate mananges all the resources such as Connection, PreparedStatement, ResultSet and automatically closes after execution of queries, we just need to provide the query for execution without having to worry about resource leaks
 
 ---
 

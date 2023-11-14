@@ -30,7 +30,7 @@
 @h3 Spring Jdbc Dependencies & Sample Configs
 
 @h4 Gradle
-@textarea implementation "org.springframework.data:spring-data-jdbc:${springDataVersion}"
+@textarea implementation "org.springframework.data:spring-data-jdbc:3.1.3"
 
 @h4 XML Configs (mysql-jdbc-component-scan.xml)
 @starttextarea

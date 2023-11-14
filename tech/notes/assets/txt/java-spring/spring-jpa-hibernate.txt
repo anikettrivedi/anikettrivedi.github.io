@@ -1,0 +1,62 @@
+@h3 JPA vs Spring Data JPA vs Hibernate
+@link https://docs.spring.io/spring-framework/reference/data-access/orm.html
+@link https://stackoverflow.com/questions/23862994/whats-the-difference-between-hibernate-and-spring-data-jpa
+
+---
+
+@h3 Steps to use Spring Data JPA
+@startpre
+1 - Initialize DataSource (via XML files and properties file or via Annotations (Java Config))
+2 - Initialize HibernateJpaVendorAdapter (via XML files and properties file or via Annotations (Java Config))
+3 - Initialize PersistenceExceptionTranslationPostProcessor (via XML files and properties file or via Annotations (Java Config))
+4 - Initialize JPA Properties
+    1 - hibernate.dialect
+    2 - hibernate.hbm2ddl.auto, etc.
+5 - Initialize LocalContainerEntityManagerFactoryBean (entityManagerFactory) by injecting 1, 2 beans and setting JPA Properties (3) (via XML files and properties file or via Annotations (Java Config))
+6 - Initialize JpaTransactionManager by injecting 5 (via XML files and properties file or via Annotations (Java Config))
+@endpre
+
+---
+
+@h3 Spring Data JPA Dependencies & Sample Configs
+
+@h4 Gradle
+@starttextarea
+implementation "org.springframework.data:spring-data-jpa:3.1.3"
+implementation 'org.hibernate:hibernate-core:6.1.4.Final'
+implementation 'jakarta.persistence:jakarta.persistence-api:3.1.0'
+@endtextarea
+
+@h4 XML Config
+@starttextarea
+<bean id="myEmf" 
+  class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+    <property name="dataSource" ref="dataSource" />
+    <property name="packagesToScan" value="com.baeldung.persistence.model" />
+    <property name="jpaVendorAdapter">
+        <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter" />
+    </property>
+    <property name="jpaProperties">
+        <props>
+            <prop key="hibernate.hbm2ddl.auto">create-drop</prop>
+            <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+        </props>
+    </property>
+</bean>
+
+<bean id="dataSource" 
+  class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+    <property name="driverClassName" value="com.mysql.cj.jdbc.Driver" />
+    <property name="url" value="jdbc:mysql://localhost:3306/spring_jpa" />
+    <property name="username" value="tutorialuser" />
+    <property name="password" value="tutorialmy5ql" />
+</bean>
+
+<bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+    <property name="entityManagerFactory" ref="myEmf" />
+</bean>
+<tx:annotation-driven />
+
+<bean id="persistenceExceptionTranslationPostProcessor" class=
+  "org.springframework.dao.annotation.PersistenceExceptionTranslationPostProcessor" />
+@endtextarea

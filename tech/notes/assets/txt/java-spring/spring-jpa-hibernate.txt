@@ -1,0 +1,3 @@
+@h3 JPA vs Spring Data JPA vs Hibernate
+@link https://docs.spring.io/spring-framework/reference/data-access/orm.html
+@link https://stackoverflow.com/questions/23862994/whats-the-difference-between-hibernate-and-spring-data-jpa

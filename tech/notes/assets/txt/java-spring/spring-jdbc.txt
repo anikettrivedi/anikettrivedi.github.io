@@ -20,10 +20,10 @@
 
 @h3 Spring Jdbc Dependencies & Sample Configs
 
-@pre Gradle Dependencies
+@h4 Gradle
 @textarea implementation "org.springframework.data:spring-data-jdbc:${springDataVersion}"
 
-@pre XML Configs (mysql-jdbc-component-scan.xml)
+@h4 XML Configs (mysql-jdbc-component-scan.xml)
 @starttextarea
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
@@ -54,7 +54,7 @@
 </beans>
 @endtextarea
 
-@pre DB Connection Details (mysql-jdbc.properties)
+@h4 DB Connection Details (mysql-jdbc.properties)
 @starttextarea
 jdbc.driverClassName=com.mysql.cj.jdbc.Driver
 jdbc.url=jdbc:mysql://localhost:3306/external_db

@@ -19,6 +19,13 @@
         ]
     },
     {
+        "optgroup": "Languages",
+        "title": "java-spring",
+        "children": [
+            "spring-core"
+        ]
+    },
+    {
         "optgroup": "Databases",
         "title": "postgres",
         "children": [
@@ -65,7 +72,7 @@
     {
         "optgroup": "Databases",
         "title": "postgres-admin",
-        "children":[
+        "children": [
             "pg-admin-refs"
         ]
     },
@@ -79,7 +86,7 @@
     {
         "optgroup": "Cloud",
         "title": "kubernetes",
-        "children":[
+        "children": [
             "k8s-resources",
             "k8s-components",
             "k8s-handson-basics",

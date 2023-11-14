@@ -1,0 +1,30 @@
+@h3 Spring Core Technologies
+@link https://docs.spring.io/spring-framework/reference/core.html
+@pre Core Technologies include following
+@ol IOC Container/AOP
+
+---
+
+@h3 IOC Container
+@pre IoC is also known as dependency injection (DI). It is a process whereby objects define their dependencies, that is, the other objects they work with, only through constructor arguments, arguments to a factory method, or properties that are set on the object instance after it is constructed or returned from a factory method. The container then injects those dependencies when it creates the bean. This process is fundamentally the inverse, hence the name Inversion of Control (IoC), of the bean itself controlling the instantiation or location of its dependencies by using direct construction of classes, or a mechanism such as the Service Locator pattern.
+
+---
+
+@h3 Spring Core Dependencies
+@pre Gradle
+@starttextarea
+implementation "org.springframework:spring-context"
+implementation "org.aspectj:aspectjweaver:1.9.20.1"
+@endtextarea
+
+---
+
+@h3 Configurations
+@ol Annotations Based/XML Based
+
+---
+
+@h3 Spring AOP Concepts
+@ol Point cut/Join Points/Advices
+
+---

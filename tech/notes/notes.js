@@ -170,16 +170,40 @@ function fetchSectionContentsAndAdd(select2Value, url) {
                 let line = contents[j]
                 // add sub heading for the section
                 if (line.startsWith("@h3")) {
+
                     let hr = document.createElement("hr")
+
+                    // add command description
+                    let cmdDescription = line.replace("@h3", "").trim()
                     let h3 = document.createElement("h3")
-                    h3.appendChild(document.createTextNode(line.replace("@h3", "").trim()))
+
+                    if (cmdDescription.startsWith("@del")) {
+                        let del = document.createElement("del")
+                        cmdDescription = cmdDescription.replace("@del", "").trim()
+                        del.appendChild(document.createTextNode(cmdDescription))
+                        h3.appendChild(del)
+                    } else {
+                        h3.appendChild(document.createTextNode(cmdDescription))
+                    }
+                    
                     cmdContainer.appendChild(h3)
                     cmdContainer.appendChild(hr)
+
                 } else if (line.startsWith("@h4")) {
+
                     // add command description
                     let cmdDescription = line.replace("@h4", "").trim()
                     let h4 = document.createElement("h4")
-                    h4.appendChild(document.createTextNode(cmdDescription))
+
+                    if (cmdDescription.startsWith("@del")) {
+                        let del = document.createElement("del")
+                        cmdDescription = cmdDescription.replace("@del", "").trim()
+                        del.appendChild(document.createTextNode(cmdDescription))
+                        h4.appendChild(del)
+                    } else {
+                        h4.appendChild(document.createTextNode(cmdDescription))
+                    }
+
                     cmdContainer.appendChild(h4)
                 } else if (line.startsWith("@link")) {
                     // add link

@@ -10,13 +10,13 @@
 
 @h3 TODOS: *** Java-Spring (Document Useful Links Only)
 
-@h4 TODO:  *** Spring Framework - Data (JPA & Hibernate Hands On)
-@h4 TODO:  *** Spring Framework - Data (JDBC)
-@h4 TODO:  *** Spring Framework - MVC
-@h4 TODO:  *** Spring Boot
-@h4 TODO:  **  Spring Framework - Testing
-@h4 TODO:  **  Spring Framework - Security
-@h4 TODO:  *   Spring Framework - Core
+@h4         TODO:  *** Spring Framework - Data (JPA & Hibernate Hands On)
+@h4 @del    TODO:  *** Spring Framework - Data (JDBC)
+@h4         TODO:  *** Spring Framework - MVC
+@h4 @del    TODO:  *** Spring Boot
+@h4         TODO:  **  Spring Framework - Testing
+@h4         TODO:  **  Spring Framework - Security
+@h4 @del    TODO:  *   Spring Framework - Core
 
 ---------
 

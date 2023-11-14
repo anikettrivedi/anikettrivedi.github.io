@@ -28,3 +28,113 @@ implementation "org.aspectj:aspectjweaver:1.9.20.1"
 @ol Point cut/Join Points/Advices
 
 ---
+
+@h3 Sample XML Configurations
+@h4 Autowire XML Config
+@starttextarea
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:annotation-config/>
+    <beans>
+        <bean id="dummyService" class="com.example.springcore.annotationsbased.service.DummyServiceFieldInjection"></bean>
+        <bean id="dummyDao" class="com.example.springcore.annotationsbased.dao.DummyDao"></bean>
+    </beans>
+
+</beans>
+@endtextarea
+
+@starttextarea
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="petStore" class="com.example.springcore.xmlbased.service.PetStoreServiceServiceImpl">
+        <property name="accountDao" ref="accountDao"/>
+        <property name="itemDao" ref="itemDao"/>
+    </bean>
+
+    <bean id="petStoreAutowired" class="com.example.springcore.xmlbased.service.PetStoreServiceServiceImpl" autowire="byName">
+        <property name="accountDao" ref="accountDao"/>
+        <property name="itemDao" ref="itemDao"/>
+    </bean>
+
+    <alias name="petStore" alias="petStoreAlias"/>
+</beans>
+@endtextarea
+
+---
+
+@h4 ComponentScan Config for Detecting Annotated Beans
+@starttextarea
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		https://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.example.springcore.annotationsbased"/>
+
+</beans>
+@endtextarea
+
+---
+
+@h4 Lifecycle XML Config
+@starttextarea
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="lifecycle"
+          class="com.example.springcore.xmlbased.lifecycle.LifecycleObject"
+          init-method="init"
+          destroy-method="destroy"
+    />
+
+    <bean id="lifecycle2"
+          class="com.example.springcore.xmlbased.lifecycle.LifecycleObject2"
+          init-method="init"
+          destroy-method="destroy"
+    />
+
+</beans>
+@endtextarea
+
+---
+
+@h4 Method injection
+@starttextarea
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- a stateful bean deployed as a prototype (non-singleton) -->
+    <bean id="myCommand" class="com.example.springcore.xmlbased.methodinjection.Command" scope="prototype">
+        <!-- inject dependencies here as required -->
+    </bean>
+
+    <!-- commandProcessor uses statefulCommandHelper -->
+    <bean id="commandManager" class="com.example.springcore.xmlbased.methodinjection.CommandManager">
+        <lookup-method name="createCommand" bean="myCommand"/>
+    </bean>
+</beans>
+@endtextarea

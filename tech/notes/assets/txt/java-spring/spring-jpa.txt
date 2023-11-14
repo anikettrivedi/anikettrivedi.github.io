@@ -6,16 +6,24 @@
 
 @h3 Steps to use Spring Data JPA
 @startpre
-1 - Initialize DataSource (via XML or Annotations)
-2 - Initialize HibernateJpaVendorAdapter (via XML or Annotations)
-3 - Initialize PersistenceExceptionTranslationPostProcessor (via XML or Annotations)
-4 - Initialize JPA Properties
-    1 - hibernate.dialect
-    2 - hibernate.hbm2ddl.auto, etc.
-5 - Initialize LocalContainerEntityManagerFactoryBean (entityManagerFactory) by injecting 1, 2 beans and setting JPA Properties (3) (via XML or Annotations)
-6 - Initialize JpaTransactionManager by injecting 5 (via XML or Annotations)
-7 - Define JPA Entities & Relationships (via XML or Annotations)
-8 - Define JPA Repositories and use them to perform DB operations
+1 - Initialize following (via XML or Annotations):
+    1 - DataSource
+    2 - HibernateJpaVendorAdapter
+    3 - PersistenceExceptionTranslationPostProcessor
+
+2 - For Hibernate Session initialize following (via XML or Annotations):
+    1 - LocalSessionFactoryBean by injecting DataSource bean 
+
+3 - For JPA Repositories initialize following (via XML or Annotations):
+    1 - LocalContainerEntityManagerFactoryBean by injecting DataSource, HibernateJpaVendorAdapter
+    2 - JPA Properties
+        1 - hibernate.dialect
+        2 - hibernate.hbm2ddl.auto, etc.
+
+4 - For Transactions initialize following (via XML or Annotations):
+    1 - JpaTransactionManager by injecting LocalContainerEntityManagerFactoryBean (getObject)
+
+5 - Define JPA Entities & Relationships (via XML or Annotations)
 @endpre
 
 ---

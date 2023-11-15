@@ -135,7 +135,8 @@
         "title": "data-structures",
         "children": [
             "ds-linkedlists",
-            "ds-stacks"
+            "ds-stacks",
+            "ds-queues"
         ]
     },
     {

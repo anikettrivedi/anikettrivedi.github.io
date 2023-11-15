@@ -1,0 +1,25 @@
+@h3 Queues
+
+@link https://en.wikipedia.org/wiki/Queue_(abstract_data_type)
+@img https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Data_Queue.svg/440px-Data_Queue.svg.png
+
+---
+
+@h4 Uses
+@ol Task Scheduling/Resource Allocation/Message Buffering/etc
+
+---
+
+@h4 Operations
+@ol Enqueue(Insert at back of the queue)/Dequeue(Remove from front of the queue)/Peek/Size
+
+
+---
+
+@h4 Properties of a Queue
+@ol First In First Out (FIFO)
+
+---
+
+@h4 Variations
+@ol Double Ended Queue (Deque)/ Priority Queue

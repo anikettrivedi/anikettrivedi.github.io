@@ -1,8 +1,6 @@
 @h3 Stacks
 
 @link https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
-@link https://simple.wikipedia.org/wiki/Stack_(data_structure)
-
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Lifo_stack.svg/700px-Lifo_stack.svg.png
 
 ---

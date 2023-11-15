@@ -22,4 +22,4 @@
 ---
 
 @h4 Variations
-@ol Double Ended Queue (Deque)/ Priority Queue
+@ol Linear Queue/ Double Ended Queue (Deque)/ Priority Queue/ Circular Queue

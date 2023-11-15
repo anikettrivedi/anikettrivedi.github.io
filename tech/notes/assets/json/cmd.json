@@ -134,7 +134,8 @@
         "optgroup": "CS",
         "title": "data-structures",
         "children": [
-            "linked-lists"
+            "ds-linkedlists",
+            "ds-stacks"
         ]
     },
     {

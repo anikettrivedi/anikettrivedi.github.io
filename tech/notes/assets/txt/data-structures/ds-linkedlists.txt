@@ -49,3 +49,8 @@
 @startpre
 1 - Insert, Delete and Search
 @endpre
+
+---
+
+@h3 Uses
+@ol Implementation for Stacks/Implementation for Queues

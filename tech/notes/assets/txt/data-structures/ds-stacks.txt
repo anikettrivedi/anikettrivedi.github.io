@@ -1,0 +1,23 @@
+@h3 Stacks
+
+@link https://en.wikipedia.org/wiki/Stack_(abstract_data_type)
+@link https://simple.wikipedia.org/wiki/Stack_(data_structure)
+
+@img https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Data_stack.svg/440px-Data_stack.svg.png
+@img https://en.wikipedia.org/wiki/File:Lifo_stack.svg
+
+---
+
+@h4 Operations
+@ol Push/Pop/Peek
+
+---
+
+@h4 Properties of a Stack
+@ol Last In First Out (LIFO)
+
+---
+
+@h4 Uses
+@link https://en.wikipedia.org/wiki/Stack_(abstract_data_type)#Applications_of_stacks
+@ol Expression evaluation and syntax parsing/Backtracking/Compile-time memory management(Function Call Stacks)/Etc.

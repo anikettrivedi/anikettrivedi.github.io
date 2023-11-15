@@ -31,10 +31,12 @@
 
 @h4 Simple JPA Demo Program
 @link https://github.com/anikettrivedi/java-spring/tree/main/spring-core/src/main/java/com/example/springjpa/jpasimple
+@ol Simple Spring JPA Demo with Hibernate/JPA CRUD Repository/Hibernate Config Setup
 
 @h4 One to Many JPA Demo Program
-@ol One to Many Table Mapping/Hibernate Session/Hibernate Transactions
 @link https://github.com/anikettrivedi/java-spring/tree/main/spring-core/src/main/java/com/example/springjpa/jpaonetomany
+@ol One to Many Table Mapping/JPA CRUD Repository/Hibernate Session/Hibernate Transactions
+
 
 @h4 TODO: JPA One to One
 @h4 TODO: JPA Many to Many

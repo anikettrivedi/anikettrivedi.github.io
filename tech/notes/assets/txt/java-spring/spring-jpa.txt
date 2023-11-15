@@ -27,6 +27,18 @@
 @endpre
 
 ---
+@h3 Spring Data JPA with Hibernate Examples
+
+@h4 Simple JPA Demo Program
+@link https://github.com/anikettrivedi/java-spring/tree/main/spring-core/src/main/java/com/example/springjpa/jpasimple
+
+@h4 One to Many JPA Demo Program
+@link https://github.com/anikettrivedi/java-spring/tree/main/spring-core/src/main/java/com/example/springjpa/jpaonetomany
+
+@h4 TODO: JPA One to One
+@h4 TODO: JPA Many to Many
+
+---
 
 @h3 Spring Data JPA Dependencies & Sample Configs
 

@@ -4,6 +4,11 @@
 
 ---
 
+@h4 Uses
+@ol Implementation for Stacks/Implementation for Queues
+
+---
+
 @h3 Singly Linked List
 @img https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Singly-linked-list.svg/408px-Singly-linked-list.svg.png
 @h4 Operations
@@ -51,6 +56,3 @@
 @endpre
 
 ---
-
-@h3 Uses
-@ol Implementation for Stacks/Implementation for Queues

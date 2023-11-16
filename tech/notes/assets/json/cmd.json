@@ -1,12 +1,5 @@
 [
     {
-        "optgroup": "Lists",
-        "title": "todo-lists",
-        "children": [
-            "list-one"
-        ]
-    },
-    {
         "optgroup": "Languages",
         "title": "java",
         "children": [
@@ -155,6 +148,13 @@
             "shell-ifs-awk",
             "shell-resource",
             "shell-networking"
+        ]
+    },
+    {
+        "optgroup": "Lists",
+        "title": "todo-lists",
+        "children": [
+            "list-one"
         ]
     }
 ]

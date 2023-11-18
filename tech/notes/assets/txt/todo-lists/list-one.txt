@@ -12,7 +12,8 @@
 
 @h4 @del    TODO:  *** Spring Framework - Data (JPA & Hibernate Hands On)
 @h4 @del    TODO:  *** Spring Framework - Data (JDBC)
-@h4         TODO:  *** Spring Framework - MVC
+@h4         TODO:  *** Spring Framework - Web on Servlet Stack
+@h4         TODO:  *** Spring Framework - Web on Reactive Stack
 @h4 @del    TODO:  *** Spring Boot
 @h4         TODO:  **  Spring Framework - Testing
 @h4         TODO:  **  Spring Framework - Security
@@ -32,6 +33,7 @@
     1 - slf4j
     2 - logback
     3 - log4j2
+4 - RxJava
 @endpre
 
 @h4 TODO: Regular Expressions

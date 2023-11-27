@@ -1,8 +1,8 @@
 @h3 TODOS: *** AWS Application Architect
 
 @h4 TODO:  *** [2023 Dec] AWS Certified Cloud Practitioner 
-@h4 TODO:  *** [2024 Mar] AWS Certified Developer - Associate
-@h4 TODO:  *** [2024 Jun] AWS Certified Solutions Architect - Associate
+@h4 TODO:  *** [2024 Jan] AWS Certified Solutions Architect - Associate
+@h4 TODO:  *** [2024 Jun] AWS Certified Developer - Associate
 @h4 TODO:  *   [--------] AWS Certified DevOps Engineer - Professional
 @h4 TODO:  *   [--------] AWS Certified Solutions Architect - Professional
 

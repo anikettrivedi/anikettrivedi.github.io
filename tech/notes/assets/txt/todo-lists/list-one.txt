@@ -2,7 +2,7 @@
 
 @h4 TODO:  *** [2023 Dec] AWS Certified Cloud Practitioner 
 @h4 TODO:  *** [2024 Mar] AWS Certified Developer - Associate
-@h4 TODO:  *** [2024 Mar] AWS Certified Solutions Architect - Associate
+@h4 TODO:  *** [2024 Jun] AWS Certified Solutions Architect - Associate
 @h4 TODO:  *   [--------] AWS Certified DevOps Engineer - Professional
 @h4 TODO:  *   [--------] AWS Certified Solutions Architect - Professional
 
@@ -30,17 +30,17 @@
 1 - Lombok
 2 - Spring Cloud Feign
 3 - Logging
-    1 - slf4j
-    2 - logback
-    3 - log4j2
+    a) slf4j
+    b) logback
+    c) log4j2
 4 - RxJava
 @endpre
 
 @h4 TODO: Regular Expressions
-@h4 TODO: Java Modules
+@h4 TODO: Java Modules In Depth
 @h4 TODO: Security using JDK Libraries
 @h4 TODO: Virtual Threads
-@h4 TODO: Java Concurrency
+@h4 TODO: Java Concurrency In Depth
 @h4 TODO: Java Pattern Matching
 @h4 TODO: Java JDK Tools
 
@@ -48,12 +48,12 @@
 @startpre
 1 - Maven
 2 - Gradle
-    1 - Bill of Materials (BOM)
+    a) Bill of Materials (BOM)
 @endpre
 
-@h4 TODO: Java Coding Conventions
+@h4 TODO: Java IDE based plugins
 @startpre
-1 - Checkstyle
+1 - Checkstyle on IntelliJ Idea
 @endpre
 
 ---------
@@ -62,13 +62,11 @@
 
 @h4 TODO:  ** Kubernetes
 @h4 TODO:  *  Docker
-@h4 TODO:     OpenShift
+@h4 TODO:  *  Jenkins
+@h4 TODO:  *  OpenShift
+@h4 TODO:     Ansible
+@h4 TODO:     Terraform
 
-@h4 TODO: Other DevOps Technologies
-@startpre
-1 - Ansible
-2 - Terraform
-@endpre
 
 ---------
 
@@ -87,10 +85,11 @@
 9 - Delivery Service (Uber Eats/Swiggy/etc)
 @endpre
 
-@h4 TODO: Technologies
+@h4 TODO: Technology Architectures etc.
 @startpre
-1 - Kafka Architecture & Working
-    1 - Kafka Consumer, Producer, Streams Optimization
+1 - Kafka
+    a) Kafka Consumer, Producer, Streams Optimization
+    b) Kafka Architecture
 2 - Messenging Queue Architecture
 @endpre
 
@@ -100,6 +99,7 @@
 2 - HTTP/1.1, HTTP/2, etc. Protocol
 3 - TCP/IP Protocol
 4 - RPC Protocol
+5 - RTMP & Other Media Streaming Protocols
 @endpre
 
 ---------
@@ -112,13 +112,13 @@
 2 - Stacks
 3 - Queues
 4 - Trees
-    1 - Binary Trees
-    2 - Red-Black Trees
+    a) Binary Trees
+    b) Red-Black Trees
 5 - Dictionaries or Maps
 6 - Graphs
 7 - Others
-    1 - Trie
-    2 - Heaps    
+    a) Trie
+    b) Heaps    
 @endpre
 
 @h4 TODO: Algorithms

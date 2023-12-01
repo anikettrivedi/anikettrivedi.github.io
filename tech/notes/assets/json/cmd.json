@@ -4,6 +4,7 @@
         "title": "java",
         "children": [
             "java-evolution",
+            "---java-new-features",
             "java-literature",
             "java-apis",
             "java-lambda",

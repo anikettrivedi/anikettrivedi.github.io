@@ -76,6 +76,7 @@
 @h4 Java 15
 @startpre
 1 - Text Blocks
+2 - ZGC (Zero Garbage Collector)
 @endpre
 
 -- 

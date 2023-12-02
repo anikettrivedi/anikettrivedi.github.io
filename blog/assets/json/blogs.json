@@ -342,11 +342,6 @@
         ],
         "contents": [
             {
-                "type": "image",
-                "value": "https://static.vecteezy.com/system/resources/thumbnails/022/172/684/original/clock-with-moving-arrows-animated-clock-time-lapse-animation-free-video.jpg",
-                "class": "media-left"
-            },
-            {
                 "type": "text",
                 "value": "Note to self."
             },

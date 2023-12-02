@@ -344,7 +344,7 @@
             {
                 "type": "image",
                 "value": "https://static.vecteezy.com/system/resources/thumbnails/022/172/684/original/clock-with-moving-arrows-animated-clock-time-lapse-animation-free-video.jpg",
-                "class": "media-right"
+                "class": "media-left"
             },
             {
                 "type": "text",
@@ -356,15 +356,7 @@
             },
             {
                 "type": "text",
-                "value": "Even when it is clearly felt, sometimes its results are subtle and can take time to be truly visible."
-            },
-            {
-                "type": "text",
-                "value": "No matter how hard a soaked cloth is rinsed, it will never be dry enough right away. But given enough time, it will be bone dry."
-            },
-            {
-                "type": "text",
-                "value": "Rinsing will do most of the job and Gravity and air will do the rest. But it won't happen right away, it will take time."
+                "value": "Even when it is clearly felt, sometimes its results are subtle and can take time to be truly visible. No matter how hard a soaked cloth is rinsed, it will never be dry enough right away. But given enough time, it will be bone dry."
             },
             {
                 "type": "text",

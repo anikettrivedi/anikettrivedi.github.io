@@ -320,5 +320,56 @@
                 "value": "Almost everything will be exactly the same even if you took a little bit more time, but you will be different. You will be calmer and less anxious."
             }
         ]
+    },
+    {
+        "index": "2023-12-03-Effort",
+        "title": "Effort",
+        "heading": "Effort",
+        "tags": "note to self",
+        "author": "",
+        "timestamp": "December 03, 2023",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Effort."
+            },
+            {
+                "type": "image",
+                "value": "https://static.vecteezy.com/system/resources/thumbnails/022/172/684/original/clock-with-moving-arrows-animated-clock-time-lapse-animation-free-video.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "image",
+                "value": "https://static.vecteezy.com/system/resources/thumbnails/022/172/684/original/clock-with-moving-arrows-animated-clock-time-lapse-animation-free-video.jpg",
+                "class": "media-right"
+            },
+            {
+                "type": "text",
+                "value": "Note to self."
+            },
+            {
+                "type": "text",
+                "value": "Effort is like drying cloths."
+            },
+            {
+                "type": "text",
+                "value": "Even when it is clearly felt, sometimes its results are subtle and can take time to be truly visible."
+            },
+            {
+                "type": "text",
+                "value": "No matter how hard a soaked cloth is rinsed, it will never be dry enough right away. But given enough time, it will be bone dry."
+            },
+            {
+                "type": "text",
+                "value": "Rinsing will do most of the job and Gravity and air will do the rest. But it won't happen right away, it will take time."
+            },
+            {
+                "type": "text",
+                "value": "Be patient."
+            }
+        ]
     }
 ]

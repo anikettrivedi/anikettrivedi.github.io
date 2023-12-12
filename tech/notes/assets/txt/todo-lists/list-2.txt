@@ -38,7 +38,7 @@
 
 ---------
 
-@h4 TODOS: *** Communication Protocols: Technology Deep Dive 
+@h3 TODOS: *** Communication Protocols: Technology Deep Dive 
 
 @h4   TODO: 1. REST
 @h4   TODO: 2. RPC, gRPC etc

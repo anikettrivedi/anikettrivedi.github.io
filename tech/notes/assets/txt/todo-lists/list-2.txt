@@ -1,0 +1,47 @@
+@h3 TODOS: *** Schemas: Technology Deep Dive 
+
+@h4 TODO:  1. Apache Avro & Avro IDL (Avdl) Overview (Avro Schema & Java Plugin)
+@h4 TODO:  2. Parquet
+@h4 TODO:  3. ProtoBuf
+
+---------
+
+@h3 TODOS: *** Kafka Ecosystem: Technology Deep Dive 
+
+@h4   TODO:  1. Kafka Cluster Setup (Java)
+@h4   TODO:  2. Kafka Consumer Optimization (Java)
+@h4   TODO:  3. Kafka Producer Optimization (Java)
+@h4   TODO:  4. Kafka Streams Optimization (Java)
+@h4   TODO:  5. Kafka Streams State Stores (Java)
+@h4   TODO:  6. Kafka Connect (Java)
+@h4   TODO:  7. KSQL (Java)
+
+---------
+
+@h3 TODOS: *** Spark Ecosystem: Technology Deep Dive 
+
+@h4   TODO:  1. Spark Intro: RDD etc (Spark on Java)
+@h4   TODO:  2. Spark Intro: RDD etc (Remote Spark Submit on Java)
+@h4   TODO:  3. Spark Intro: Spark Shell, Spark Submit etc (Scala)
+@h4   TODO:  4. Spark Streaming
+@h4   TODO:  5. Spark SQL
+
+---------
+
+@h3 TODOS: *** Hadoop Ecosystem: Technology Deep Dive 
+
+@h4   TODO:  1. Map Reduce (Java)
+@h4   TODO:  2. YARN 
+@h4   TODO:  3. HDFS File System
+@h4   TODO:  4. Flume (Java)
+@h4   TODO:  5. Flink (Java)
+
+---------
+
+@h4 TODOS: *** Communication Protocols: Technology Deep Dive 
+
+@h4   TODO: 1. REST
+@h4   TODO: 2. RPC, gRPC etc
+@h4   TODO: 3. graphQL
+
+---------

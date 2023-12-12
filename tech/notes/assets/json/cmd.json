@@ -155,7 +155,8 @@
         "optgroup": "Lists",
         "title": "todo-lists",
         "children": [
-            "list-one"
+            "list-1",
+            "list-2"
         ]
     }
 ]

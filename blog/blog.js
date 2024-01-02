@@ -14,6 +14,24 @@ let toggleTag = false;
 let shareLink = document.URL;
 
 window.onload = function () {
+
+    // code to remove additional params added by instagram like fbclid etc.
+    const regex = new RegExp('\\?.*id.*\\?', 'gm')
+    let m;
+
+    while ((m = regex.exec(document.URL)) !== null) {
+        // This is necessary to avoid infinite loops with zero-width matches
+        if (m.index === regex.lastIndex) {
+            regex.lastIndex++;
+        }
+
+        m.forEach((match, groupIndex) => {
+            let trimmedUrl = document.URL.replace(regex, "")
+            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${aboutData.email}&su=${subject}&body=${body}`);
+        });
+    }
+
+
     if (document.URL.includes("/blog/about")) {
         // about page
         fetch("https://anikettrivedi.github.io/blog/assets/json/about.json")
@@ -167,14 +185,14 @@ function addSideBarContent() {
         a.classList.add("common-sidebar-link");
 
         // links to /blog/page
-        if (document.URL.includes("/blog/page")){
+        if (document.URL.includes("/blog/page")) {
             // from /blog/page 
             a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
         } else {
             // from /blog
             a.href = `${document.URL}page?title=${navigationArray[i].index}`
         }
-        
+
 
         let div = document.createElement("div");
         div.classList.add("common-sidebar-item");
@@ -609,7 +627,7 @@ ontouchend = (e) => {
 
 // window resize
 
-(function(){
+(function () {
     //create a closed scope to prevent naming collision        
 
     //store the previous value for the width
@@ -617,7 +635,7 @@ ontouchend = (e) => {
 
     var onResize = function () {
         var currentWidth = window.innerWidth || document.body.clientWidth;
-        if (Math.abs(previousWidth - currentWidth) > 0 ) {
+        if (Math.abs(previousWidth - currentWidth) > 0) {
             if (!document.URL.includes("/blog/about") && !document.URL.includes("/blog/page")) {
                 addHomePageArticles();
             } else if (document.URL.includes("/blog/page")) {

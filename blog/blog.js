@@ -12,7 +12,7 @@ let websiteHeaderMenuText = ""
 let toggleTag = false;
 
 let shareLink = document.URL;
-let mainUrl = "https://aniket.trivedi.github.io/blog"
+let mainUrl = "https://anikettrivedi.github.io/blog"
 
 window.onload = function () {
 

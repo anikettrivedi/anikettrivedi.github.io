@@ -28,7 +28,7 @@ window.onload = function () {
 
         m.forEach((match, groupIndex) => {
             console.log(`redirecting from ${document.URL} to ${mainUrl}`);
-            window.open(`${mainUrl}`).focus();
+            window.open(`${mainUrl}`, "_self")
         });
     }
 

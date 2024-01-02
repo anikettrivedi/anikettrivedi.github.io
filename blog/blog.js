@@ -26,8 +26,10 @@ window.onload = function () {
         }
 
         m.forEach((match, groupIndex) => {
-            let trimmedUrl = document.URL.replace(regex, "")
-            window.open(`${trimmedUrl}`).focus();
+            const reg = "'\\?.*id.*\\?'"
+            const newUrl = document.URL.replace(reg, "");
+            console.log(`redirecting from ${document.URL} to ${newUrl}`);
+            window.open(`${newUrl}`);
         });
     }
 

@@ -26,10 +26,8 @@ window.onload = function () {
         }
 
         m.forEach((match, groupIndex) => {
-            const reg = "'\\?.*id.*\\?'"
-            const newUrl = document.URL.replace(reg, "");
             console.log(`redirecting from ${document.URL} to ${newUrl}`);
-            window.open(`${newUrl}`);
+            window.open("https://aniket.trivedi.github.io/blog");
         });
     }
 

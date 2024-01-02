@@ -12,6 +12,7 @@ let websiteHeaderMenuText = ""
 let toggleTag = false;
 
 let shareLink = document.URL;
+let mainUrl = "https://aniket.trivedi.github.io/blog"
 
 window.onload = function () {
 
@@ -26,8 +27,8 @@ window.onload = function () {
         }
 
         m.forEach((match, groupIndex) => {
-            console.log(`redirecting from ${document.URL} to ${newUrl}`);
-            window.open("https://aniket.trivedi.github.io/blog");
+            console.log(`redirecting from ${document.URL} to ${mainUrl}`);
+            window.open(`${mainUrl}`).focus();
         });
     }
 

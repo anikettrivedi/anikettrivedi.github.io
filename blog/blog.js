@@ -27,7 +27,7 @@ window.onload = function () {
 
         m.forEach((match, groupIndex) => {
             let trimmedUrl = document.URL.replace(regex, "")
-            window.open(`https://mail.google.com/mail/?view=cm&fs=1&to=${aboutData.email}&su=${subject}&body=${body}`);
+            window.open(`${trimmedUrl}`).focus();
         });
     }
 

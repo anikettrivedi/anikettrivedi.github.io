@@ -27,6 +27,16 @@
         ]
     },
     {
+        "optgroup": "Languages",
+        "title": "java-concurrency",
+        "children": [
+            "--threads",
+            "--threads-interrupt",
+            "--threads-properties",
+            "--threads-join"
+        ]
+    },
+    {
         "optgroup": "Databases",
         "title": "postgres",
         "children": [

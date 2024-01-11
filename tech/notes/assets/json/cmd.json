@@ -30,10 +30,10 @@
         "optgroup": "Languages",
         "title": "java-concurrency",
         "children": [
-            "--threads",
-            "--threads-interrupt",
-            "--threads-properties",
-            "--threads-join"
+            "--thread",
+            "--thread-interrupt",
+            "--thread-properties",
+            "--thread-join"
         ]
     },
     {

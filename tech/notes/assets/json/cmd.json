@@ -33,7 +33,10 @@
             "--thread",
             "--thread-interrupt",
             "--thread-properties",
-            "--thread-join"
+            "--thread-join",
+            "--performance-metrics",
+            "--latency-optimization",
+            "--throughput-optimization"
         ]
     },
     {

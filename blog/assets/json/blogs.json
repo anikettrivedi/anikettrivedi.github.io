@@ -358,5 +358,36 @@
                 "value": "Be patient."
             }
         ]
+    },
+    {
+        "index": "2024-02-01-Goa-the-years",
+        "title": "Goa Through The Years",
+        "heading": "Goa Through The Years",
+        "tags": "album,travel",
+        "author": "",
+        "timestamp": "February 01, 2024",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Some pictures from Goa since 2019."
+            },
+            {
+                "type": "image",
+                "value": "https://live.staticflickr.com/65535/53502581433_40911e8a9d_z.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "flickralbum",
+                "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
+                "albumRef": "https://www.flickr.com/photos/198587363@N06/albums/72177720314506328",
+                "imgRef": "https://live.staticflickr.com/65535/53502581433_40911e8a9d_z.jpg",
+                "imgHeight": "450",
+                "imgWidth":"800",
+                "class": "media-full"
+            }
+        ]
     }
 ]

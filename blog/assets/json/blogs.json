@@ -375,7 +375,7 @@
             },
             {
                 "type": "image",
-                "value": "https://live.staticflickr.com/65535/53502581433_40911e8a9d_z.jpg"
+                "value": "https://live.staticflickr.com/65535/53502581433_0f66c87a04_z.jpg"
             }
         ],
         "contents": [
@@ -383,7 +383,7 @@
                 "type": "flickralbum",
                 "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
                 "albumRef": "https://www.flickr.com/photos/198587363@N06/albums/72177720314506328",
-                "imgRef": "https://live.staticflickr.com/65535/53502581433_40911e8a9d_z.jpg",
+                "imgRef": "https://live.staticflickr.com/65535/53502581433_0f66c87a04_z.jpg",
                 "imgHeight": "450",
                 "imgWidth":"800",
                 "class": "media-full"

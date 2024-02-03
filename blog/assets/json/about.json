@@ -13,7 +13,8 @@
             "value": "Aside from work, some of my interests include history, languages, a little bit of geography. I also like to take part in sports, specifically football, running, swimming and lately mix martial arts."
         },
         {
-            "type": "This page is still a work in progress, so I'll probably write more about it future but I guess that's all for now. If you like anything about this website, do write me an email! My address at the bottom of this page. Cheers!"
+            "type": "text",
+            "value": "This page is still a work in progress, so I'll probably write more about it future but I guess that's all for now. If you like anything about this website, do write me an email! My address at the bottom of this page. Cheers!"
         }
     ]
 }

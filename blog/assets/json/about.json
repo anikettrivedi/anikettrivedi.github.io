@@ -2,11 +2,18 @@
     "email": "anikettrivedi@outlook.com",
     "websiteHeading": "blog",
     "websiteHeaderMenuText": "Journal of thoughts, ideas and life experiences.",
-    "image": "/blog/assets/images/profile-pic.jpeg",
+    "image": "/blog/assets/images/20240118_152944.jpg",
     "contents": [
         {
             "type": "text",
-            "value": "Hello I am Aniket. I work as a backend developer in finance sector. In my free time I like to try new skills and hobbies and this website is one of my latest endeavors. I have created this website as a medium to express myself creatively, be it designing the website itself or sharing writings, pictures and other media. Some of my other hobbies include football both playing and watching, swimming and jogging."
+            "value": "Hello I am Aniket and I am a backend engineer. In my free time I like to try new skills and hobbies and this website is one of my latest endeavors. I have created this website as a medium to express myself creatively, be it designing the website itself or sharing writings, pictures and other media."
+        },
+        {
+            "type": "text",
+            "value": "Aside from work, some of my interests include history, languages, a little bit of geography. I also like to take part in sports, specifically football, running, swimming and lately mix martial arts."
+        },
+        {
+            "type": "This page is still a work in progress, so I'll probably write more about it future but I guess that's all for now. If you like anything about this website, do write me an email! My address at the bottom of this page. Cheers!"
         }
     ]
 }

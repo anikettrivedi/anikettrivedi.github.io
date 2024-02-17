@@ -4,7 +4,7 @@
         "title": "java",
         "children": [
             "java-evolution",
-            "---java-new-features",
+            "--java-new-features",
             "java-literature",
             "java-apis",
             "java-lambda",
@@ -117,16 +117,16 @@
         "optgroup": "Cloud",
         "title": "docker",
         "children": [
-            "todo-docker-overview",
-            "todo-docker-commands",
-            "todo-docker-run",
-            "todo-docker-images",
-            "todo-docker-compose",
-            "todo-docker-registry",
-            "todo-docker-engine",
-            "todo-docker-storage",
-            "todo-docker-networking",
-            "todo-handson"
+            "--docker-overview",
+            "--docker-commands",
+            "--docker-run",
+            "--docker-images",
+            "--docker-compose",
+            "--docker-registry",
+            "--docker-engine",
+            "--docker-storage",
+            "--docker-networking",
+            "--handson"
         ]
     },
     {
@@ -134,7 +134,8 @@
         "title": "systemdesign",
         "children": [
             "sd-security",
-            "sd-comm-protocols"
+            "sd-comm-protocols",
+            "--sd-app-common-arch-patterns"
         ]
     },
     {

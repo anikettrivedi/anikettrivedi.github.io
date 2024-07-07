@@ -19,7 +19,7 @@
 		@value Bad stays bad, worse gets to be good.
 	@entry
 		@type image
-		@value /blog/_thumbnails/2023-06-10-Rock-Music.jpg
+		@value /blog/static-thumbnails/2023-06-10-Rock-Music.jpg
 @enddescription
 @place Pune
 @title Worse Is Better Than Bad?

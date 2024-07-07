@@ -13,7 +13,7 @@
 		@value The world doesn't see you the way you see yourself.
 	@entry
 		@type image
-		@value /blog/_thumbnails/2023-06-10-Rock-Music.jpg
+		@value /blog/static-thumbnails/2023-06-10-Rock-Music.jpg
 @enddescription
 @place Pune
 @title Observation No. 1

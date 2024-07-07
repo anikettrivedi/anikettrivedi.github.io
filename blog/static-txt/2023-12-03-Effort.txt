@@ -1,30 +1,27 @@
 @heading Effort
-@startcontents
-	@entry
-		@type text
-		@value Note to self.
-	@entry
-		@type text
-		@value Effort is like drying cloths.
-	@entry
-		@type text
-		@value Its results are subtle and can take time to be truly visible. No matter how hard a soaked cloth is rinsed, it will never be dry enough right away. But given enough time, it will be bone dry.
-	@entry
-		@type text
-		@value Be patient.
-@endcontents
 @author 
 @display visible
 @index 2023-12-03-Effort
-@startdescription
-	@entry
-		@type text
-		@value Effort.
-	@entry
-		@type image
-		@value https://static.vecteezy.com/system/resources/thumbnails/022/172/684/original/clock-with-moving-arrows-animated-clock-time-lapse-animation-free-video.jpg
-@enddescription
 @place Pune
 @title Effort
 @tags note to self
 @timestamp December 03, 2023
+
+@startcontents
+	@startentry
+		@type text
+		@value Note to self.
+	@endentry
+	@startentry
+		@type text
+		@value Effort is like drying cloths.
+	@endentry
+	@startentry
+		@type text
+		@value Its results are subtle and can take time to be truly visible. No matter how hard a soaked cloth is rinsed, it will never be dry enough right away. But given enough time, it will be bone dry.
+	@endentry
+	@startentry
+		@type text
+		@value Be patient.
+	@endentry
+@endcontents

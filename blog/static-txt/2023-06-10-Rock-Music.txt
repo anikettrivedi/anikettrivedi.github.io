@@ -1,30 +1,26 @@
 @heading Rock music
-@startcontents
-	@entry
-		@type text
-		@value A few months back while scrolling on YouTube Shorts, I came across a video that played a lofi, fast forwarded cover of some song that I had never heard. The words and the melody were too good to forget, so I ended up shazaming it and thanks to Spotify and it's suggestions found a playlist worth of (mainly old) rock songs.
-	@entry
-		@type iframe
-		@value https://open.spotify.com/embed/playlist/6DFfL4N9SFFkYX5YjfOzEU?utm_source=generator
-		@class media-full
-	@entry
-		@refNo link
-		@ref https://open.spotify.com/track/1SKPmfSYaPsETbRHaiA18G?si=6a932fbc825146c2
-		@type link
-		@value And also, that song was Somewhere Only We Know by Keane.
-@endcontents
 @author 
 @display visible
 @index 2023-06-10-Rock-Music
-@startdescription
-	@entry
-		@type text
-		@value A few songs I have discovered recently.
-	@entry
-		@type image
-		@value /blog/static-thumbnails/2023-06-10-Rock-Music.jpg
-@enddescription
 @place Pune
 @title Rock music
 @tags music
 @timestamp June 10, 2023
+
+@startcontents
+	@startentry
+		@type text
+		@value A few months back while scrolling on YouTube Shorts, I came across a video that played a lofi, fast forwarded cover of some song that I had never heard. The words and the melody were too good to forget, so I ended up shazaming it and thanks to Spotify and it's suggestions found a playlist worth of (mainly old) rock songs.
+	@endentry
+	@startentry
+		@type iframe
+		@value https://open.spotify.com/embed/playlist/6DFfL4N9SFFkYX5YjfOzEU?utm_source=generator
+		@class media-full
+	@endentry
+	@startentry
+		@refNo link
+		@ref https://open.spotify.com/track/1SKPmfSYaPsETbRHaiA18G?si=6a932fbc825146c2
+		@type link
+		@value And also, that song was Somewhere Only We Know by Keane.
+	@endentry
+@endcontents

@@ -1,0 +1,33 @@
+@heading Stuck in a loop
+@startcontents
+	@entry
+		@type text
+		@value From the age of 19 to 24, I was stuck in a vicious loop. What ever I tried to learn, a new subject, a new hobby or anything else I would always get too overwhelmed because of it's complexity or too bored because of it's simplicity, but that wasn't even the worst of it. The most frustrating part was that every time I made some progress while trying to learn something, I will forget it the next time, so I will have to start over and over again until I give it up or settle for something mediocre. Kind of like going up on an escalator which is going down, chances are you'll end up going nowhere or get injured badly. It made my life hell, academically or otherwise.
+	@entry
+		@type text
+		@value It gave me anxiety, countless breakdowns but no explanations. I tried different things hoping to sort it out, meditations, exercise etc. They helped in making me feel better (Dopamine boost) when I was otherwise not but never really helped fixing the problem.
+	@entry
+		@type text
+		@value So after 5 years of accumulated frustration, in which I somehow dragged myself through college, got a job, got so frustrated with my head that almost quit the job, consulted a psychiatrist for almost a year - I finally got an answer, hope and treatment and it saved my life, really it did. It was undiagnosed and untreated Attention Deficit Hyperactivity Disorder (ADHD), in my case predominantly inattentive.
+	@entry
+		@type text
+		@value My brain lacked the normal levels of Dopamine & Norepinephrine (as I understand it, brain chemicals responsible for regulation of attention/working memory).
+	@entry
+		@type text
+		@value I often wondered why it didn't come up during school? In retrospect it appears the signs were always there, but while living with parents, they created enough structure around me that held everything together, but once I was out of home, all hell broke loose.
+@endcontents
+@author 
+@display visible
+@index 2023-08-12-Stuck-in-a-loop
+@startdescription
+	@entry
+		@type text
+		@value Stuck in a loop.
+	@entry
+		@type image
+		@value https://www.hackingwithswift.com/uploads/loops.jpg
+@enddescription
+@place Pune
+@title Stuck in a loop
+@tags life experience
+@timestamp August 13, 2023

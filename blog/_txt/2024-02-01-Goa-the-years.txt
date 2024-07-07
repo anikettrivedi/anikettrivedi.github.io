@@ -1,0 +1,26 @@
+@heading Goa, through the years
+@startcontents
+	@entry
+		@imgWidth 800
+		@albumRef https://www.flickr.com/photos/198587363@N06/albums/72177720314506328
+		@imgHeight 450
+		@type flickralbum
+		@imgRef https://live.staticflickr.com/65535/53502581433_0f66c87a04_z.jpg
+		@scriptRef https://embedr.flickr.com/assets/client-code.js
+		@class media-full
+@endcontents
+@author 
+@display visible
+@index 2024-02-01-Goa-the-years
+@startdescription
+	@entry
+		@type text
+		@value Some pictures from Goa since 2019.
+	@entry
+		@type image
+		@value https://live.staticflickr.com/65535/53502581433_0f66c87a04_z.jpg
+@enddescription
+@place Pune
+@title Goa, through the years
+@tags album,travel
+@timestamp February 01, 2024

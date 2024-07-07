@@ -1,0 +1,27 @@
+@heading Worse Is Better Than Bad?
+@startcontents
+	@entry
+		@type text
+		@value I think I saw some YouTube reel about this theory, which actually makes sense. It says that often times we settle for things that we don't really enjoy or that don't make us happy because in our minds we keep thinking it's not worse yet. We go for bad because things aren't worse yet, had they been worse we would do something about it but they are not so we don't. Do you see the irony here?
+	@entry
+		@type text
+		@value For example consider a job that makes you unhappy but not outright miserable, you stick to it because it is not bad enough. But what if it was bad enough, then you will do something about it. Worse forces you to strive for good but bad doesn't. Funny right?
+	@entry
+		@type text
+		@value This applies to various situations in life not just a job. It can be about a place, a relationship, a friendship, a situation or something else.
+@endcontents
+@author 
+@display hidden
+@index 2023-05-25-Worse-Is-Better-Than-Bad
+@startdescription
+	@entry
+		@type text
+		@value Bad stays bad, worse gets to be good.
+	@entry
+		@type image
+		@value /blog/_thumbnails/2023-06-10-Rock-Music.jpg
+@enddescription
+@place Pune
+@title Worse Is Better Than Bad?
+@tags note to self
+@timestamp May 25, 2023

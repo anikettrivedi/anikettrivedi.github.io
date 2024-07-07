@@ -1,0 +1,30 @@
+@heading Nepal
+@startcontents
+	@entry
+		@imgWidth 800
+		@albumRef https://www.flickr.com/photos/198587363@N06/albums/72177720309155341
+		@imgHeight 450
+		@type flickralbum
+		@imgRef https://live.staticflickr.com/65535/52985322231_a730cc56af_h.jpg
+		@scriptRef https://embedr.flickr.com/assets/client-code.js
+		@class media-full
+	@entry
+		@type iframe
+		@value https://www.youtube.com/embed/jrGBl9ssHXk
+		@class media-full
+@endcontents
+@author 
+@display visible
+@index 2023-06-18-Nepal
+@startdescription
+	@entry
+		@type text
+		@value Pictures from Nepal back in 2019.
+	@entry
+		@type image
+		@value https://live.staticflickr.com/65535/52985322231_a730cc56af_h.jpg
+@enddescription
+@place Pune
+@title Nepal
+@tags album,travel
+@timestamp June 18, 2023

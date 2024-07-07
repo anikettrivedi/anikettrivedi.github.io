@@ -12,7 +12,7 @@ try {
 
 // todo - end
 
-fetch('https://anikettrivedi.github.io/tech/notes/assets/json/cmd.json')
+fetch('https://anikettrivedi.github.io/tech/notes/json/cmd.json')
     .then((response) => response.json())
     .then((json) => {
         //console.log(json)
@@ -150,7 +150,7 @@ function navigateOnButtonClick() {
 
 function insertSelectedSection() {
     // get selected section
-    let target = `https://anikettrivedi.github.io/tech/notes/assets/txt/${type}/${subtype}.txt`
+    let target = `https://anikettrivedi.github.io/tech/notes/txt/${type}/${subtype}.txt`
     fetchSectionContentsAndAdd(subtype, target)
 }
 

@@ -1,0 +1,13 @@
+@websiteHeading blog
+@websiteHeaderMenuText Journal of thoughts, ideas and life experiences.
+@email anikettrivedi@outlook.com
+@image /blog/static-images/profile.jpg
+
+@startcontents
+	@entry
+		@type text
+		@value Hello I am Aniket and I am a programmer. In my free time I like to try things and this website is one of my latest endeavors. I have created this website as a medium to express myself creatively, be it designing the website itself or sharing writings, pictures and other media.
+	@entry
+		@type text
+		@value Aside from work, some of my interests include science, history, languages and geography. Also, I really love spending time in nature, even though living in a metro city can make it hard to do so on a day to day basis, I keep my hopes up by doing it whenever I can! For keeping myself sane in this life that involves sitting in front of a screen for hours, I like to run (away from my problems! :D), and if possible swim too!
+@endcontents

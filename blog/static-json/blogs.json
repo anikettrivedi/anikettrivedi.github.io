@@ -416,7 +416,7 @@
             },
             {
                 "type": "iframe",
-                "value": "https://open.spotify.com/playlist/1v8xEcEXbUem8acTaL7pMG?si=fdc66624d66f4369`",
+                "value": "https://open.spotify.com/embed/playlist/1v8xEcEXbUem8acTaL7pMG?utm_source=generator",
                 "class": "media-full"
             }
         ]

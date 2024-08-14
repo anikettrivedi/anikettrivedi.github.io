@@ -389,5 +389,36 @@
                 "class": "media-full"
             }
         ]
+    },
+    {
+        "index": "2024-08-14-To-Be-Continued",
+        "title": "To Be Continued...",
+        "heading": "To Be Continued...",
+        "tags": "music",
+        "author": "",
+        "timestamp": "August 14, 2024",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "To be continued..."
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2024-08-14-To-Be-Continued.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "Or so I would like to believe."
+            },
+            {
+                "type": "iframe",
+                "value": "https://open.spotify.com/playlist/1v8xEcEXbUem8acTaL7pMG?si=fdc66624d66f4369`",
+                "class": "media-full"
+            }
+        ]
     }
 ]

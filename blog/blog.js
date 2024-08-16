@@ -192,8 +192,8 @@ function addSideBarContent() {
         } else {
             // from /blog
             temp_url = document.URL
-            if (temp_url.includes("show=?")){
-                temp_url = temp_url.split("show=?")[0]
+            if (temp_url.includes("show=\?")){
+                temp_url = temp_url.split("show=\?")[0]
             }
             a.href = `${temp_url}page?title=${navigationArray[i].index}`
             console.log(temp_url)
@@ -352,8 +352,8 @@ function addHomePageArticleSummaryPanel(article, element) {
     let headingText = article.heading;
 
     temp_url = document.URL
-    if (temp_url.includes("show=?")){
-        temp_url = temp_url.split("show=?")[0]
+    if (temp_url.includes("show=\?")){
+        temp_url = temp_url.split("show=\?")[0]
         console.log(temp_url)
     }
     let articleLinkRelativePath = `${temp_url}page?title=${article.index}`

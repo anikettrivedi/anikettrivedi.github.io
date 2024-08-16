@@ -192,8 +192,8 @@ function addSideBarContent() {
         } else {
             // from /blog
             temp = document.URL
-            if (temp.includes("?show")){
-                temp = temp.split("?show=")[0]
+            if (temp.includes("show=")){
+                temp = temp.split("show=")[0]
             }
             a.href = `${temp}page?title=${navigationArray[i].index}`
         }

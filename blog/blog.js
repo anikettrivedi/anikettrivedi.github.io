@@ -72,7 +72,7 @@ window.onload = function () {
                 console.error(error);
             });
     } else {
-        // blog
+        // /blog
         // home page 
         fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
             .then(response => {
@@ -191,13 +191,7 @@ function addSideBarContent() {
             a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
         } else {
             // from /blog
-            temp_url = document.URL
-            if (temp_url.includes("show=\?")){
-                temp_url = temp_url.split("show=\?")[0]
-            }
-            a.href = `${temp_url}page?title=${navigationArray[i].index}`
-            console.log(temp_url)
-            console.log(a.href)
+            a.href = `${document.URL}page?title=${navigationArray[i].index}`
         }
 
 
@@ -351,14 +345,7 @@ function addHomePageArticleSummaryPanel(article, element) {
     let timestampText = article.timestamp;
     let headingText = article.heading;
 
-    temp_url = document.URL
-    if (temp_url.includes("show=\?")){
-        temp_url = temp_url.split("show=\?")[0]
-        console.log(temp_url)
-    }
-    let articleLinkRelativePath = `${temp_url}page?title=${article.index}`
-    console.log(articleLinkRelativePath)
-
+    let articleLinkRelativePath = `${document.URL}page?title=${article.index}`
     previewPanel.classList.add("preview-panel");
 
     article.description.forEach(entry => {

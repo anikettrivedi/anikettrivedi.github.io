@@ -349,7 +349,12 @@ function addHomePageArticleSummaryPanel(article, element) {
     let timestampText = article.timestamp;
     let headingText = article.heading;
 
-    let articleLinkRelativePath = `${document.URL}page?title=${article.index}`
+    temp_url = document.URL
+    if (temp_url.includes("show=?")){
+        temp_url = temp_url.split("show=?")[0]
+    }
+    let articleLinkRelativePath = `${temp_url}page?title=${article.index}`
+
     previewPanel.classList.add("preview-panel");
 
     article.description.forEach(entry => {

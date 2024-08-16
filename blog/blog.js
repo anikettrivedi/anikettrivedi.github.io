@@ -72,7 +72,7 @@ window.onload = function () {
                 console.error(error);
             });
     } else {
-        // /blog
+        // blog
         // home page 
         fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
             .then(response => {
@@ -191,7 +191,11 @@ function addSideBarContent() {
             a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
         } else {
             // from /blog
-            a.href = `${document.URL}page?title=${navigationArray[i].index}`
+            temp = document.URL
+            if (temp.contains("?show")){
+                temp = temp.split("?show=")[0]
+            }
+            a.href = `${temp}page?title=${navigationArray[i].index}`
         }
 
 

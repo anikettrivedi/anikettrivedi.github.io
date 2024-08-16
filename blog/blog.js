@@ -191,11 +191,11 @@ function addSideBarContent() {
             a.href = `${document.URL.split("?title=")[0]}?title=${navigationArray[i].index}`
         } else {
             // from /blog
-            temp = document.URL
-            if (temp.includes("show=?")){
-                temp = temp.split("show=?")[0]
+            temp_url = document.URL
+            if (temp_url.includes("show=?")){
+                temp_url = temp_url.split("show=?")[0]
             }
-            a.href = `${temp}page?title=${navigationArray[i].index}`
+            a.href = `${temp_url}page?title=${navigationArray[i].index}`
         }
 
 

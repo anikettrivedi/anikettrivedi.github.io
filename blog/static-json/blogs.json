@@ -391,14 +391,14 @@
         ]
     },
     {
-        "index": "2024-08-14-To-Be-Continued",
-        "title": "To Be Continued...",
-        "heading": "To Be Continued...",
+        "index": "2024-08-20-Le-Cadeau-Perdu",
+        "title": "Le Cadeau Perdu",
+        "heading": "Le Cadeau Perdu",
         "tags": "music",
         "author": "",
         "timestamp": "August 14, 2024",
         "place": "Pune",
-        "display": "hidden",
+        "display": "visible",
         "description": [
             {
                 "type": "text",
@@ -410,10 +410,6 @@
             }
         ],
         "contents": [
-            {
-                "type": "text",
-                "value": "Or so I would like to believe."
-            },
             {
                 "type": "iframe",
                 "value": "https://open.spotify.com/embed/playlist/1v8xEcEXbUem8acTaL7pMG?utm_source=generator",

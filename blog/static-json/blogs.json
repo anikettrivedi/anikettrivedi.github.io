@@ -406,7 +406,7 @@
             },
             {
                 "type": "image",
-                "value": "/blog/static-thumbnails/2024-08-14-To-Be-Continued.jpg"
+                "value": "/blog/static-thumbnails/2024-08-20-Le-Cadeau-Perdu.jpg"
             }
         ],
         "contents": [
@@ -414,6 +414,32 @@
                 "type": "iframe",
                 "value": "https://open.spotify.com/embed/playlist/1v8xEcEXbUem8acTaL7pMG?utm_source=generator",
                 "class": "media-full"
+            }
+        ]
+    },
+    {
+        "index": "2024-09-20-Thoughts",
+        "title": "Thoughts",
+        "heading": "Thoughts",
+        "tags": "note to self",
+        "author": "",
+        "timestamp": "September 20, 2024",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2024-09-20-Thought.gif"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "Let me think."
             }
         ]
     }

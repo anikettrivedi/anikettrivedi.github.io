@@ -439,7 +439,11 @@
         "contents": [
             {
                 "type": "text",
-                "value": "Thinking"
+                "value": "20 Sept: Thinking..."
+            },
+            {
+                "type": "text",
+                "value": "22 Sept: Thought about thoughts, still thinking..."
             }
         ]
     }

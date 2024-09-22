@@ -438,12 +438,20 @@
         ],
         "contents": [
             {
-                "type": "text",
-                "value": "20 Sept: Thinking..."
+                "type": "subheading",
+                "value": "20 Sept"
             },
             {
                 "type": "text",
-                "value": "22 Sept: Thought about thoughts, still thinking..."
+                "value": "Thinking..."
+            },
+            {
+                "type": "subheading",
+                "value": "22 Sept"
+            },
+            {
+                "type": "text",
+                "value": "Thought about thoughts, still thinking..."
             }
         ]
     }

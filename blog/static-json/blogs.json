@@ -443,7 +443,7 @@
             },
             {
                 "type": "text",
-                "value": "Thinking..."
+                "value": "Thinking."
             },
             {
                 "type": "subheading",
@@ -451,7 +451,7 @@
             },
             {
                 "type": "text",
-                "value": "Thought about thoughts, still thinking..."
+                "value": "Thought about thoughts, still thinking."
             }
         ]
     }

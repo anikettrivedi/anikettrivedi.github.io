@@ -460,6 +460,10 @@
             {
                 "type": "text",
                 "value": "Thought of something, but took it back."
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/buddha.jpg"
             }
         ]
     }

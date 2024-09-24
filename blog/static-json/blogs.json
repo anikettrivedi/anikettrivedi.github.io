@@ -463,7 +463,8 @@
             },
             {
                 "type":"image",
-                "value": "/blog/static-images/buddha.jpg"
+                "value": "/blog/static-images/buddha.jpg",
+                "class": "media-full"
             }
         ]
     }

@@ -452,6 +452,14 @@
             {
                 "type": "text",
                 "value": "Thought about thoughts, still thinking."
+            },
+            {
+                "type": "subheading",
+                "value": "24 Sept"
+            },
+            {
+                "type": "text",
+                "value": "Thought of something, but took it back."
             }
         ]
     }

@@ -464,7 +464,39 @@
             {
                 "type":"image",
                 "value": "/blog/static-images/buddha.jpg",
-                "class": "media-full"
+                "class": "media-left"
+            },
+            {
+                "type": "subheading",
+                "value": "27 Sept"
+            },
+            {
+                "type": "text",
+                "value": "Note to self."
+            },
+            {
+                "type": "text",
+                "value": "Thinking is a strange process, just by thinking we can cook up a world in our minds that doesn't really exist. Crazy, isn't it?"
+            },
+            {
+                "type": "text",
+                "value": "Think of a road with two way traffic but only a single lane, there are vehicles coming and going from either side and think of yourself as a pedestrian on the side walk, just standing by a corner and observing."
+            },
+            {
+                "type": "text",
+                "value": "So there's a red car going from left to right, there's a silver SUV coming from the opposite direction, there's a black and yellow auto rickshaw trying to make a U-turn, there's a cyclist with his helmet and glasses trying to swoosh past the intersection that you are standing on, far up on one of the sides you can hear the honk of a gigantic truck approaching, and so on, there are countless vehicles going from one direction to another, taking a turn to left or to right or turning around completely, often all at once."
+            },
+            {
+                "type": "text",
+                "value": "Thoughts, inside your head can be just like these vehicles you know? They can be light and pretty and quick like a nice little car, tempting enough to turn your head around. Or they can be barely noticeable and short lived like a crossing cyclist that you probably won't even bother to notice. Or they can be slow and heavy like a truck, hard to ignore and not easily going away. Or there could be a conflict of thoughts that could fuck your  head up kind of like a traffic jam or even worse, an accident."
+            },
+            {
+                "type": "text",
+                "value": "As long as you are a bystander, just observing, it's more or less fine. But when you try to take part in it there could be a problem. Like crossing a road on a day with heavy traffic or getting too distracted by all the fancy sports cars passing by or taking too much pleasure in a road rage incident."
+            },
+            {
+                "type": "text",
+                "value": "Try to be a bystander of your own thoughts, observe more and act less. Not every thought that seeks your attention needs to be acted on. Remember, after all, they are just thoughts - some big, some small, some sweet, some scary, some fast and some slow and just like vehicles they will come and they will go.`"
             }
         ]
     }

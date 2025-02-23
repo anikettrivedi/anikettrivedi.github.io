@@ -521,13 +521,13 @@
         ],
         "contents": [
             {
-                "type": "text",
-                "value": "Since the beginning of December last year, because of a back injury, I have not been able to go out and run as much as I would like to. At times, it has been super annoying and frustrating. Both the pain of the injury and inability to go out and exercise. So here I am, listing down a few books that I have read or plan to read to kill time while recovering."
-            },
-            {
                 "type":"image",
                 "value": "/blog/static-images/2025-02-24-book-list.jpg",
                 "class": "media-right"
+            },
+            {
+                "type": "text",
+                "value": "Since the beginning of December last year, because of a back injury, I have not been able to go out and run as much as I would like to. At times, it has been super annoying and frustrating. Both the pain of the injury and inability to go out and exercise. So here I am, listing down a few books that I have read or plan to read to kill time while recovering."
             },
             {
                 "type": "text",

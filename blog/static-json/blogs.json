@@ -463,7 +463,7 @@
             },
             {
                 "type":"image",
-                "value": "/blog/static-images/buddha.jpg",
+                "value": "/blog/static-images/2024-09-22-buddha.jpg",
                 "class": "media-left"
             },
             {
@@ -497,6 +497,41 @@
             {
                 "type": "text",
                 "value": "Try to be a bystander of your own thoughts, observe more and act less. Not every thought that seeks your attention needs to be acted on. Remember, after all, they are just thoughts - some big, some small, some sweet, some scary, some fast and some slow and just like vehicles they will come and they will go."
+            }
+        ]
+    },
+    {
+        "index": "2025-02-24-Running-and-Reading",
+        "title": "Running & Reading",
+        "heading": "Running & Reading",
+        "tags": "",
+        "author": "",
+        "timestamp": "February 24, 2025",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2025-02-24-born-to-run.jpeg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "Since the beginning of December last year, because of a back injury, I have not been able to go out and run as much as I would like to. At times, it has been super annoying and frustrating. Both the pain of the injury and inability to go out and exercise. So here I am, listing down a few books that I have read or plan to read to kill time while recovering."
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-24-book-list.jpg",
+                "class": "media-right"
+            },
+            {
+                "type": "text",
+                "value": "First one is a special one, Born to Run, I found it in a backpacker hostel back in 2019 in Nepal. Amazing book. Eat & Run - I recently finished reading (also Amazing) and North is what I am reading at the moment (So far, Amazing). Rest of the books are really just recommendations from Eat & Run that I plan to read (more or less). "
             }
         ]
     }

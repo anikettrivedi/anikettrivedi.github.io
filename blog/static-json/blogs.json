@@ -1,31 +1,5 @@
 [
     {
-        "index": "2023-06-10-blog-template",
-        "title": "Blog Template",
-        "heading": "Blog Template",
-        "tags": "template",
-        "author": "",
-        "timestamp": "June 10, 2023",
-        "place": "Pune",
-        "display": "hidden",
-        "description": [
-            {
-                "type": "text",
-                "value": "Template"
-            },
-            {
-                "type": "image",
-                "value": "/blog/static-thumbnails/2023-06-10-Rock-Music.jpg"
-            }
-        ],
-        "contents": [
-            {
-                "type": "text",
-                "value": "Template"
-            }
-        ]
-    },
-    {
         "index": "2023-05-08-Observation-No-1",
         "title": "Observation No. 1",
         "heading": "Observation No. 1",
@@ -533,7 +507,7 @@
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/002.png",
                 "class": "media-right",
-                "text" : "2 - Open bread"
+                "text": "2 - Open bread"
             },
             {
                 "type": "image",

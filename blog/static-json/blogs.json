@@ -479,8 +479,8 @@
     },
     {
         "index": "2025-02-26-Food-001",
-        "title": "Food 001",
-        "heading": "Food 001",
+        "title": "Food No.1",
+        "heading": "Food No.1",
         "tags": "food",
         "author": "",
         "timestamp": "February 26, 2025",
@@ -500,50 +500,49 @@
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/001.png",
-                "class": "media-left",
-                "text": "1 - Take bread."
+                "class": "media-left"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/002.png",
-                "class": "media-right",
-                "text": "2 - Open bread"
+                "class": "media-right"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/003.png",
-                "class": "media-left",
-                "text": "3 - Add tikki."
+                "class": "media-left"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/004.png",
-                "class": "media-right",
-                "text": "4 - Add tomato."
+                "class": "media-right"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/005.png",
-                "class": "media-left",
-                "text": "5 - Add onion."
+                "class": "media-left"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/006.png",
-                "class": "media-right",
-                "text": "6 - Add cabbage."
+                "class": "media-right"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/007.png",
-                "class": "media-left",
-                "text": "7 - Add sauces."
+                "class": "media-left"
+                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/008.png",
-                "class": "media-right",
-                "text": "8 - Close bread."
+                "class": "media-right"
             }
         ]
     }

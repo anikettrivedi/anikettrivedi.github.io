@@ -502,5 +502,67 @@
                 "value": "First one is a special one, Born to Run, I found it in a backpacker hostel back in 2019 in Nepal. Amazing book. Eat & Run - I recently finished reading (also amazing) and North is what I am reading at the moment (so far, amazing). Rest of the books are really just recommendations from Eat & Run that I plan to read (more or less). "
             }
         ]
+    },
+    {
+        "index": "2025-02-26-Food-001",
+        "title": "Food 001",
+        "heading": "Food 001",
+        "tags": "food",
+        "author": "",
+        "timestamp": "February 26, 2025",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-images/2025-02-26/008.png"
+            }
+        ],
+        "contents": [
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/001.png",
+                "class": "media-left"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/002.png",
+                "class": "media-right"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/003.png",
+                "class": "media-left"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/004.png",
+                "class": "media-right"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/005.png",
+                "class": "media-left"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/006.png",
+                "class": "media-right"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/007.png",
+                "class": "media-left"
+            },
+            {
+                "type":"image",
+                "value": "/blog/static-images/2025-02-26/008.png",
+                "class": "media-right"
+            }
+        ]
     }
 ]

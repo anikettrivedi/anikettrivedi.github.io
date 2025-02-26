@@ -214,11 +214,11 @@
         "contents": [
             {
                 "type": "flickralbum",
-                "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
+                "scriptRef": "https://embedr.flickr.com/assets/client-code.js",
                 "albumRef": "https://www.flickr.com/photos/198587363@N06/albums/72177720309155341",
                 "imgRef": "https://live.staticflickr.com/65535/52985322231_a730cc56af_h.jpg",
                 "imgHeight": "450",
-                "imgWidth":"800",
+                "imgWidth": "800",
                 "class": "media-full"
             },
             {
@@ -291,7 +291,7 @@
         ],
         "contents": [
             {
-                "type":"text",
+                "type": "text",
                 "value": "Note to self."
             },
             {
@@ -376,11 +376,11 @@
         "contents": [
             {
                 "type": "flickralbum",
-                "scriptRef":"https://embedr.flickr.com/assets/client-code.js",
+                "scriptRef": "https://embedr.flickr.com/assets/client-code.js",
                 "albumRef": "https://www.flickr.com/photos/198587363@N06/albums/72177720314506328",
                 "imgRef": "https://live.staticflickr.com/65535/53502581433_0f66c87a04_z.jpg",
                 "imgHeight": "450",
-                "imgWidth":"800",
+                "imgWidth": "800",
                 "class": "media-full"
             }
         ]
@@ -430,7 +430,7 @@
                 "value": "Thought of something, but took it back."
             },
             {
-                "type":"image",
+                "type": "image",
                 "value": "/blog/static-images/2024-09-22-buddha.jpg",
                 "class": "media-left"
             },
@@ -489,7 +489,7 @@
         ],
         "contents": [
             {
-                "type":"image",
+                "type": "image",
                 "value": "/blog/static-images/2025-02-24-book-list.jpg",
                 "class": "media-right"
             },
@@ -515,7 +515,7 @@
         "description": [
             {
                 "type": "text",
-                "value": ""
+                "value": "Food"
             },
             {
                 "type": "image",
@@ -524,44 +524,76 @@
         ],
         "contents": [
             {
-                "type":"image",
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/001.png",
                 "class": "media-left"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "1 - Take bread."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/002.png",
                 "class": "media-right"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "2 - Open bread."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/003.png",
                 "class": "media-left"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "3 - Add tikki."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/004.png",
                 "class": "media-right"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "4 - Add tomato."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/005.png",
                 "class": "media-left"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "5 - Add onion."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/006.png",
                 "class": "media-right"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "6 - Add cabbage."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/007.png",
                 "class": "media-left"
             },
             {
-                "type":"image",
+                "type": "text",
+                "value": "7 - Add sauces."
+            },
+            {
+                "type": "image",
                 "value": "/blog/static-images/2025-02-26/008.png",
                 "class": "media-right"
+            },
+            {
+                "type": "text",
+                "value": "8 - Close bread."
             }
         ]
     }

@@ -545,5 +545,36 @@
                 "class": "media-right"
             }
         ]
+    },
+    {
+        "index": "2025-03-01-Running-So-Far",
+        "title": "Running, so far",
+        "heading": "Running, so far",
+        "tags": "",
+        "author": "",
+        "timestamp": "March 01, 2025",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "A few pictures from days of running."
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2025-03-01-running-so-far.png"
+            }
+        ],
+        "contents": [
+            {
+                "type": "flickralbum",
+                "scriptRef": "https://embedr.flickr.com/assets/client-code.js",
+                "albumRef": "https://www.flickr.com/photos/198587363@N06/albums/72177720324157213",
+                "imgRef": "https://live.staticflickr.com/65535/54356638527_f984962905_z.jpg",
+                "imgHeight": "450",
+                "imgWidth": "800",
+                "class": "media-full"
+            }
+        ]
     }
 ]

@@ -576,5 +576,43 @@
                 "class": "media-full"
             }
         ]
+    },
+    {
+        "index": "2026-10-11-Pain",
+        "title": "Pain",
+        "heading": "Pain",
+        "tags": "",
+        "author": "",
+        "timestamp": "October 11, 2026",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Nerve wrecking."
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-10-11-pain.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "Pain is weird. Never in my life I would have thought that I will have to live with such a pain for a few days. Yet, here it is, living day in and day out with more or less the same pain for a year and ten months."
+            },
+            {
+                "type": "text",
+                "value": "'Nerve wrecking', 'Touching a nerve', 'Unnerving' - Never thought of these beyond anything more than figures of speeches, but not anymore. I have experienced it in the most literal sense and as much as I want to admit that one gets used to it, I can not, because one never does."
+            },
+            {
+                "type": "text",
+                "value": "Nerve pain is the worst kind of pain these is. It is a torture that I would not wish for the worst of my enemies. It messes up with the mind. It sucks the goodness out of every happy moment. It disables you physically and psychologically. It isolates you from the world. It takes away all your dreams, hopes and wishes, and keep them hostage. It is there day in and day out - when you sleep, when you wake up, while sitting, while standing, while walking. Like a shadow, or even worse, because shadows disappear in darkness but this pain makes the brighest of days dark. One can't work, can't play, can't do anything without being reminded of it. It effectively grinds one's life to a halt. It renders you helpless and desperate."
+            },
+            {
+                "type": "text",
+                "value": "But the good news is that there's an end to it. In a few months or maybe even a few weeks I am going to be free of it for good. There's is an end to this seemingly unending ordeal. There's light at the end of this tunnel. Very soon, I'm going to get my life back. I have held on so far, so why not hold on for just a little bit more?"
+            }
+        ]
     }
 ]

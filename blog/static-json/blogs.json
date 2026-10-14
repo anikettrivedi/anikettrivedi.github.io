@@ -632,6 +632,10 @@
             {
                 "type": "text",
                 "value": "About the pain."
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-10-14-doing-something.jpg"
             }
         ],
         "contents": [

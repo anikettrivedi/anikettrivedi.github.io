@@ -485,6 +485,21 @@ function addArticlePageContent() {
             para.appendChild(text);
             div.appendChild(para)
             contentDiv.appendChild(div);
+        } else if (entry.type == "unorderedlist") {
+           
+            let div = document.createElement("div");
+            let ul = document.createElement("ul");
+            let arrayEntries = entry.value.split(";")
+
+            arrayEntries.forEach((arrayEntry) => {
+                let li = document.createElement("li");
+                let text = document.createTextNode(arrayEntry);
+                li.appendChild(text);
+                ul.appendChild(li);
+            });
+
+            div.appendChild(ul)
+            contentDiv.appendChild(div);
         } else if (entry.type == "subheading") {
             let div = document.createElement("div");
             let heading = document.createElement("h3");

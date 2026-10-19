@@ -643,7 +643,7 @@
         ]
     },
     {
-        "index": "2026-10-19-Turtles",
+        "index": "2026-10-19-01-Turtles",
         "title": "Turtles All the Way Down",
         "heading": "Turtles All the Way Down",
         "tags": "",
@@ -669,7 +669,7 @@
         ]
     },
     {
-        "index": "2026-10-19-Booklist",
+        "index": "2026-10-19-02-Booklist",
         "title": "Book List",
         "heading": "Book List",
         "tags": "",
@@ -699,7 +699,7 @@
             },
             {
                 "type": "text",
-                "value": "I Contain Multitudes - Ed Yong <br> The Man Who Couldn't Stop - David Adam <br> The Body in Pain - Elaine Scarry"
+                "value": "I Contain Multitudes - Ed Yong; The Man Who Couldn't Stop - David Adam; The Body in Pain - Elaine Scarry"
             },
             {
                 "type": "subheading",
@@ -707,7 +707,7 @@
             },
             {
                 "type": "text",
-                "value": "Turtles All the Way Down - John Green <br> "
+                "value": "Turtles All the Way Down - John Green; "
             }
         ]
     }

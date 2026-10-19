@@ -501,43 +501,36 @@
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/001.png",
                 "class": "media-left"
-                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/002.png",
                 "class": "media-right"
-                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/003.png",
                 "class": "media-left"
-                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/004.png",
                 "class": "media-right"
-                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/005.png",
                 "class": "media-left"
-                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/006.png",
                 "class": "media-right"
-                
             },
             {
                 "type": "image",
                 "value": "/blog/static-images/2025-02-26/007.png",
                 "class": "media-left"
-                
             },
             {
                 "type": "image",
@@ -672,6 +665,49 @@
             {
                 "type": "text",
                 "value": "\"I want to share something Virginia Woolf wrote: 'English, which can express the thoughts of Hamlet and the tragedy of Lear, has no words for the shiver and the headache.... The merest schoolgirl, when she falls in love, has Shakespeare or Keats to speak her mind for her; but let a sufferer try to describe a pain in his head to a doctor and language at once runs dry.' And we're such language-based creatures that to some extent we cannot know what we cannot name. And so we assume it isn't real. We refer to it with catch-all terms, like crazy or chronic pain, terms that both ostracize and minimize. Ther term chronic pain captures nothing of the grinding, constant, ceaseless, excapable hurt. And the term crazy arrives at us with none of the terror and worry you live with. Nor do either of those terms connote the courage people in such pains exemplify.\" - John Green"
+            }
+        ]
+    },
+    {
+        "index": "2026-10-19-Booklist",
+        "title": "Book List",
+        "heading": "Book List",
+        "tags": "",
+        "author": "",
+        "timestamp": "October 19, 2026",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Books to read, or read already"
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-10-19-books-to-read.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "image",
+                "value": "/blog/static-images/2026-10-11-book-list.jpg",
+                "class": "media-right"
+            },
+            {
+                "type": "subheading",
+                "value": "Books to Read"
+            },
+            {
+                "type": "text",
+                "value": "I Contain Multitudes - Ed Yong <br> The Man Who Couldn't Stop - David Adam <br> The Body in Pain - Elaine Scarry"
+            },
+            {
+                "type": "subheading",
+                "value": "Done Reading"
+            },
+            {
+                "type": "text",
+                "value": "Turtles All the Way Down - John Green <br> "
             }
         ]
     }

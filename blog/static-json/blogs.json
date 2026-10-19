@@ -699,7 +699,7 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "An Abundance of Katherines - John Green; Hitler - Ian Kershaw; "
+                "value": "An Abundance of Katherines; Hitler - Ian Kershaw; "
             },
             {
                 "type": "subheading",
@@ -711,11 +711,19 @@
             },
             {
                 "type": "subheading",
-                "value": "Done Reading"
+                "value": "Read in 2026"
             },
             {
                 "type": "unorderedlist",
-                "value": "Turtles All the Way Down - John Green; Personality and Power: Builders and Destroyers of Modern Europe - Ian Kershaw; Becoming - Michelle Obama;  Educated - Tara Westover; The Glass Castle - Jeannette Walls;  The Adult ADHD Tool Kit - J. Russell Ramsay, Anthony L. Rostain;  Siddhartha - Hermann Hesse; Paper Towns - John Green;  Remarkably Bright Creatures - Shelby Van Pelt;  The Hidden Life of Trees - Peter Wohlleben; The Overstory - Richard Powers; Norwegian Wood - Haruki Murakami; North of Normal - Cea Sunrise Person; "
+                "value": "Turtles All the Way Down; Personality and Power: Builders and Destroyers of Modern Europe; Becoming;  Educated; The Glass Castle;  The Adult ADHD Tool Kit;  Siddhartha - Hermann Hesse; Remarkably Bright Creatures;  The Hidden Life of Trees; The Overstory; Norwegian Wood; North of Normal - Cea Sunrise Person; "
+            },
+            {
+                "type": "subheading",
+                "value": "Read Before 2026"
+            },
+            {
+                "type": "unorderedlist",
+                "value": "Paper Towns; The Metamorphosis; A Brief History of Time; In Patagonia; Le Petit Prince; Sybil; The Man Who Walked Throught Time; North, The Power of Bable: A Natural History of Language; Born to Run; Eat and Run; Looking for Alaska; The Time Traveler's Wife; Lord of the Flies; And the Mountains Echoed; A Thousand Splendid Suns; The Kite Runner; "
             }
         ]
     }

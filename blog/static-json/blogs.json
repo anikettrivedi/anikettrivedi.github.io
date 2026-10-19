@@ -695,11 +695,19 @@
             },
             {
                 "type": "subheading",
+                "value": "Reading"
+            },
+            {
+                "type": "unorderedlist",
+                "value": "An Abundance of Katherines - John Green; Hitler - Ian Kershaw; "
+            },
+            {
+                "type": "subheading",
                 "value": "Books to Read"
             },
             {
                 "type": "unorderedlist",
-                "value": "I Contain Multitudes - Ed Yong; The Man Who Couldn't Stop - David Adam; The Body in Pain - Elaine Scarry"
+                "value": "I Contain Multitudes - Ed Yong; The Man Who Couldn't Stop - David Adam; The Body in Pain - Elaine Scarry; Personality and Power: Builders and Destroyers of Modern Europe - Ian Kershaw; Becoming - Michelle Obama;  Educated - Tara Westover; The Glass Castle - Jeannette Walls;  The Adult ADHD Tool Kit - J. Russell Ramsay, Anthony L. Rostain;  Siddhartha - Hermann Hesse; Paper Towns - John Green;  Remarkably Bright Creatures - Shelby Van Pelt;  The Hidden Life of Trees - Peter Wohlleben; The Overstory - Richard Powers; Norwegian Wood - Haruki Murakami; North of Normal - Cea Sunrise Person; "
             },
             {
                 "type": "subheading",

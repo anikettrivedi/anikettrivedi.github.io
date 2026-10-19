@@ -680,7 +680,7 @@
         "description": [
             {
                 "type": "text",
-                "value": "Books to read, or read already"
+                "value": "Evolving list of books."
             },
             {
                 "type": "image",

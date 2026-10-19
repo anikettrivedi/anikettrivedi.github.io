@@ -489,7 +489,7 @@ function addArticlePageContent() {
             let div = document.createElement("div");
             let pre = document.createElement("pre");
             let text = document.createTextNode(entry.value.replaceAll(";", "<br>"));
-            para.appendChild(text);
+            pre.appendChild(text);
             div.appendChild(pre)
             contentDiv.appendChild(div);
         } else if (entry.type == "subheading") {

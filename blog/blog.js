@@ -485,13 +485,6 @@ function addArticlePageContent() {
             para.appendChild(text);
             div.appendChild(para)
             contentDiv.appendChild(div);
-        } else if (entry.type == "pre") {
-            let div = document.createElement("div");
-            let pre = document.createElement("pre");
-            let text = document.createTextNode(entry.value.replaceAll(";", "<br>"));
-            pre.appendChild(text);
-            div.appendChild(pre)
-            contentDiv.appendChild(div);
         } else if (entry.type == "subheading") {
             let div = document.createElement("div");
             let heading = document.createElement("h3");

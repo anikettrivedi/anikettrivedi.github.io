@@ -726,5 +726,51 @@
                 "value": "Paper Towns; Looking for Alaska; The Metamorphosis - Franz Kafka; A Brief History of Time; In Patagonia; Le Petit Prince; Sybil; The Man Who Walked Throught Time; North - Scott Jurek; The Power of Babel; Born to Run; Eat and Run; The Time Traveler's Wife; Lord of the Flies; And the Mountains Echoed; A Thousand Splendid Suns; The Kite Runner; "
             }
         ]
+    },
+    {
+        "index": "2026-10-26-The-Engine-of-My-Childhood",
+        "title": "The Engine of My Childhood",
+        "heading": "The Engine of My Childhood",
+        "tags": "",
+        "author": "",
+        "timestamp": "October 26, 2026",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": "Locomotivational stuff."
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-10-26-the-engine-of-my-childhood.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "When I was a little boy, I used to think that engines were the most respected, most revered part of a train. At the train station whenever an engine passed in front of me, it used to fill me with wonder, it used to make me awestruck. For some reason, I used to think that the arrival of an engine was a very special event. Something that deserved a ceremony of its own. And interestingly I did not even know what it was that the engine did, I did not know what was its purpose, and not knowing that didn’t really bother me."
+            },
+            {
+                "type": "text",
+                "value": "I never really questioned the engine back then, I didn’t know why it commanded such reverence from me."
+            },
+            {
+                "type": "text",
+                "value": "Maybe it was because whenever I noticed it, it was always alone, unafraid, detached from the rest of the train, crawling slowly across the platform, bold, confident, too absorbed in its own solitary rhythm. While the coaches were always huddled together, always holding each other’s hands, never letting go…"
+            },
+            {
+                "type": "text",
+                "value": "Maybe it was because the way it moved, leisurely but regally, because of its deep humming sound, its vibrations shaking everything a little on its wake, I could feel the heat radiating from its body on my face, its intimidating size made me treble a little, as if I had just encountered a wild elephant staring me in the eyes, as if an emperor has just entered the hall. While the coaches looked like sheep and goats, bound inside a barn, bleating feebly…"
+            },
+            {
+                "type": "text",
+                "value": "Maybe it was because it looked very royal, very different, wearing a fancy mantle, exclusive even, because only one or two humans were allowed on it, and they needed special costumes and flags that I didn’t have. While the coaches looked all the same, none stood out, they would allow anyone on them, there was no dress code, no selection criteria for them…"
+            },
+            {
+                "type": "text",
+                "value": "And now, an engine is just an engine."
+            }
+        ]
     }
 ]

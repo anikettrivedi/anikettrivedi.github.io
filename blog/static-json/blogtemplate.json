@@ -1,0 +1,59 @@
+{
+  "index": "",
+  "title": "",
+  "heading": "",
+  "tags": "",
+  "author": "",
+  "timestamp": "",
+  "place": "",
+  "display": "visible",
+  "description": [
+    {
+      "type": "text",
+      "value": ""
+    },
+    {
+      "type": "image",
+      "value": "/blog/static-thumbnails/"
+    }
+  ],
+  "contents": [
+    {
+      "type": "text",
+      "value": ""
+    },
+    {
+      "type": "image",
+      "value": "/blog/static-images/",
+      "class": "media-right"
+    },
+    {
+      "type": "subheading",
+      "value": "Reading"
+    },
+    {
+      "type": "unorderedlist",
+      "value": "First; Second; Third"
+    },
+    {
+      "type": "iframe",
+      "value": "",
+      "class": "media-full"
+    },
+    {
+      "type": "flickralbum",
+      "scriptRef": "https://embedr.flickr.com/assets/client-code.js",
+      "albumRef": "",
+      "imgRef": "",
+      "imgHeight": "450",
+      "imgWidth": "800",
+      "class": "media-full"
+    },
+    {
+      "type": "link",
+      "value": "",
+      "ref": "",
+      "refNo": "1"
+    }
+  ]
+}

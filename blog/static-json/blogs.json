@@ -772,5 +772,36 @@
                 "value": "And now, an engine is just an engine."
             }
         ]
+    },
+    {
+        "index": "2026-10-27-Demain",
+        "title": "Demain",
+        "heading": "Demain",
+        "tags": "",
+        "author": "",
+        "timestamp": "October 27, 2026",
+        "place": "Pune",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-10-27-demain.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "unorderedlist",
+                "value": "Me croirais-tu si j'te disais, ;Que demain il va faire beau, ;Que l'soleil va sortir pour ta peau, ;Que mon ombre est comme, ;Un spot au frette pour toi, ;Si j'te disais que demain, ;Si j'te disais que demain, ;Que mon ombre est comme, ;Un spot au frette pour toi, ;Si j'te disais que demain… ;;Et sous la peau, ;Un cimetière de volcans, ;Les fantômes chantent, ;Ils s'embrassent lentement, ;Et attendent l'aube, ;On dansera jusqu'à la fin… ;;Je serai là, ;Les grandes promesses puis le temps, ;Qui rongent les têtes et boit le sang, ;On nage ici comme des enfants, ;On serre les dent, on meurt, on vit, ;Et tout ce qui reste, c'est nos envies, ;On crie ensemble à la dérive, ;Si j'te disais que demain…"
+            },
+            {
+                "type": "iframe",
+                "value": "https://www.youtube.com/embed/3SHy2afglzY?rel=0",
+                "class": "media-left"
+            }
+        ]
     }
 ]

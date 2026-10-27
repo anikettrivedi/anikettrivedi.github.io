@@ -2,90 +2,64 @@
 <html>
 
 <head>
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-    <script src="../blog.js"
-            defer></script>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet"
-          href="../static-css/about.css">
-    <link rel="stylesheet"
-          href="../static-css/common.css">
-    <link rel="icon"
-          type="image/x-icon"
-          href="../static-images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../blog.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static-css/about.css">
+    <link rel="stylesheet" href="../static-css/common.css">
+    <link rel="icon" type="image/x-icon" href="../static-images/favicon.ico">
     <title>About Me</title>
 </head>
 
 <body id="document-body">
 
     <!-- todo -->
-    <div class="common-sidebar"
-         id="common-sidebar"
-         onmouseleave="closeSideBar()"></div>
+    <div class="common-sidebar" id="common-sidebar" onmouseleave="closeSideBar()"></div>
 
     <header class="common-header">
-        <button class="common-icon"
-                onclick="goToHomePage()"><i class="fa fa-home fa-lg"></i></button>
+        <button class="common-icon" onclick="goToHomePage()"><i class="fa fa-home fa-lg"></i></button>
 
-        <h1 class="common-heading"
-            id="common-heading"></h1>
+        <h1 class="common-heading" id="common-heading"></h1>
         <div class="line-thin line-light"></div>
     </header>
 
     <div class="common-content">
         <div class="about-page-container">
-            <img class="about-img"
-                 id="about-img"
-                 src="">
-            <div class="about-page-text-container"
-                 id="about-page-text-container">
+            <img class="about-img" id="about-img" src="">
+            <div class="about-page-text-container" id="about-page-text-container">
                 <h3 class="about-heading">About Me</h3>
                 <!-- <p class="about-para" id="about-para"></p> -->
             </div>
         </div>
     </div>
 
-    <footer class="common-footer"
-            id="common-footer">
+    <footer class="common-footer" id="common-footer">
         <div class="line-thin"></div>
 
         <div class="common-footer-item-container">
-            <a class="common-footer-link"
-               onclick="openEmailAlertBox()">E-Mail</a>
+            <a class="common-footer-link" onclick="openEmailAlertBox()">E-Mail</a>
         </div>
 
     </footer>
 
     <!-- email popup -->
-    <div class="email-alert-box"
-         id="email-alert-box">
+    <div class="email-alert-box" id="email-alert-box">
 
         <div class="email-header">
-            <p class="email-dialog"
-               id="email-dialog">E-Mail</p>
-            <button class="common-icon"
-                    onclick="closeEmailAlertBox()"
-                    style="float: right;"><i class="fa fa-close fa-lg"></i></button>
+            <p class="email-dialog" id="email-dialog">E-Mail</p>
+            <button class="common-icon" onclick="closeEmailAlertBox()" style="float: right;"><i
+                    class="fa fa-close fa-lg"></i></button>
         </div>
 
-        <input class="email-alert-box-input"
-               id="email-alert-box-input"
-               type="text"
-               disabled>
+        <input class="email-alert-box-input" id="email-alert-box-input" type="text" disabled>
 
-        <select class="email-actions-select"
-                name="email-actions"
-                id="email-actions">
-            <option value="copy">Copy To Clipboard</option>
-            <option value="gmail">Open In Gmail (Web)</option>
+        <select class="email-actions-select" name="email-actions" id="email-actions">
             <option value="default">Open In Default Email App</option>
+            <option value="gmail">Open In Gmail (Web)</option>
+            <option value="copy">Copy To Clipboard</option>
         </select>
 
-        <button class="email-actions-button"
-                onclick="executeEmailAction()"
-                id="email-copy-button">Go</button>
+        <button class="email-actions-button" onclick="executeEmailAction()" id="email-copy-button">Go</button>
     </div>
 
 </body>

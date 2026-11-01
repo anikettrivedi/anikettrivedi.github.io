@@ -820,7 +820,7 @@
         "author": "",
         "timestamp": "November 01, 2026",
         "place": "",
-        "display": "visible",
+        "display": "hidden",
         "description": [
             {
                 "type": "text",

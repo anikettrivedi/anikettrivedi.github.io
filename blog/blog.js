@@ -140,7 +140,7 @@ function loadAllArticlesData(data) {
     let articleMap = new Map(Object.entries(data));
     let i = 0;
 
-    if (readerName == "xyz") {
+    if (secretNames.includes(readerName)) {
         articleMap.forEach((v, k) => {
             articleEntry = JSON.parse(v);
             articlesArray[i] = articleEntry;
@@ -743,7 +743,7 @@ function closeClipboardAlertBox() {
 
 function closeNameAlertBox() {
     try {
-        console.log("closing name block!")
+        // console.log("closing name block!")
         document.getElementById("name-alert-box").classList.add("invisible")
     } catch (err) {
         // do nothing
@@ -751,8 +751,8 @@ function closeNameAlertBox() {
 }
 
 function enterName() {
-    readerName = document.getElementById("name-alert-box-input").value.toLowerCase();
-    console.log('hello ' + readerName);
+    readerName = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
+    // console.log('hello ' + readerName);
 
     // document.getElementById("name-dialog").innerHTML = "Hey " + readerName + " !";
     closeNameAlertBox();
@@ -877,3 +877,5 @@ function toggleSort() {
 
     addHomePageArticles()
 }
+
+const secretNames = ['anakin', 'anna']

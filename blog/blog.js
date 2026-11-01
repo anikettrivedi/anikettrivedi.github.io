@@ -207,6 +207,8 @@ function display404() {
 function addSideBarContent() {
     let sidebar = document.getElementById("common-sidebar");
 
+    sidebar.replaceChildren()
+
     for (let i = 0; i < navigationArray.length; i++) {
         let a = document.createElement("a");
         a.classList.add("common-sidebar-link");

@@ -811,5 +811,71 @@
                 "class": "media-full"
             }
         ]
+    },
+    {
+        "index": "2026-11-01-Hey",
+        "title": "Hey!",
+        "heading": "Hey!",
+        "tags": "",
+        "author": "",
+        "timestamp": "November 01, 2026",
+        "place": "",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-11-01-hey.jpeg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "text",
+                "value": ""
+            }
+        ]
     }
 ]

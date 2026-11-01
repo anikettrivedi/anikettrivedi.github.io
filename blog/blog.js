@@ -144,7 +144,7 @@ function loadAllArticlesData(data) {
         articleMap.forEach((v, k) => {
             articleEntry = JSON.parse(v);
             articlesArray[i] = articleEntry;
-            console.log(articleEntry)
+            // console.log(articleEntry)
             i++;
         })
     } else if (view !== "all") {
@@ -152,7 +152,7 @@ function loadAllArticlesData(data) {
             articleEntry = JSON.parse(v);
             if (articleEntry.display === view) {
                 articlesArray[i] = articleEntry;
-                console.log(articleEntry)
+                // console.log(articleEntry)
                 i++;
             }
         })

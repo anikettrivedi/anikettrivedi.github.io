@@ -1,3 +1,4 @@
+let readerName = '';
 let article;
 let articlesMap = {};
 let articlesArray = [];
@@ -34,72 +35,89 @@ window.onload = function () {
 
 
     if (document.URL.includes("/blog/about")) {
-        // about page
-        fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
-            .then(response => {
-                return response.json()
-            }).then(data => {
-                loadAboutData(data);
-            }).then(() => {
-                addAboutPageContent();
-            })
-
+        loadAboutPage();
     } else if (document.URL.includes("/blog/page")) {
-        // blog page
-        let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
-        fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
-            .then(response => {
-                return response.json()
-            }).then(data => {
-                loadAboutData(data);
-            }).then(() => {
-                return fetch("https://anikettrivedi.github.io/blog/static-json/blogs.json")
-            }).then(response => {
-                // fetching all articles data
-                return response.json();
-            }).then(dataArray => {
-                for (let i = 0; i < dataArray.length; i++) {
-                    articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
-                }
-                loadAllArticlesData(articlesMap);
-                loadArticleData(articlesMap[articleTitle]);
-                addArticlePageContent();
-                loadNavigationData(articlesArray);
-                addSideBarContent();
-                displayVisible();
-            }).catch(error => {
-                display404();
-                console.error(error);
-            });
+        loadBlogPage();
     } else {
-        // /blog
-        // home page 
-        fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
-            .then(response => {
-                return response.json()
-            }).then(data => {
-                loadAboutData(data);
-            }).then(() => {
-                return fetch("https://anikettrivedi.github.io/blog/static-json/blogs.json")
-            }).then(response => {
-                // fetching all articles data
-                return response.json();
-            }).then(dataArray => {
-                for (let i = 0; i < dataArray.length; i++) {
-                    articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
-                }
-                loadAllArticlesData(articlesMap);
-                addHomePageContent();
-                loadNavigationData(articlesArray);
-                addSideBarContent();
-                toggleSort()
-                displayVisible();
-            }).catch(error => {
-                display404();
-                console.error(error);
-            });
+        loadHomePage();
     }
 };
+
+function loadAboutPage() {
+    // about page
+    fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
+        .then(response => {
+            return response.json()
+        }).then(data => {
+            loadAboutData(data);
+        }).then(() => {
+            addAboutPageContent();
+        })
+}
+
+function loadBlogPage() {
+    // blog page
+    let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
+    fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
+        .then(response => {
+            return response.json()
+        }).then(data => {
+            loadAboutData(data);
+        }).then(() => {
+            return fetch("https://anikettrivedi.github.io/blog/static-json/blogs.json")
+        }).then(response => {
+            // fetching all articles data
+            return response.json();
+        }).then(dataArray => {
+            for (let i = 0; i < dataArray.length; i++) {
+                articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
+            }
+            loadAllArticlesData(articlesMap);
+            loadArticleData(articlesMap[articleTitle]);
+            addArticlePageContent();
+            loadNavigationData(articlesArray);
+            addSideBarContent();
+            displayVisible();
+        }).catch(error => {
+            display404();
+            console.error(error);
+        });
+}
+
+function loadHomePage() {
+    // home page 
+    fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
+        .then(response => {
+            return response.json()
+        }).then(data => {
+            loadAboutData(data);
+        }).then(() => {
+            return fetch("https://anikettrivedi.github.io/blog/static-json/blogs.json")
+        }).then(response => {
+            // fetching all articles data
+            return response.json();
+        }).then(dataArray => {
+            for (let i = 0; i < dataArray.length; i++) {
+                articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
+            }
+            loadAllArticlesData(articlesMap);
+            addHomePageContent();
+            loadNavigationData(articlesArray);
+            addSideBarContent();
+            toggleSort()
+            displayVisible();
+        }).catch(error => {
+            display404();
+            console.error(error);
+        });
+}
+
+function loadHomePageAgain() {
+    loadAllArticlesData(articlesMap);
+    addHomePageContent();
+    loadNavigationData(articlesArray);
+    addSideBarContent();
+}
 
 // http callback functions
 function loadAboutData(data) {
@@ -122,11 +140,19 @@ function loadAllArticlesData(data) {
     let articleMap = new Map(Object.entries(data));
     let i = 0;
 
-    if (view !== "all") {
+    if (readerName == "xyz") {
+        articleMap.forEach((v, k) => {
+            articleEntry = JSON.parse(v);
+            articlesArray[i] = articleEntry;
+            console.log(articleEntry)
+            i++;
+        })
+    } else if (view !== "all") {
         articleMap.forEach((v, k) => {
             articleEntry = JSON.parse(v);
             if (articleEntry.display === view) {
                 articlesArray[i] = articleEntry;
+                console.log(articleEntry)
                 i++;
             }
         })
@@ -213,7 +239,7 @@ function addSideBarContent() {
 
 // about page functions
 function addAboutPageContent() {
-    let websiteHeadingElement = document.getElementById("common-heading");
+    let websiteHeadingElement = document.getElementById("common-heading")
     node = document.createTextNode(websiteHeading);
     websiteHeadingElement.appendChild(node)
 
@@ -249,15 +275,24 @@ function addHomePageContent() {
     // add title
     let title = document.getElementById("article-title")
     let titleText = document.createTextNode(websiteHeading);
-    title.appendChild(titleText)
+
+    if (title.childNodes.length === 0) {
+        title.appendChild(titleText)
+    }
 
     let websiteHeadingElement = document.getElementById("common-heading");
     node = document.createTextNode(websiteHeading);
-    websiteHeadingElement.appendChild(node)
+
+    if (websiteHeadingElement.childNodes.length === 0) {
+        websiteHeadingElement.appendChild(node);
+    }
 
     let headerMenuPara = document.getElementById("common-header-menu-para")
     let headerMenuParaText = document.createTextNode(websiteHeaderMenuText);
-    headerMenuPara.appendChild(headerMenuParaText)
+
+    if (headerMenuPara.childNodes.length === 0) {
+        headerMenuPara.appendChild(headerMenuParaText)
+    }
 
     addHomePageArticles();
 
@@ -486,7 +521,7 @@ function addArticlePageContent() {
             div.appendChild(para)
             contentDiv.appendChild(div);
         } else if (entry.type == "unorderedlist") {
-           
+
             let div = document.createElement("div");
             let ul = document.createElement("ul");
             let arrayEntries = entry.value.split(";")
@@ -704,7 +739,24 @@ function closeClipboardAlertBox() {
     } catch (err) {
         // do nothing
     }
+}
 
+function closeNameAlertBox() {
+    try {
+        console.log("closing name block!")
+        document.getElementById("name-alert-box").classList.add("invisible")
+    } catch (err) {
+        // do nothing
+    }
+}
+
+function enterName() {
+    readerName = document.getElementById("name-alert-box-input").value.toLowerCase();
+    console.log('hello ' + readerName);
+
+    // document.getElementById("name-dialog").innerHTML = "Hey " + readerName + " !";
+    closeNameAlertBox();
+    loadHomePageAgain();
 }
 
 function copyLinkToClipBoard() {
@@ -825,5 +877,3 @@ function toggleSort() {
 
     addHomePageArticles()
 }
-
-

@@ -271,6 +271,101 @@ p.timestamp-small {
     color: black;
 }
 
+/* name popup */
+
+.name-alert-box {
+
+    display: block;
+    box-sizing: border-box;
+    z-index: 1;
+
+    width: 250px;
+    height: auto;
+
+    position: fixed;
+    left: 50%;
+    top: 30%;
+
+    margin-left: -125px;
+    padding: 0;
+
+    opacity: 95%;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: white;
+
+    animation-name: clipboard-animation;
+    animation-duration: .7s;
+
+}
+
+.name-alert-box-input {
+    box-sizing: border-box;
+    display: block;
+    width: 230px;
+    height: 25px;
+
+    margin: 10px auto 10px auto;
+    padding: 0 0 0 5px;
+    text-align: center;
+
+    color: black;
+    border: 1px solid black;
+    border-radius: 2px;
+    outline: none;
+}
+
+.name-header {
+    box-sizing: border-box;
+    width: inherit;
+    height: 30px;
+
+    padding: 5px;
+
+    color: black;
+
+    border-radius: 5px 5px 0 0;
+    opacity: 100%;
+
+    text-align: center;
+}
+
+.name-dialog {
+    display: inline;
+    font-weight: bold;
+}
+
+.name-actions-button {
+    box-sizing: border-box;
+    width: 230px;
+    margin: 0 10px 10px 10px;
+
+    background-color: #b5e7a0;
+    font-weight: bold;
+
+    border: 0;
+    border-radius: 2px;
+}
+
+@keyframes name-animation {
+    0% {
+        opacity: 0;
+        left: 50%;
+        top: 0;
+    }
+
+    50% {
+        opacity: 50%;
+        left: 50%;
+        top: 33%;
+    }
+
+    100% {
+        opacity: 95%;
+        left: 50%;
+        top: 30%;
+    }
+}
 
 /* clipboard popup */
 
@@ -491,6 +586,10 @@ p.timestamp-small {
 
 .visible-block {
     display: block;
+}
+
+.invisible {
+    display: none;
 }
 
 i {

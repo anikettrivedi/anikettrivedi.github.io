@@ -78,6 +78,21 @@
 
         <!-- popups -->
 
+        <!-- name popup -->
+        <div class="name-alert-box visible-block" id="name-alert-box">
+
+                <div class="name-header">
+                        <p class="name-dialog" id="name-dialog">What's your name?</p>
+                        <button class="common-icon" onclick="closeNameAlertBox()" style="float: right;"><i
+                                        class="fa fa-close fa-lg"></i></button>
+                </div>
+
+                <input class="name-alert-box-input" id="name-alert-box-input" type="text">
+
+                <button class="name-actions-button" onclick="enterName()" id="enter-name-button">
+                        THAT'S ME</button>
+        </div>
+
         <!-- clipboard popup -->
         <div class="clipboard-alert-box" id="clipboard-alert-box">
 
@@ -105,13 +120,14 @@
                 <input class="email-alert-box-input" id="email-alert-box-input" type="text" disabled>
 
                 <select class="email-actions-select" name="email-actions" id="email-actions">
-                        <option value="default">Open In Default Email App</option>
+                        <option value="default">Open In Email App</option>
                         <option value="gmail">Open In Gmail (Web)</option>
                         <option value="copy">Copy To Clipboard</option>
                 </select>
 
                 <button class="email-actions-button" onclick="executeEmailAction()" id="email-copy-button">GO</button>
         </div>
+        
 </body>
 
 </html>

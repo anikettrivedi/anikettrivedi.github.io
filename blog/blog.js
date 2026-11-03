@@ -530,6 +530,8 @@ function addArticlePageContent() {
 
             arrayEntries.forEach((arrayEntry) => {
                 let li = document.createElement("li");
+                li.style.fontStyle = 'italic';
+
                 let text = document.createTextNode(arrayEntry);
                 li.appendChild(text);
                 ul.appendChild(li);

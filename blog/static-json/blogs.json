@@ -703,7 +703,7 @@
             },
             {
                 "type": "subheading",
-                "value": "May Read, Books Discovered Within Books (Mostly)"
+                "value": "Books Discovered Within Books (Mostly)"
             },
             {
                 "type": "unorderedlist",
@@ -730,46 +730,37 @@
                 "value": "Book Recommendations"
             },
             {
-                "type": "link",
-                "value": "NYTimes Book Review",
-                "ref": "https://www.nytimes.com/section/books/review",
-                "refNo": "link"
-            },
-            {
-                "type": "link",
-                "value": "Classics",
-                "ref": "https://www.penguinrandomhouse.ca/categories/2000000181/classics",
-                "refNo": "link"
-            },
-            {
-                "type": "link",
-                "value": "Non Western Books",
-                "ref": "https://thegreatestbooks.org/non-western",
-                "refNo": "link"
-            },
-            {
-                "type": "link",
-                "value": "Book Recommendations by John Green",
-                "ref": "https://www.goodreads.com/list/show/117726.99_Book_Recommendations_from_John_Green",
-                "refNo": "link"
-            },
-            {
-                "type": "link",
-                "value": "Barack Obama's 2026 Summer Reading List",
-                "ref": "https://barackobama.medium.com/my-2026-summer-reading-music-lists-44a3366666b4",
-                "refNo": "link"
-            },
-            {
-                "type": "link",
-                "value": "Books About Trees",
-                "ref": "https://www.livewildly.co/blog/fiction-books-about-trees/",
-                "refNo": "link"
-            },
-            {
-                "type": "link",
-                "value": "Feel Good Books",
-                "ref": "https://www.goodreads.com/shelf/show/feel-good",
-                "refNo": "link"
+                "type": "unorderedlistWithLinks",
+                "value": [
+                    {
+                        "value": "NYTimes Book Review",
+                        "ref": "https://www.nytimes.com/section/books/review"
+                    },
+                    {
+                        "value": "Classics",
+                        "ref": "https://www.penguinrandomhouse.ca/categories/2000000181/classics"
+                    },
+                    {
+                        "value": "Non Western Books",
+                        "ref": "https://thegreatestbooks.org/non-western"
+                    },
+                    {
+                        "value": "Book Recommendations by John Green",
+                        "ref": "https://www.goodreads.com/list/show/117726.99_Book_Recommendations_from_John_Green"
+                    },
+                    {
+                        "value": "Barack Obama's 2026 Summer Reading List",
+                        "ref": "https://barackobama.medium.com/my-2026-summer-reading-music-lists-44a3366666b4"
+                    },
+                    {
+                        "value": "Books About Trees",
+                        "ref": "https://www.livewildly.co/blog/fiction-books-about-trees/"
+                    },
+                    {
+                        "value": "Feel Good Books",
+                        "ref": "https://www.goodreads.com/shelf/show/feel-good"
+                    }
+                ]
             }
         ]
     },

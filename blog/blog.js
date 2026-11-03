@@ -516,12 +516,14 @@ function addArticlePageContent() {
 
     article.contents.forEach(entry => {
         if (entry.type == "text") {
+
             let div = document.createElement("div");
             let para = document.createElement("p");
             let text = document.createTextNode(entry.value);
             para.appendChild(text);
             div.appendChild(para)
             contentDiv.appendChild(div);
+
         } else if (entry.type == "unorderedlist") {
 
             let div = document.createElement("div");
@@ -539,14 +541,41 @@ function addArticlePageContent() {
 
             div.appendChild(ul)
             contentDiv.appendChild(div);
+
+        } else if (entry.type == "unorderedlistWithLinks") {
+
+            let div = document.createElement("div");
+            let ul = document.createElement("ul");
+            let arrayEntries = entry.value;
+
+            arrayEntries.forEach((arrayEntry) => {
+                let li = document.createElement("li");
+                let a = document.createElement("a");
+
+                a.href = arrayEntry.ref
+                a.innerHTML = arrayEntry.value
+                a.style.fontStyle = 'italic'
+                a.target = "blank";
+                a.style.textDecoration = "none";
+
+                li.appendChild(a);
+                ul.appendChild(li);
+            });
+
+            div.appendChild(ul)
+            contentDiv.appendChild(div);
+
         } else if (entry.type == "subheading") {
+
             let div = document.createElement("div");
             let heading = document.createElement("h3");
             let text = document.createTextNode(entry.value);
             heading.appendChild(text);
             div.appendChild(heading)
             contentDiv.appendChild(div);
+
         } else if (entry.type == "link") {
+
             let div = document.createElement("div");
             let para = document.createElement("p");
             let text = document.createTextNode(entry.value);
@@ -567,12 +596,16 @@ function addArticlePageContent() {
 
             div.appendChild(para)
             contentDiv.appendChild(div);
+
         } else if (entry.type == "image") {
+
             let img = document.createElement("img");
             img.src = entry.value;
             img.classList.add(entry.class);
             contentDiv.appendChild(img);
+
         } else if (entry.type == "video") {
+
             let video = document.createElement("video");
             let source = document.createElement("source");
             video.appendChild(source);
@@ -581,14 +614,18 @@ function addArticlePageContent() {
             video.type = "video/mp4";
             video.classList.add(entry.class);
             video.controls = 1;
+
         } else if (entry.type == "iframe") {
+
             let iframe = document.createElement("iframe");
             contentDiv.appendChild(iframe);
             iframe.src = entry.value;
             iframe.classList.add(entry.class);
             iframe.style.height = "60vh"
             iframe.controls = 1;
+
         } else if (entry.type == "flickralbum") {
+
             let script = document.createElement("script");
             // script.setAttribute("async", "");
             script.charset = "utf-8";
@@ -613,6 +650,7 @@ function addArticlePageContent() {
             contentDiv.appendChild(a);
 
         } else if (entry.type == "audio") {
+
             let audio = document.createElement("audio");
             audio.controls = 1;
             audio.autoplay = 0;
@@ -622,6 +660,7 @@ function addArticlePageContent() {
             source.type = "audio/mpeg";
             audio.appendChild(source)
             contentDiv.appendChild(audio);
+
         }
     });
 

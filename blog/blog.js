@@ -100,6 +100,7 @@ function loadHomePage() {
             for (let i = 0; i < dataArray.length; i++) {
                 articlesMap[dataArray[i].index] = JSON.stringify(dataArray[i]);
             }
+            displayNameAlertBox();
             loadAllArticlesData(articlesMap);
             addHomePageContent();
             loadNavigationData(articlesArray);
@@ -771,6 +772,24 @@ function closeClipboardAlertBox() {
     }
 }
 
+// name alert box
+
+function displayNameAlertBox(){
+
+    if (getWithExpiry('readerName') != null) {
+
+        readerName = getWithExpiry('readerName');
+        console.log("readerName = " + readerName)
+        document.getElementById("name-alert-box").classList.add("invisible")
+        document.getElementById("name-alert-box").classList.remove("display-block")
+
+    } else {
+        document.getElementById("name-alert-box").classList.remove("invisible")
+        document.getElementById("name-alert-box").classList.add("display-block")
+    }
+
+}
+
 function closeNameAlertBox() {
     try {
         // console.log("closing name block!")
@@ -781,10 +800,17 @@ function closeNameAlertBox() {
 }
 
 function enterName() {
-    readerName = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
-    // console.log('hello ' + readerName);
 
+    readerName = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
+
+    // store in local storage for 1 hour (60 * 60 * 1000)
+    if (readerName !== '') {
+            setWithExpiry('readerName', readerName, 60 * 60 * 1000);
+    }
+
+    // console.log('hello ' + readerName);
     // document.getElementById("name-dialog").innerHTML = "Hey " + readerName + " !";
+
     closeNameAlertBox();
     loadHomePageAgain();
 }
@@ -908,4 +934,39 @@ function toggleSort() {
     addHomePageArticles()
 }
 
+// store in local storage for a fixed time
+function setWithExpiry(key, value, ttl) {
+  const now = new Date();
+  const item = {
+    value: value,
+    expiry: now.getTime() + ttl, // ttl in milliseconds
+  };
+  localStorage.setItem(key, JSON.stringify(item));
+}
+
+// check expiry and return from local storage
+function getWithExpiry(key) {
+ 
+  const itemStr = localStorage.getItem(key);
+  
+  // If the item doesn't exist, return null
+  if (!itemStr) {
+    return null;
+  }
+
+  const item = JSON.parse(itemStr);
+  const now = new Date();
+
+  // Compare the current time with the expiry time
+  if (now.getTime() > item.expiry) {
+    // Expired: remove from storage and return null
+    localStorage.removeItem(key);
+    console.log('item expired')
+    return null;
+  }
+  
+  return item.value;
+}
+
+// secret names
 const secretNames = ['anakin', 'anna']

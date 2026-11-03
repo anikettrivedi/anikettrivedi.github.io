@@ -965,7 +965,7 @@ function getWithExpiry(key) {
     return null;
   }
   
-  return item.value.toLowerCase();
+  return item.value.trim().toLowerCase();
 }
 
 // secret names

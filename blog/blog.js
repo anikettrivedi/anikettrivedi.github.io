@@ -456,24 +456,6 @@ function addHomePageArticleSummaryPanel(article, element) {
     articleLink.appendChild(previewPanel);
 
     element.appendChild(articleLink);
-
-    // article tags - testing
-    // articleTagArray = articleTags.split(",");
-    // for (let i = 0; i < articleTagArray.length; i++) {
-
-    //     let articleTagDiv = document.createElement("div");
-    //     let articleTagPara = document.createElement("p");
-
-    //     articleTagDiv.classList.add("article-tag");
-    //     articleTagPara.classList.add("article-tag-text");
-
-    //     articleTagDiv.appendChild(articleTagPara)
-    //     articleTagPara.appendChild(document.createTextNode(articleTagArray[i]));
-
-    //     element.appendChild(articleTagDiv);
-
-    //     articleTagDiv.addEventListener("click", searchByTagAndToggle)
-    // }
 }
 
 // article page function
@@ -520,6 +502,11 @@ function addArticlePageContent() {
             let div = document.createElement("div");
             let para = document.createElement("p");
             let text = document.createTextNode(entry.value);
+
+            if (entry.style !== undefined && entry.style !== '') {
+                para.style.cssText = entry.style
+            }
+
             para.appendChild(text);
             div.appendChild(para)
             contentDiv.appendChild(div);

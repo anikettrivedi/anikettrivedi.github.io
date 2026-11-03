@@ -20,7 +20,8 @@
   "contents": [
     {
       "type": "text",
-      "value": ""
+      "value": "",
+      "style": "optional"
     },
     {
       "type": "image",

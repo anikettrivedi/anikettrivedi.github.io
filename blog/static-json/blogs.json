@@ -745,6 +745,10 @@
                         "ref": "https://thegreatestbooks.org/non-western"
                     },
                     {
+                        "value": "Non Fiction Books",
+                        "ref": "https://www.goodreads.com/shelf/show/non-fiction"
+                    },
+                    {
                         "value": "Book Recommendations by John Green",
                         "ref": "https://www.goodreads.com/list/show/117726.99_Book_Recommendations_from_John_Green"
                     },

@@ -780,7 +780,7 @@ function closeClipboardAlertBox() {
 
 // name alert box
 
-function displayNameAlertBox(){
+function displayNameAlertBox() {
 
     if (getWithExpiry('readerName') != null) {
 
@@ -809,9 +809,12 @@ function enterName() {
 
     readerName = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
 
-    // store in local storage for 1 hour (2 * 60 * 60 * 1000)
     if (readerName !== '') {
-            setWithExpiry('readerName', readerName, 2 * 60 * 60 * 1000);
+        if (secretNames.includes(readerName)) {
+            setWithExpiry('readerName', readerName, 30 * 24 * 60 * 60 * 1000);
+        } else {
+            setWithExpiry('readerName', readerName, 1 * 60 * 60 * 1000);
+        }
     }
 
     // console.log('hello ' + readerName);
@@ -942,36 +945,36 @@ function toggleSort() {
 
 // store in local storage for a fixed time
 function setWithExpiry(key, value, ttl) {
-  const now = new Date();
-  const item = {
-    value: value,
-    expiry: now.getTime() + ttl, // ttl in milliseconds
-  };
-  localStorage.setItem(key, JSON.stringify(item));
+    const now = new Date();
+    const item = {
+        value: value,
+        expiry: now.getTime() + ttl, // ttl in milliseconds
+    };
+    localStorage.setItem(key, JSON.stringify(item));
 }
 
 // check expiry and return from local storage
 function getWithExpiry(key) {
- 
-  const itemStr = localStorage.getItem(key);
-  
-  // If the item doesn't exist, return null
-  if (!itemStr) {
-    return null;
-  }
 
-  const item = JSON.parse(itemStr);
-  const now = new Date();
+    const itemStr = localStorage.getItem(key);
 
-  // Compare the current time with the expiry time
-  if (now.getTime() > item.expiry) {
-    // Expired: remove from storage and return null
-    localStorage.removeItem(key);
-    console.log('item expired')
-    return null;
-  }
-  
-  return item.value.trim().toLowerCase();
+    // If the item doesn't exist, return null
+    if (!itemStr) {
+        return null;
+    }
+
+    const item = JSON.parse(itemStr);
+    const now = new Date();
+
+    // Compare the current time with the expiry time
+    if (now.getTime() > item.expiry) {
+        // Expired: remove from storage and return null
+        localStorage.removeItem(key);
+        console.log('item expired')
+        return null;
+    }
+
+    return item.value.trim().toLowerCase();
 }
 
 // secret names

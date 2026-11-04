@@ -136,7 +136,7 @@ function loadArticleData(data) {
 
 function loadAllArticlesData(data) {
 
-    console.log(readerName)
+    // console.log(readerName)
 
     let view = "visible";
 

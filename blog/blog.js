@@ -33,7 +33,6 @@ window.onload = function () {
         });
     }
 
-
     if (document.URL.includes("/blog/about")) {
         loadAboutPage();
     } else if (document.URL.includes("/blog/page")) {
@@ -56,6 +55,10 @@ function loadAboutPage() {
 }
 
 function loadBlogPage() {
+
+    // load reader name
+    readerName = getWithExpiry('readerName');
+
     // blog page
     let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
     fetch("https://anikettrivedi.github.io/blog/static-json/about.json")
@@ -132,6 +135,9 @@ function loadArticleData(data) {
 }
 
 function loadAllArticlesData(data) {
+
+    console.log(readerName)
+
     let view = "visible";
 
     if (document.URL.includes("?show=")) {
@@ -803,9 +809,9 @@ function enterName() {
 
     readerName = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
 
-    // store in local storage for 1 hour (60 * 60 * 1000)
+    // store in local storage for 1 hour (2 * 60 * 60 * 1000)
     if (readerName !== '') {
-            setWithExpiry('readerName', readerName, 60 * 60 * 1000);
+            setWithExpiry('readerName', readerName, 2 * 60 * 60 * 1000);
     }
 
     // console.log('hello ' + readerName);

@@ -1,4 +1,4 @@
-let readerName = '';
+let r = '';
 let article;
 let articlesMap = {};
 let articlesArray = [];
@@ -57,7 +57,7 @@ function loadAboutPage() {
 function loadBlogPage() {
 
     // load reader name
-    readerName = getWithExpiry('readerName');
+    r = getWithExpiry('readerName');
 
     // blog page
     let articleTitle = document.URL.substring(document.URL.indexOf("=") + 1, document.URL.length)
@@ -136,8 +136,6 @@ function loadArticleData(data) {
 
 function loadAllArticlesData(data) {
 
-    // console.log(readerName)
-
     let view = "visible";
 
     if (document.URL.includes("?show=")) {
@@ -147,7 +145,7 @@ function loadAllArticlesData(data) {
     let articleMap = new Map(Object.entries(data));
     let i = 0;
 
-    if (secretNames.includes(readerName)) {
+    if (vsp.includes(btoa(r))) {
         articleMap.forEach((v, k) => {
             articleEntry = JSON.parse(v);
             articlesArray[i] = articleEntry;
@@ -784,8 +782,8 @@ function displayNameAlertBox() {
 
     if (getWithExpiry('readerName') != null) {
 
-        readerName = getWithExpiry('readerName');
-        console.log("readerName = " + readerName)
+        r = getWithExpiry('readerName');
+        // console.log("readerName = " + readerName)
         document.getElementById("name-alert-box").classList.add("invisible")
         document.getElementById("name-alert-box").classList.remove("display-block")
 
@@ -799,6 +797,10 @@ function displayNameAlertBox() {
 function closeNameAlertBox() {
     try {
         // console.log("closing name block!")
+        if (r === '') {
+            r = 'nameless admirer'
+            setWithExpiry('readerName', r, 6 * 60 * 60 * 1000);
+        }
         document.getElementById("name-alert-box").classList.add("invisible")
     } catch (err) {
         // do nothing
@@ -807,18 +809,18 @@ function closeNameAlertBox() {
 
 function enterName() {
 
-    readerName = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
+    r = document.getElementById("name-alert-box-input").value.toLowerCase().trim();
 
-    if (readerName !== '') {
-        if (secretNames.includes(readerName)) {
-            setWithExpiry('readerName', readerName, 30 * 24 * 60 * 60 * 1000);
+    if (r !== '') {
+        if (vsp.includes(btoa(r))) {
+            // 15 days
+            setWithExpiry('readerName', r, 15 * 24 * 60 * 60 * 1000);
         } else {
-            setWithExpiry('readerName', readerName, 1 * 60 * 60 * 1000);
+
+            // 6 hours
+            setWithExpiry('readerName', r, 6 * 60 * 60 * 1000);
         }
     }
-
-    // console.log('hello ' + readerName);
-    // document.getElementById("name-dialog").innerHTML = "Hey " + readerName + " !";
 
     closeNameAlertBox();
     loadHomePageAgain();
@@ -854,21 +856,6 @@ function copyEmailToClipBoard() {
     document.getElementById("email-dialog").innerHTML = "Email Copied!"
 }
 
-function shareToTwitter() {
-    window.open(`https://twitter.com/share?url=${document.URL}&text=${document.title}`, '_blank').focus();
-}
-
-function shareToReddit() {
-    window.open(`https://reddit.com/submit?url=${document.URL}&title=${document.title}`, '_blank').focus();
-}
-
-function shareToFacebook() {
-    window.open(`https://www.facebook.com/sharer.php?u=${document.URL}`, '_blank').focus();
-}
-
-function shareToWhatsapp() {
-    window.open(`https://api.whatsapp.com/send?text=*${document.title}* ${document.URL}`, '_blank').focus();
-}
 
 function toggleSearchBox() {
     if (document.getElementById("search-box").classList.contains("visible-inline")) {
@@ -977,5 +964,4 @@ function getWithExpiry(key) {
     return item.value.trim().toLowerCase();
 }
 
-// secret names
-const secretNames = ['anakin', 'anna']
+const vsp = ['YW5ha2lu', 'YW5uYQ==']

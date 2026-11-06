@@ -799,7 +799,8 @@ function closeNameAlertBox() {
         // console.log("closing name block!")
         if (r === '') {
             r = 'nameless admirer'
-            setWithExpiry('readerName', r, 6 * 60 * 60 * 1000);
+            // 30 minutes
+            setWithExpiry('readerName', r, 30 * 60 * 1000);
         }
         document.getElementById("name-alert-box").classList.add("invisible")
     } catch (err) {
@@ -818,7 +819,7 @@ function enterName() {
         } else {
 
             // 6 hours
-            setWithExpiry('readerName', r, 6 * 60 * 60 * 1000);
+            setWithExpiry('readerName', r,  6 * 60 * 60 * 1000);
         }
     }
 

@@ -521,10 +521,15 @@ function addArticlePageContent() {
             let div = document.createElement("div");
             let ul = document.createElement("ul");
             let arrayEntries = entry.value.split(";")
+            let style = ''
+            
+            if (entry.style !== undefined && entry.style !== '') {
+                style = entry.style;
+            }
 
             arrayEntries.forEach((arrayEntry) => {
                 let li = document.createElement("li");
-                li.style.fontStyle = 'italic';
+                li.style = style;
 
                 let text = document.createTextNode(arrayEntry);
                 li.appendChild(text);
@@ -539,6 +544,12 @@ function addArticlePageContent() {
             let div = document.createElement("div");
             let ul = document.createElement("ul");
             let arrayEntries = entry.value;
+            let style = ''
+            
+            if (entry.style !== undefined && entry.style !== '') {
+                style = entry.style;
+            }
+
 
             arrayEntries.forEach((arrayEntry) => {
                 let li = document.createElement("li");
@@ -546,7 +557,7 @@ function addArticlePageContent() {
 
                 a.href = arrayEntry.ref
                 a.innerHTML = arrayEntry.value
-                a.style.fontStyle = 'italic'
+                a.style = style;
                 a.target = "blank";
                 a.style.textDecoration = "none";
 

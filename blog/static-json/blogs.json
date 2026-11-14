@@ -699,7 +699,8 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "The Book Thief; Will Grayson, Will Grayson; Hitler by Ian Kershaw; "
+                "value": "The Book Thief; Will Grayson, Will Grayson; Hitler by Ian Kershaw; ",
+                "style": "font-style: italic;"
             },
             {
                 "type": "subheading",
@@ -707,7 +708,8 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "The Anthropocene Reviewed by John Green; Everything is Tuberculosis by John Green; The Emperor  of  All Maladies by Siddhartha Mukherjee; The Biology of Cancer by Robert A. Weinberg; I Contain Multitudes by Ed Yong; The Man Who Couldn't Stop by David Adam; The Body in Pain by Elaine Scarry;"
+                "value": "The Anthropocene Reviewed by John Green; Everything is Tuberculosis by John Green; The Emperor  of  All Maladies by Siddhartha Mukherjee; The Biology of Cancer by Robert A. Weinberg; I Contain Multitudes by Ed Yong; The Man Who Couldn't Stop by David Adam; The Body in Pain by Elaine Scarry;",
+                "style": "font-style: italic;"
             },
             {
                 "type": "subheading",
@@ -715,7 +717,8 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "The Fault in Our Stars; An Abundance of Katherines; Turtles All the Way Down; Personality and Power: Builders and Destroyers of Modern Europe; Becoming;  Educated; The Glass Castle;  The Adult ADHD Tool Kit;  Siddhartha by Hermann Hesse; Remarkably Bright Creatures;  The Hidden Life of Trees; The Overstory; Norwegian Wood; North of Normal by Cea Sunrise Person; "
+                "value": "The Fault in Our Stars; An Abundance of Katherines; Turtles All the Way Down; Personality and Power: Builders and Destroyers of Modern Europe; Becoming;  Educated; The Glass Castle;  The Adult ADHD Tool Kit;  Siddhartha by Hermann Hesse; Remarkably Bright Creatures;  The Hidden Life of Trees; The Overstory; Norwegian Wood; North of Normal by Cea Sunrise Person; ",
+                "style": "font-style: italic;"
             },
             {
                 "type": "subheading",
@@ -723,7 +726,8 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "Paper Towns; Looking for Alaska; The Metamorphosis by Franz Kafka; A Brief History of Time; In Patagonia; Le Petit Prince; Sybil; The Man Who Walked Through Time; North by Scott Jurek; The Power of Babel; Born to Run; Eat and Run; The Time Traveler's Wife; Lord of the Flies; And the Mountains Echoed; A Thousand Splendid Suns; The Kite Runner; "
+                "value": "Paper Towns; Looking for Alaska; The Metamorphosis by Franz Kafka; A Brief History of Time; In Patagonia; Le Petit Prince; Sybil; The Man Who Walked Through Time; North by Scott Jurek; The Power of Babel; Born to Run; Eat and Run; The Time Traveler's Wife; Lord of the Flies; And the Mountains Echoed; A Thousand Splendid Suns; The Kite Runner; ",
+                "style": "font-style: italic;"
             },
             {
                 "type": "subheading",
@@ -731,6 +735,7 @@
             },
             {
                 "type": "unorderedlistWithLinks",
+                "style": "font-style: italic;",
                 "value": [
                     {
                         "value": "NYTimes Book Review",
@@ -836,15 +841,18 @@
         "contents": [
             {
                 "type": "unorderedlist",
-                "value": "Me croirais-tu si j'te disais, ;Que demain il va faire beau, ;Que l'soleil va sortir pour ta peau, ;Que mon ombre est comme, ;Un spot au frette pour toi, ;Si j'te disais que demain, ;Si j'te disais que demain, ;Que mon ombre est comme, ;Un spot au frette pour toi, ;Si j'te disais que demain..."
+                "value": "Me croirais-tu si j'te disais, ;Que demain il va faire beau, ;Que l'soleil va sortir pour ta peau, ;Que mon ombre est comme, ;Un spot au frette pour toi, ;Si j'te disais que demain, ;Si j'te disais que demain, ;Que mon ombre est comme, ;Un spot au frette pour toi, ;Si j'te disais que demain...",
+                "style": "font-style: italic;"
             },
             {
                 "type": "unorderedlist",
-                "value": "Et sous la peau, ;Un cimetière de volcans, ;Les fantômes chantent, ;Ils s'embrassent lentement, ;Et attendent l'aube, ;On dansera jusqu'à la fin..."
+                "value": "Et sous la peau, ;Un cimetière de volcans, ;Les fantômes chantent, ;Ils s'embrassent lentement, ;Et attendent l'aube, ;On dansera jusqu'à la fin...",
+                "style": "font-style: italic;"
             },
             {
                 "type": "unorderedlist",
-                "value": "Je serai là, ;Les grandes promesses puis le temps, ;Qui rongent les têtes et boit le sang, ;On nage ici comme des enfants, ;On serre les dent, on meurt, on vit, ;Et tout ce qui reste, c'est nos envies, ;On crie ensemble à la dérive, ;Si j'te disais que demain..."
+                "value": "Je serai là, ;Les grandes promesses puis le temps, ;Qui rongent les têtes et boit le sang, ;On nage ici comme des enfants, ;On serre les dent, on meurt, on vit, ;Et tout ce qui reste, c'est nos envies, ;On crie ensemble à la dérive, ;Si j'te disais que demain...",
+                "style": "font-style: italic;"
             },
             {
                 "type": "iframe",

@@ -260,6 +260,7 @@ function addAboutPageContent() {
         if (aboutDataContentEntry.type == "text") {
             let aboutPara = document.createElement("p");
             aboutPara.innerHTML = aboutDataContentEntry.value;
+            aboutPara.style.fontStyle = 'italic';
             aboutPara.classList.add("about-para");
             aboutPageTextContainer.appendChild(aboutPara);
         }

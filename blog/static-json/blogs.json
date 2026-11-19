@@ -699,7 +699,7 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "The Body Keeps the Score by Bessel van der Kolk; Will Grayson, Will Grayson; Hitler by Ian Kershaw; ",
+                "value": "The Body Keeps the Score by Bessel van der Kolk; One Hundred Years of Solitude; ",
                 "style": "font-style: italic;"
             },
             {
@@ -717,7 +717,7 @@
             },
             {
                 "type": "unorderedlist",
-                "value": "The Anthropocene Reviewed by John Green; Everything is Tuberculosis by John Green; The Emperor  of  All Maladies by Siddhartha Mukherjee; The Biology of Cancer by Robert A. Weinberg; I Contain Multitudes by Ed Yong; The Man Who Couldn't Stop by David Adam; The Body in Pain by Elaine Scarry;",
+                "value": "Will Grayson, Will Grayson; The Anthropocene Reviewed by John Green; Everything is Tuberculosis by John Green; The Emperor  of  All Maladies by Siddhartha Mukherjee; The Biology of Cancer by Robert A. Weinberg; I Contain Multitudes by Ed Yong; The Man Who Couldn't Stop by David Adam; The Body in Pain by Elaine Scarry;",
                 "style": "font-style: italic;"
             },
             {
@@ -983,6 +983,78 @@
             {
                 "type": "text",
                 "value": "Until then, I hope you are doing well.",
+                "style": "font-style: italic;"
+            }
+        ]
+    },
+    {
+        "index": "2026-11-19-Resurgery",
+        "title": "Resurgery",
+        "heading": "Resurgery",
+        "tags": "",
+        "author": "",
+        "timestamp": "November 19, 2026, Pune",
+        "place": "",
+        "display": "visible",
+        "description": [
+            {
+                "type": "text",
+                "value": ""
+            },
+            {
+                "type": "image",
+                "value": "/blog/static-thumbnails/2026-11-19-resurgery.jpg"
+            }
+        ],
+        "contents": [
+            {
+                "type": "text",
+                "value": "I have suffered for too long.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "The pain has filled me with regrets. Yet these last two years have not been wasted. I have accomplished a lot. I have read many books. I have made a lot of progress in French. I have started learning German. I have travelled. I have interviewed. I have started journaling seriously.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "I know that the future is not decided. In retrospect, it always appears that way, but it is not decided.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "I know that the past can't be changed so ruminating about it will do me no good.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "It is time to channel all my regrets to build a better future for myself.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "It is time to let go of all the doubts.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "It is time to believe.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "Tomorrow is the beginning of the end of this pain.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "Beyond tomorrow, all my dreams and wishes are no longer dreams and wishes.",
+                "style": "font-style: italic;"
+            },
+            {
+                "type": "text",
+                "value": "Beyond tomorrow, they are my reality.",
                 "style": "font-style: italic;"
             }
         ]
